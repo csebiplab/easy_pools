@@ -1,9 +1,9 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto_Serif } from "next/font/google";
 import Header from "./components/layouts/Header/Header";
 import Footer from "./components/layouts/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const robotoSerif = Roboto_Serif({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Easy Pools",
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={robotoSerif.className}>
         <Header />
         {children}
         <Footer />

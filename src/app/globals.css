@@ -75,6 +75,11 @@ a {
   background: #555;
 }
 
+/* My Utility classes */
+.text-18px {
+  font-size: 18px;
+}
+
 /* Max screen size Media Query */
 @media screen and (min-width: 1400px) {
   .custom-container {
