@@ -8,9 +8,9 @@
 body {
   background-color: #f5f8fa;
 }
-footer * {
+/* footer * {
   @apply text-white;
-}
+} */
 
 .container {
   @apply max-w-7xl mx-auto px-2;
@@ -73,4 +73,24 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* Max screen size Media Query */
+@media screen and (min-width: 1400px) {
+  .custom-container {
+    width: 1370px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .custom-container {
+    width: 1570px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1950px) {
+  .custom-container {
+    width: 1920px;
+    margin: 0 auto;
+  }
 }
