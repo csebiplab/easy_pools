@@ -8,9 +8,9 @@
 body {
   background-color: #f5f8fa;
 }
-/* footer * {
-  @apply text-white;
-} */
+footer * {
+  @apply text-white bg-black px-[120px];
+}
 
 .container {
   @apply max-w-7xl mx-auto px-2;
@@ -86,16 +86,31 @@ a {
     width: 100%;
     margin: 0 auto;
   }
+
+  section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 @media screen and (min-width: 1600px) {
   .custom-container {
     width: 100%;
     margin: 0 auto;
   }
+
+  section {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 @media screen and (min-width: 1921px) {
   .custom-container {
     width: 1920px;
     margin: 0 auto;
+  }
+
+  section {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
