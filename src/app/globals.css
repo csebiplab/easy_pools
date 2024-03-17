@@ -9,7 +9,7 @@ body {
   background-color: #f5f8fa;
 }
 footer * {
-  @apply text-white;
+  @apply text-white bg-black px-[120px];
 }
 
 .container {
@@ -73,4 +73,44 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* My Utility classes */
+.text-18px {
+  font-size: 18px;
+}
+
+/* Big screen size Media Query */
+@media screen and (min-width: 1400px) {
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .custom-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .custom-container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
