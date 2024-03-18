@@ -41,12 +41,12 @@ const ourServices = [
 
 const OurServices = () => {
   return (
-    <div className="px-[120px] py-[112px] our__service__box">
+    <div className="px-5 md:px-10 xl:px-20 2xl:px-[120px] py-[112px] our__service__box">
       <HeadingIcon text={headingIconText.ourServices__IconTxt} />
       <h3 className="text-4xl text-dark">Our Services</h3>
 
       <div className="mt-[35px]">
-        <div className="grid grid-cols-4 gap-x-[27px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4 2xl:gap-[27px]">
           {ourServices.map((serv, index) => (
             <ServiceCard key={index} serv={serv} />
           ))}
