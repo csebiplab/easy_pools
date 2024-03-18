@@ -29,3 +29,7 @@
   border-radius: 8px;
   background: #049e43;
 }
+
+.service__card img {
+  @apply  w-full;
+}
