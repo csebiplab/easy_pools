@@ -54,7 +54,7 @@ const Footer = () => {
 
                 <Image src={LOGO} alt="" className="" />
                 <p className="text-white pt-6 mb-3 ml-2 lg:text-[20px] md:text-sm ">
-                Easy reno simplifies the process and costs of renovation by bringing design, sourcing and management under one roof.
+                  Easy reno simplifies the process and costs of renovation by bringing design, sourcing and management under one roof.
                 </p>
                 {/* <h5 className="text-gray-500">Customer Reviews</h5> */}
 
@@ -155,7 +155,7 @@ const Footer = () => {
                       {
                         footerIcon.map((fIcon, i) =>
                           <div key={i} className=" col-span-1">
-                            <img src={fIcon.img.src} className=" lg:h-auto lg:w-auto w-10 h-10"></img>
+                            <img src={fIcon.img.src} className=" lg:h-auto lg:w-auto "></img>
                           </div>)
                       }
                     </div>
@@ -170,7 +170,7 @@ const Footer = () => {
           </div>
         </footer>
       </div>
-      <div className=" bg-[#062524] md:px-10  ">
+      <div className=" bg-[#062524] md:px-10 px-3  ">
         <div className="grid lg:grid-cols-9 md:grid-cols-2 gap-5 py-6  items-center custom-container md:mx-auto ">
           <div className=" lg:col-span-3 flex items-center gap-2 md:col-span-1">
             <p className=" lg:text-[18px] md:text-sm "> <b className="text-white" >WEBSITE DESIGN AND SEO BY:-</b> </p>

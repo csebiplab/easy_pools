@@ -30,7 +30,7 @@ const OurServiceAreas = () => {
       </div>
 
       {/* //   ======================= map Card ==================// */}
-      <div className=" grid grid-cols-3 lg:gap-18 gap-10">
+      <div className=" grid md:grid-cols-3 grid-cols-2 lg:gap-18 gap-10">
 
         <div className="col-span-1 relative">
           <div className="shadow-md p-0 rounded-sm relative">
