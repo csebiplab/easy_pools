@@ -15,6 +15,7 @@
 
 .home-banner {
   position: relative;
+  z-index: -1;
 }
 
 .home-banner::before {
