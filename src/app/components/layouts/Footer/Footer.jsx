@@ -170,7 +170,7 @@ const Footer = () => {
           </div>
         </footer>
       </div>
-      <div className=" bg-[#062524] md:px-10 px-3  ">
+      <div className=" bg-[#062524] md:px-10 px-3   ">
         <div className="grid lg:grid-cols-9 md:grid-cols-2 gap-5 py-6  items-center custom-container md:mx-auto ">
           <div className=" lg:col-span-3 flex items-center gap-2 md:col-span-1">
             <p className=" lg:text-[18px] md:text-sm "> <b className="text-white" >WEBSITE DESIGN AND SEO BY:-</b> </p>

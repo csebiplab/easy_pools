@@ -45,7 +45,7 @@ const OurServiceAreas = () => {
             <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
               <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">Visit Location</button>
             </div>
-            <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0">Queens</h5>
+            <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white">Queens</h5>
           </div>
         </div>
         <div className="col-span-1 relative">
@@ -61,7 +61,7 @@ const OurServiceAreas = () => {
             <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
               <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">Visit Location</button>
             </div>
-            <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0">Queens</h5>
+            <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white">Queens</h5>
           </div>
         </div>
         <div className="col-span-1 relative">
@@ -77,7 +77,7 @@ const OurServiceAreas = () => {
             <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
               <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">Visit Location</button>
             </div>
-            <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0">Queens</h5>
+            <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white">Queens</h5>
           </div>
         </div>
 
