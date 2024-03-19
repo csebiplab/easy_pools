@@ -1,0 +1,10 @@
+.footer-bg{
+  background: #188B89;
+  mix-blend-mode: multiply;
+  
+}
+
+.footer-bottom-bg{
+  background: linear-gradient(90deg, #062524 0%, #188B89 100%);
+}
+
