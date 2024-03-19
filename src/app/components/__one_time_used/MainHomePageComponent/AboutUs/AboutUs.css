@@ -1,0 +1,23 @@
+.under__bg {
+  width: 596.47px;
+  height: 490.22px;
+  max-width: 100%;
+
+  border-radius: 15px;
+  background: #049e43;
+}
+
+.upper_img {
+  width: 596.47px;
+  height: 490.22px;
+
+  border-radius: 15px;
+}
+
+.aboutus__para {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+}
