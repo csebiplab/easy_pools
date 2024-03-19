@@ -14,7 +14,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import gokundo from "../../../../../public/assets/footer/Gokundu-logo(white and green) 1.png"
-import bgImg from "../../../../../public/assets/footer/footerbg.JPG"
+import bgImg from "../../../../../public/assets/footer/footerbg.png"
 import Image from "next/image";
 
 import { FaFacebook } from "react-icons/fa";
@@ -45,7 +45,7 @@ const Footer = () => {
   return (
     <div className=" ">
       <div className="  footer-bg">
-        <footer className="z-50 custom-container  pt-20 text-white" style={{ backgroundImage: `url(${gokundo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+        <footer className="z-50 custom-container  pt-20 text-white" style={{ backgroundImage: `url(${bgImg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
           <div className="">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-5 lg:mt-36 mt:mb-20 mt-10 md:px-10 sm:px-5">
 
