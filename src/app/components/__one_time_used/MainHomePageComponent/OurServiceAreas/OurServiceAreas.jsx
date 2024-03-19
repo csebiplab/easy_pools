@@ -45,7 +45,7 @@ const OurServiceAreas = () => {
                     Visit Location
                   </button>
                 </div>
-                <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0">
+                <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white">
                   Queens
                 </h5>
               </div>
@@ -65,7 +65,7 @@ const OurServiceAreas = () => {
                     Visit Location
                   </button>
                 </div>
-                <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0">
+                <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white">
                   Queens
                 </h5>
               </div>
@@ -85,7 +85,7 @@ const OurServiceAreas = () => {
                     Visit Location
                   </button>
                 </div>
-                <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0">
+                <h5 className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white">
                   Queens
                 </h5>
               </div>
@@ -103,7 +103,7 @@ const OurServiceAreas = () => {
               />
             ))}
           </div>
-          
+
         </div>
       </div>
     </div>
