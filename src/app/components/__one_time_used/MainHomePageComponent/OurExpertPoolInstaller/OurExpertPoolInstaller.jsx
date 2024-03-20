@@ -94,7 +94,7 @@ const OurExpertPoolInstaller = () => {
                     </div>
                 </div>
 
-                <div className=' grid grid-cols-2 lg:gap-14 md:gap-5 '>
+                <div className=' grid md:grid-cols-2 lg:gap-14 md:gap-5 '>
                     <div className=' border-2 shadow'>
                         <h2 className='title-bg text-center lg:py-8 py-5 text-white lg:text-[25px] text-[20px]'>Usual Pool Installers</h2>
                         <div className=' grid grid-cols-2 lg:p-6 p-3 lg:text-[20px] text-[16px] leading-[50px] '>
