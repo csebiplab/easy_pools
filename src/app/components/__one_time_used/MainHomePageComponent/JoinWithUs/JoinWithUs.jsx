@@ -26,7 +26,7 @@ const JoinWithUs = () => {
                             Dive into a world of seamless luxury with Easy Pools, your trusted partner for swimming pool installation in Toronto. Our expert team ensures a hassle-free experience. From concept to completion, we guarantee a swift and stress-free process, making your aquatic oasis a reality. Are you ready to transform your space and embrace the refreshing allure of a custom Easy Pool? Start your swimming pool installation with us and let our unparalleled expertise and dedication take your backyard to new heights of relaxation and enjoyment.
                         </p>
                         <div className=' flex justify-center items-center lg:mt-12 mt-7'>
-                            <Button></Button> <p className='mx-5 text-[#049E43]'>  or </p>
+                            <Button title={"Get Your Estimate"}></Button> <p className='mx-5 text-[#049E43]'>  or </p>
                             <p className=' lg:text-[18px] text-[16px] font-medium text-[#049E43]'> Call Us: 647-931-0164 </p>
                         </div>
                     </div>
