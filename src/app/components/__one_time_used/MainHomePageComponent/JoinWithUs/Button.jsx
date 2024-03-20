@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Button() {
+export default function Button({title}) {
   return (
     <div>
       <button className="service__card__btn flex justify-center items-center">
-        <span className="text-white text-[14px] font-bold">Get Your Estimate</span>
+        <span className="text-white text-[14px] font-bold">{title}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="7"

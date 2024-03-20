@@ -93,7 +93,7 @@ const OurServiceAreas = () => {
           </div>
 
           {/* dot button */}
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-4 pb-8">
             {[1, 2, 3].map((dotNumber) => (
               <div
                 key={dotNumber}
