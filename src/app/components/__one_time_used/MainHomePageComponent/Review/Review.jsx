@@ -87,7 +87,7 @@ const TestimonialSlider = ({ testimonials }) => {
 const Review = () => {
   const testimonials = [
     {
-      text: 'I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius cost-saving suggestion that we pulled off effortlessly. Huge thanks. From start to finish working with Easy Renovation was a great experience. I was looking to get my primary bathroom updated and remodelled and reached out to the team.',
+      text: 'I cannot express enough how delighted I am with the exceptional service provided by this company. Despite our tight budget constraints, they approached our project with ingenuity and professionalism. Their innovative cost-saving solutions surpassed our expectations, making the renovation process smooth and stress-free. Working with Easy Renovation was an absolute pleasure from start to finish. ',
       author: 'Lisa Silva',
       location: 'London',
 
@@ -99,7 +99,7 @@ const Review = () => {
 
     },
     {
-      text: 'I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius cost-saving suggestion that we pulled off effortlessly. Huge thanks. From start to finish working with Easy Renovation was a great experience. I was looking to get my primary bathroom updated and remodelled and reached out to the team.',
+      text: 'Easy Renovation exceeded all expectations. Despite tight budgets, they delivered innovative solutions effortlessly. Their professionalism and expertise made the entire process a breeze. Highly recommended for any renovation project! I was looking to get my primary bathroom updated and remodelled and reached out to the team.',
       author: 'Alex ross',
       location: 'Barling',
 

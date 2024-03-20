@@ -9,5 +9,7 @@ export const headingIconText = {
     meterialNEquip__IconText: "Materials and Equipment",
     benefits__IconText: "About Us",
     revidw__IconText: "Review",
+    hire__IconText: "Hire For Installation Services ",
+    joinUs__IconText: "Join With Us",
 
 }
