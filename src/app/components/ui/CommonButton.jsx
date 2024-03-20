@@ -1,6 +1,6 @@
 import React from "react";
 
-const ServiceCardButton = () => {
+const CommonButton = () => {
   return (
     <button className="service__card__btn flex justify-center items-center">
       <span className="text-white text-[14px] font-bold">Learn More</span>
@@ -21,4 +21,4 @@ const ServiceCardButton = () => {
   );
 };
 
-export default ServiceCardButton;
+export default CommonButton;

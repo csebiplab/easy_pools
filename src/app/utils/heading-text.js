@@ -6,6 +6,7 @@ export const headingIconText = {
     toptail__IconText: "Top-Tier Pools",
     faq__IconText: "Frequently Asked Questions (FAQ)",
     aboutUs__IconText: "About Us",
+    meterialNEquip__IconText: "Materials and Equipment",
     benefits__IconText: "About Us",
 
 }

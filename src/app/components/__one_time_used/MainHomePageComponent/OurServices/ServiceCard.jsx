@@ -1,6 +1,6 @@
+import CommonButton from "@/app/components/ui/CommonButton";
 import Image from "next/image";
 import React from "react";
-import ServiceCardButton from "./ServiceCardButton";
 
 const ServiceCard = ({ serv }) => {
   const { imgUrl, title, desc } = serv ?? {};
@@ -18,7 +18,7 @@ const ServiceCard = ({ serv }) => {
           <h5 className="py-[25px]">{title}</h5>
           <p className="pb-[45px]">{desc}</p>
           <div className="pb-5 flex justify-center relative">
-            <ServiceCardButton />
+            <CommonButton />
           </div>
         </div>
       </div>
