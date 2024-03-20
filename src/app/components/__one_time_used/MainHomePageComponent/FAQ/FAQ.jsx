@@ -71,11 +71,11 @@ const FAQ = () => {
                 <div className="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
 
                     <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-                        <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
+                        <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full  border-r-[15px] rounded-3xl border-green-600 ">
                             <img
                                 alt=""
                                 src={faqImg.src}
-                                className="absolute inset-0 h-full w-full object-cover"
+                                className="absolute inset-0 h-full w-full object-cover rounded-3xl"
                             />
                         </div>
 

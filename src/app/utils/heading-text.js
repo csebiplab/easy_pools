@@ -7,5 +7,9 @@ export const headingIconText = {
     faq__IconText: "Frequently Asked Questions (FAQ)",
     aboutUs__IconText: "About Us",
     meterialNEquip__IconText: "Materials and Equipment",
+    benefits__IconText: "About Us",
+    revidw__IconText: "Review",
+    hire__IconText: "Hire For Installation Services ",
+    joinUs__IconText: "Join With Us",
 
 }

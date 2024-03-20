@@ -26,7 +26,7 @@ const MaterialsNEquip = () => {
                 loading="lazy"
                 className="h-[493px] w-[650px] pl-32 mr-2 rounded-[9px]"
               />
-              <div className="-ml-[130px] mt-[-13rem]">
+              <div className="-ml-[130px] mt-[-12rem]">
                 <Image
                   src="/assets/images/equip1.png"
                   width={513}
