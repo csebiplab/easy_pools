@@ -1,5 +1,5 @@
 # EasyPools
-
+Almost done
 
 ## Get Start
 
@@ -9,4 +9,4 @@
  * npm install
 
 ## Finally run
-* npm run dev
+* npm run dev 
