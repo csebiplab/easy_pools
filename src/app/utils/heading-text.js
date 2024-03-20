@@ -8,5 +8,6 @@ export const headingIconText = {
     aboutUs__IconText: "About Us",
     meterialNEquip__IconText: "Materials and Equipment",
     benefits__IconText: "About Us",
+    revidw__IconText: "Review",
 
 }

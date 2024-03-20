@@ -3,6 +3,8 @@ import con from "../../../../../../public/assets/benefits/convenince.png"
 import cost from "../../../../../../public/assets/benefits/cost.png"
 import dur from "../../../../../../public/assets/benefits/durability.png"
 import saf from "../../../../../../public/assets/benefits/safety.png"
+import topright from "../../../../../../public/assets/benefits/topcorner.png"
+import bottomleft from "../../../../../../public/assets/benefits/bottomcorner.png"
 import { headingIconText } from '@/app/utils/heading-text';
 import HeadingIcon from '@/app/components/ui/HeadingIcon';
 
@@ -45,23 +47,23 @@ const BenefitsWithEasyPools = () => {
                 </div>
 
                 <div>
-                    <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5 gap-y-8'>
+                    <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 gap-y-8'>
                         {services.map((service, index) => (
                             <div key={index} className='col-span-1 border-2 shadow-md rounded border-green-600 relative '>
                                 {/* SVG background for left bottom corner */}
                                 <div className="absolute bottom-0 left-0 z-10">
-                                    <img className="lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full border-black" src={service.img.src} alt="Profile" />
+                                    <img className="lg:w-20 lg:h-20 w-14 h-14  border-black" src={bottomleft.src} alt="Profile" />
                                 </div>
                                 {/* SVG background for right top corner */}
                                 <div className="absolute top-0 right-0 z-10">
-                                    <img className="lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full border-black" src={service.img.src} alt="Profile" />
+                                    <img className="lg:w-20 lg:h-20 w-14 h-14   border-black" src={topright.src} alt="Profile" />
                                 </div>
                                 <div className="mx-auto rounded-lg relative z-20">
                                     <div className="pt-7">
-                                        <p className='pt-10 mx-auto text-center lg:text-[20px] text-xs'>{service.title} </p>
+                                        <p className='pt-10 mx-auto text-center lg:text-[20px] text-md'>{service.title} </p>
                                     </div>
                                     <div>
-                                        <p className='md:px-8 p-3 md:text-[16px] text-[14px]'> {service.details} </p>
+                                        <p className='p-8 md:text-[16px] text-[14px] text-center flex items-center leading-normal '> {service.details} </p>
                                     </div>
                                     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
                                         <img className="lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full border-black" src={service.img.src} alt="Profile" />
