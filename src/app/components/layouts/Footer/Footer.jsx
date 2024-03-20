@@ -46,6 +46,7 @@ const Footer = () => {
     <div className=" ">
       <div className="  footer-bg">
         <footer className="z-50 custom-container  pt-20 text-white" style={{ backgroundImage: `url(${bgImg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+          
           <div className="">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-5 lg:mt-36 mt:mb-20 mt-10 md:px-10 sm:px-5">
 
