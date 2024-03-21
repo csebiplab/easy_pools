@@ -9,12 +9,13 @@ body {
   background-color: #f5f8fa;
 }
 footer * {
-  @apply text-white  ;
+  @apply text-white;
 }
 
 .container {
-  @apply max-w-7xl mx-auto px-2;
+  @apply max-w-screen-5xl px-3 md:px-5 lg:px-10 xl:px-20 2xl:px-28 3xl:px-40 4xl:px-52 5xl:px-[285px] mx-auto;
 }
+
 a {
   @apply text-primary underline-offset-2 hover:underline decoration-primary-700;
 }
@@ -86,26 +87,19 @@ a {
     width: 100%;
     margin: 0 auto;
   }
-
-  
 }
 @media screen and (min-width: 1600px) {
   .custom-container {
     width: 100%;
     margin: 0 auto;
   }
-
-  
 }
 @media screen and (min-width: 1921px) {
   .custom-container {
     width: 1920px;
     margin: 0 auto;
   }
-
-  
 }
-
 
 @layer components {
   /*

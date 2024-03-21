@@ -6,6 +6,39 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      // => beshi choto screen mobile 639-280px
+      // => moddhom screen mobile 767-640px
+      'xs': '280px',
+
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+      // => tablet screen 1023px-768px
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      // => mid level desktop screen 1279-1024px
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      // => Extra desktop screen 1439px-1280px
+
+      '2xl': '1440px',
+      // => @media (min-width: 1536px) { ... }
+
+      // 2(dui gun extra screen) ==> 1535px-1440px
+
+      '3xl': '1536px',
+
+      '4xl': '1736px',
+
+      '5xl': '1920px',
+    },
     extend: {
       colors: {
         primary: {
