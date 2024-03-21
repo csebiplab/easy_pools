@@ -43,8 +43,8 @@ const LicensedNInsured = () => {
         </div>
       </div>
       <div className=" grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:mx-5 mx-3 gap-5 lg:pb-16 pb-8">
-        {imgList.map((im, i) => (
-          <div key={im.img}>
+        {imgList.map((im, idx) => (
+          <div key={idx}>
             <img src={im.img.src} alt="" />
           </div>
         ))}

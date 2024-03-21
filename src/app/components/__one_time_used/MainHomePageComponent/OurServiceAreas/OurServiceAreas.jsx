@@ -2,7 +2,7 @@
 import HeadingIcon from "@/app/components/ui/HeadingIcon";
 import { headingIconText } from "@/app/utils/heading-text";
 import React, { useState } from "react";
-import "./area.css"
+import "./area.css";
 
 const OurServiceAreas = () => {
   const [activeDot, setActiveDot] = useState(1);
@@ -13,11 +13,9 @@ const OurServiceAreas = () => {
 
   return (
     <div className="area-bg ">
-      <div >
+      <div>
         <div className="custom-container lg:py-18 py-8 ">
-
           <div className="mx-auto   flex flex-col items-center justify-center">
-           
             <HeadingIcon text={headingIconText.map__IconTxt} />
 
             <div>
@@ -94,16 +92,16 @@ const OurServiceAreas = () => {
 
           {/* dot button */}
           <div className="flex justify-center mt-4 pb-8">
-            {[1, 2, 3].map((dotNumber) => (
+            {[1, 2, 3].map((dotNumber, idx) => (
               <div
-                key={dotNumber}
-                className={`w-4 h-4 rounded-full cursor-pointer mx-2 ${activeDot === dotNumber ? "bg-blue-500" : "bg-gray-300"
-                  }`}
+                key={idx}
+                className={`w-4 h-4 rounded-full cursor-pointer mx-2 ${
+                  activeDot === dotNumber ? "bg-blue-500" : "bg-gray-300"
+                }`}
                 onClick={() => handleDotClick(dotNumber)}
               />
             ))}
           </div>
-
         </div>
       </div>
     </div>
