@@ -10,3 +10,5 @@ Almost done
 
 ## Finally run
 * npm run dev 
+
+### main branch is protected for push and merging
