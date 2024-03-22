@@ -7,16 +7,16 @@ import HeadingIcon from '@/app/components/ui/HeadingIcon';
 import { headingIconText } from '@/app/utils/heading-text';
 
 const TestimonialCard = ({ text, author, location }) => (
-  <div className=" rounded-lg shadow-md lg:py-5 lg:px-9 px-4 py-3 ">
+  <div className=" rounded-lg shadow-md p-[13px] ">
     <div >
       <img src={googleIcon.src} alt="" />
     </div>
     <div className='lg:pt-2'>
       <img src={starIcon.src} alt="" />
     </div>
-    <p className="text-sm text-gray-800 lg:py-5  py-3 ">{text}</p>
-    <h6 className="font-semibold text-gray-900 mt-2">{author}</h6>
-    <p className="text-gray-600 text-xs mt-2">{location}</p>
+    <p className="text-sm text-gray-800 py-3 3xl:text-[14px] ">{text}</p>
+    <h6 className="font-semibold text-gray-900 ">{author}</h6>
+    <p className="text-gray-600 text-xs ">{location}</p>
   </div>
 );
 
@@ -34,10 +34,10 @@ const TestimonialSlider = ({ testimonials }) => {
   };
 
   return (
-    <div className="relative ">
+    <div className="relative  ">
       <div className="  justify-center items-center mb-4">
 
-        <div className="grid lg:grid-cols-3 mx-10  items-center lg:gap-20">
+        <div className="grid lg:grid-cols-3 grid-cols-1  items-center lg:gap-12">
           {testimonials.map((testimonial, index) => {
             const cardIndex = (focusedIndex + index) % testimonials.length;
             const isFocused = index === 1; // Check if this card is focused
@@ -60,7 +60,7 @@ const TestimonialSlider = ({ testimonials }) => {
 
       </div>
 
-      <div className="flex gap-8 mt-20 items-center justify-center py-5">
+      <div className="flex gap-8 mt-10 items-center justify-center py-5">
         {/* ========= first line ======== */}
         <div className="w-[330px] h-0.5  bg-[#049E43] hidden md:block">
 
@@ -68,9 +68,9 @@ const TestimonialSlider = ({ testimonials }) => {
 
         <div className="flex gap-5">
 
-          <button onClick={handlePrev} className="p-3 rounded-full border-2 border-[#049E43] hover:text-white hover:bg-[#049E43] "><FaChevronLeft /></button>
+          <button onClick={handlePrev} className="p-3 rounded-full border-2 border-[#049E43] hover:text-white hover:bg-[#049E43]  "><FaChevronLeft className='fill-[#049E43] hover:fill-white' /></button>
 
-          <button onClick={handleNext} className=" hover:text-white bg-active hover:bg-[#049E43] border-2 p-3  rounded-full  border-[#049E43]  "><FaChevronRight /></button>
+          <button onClick={handleNext} className=" hover:text-white bg-active hover:bg-[#049E43] border-2 p-3  rounded-full  border-[#049E43]  "><FaChevronRight className='fill-[#049E43] hover:fill-white' /></button>
 
         </div>
         {/* =============== second line ============= */}
@@ -87,19 +87,19 @@ const TestimonialSlider = ({ testimonials }) => {
 const Review = () => {
   const testimonials = [
     {
-      text: 'I cannot express enough how delighted I am with the exceptional service provided by this company. Despite our tight budget constraints, they approached our project with ingenuity and professionalism. Their innovative cost-saving solutions surpassed our expectations, making the renovation process smooth and stress-free. Working with Easy Renovation was an absolute pleasure from start to finish. ',
+      text: 'I cannot express enough how delighted I am with the exceptional service provided by this company. Despite our tight budget constraints, they approached our project with ingenuity and professionalism. ',
       author: 'Lisa Silva',
       location: 'London',
 
     },
     {
-      text: 'I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius cost-saving suggestion that we pulled off effortlessly. Huge thanks. From start to finish working with Easy Renovation was a great experience. I was looking to get my primary bathroom updated and remodelled and reached out to the team.',
+      text: 'I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius cost-saving suggestion that we pulled off effortlessly. Huge thanks.',
       author: 'Nuan Projip',
       location: 'North York',
 
     },
     {
-      text: 'Easy Renovation exceeded all expectations. Despite tight budgets, they delivered innovative solutions effortlessly. Their professionalism and expertise made the entire process a breeze. Highly recommended for any renovation project! I was looking to get my primary bathroom updated and remodelled and reached out to the team.',
+      text: 'I would highly recommend this company. They came in, listened to our crazy budget restrictions, and came up with the most genius cost-saving suggestion that we pulled off effortlessly. Huge thanks. From start to finish working with Easy Renovation was a great experience.',
       author: 'Alex ross',
       location: 'Barling',
 
@@ -107,20 +107,22 @@ const Review = () => {
   ];
 
   return (
-    <div className=" bg-[#188B891A] lg:py-12 py-y">
-      <div>
-        <div className=" flex flex-col justify-center items-center ">
+    <div className='bg-[#188B891A]'>
+      <div className="  container 3xl:py-[50px] py-[30px]">
+        <div>
+          <div className=" flex flex-col justify-center items-center ">
 
-          <HeadingIcon text={headingIconText.revidw__IconText} />
+            <HeadingIcon text={headingIconText.revidw__IconText} />
 
-          <div>
-            <p className="lg:text-[36px] text-[20px] md:mb-20 mb-8 ">
-            Here’s what to expect when you hire us as your Pool Installer in Toronto.
-            </p>
+            <div>
+              <p className="lg:text-[36px] text-[20px] md:mb-20 mb-8 ">
+                Here’s what to expect when you hire us as your Pool Installer in Toronto.
+              </p>
+            </div>
           </div>
         </div>
+        <TestimonialSlider testimonials={testimonials} />
       </div>
-      <TestimonialSlider testimonials={testimonials} />
     </div>
   );
 };

@@ -37,8 +37,8 @@ const BenefitsWithEasyPools = () => {
   ];
 
   return (
-    <div>
-      <div className="md:py-20 py-10">
+    <div className="container">
+      <div className="lg:py-[120px] py-20">
         <div className=" flex flex-col justify-center items-center ">
           <HeadingIcon text={headingIconText.benefits__IconText} />
 
@@ -50,11 +50,11 @@ const BenefitsWithEasyPools = () => {
         </div>
 
         <div>
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 gap-y-8">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 3xl:gap-8 md:gap-5 md:gap-y-12 xs:gap-y-10 ">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="col-span-1 border-2 shadow-md rounded border-green-600 relative "
+                className="col-span-1 border-2 shadow-md rounded border-green-600 relative md:gap-5 xs:px-[10px] xs:pb-[10px]"
               >
                 {/* SVG background for left bottom corner */}
                 <div className="absolute bottom-0 left-0 z-10">
@@ -73,18 +73,18 @@ const BenefitsWithEasyPools = () => {
                   />
                 </div>
                 <div className="mx-auto rounded-lg relative z-20">
-                  <div className="pt-7">
-                    <p className="pt-10 mx-auto text-center lg:text-[20px] text-md">
+                  <div className="5xl:pt-[30px] pt-[20px]">
+                    <p className=" mx-auto text-center lg:text-[24px] text-md">
                       {service.title}{" "}
                     </p>
                   </div>
                   <div>
-                    <p className="p-8 md:text-[16px] text-[14px] text-center flex items-center leading-normal ">
+                    <p className="5xl:px-[20px] lg:px-[15px] px-4 5xl:pb-[30px] lg:pb-[20px] md:text-[15px] text-[14px] text-center flex items-center leading-normal ">
                       {" "}
                       {service.details}{" "}
                     </p>
                   </div>
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30">
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2/3 z-30">
                     <img
                       className="lg:w-20 lg:h-20 w-14 h-14 bg-white rounded-full border-black"
                       src={service.img.src}
