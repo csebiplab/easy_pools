@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const UpperNavbar = () => {
   return (
-    <nav className="px-5 md:px-10 xl:px-20 2xl:px-[120px] py-5 bg__uppernav">
+    // <nav className="px-5 md:px-10 xl:px-20 2xl:px-[120px] py-5 bg__uppernav">
+    <nav className="container py-5 bg__uppernav hidden md:block">
       <div className="flex justify-between">
         <div className="flex items-center gap-x-3">
           <Image

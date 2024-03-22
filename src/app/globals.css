@@ -7,6 +7,7 @@
 }
 body {
   background-color: #f5f8fa;
+  overflow-x: hidden !important;
 }
 footer * {
   @apply text-white;
@@ -68,12 +69,14 @@ a {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background: #888;
+  /* background: #888; */
+  @apply bg-secondary;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  /* background: #555; */
+  @apply bg-primary;
 }
 
 /* My Utility classes */
