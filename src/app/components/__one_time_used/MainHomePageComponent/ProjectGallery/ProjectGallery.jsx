@@ -57,7 +57,7 @@ const ProjectGallery = () => {
 
   return (
     <div className=" bg-[#188B891A] lg:py-24 py-10">
-      <div>
+      <div className="">
         <div className=" flex flex-col justify-center items-center ">
           <HeadingIcon text={headingIconText.joinUs__IconText} />
 

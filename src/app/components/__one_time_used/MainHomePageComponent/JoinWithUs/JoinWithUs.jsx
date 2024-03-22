@@ -9,9 +9,9 @@ const JoinWithUs = () => {
     return (
         <div>
             <div className="bg-[#188B891A]">
-                <div className="grid grid-cols-1 md:grid-cols-9 gap-4">
+                <div className=" container grid grid-cols-1 md:grid-cols-9 gap-4">
 
-                    <div className="w-full md:col-span-4 md:order-1 bg-white lg:my-16 my-8 lg:ml-28 ml-12 lg:px-8 px-4 lg:py-12 py-8  border-2 shadow-md rounded-md z-50    ">
+                    <div className="w-full md:col-span-4 md:order-1 bg-white lg:my-[40px] my-[40px]   lg:px-8 px-4 lg:py-12 py-8  border-2 shadow-md rounded-md z-50    ">
                         <div className=" flex flex-col ">
 
                             <HeadingIcon text={headingIconText.joinUs__IconText} />
@@ -22,7 +22,7 @@ const JoinWithUs = () => {
                                 </p>
                             </div>
                         </div>
-                        <p className="mt-4 lg:text-[20px] text-[16px] leading-10">
+                        <p className="mt-4 lg:text-[16px] text-[14px] leading-10">
                             Dive into a world of seamless luxury with Easy Pools, your trusted partner for swimming pool installation in Toronto. Our expert team ensures a hassle-free experience. From concept to completion, we guarantee a swift and stress-free process, making your aquatic oasis a reality. Are you ready to transform your space and embrace the refreshing allure of a custom Easy Pool? Start your swimming pool installation with us and let our unparalleled expertise and dedication take your backyard to new heights of relaxation and enjoyment.
                         </p>
                         <div className=' flex justify-center items-center lg:mt-12 mt-7'>

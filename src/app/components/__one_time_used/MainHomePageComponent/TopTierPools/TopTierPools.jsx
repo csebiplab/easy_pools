@@ -8,7 +8,7 @@ const TopTierPools = () => {
         <div className=' 
             '>
             <div className='bg-[#188B891A]'>
-                <section className="overflow-hidden   container  sm:grid sm:grid-cols-2 5xl:py-[70px] 3xl:py-[50px] py-[40px] ">
+                <section className="overflow-hidden  container  sm:grid sm:grid-cols-2 5xl:py-[70px] 3xl:py-[50px] py-[40px] ">
                     <div className="4xl:pr-[65px] pr-[45px]">
                         <div className=" flex flex-col  ">
 
