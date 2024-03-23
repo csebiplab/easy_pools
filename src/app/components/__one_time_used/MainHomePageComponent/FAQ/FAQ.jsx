@@ -4,6 +4,7 @@ import faqImg from "../../../../../../public/assets/random/faq.png";
 import React from "react";
 import { IoCaretDown } from "react-icons/io5";
 import "./faq.css";
+import Image from "next/image";
 
 const FAQ = () => {
   const faqQuestionsNAns = [
@@ -65,11 +66,13 @@ const FAQ = () => {
       <section className="container">
         <div className="mx-auto 3xl:py-[120px] lg:py-[100px] py-[60px]">
           <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-            <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full  border-r-[15px] rounded-3xl border-green-600 ">
-              <img
+            <div className="flex justify-center items-center  ">
+              <Image
                 alt=""
-                src={faqImg.src}
-                className="absolute inset-0 h-full w-full object-cover rounded-3xl"
+                src={faqImg}
+                className=" "
+                width={"580px"}
+                height={"410px"}
               />
             </div>
 
