@@ -40,10 +40,10 @@ const Footer = () => {
   ];
 
   return (
-    <div className="custom-container">
+    <div className="">
       <div className="footer__bg bg-blend-multiply bg-[#188B89] !text-white">
         <footer
-          className="z-50 pt-20 text-white"
+          className="z-50 pt-20 text-white container"
           // style={{
           //   backgroundImage: `url(${bgImg})`,
           //   backgroundSize: "cover",
@@ -228,8 +228,8 @@ const Footer = () => {
           </div>
         </footer>
       </div>
-      <div className=" footer-bottom-bg md:px-10 px-3  ">
-        <div className="grid lg:grid-cols-9 md:grid-cols-2 gap-5 py-6  items-center custom-container md:mx-auto ">
+      <div className="  footer-bottom-bg md:px-10 px-3  ">
+        <div className="grid lg:grid-cols-9 md:grid-cols-2 gap-5 py-6  items-center container md:mx-auto ">
           <div className=" lg:col-span-3 flex items-center gap-2 md:col-span-1">
             <p className=" lg:text-[18px] md:text-sm ">
               {" "}
