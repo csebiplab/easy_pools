@@ -47,7 +47,7 @@ const Header = () => {
               />
               <Link
                 href="/"
-                className="text-secondary font-bold text-2xl 2xl:text-3xl"
+                className="text-secondary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
               >
                 +1(647) 449 9512
               </Link>

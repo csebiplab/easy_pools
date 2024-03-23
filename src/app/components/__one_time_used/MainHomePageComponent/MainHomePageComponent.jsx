@@ -19,9 +19,9 @@ import LicensedNInsured from "./LicensedNInsured/LicensedNInsured";
 const MainHomePageComponent = () => {
   return (
     <div>
-      <div>
+      <section>
         <HomeBanner />
-      </div>
+      </section>
 
       <section>
         <PartnerNRatings />
