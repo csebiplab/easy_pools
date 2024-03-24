@@ -7,7 +7,7 @@ import Button from './Button';
 
 const JoinWithUs = () => {
     return (
-        <div>
+        <div className=' '>
             <div className="bg-[#188B891A]">
                 <div className=" custom-container grid grid-cols-1 md:grid-cols-8 gap-4">
 
