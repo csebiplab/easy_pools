@@ -12,5 +12,6 @@ export const headingIconText = {
     hire__IconText: "Hire For Installation Services ",
     joinUs__IconText: "Join With Us",
     gellary__IconText: "Projects Gallery",
+    Benefits__IconText: "Benefits with Easy Pools",
 
 }

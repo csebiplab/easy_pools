@@ -9,7 +9,7 @@ const JoinWithUs = () => {
     return (
         <div className=' '>
             <div className="bg-[#188B891A]">
-                <div className=" custom-container grid grid-cols-1 md:grid-cols-8 gap-4">
+                <div className=" custom-container lg:block hidden grid grid-cols-1 md:grid-cols-8 gap-4">
 
                     <div className="w-full md:col-span-4 md:order-1 bg-white  lg:px-8 px-4 lg:py-12 py-8  border-2 shadow-md rounded-md z-50 ml-[285px] 3xl:w-[770px] 3xl:h-[550px] 3xl:my-[55px] lg:my-[25px] my-20px ">
                         <div className=" flex flex-col ">
