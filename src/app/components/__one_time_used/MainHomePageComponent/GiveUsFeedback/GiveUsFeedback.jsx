@@ -15,11 +15,41 @@ import { FaLocationArrow } from "react-icons/fa6";
 const GiveUsFeedback = () => {
     return (
         <div>
-            <div className="">
-                <div className="grid grid-cols-1 md:grid-cols-10 relative  ">
+            <div className="md:mx-auto xs:mx-[35px]">
+                <div className="grid lg:grid-cols-10 md:grid-cols-7  lg:relative  ">
+                    <div className=" lg:absolute md:col-span-3 md:order-1 flex justify-center items-center align-middle 2xl:left-[37%] lg:left-[16%] xl:left-[30%] 2xl:top-[16%] xs:align-middle
+                    lg:top-[20%]  bg-[#188B89] 2xl:my-16 my-8  2xl:py-8 py-5 border shadow-md rounded-md border-black z-50   ">
+                        <div className=''>
+                            <div className=' 2xl:py-8 py-5 lg:px-10 px-5  '>
+                                <h2 className=" 2xl:text-[36px] text-[20px] text-white md:text-start xs:text-center  ">
+                                    Contact Us
+                                </h2>
+                                <div className=' flex gap-2 md:items-center text-center 2xl:text-[18px] text-[14px] lg:py-8 py-5 md:justify-start xs:justify-center '>
+                                    <FaMapLocationDot className=' 2xl:w-5 lg:h-5 w-auto h-auto fill-white' />
+                                    <p className='text-white'> 1331 Major Mackenzie dr West, Vaughan</p>
+                                </div>
+                                <div className='my-2 flex gap-2 items-center md:justify-start xs:justify-center 2xl:text-[18px] text-[14px]  '>
+                                    <FaPhoneVolume className=' 2xl:w-5 lg:h-5 w-auto h-auto fill-white' />
+                                    <p className='text-white'> +1(647)449-9512</p>
+                                </div>
+                                <div className=' flex gap-2 my-auto items-center 2xl:text-[18px] text-[14px] 2xl:py-8 py-5 md:justify-start xs:justify-center '>
+                                    <IoIosMail className=' 2xl:w-5 2xl:h-5 w-auto h-auto fill-white' />
+                                    <p className='text-white'>easypools.landscaping@gmail.com</p>
+                                </div>
+                                <div className=' flex gap-8  text-white md:justify-start xs:justify-center'>
+                                    <FaFacebook className=' 2xl:w-6 2xl:h-6 w-auto h-auto fill-white' />
+                                    <FaXTwitter className=' 2xl:w-6  2xl:h-6 w-auto h-auto fill-white ' />
+                                    <FaInstagram className='2xl:w-6 2xl:h-6 w-auto h-auto fill-white' />
+                                    <FaLinkedin className='2xl:w-6 2xl:h-6 w-auto h-auto fill-white' />
+                                </div>
 
-                    <div className='md:col-span-5 md:order-2 lg:ml-64 lg:py-30 flex items-center'>
-                        <div className="rounded-lg p-8 lg:col-span-3 lg:p-12 items-center">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className='xl:col-span-5 lg:col-span-6 md:col-span-4 md:order-2 2xl:ml-64 xl:ml-32 lg:ml-24  lg:py-30 md:flex items-center'>
+                        <div className="rounded-lg md:p-8 lg:col-span-3 lg:p-12 items-center">
                             <h2 className='lg:mb-8 mb-5 text-[#188B89]'> Give Us Feedback </h2>
                             <form action="#" className=" ">
 
@@ -84,10 +114,10 @@ const GiveUsFeedback = () => {
                                     ></textarea>
                                 </div>
 
-                                <div >
+                                <div className=' flex md:block xs:justify-center xs:items-center xs:mx-auto'>
                                     <button
                                         type="submit"
-                                        className=" w-full rounded-md bg-[#049E43E4] px-10 py-4 lg:px-20  font-semibold  sm:w-auto text-white items-center flex lg:mt-13 mt-8 "
+                                        className="  rounded-md bg-[#049E43E4] px-10 py-4 md:px-20  font-semibold  text-white items-center flex lg:mt-13 mt-8 "
                                     >
                                         Submit <FaLocationArrow className=' ml-2 fill-white ' />
                                     </button>
@@ -96,34 +126,8 @@ const GiveUsFeedback = () => {
                         </div>
                     </div>
 
-                    <div className=" absolute left-[37%] top-[16%] bg-[#188B89] lg:my-16 my-8  lg:py-8 py-5 border-2 shadow-md rounded-md border-black z-50    ">
-                        <div className=' lg:py-8 py-5 lg:px-10 px-5'>
-                            <h2 className=" lg:text-[36px] text-[20px] text-white ">
-                                Contact Us
-                            </h2>
-                            <div className=' flex gap-2 items-center lg:text-[18px] text-[14px] lg:py-8 py-5 '>
-                                <FaMapLocationDot className=' lg:w-5 lg:h-5 w-auto h-auto fill-white' />
-                                <p className='text-white'> 1331 Major Mackenzie dr West, Vaughan</p>
-                            </div>
-                            <div className='my-2 flex gap-2 items-center lg:text-[18px] text-[14px]  '>
-                                <FaPhoneVolume className=' lg:w-5 lg:h-5 w-auto h-auto fill-white' />
-                                <p className='text-white'> +1(647)449-9512</p>
-                            </div>
-                            <div className=' flex gap-2 my-auto items-center lg:text-[18px] text-[14px] lg:py-8 py-5 '>
-                                <IoIosMail className=' lg:w-5 lg:h-5 w-auto h-auto fill-white' />
-                                <p className='text-white'>easypools.landscaping@gmail.com</p>
-                            </div>
-                            <div className=' flex gap-8  text-white'>
-                                <FaFacebook className=' lg:w-6 lg:h-6 w-auto h-auto fill-white' />
-                                <FaXTwitter className=' lg:w-6  lg:h-6 w-auto h-auto fill-white ' />
-                                <FaInstagram className='lg:w-6 lg:h-6 w-auto h-auto fill-white' />
-                                <FaLinkedin className='lg:w-6 lg:h-6 w-auto h-auto fill-white' />
-                            </div>
 
-                        </div>
-                    </div>
-
-                    <div className="w-full -z-10  md:col-span-5 md:order-1">
+                    <div className="w-full -z-10  xl:col-span-5 lg:col-span-4 lg:order-1 lg:block xs:hidden">
                         <Image
                             src={contactImg}
                             alt="Trusted general contractor"

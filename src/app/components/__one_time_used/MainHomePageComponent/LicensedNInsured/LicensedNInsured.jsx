@@ -43,7 +43,7 @@ const LicensedNInsured = () => {
           </div>
         </div>
       </div>
-      <div className=" flex justify-between gap-5 lg:pb-16 pb-8">
+      <div className=" flex justify-between md:mx-auto xs:mx-[30px] gap-5 lg:pb-16 pb-8">
         {imgList.map((im, idx) => (
           <div key={idx}>
             <Image src={im.img} width={"200px"} height={"35px"} alt="" />
