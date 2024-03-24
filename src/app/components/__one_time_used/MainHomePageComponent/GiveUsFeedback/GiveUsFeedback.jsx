@@ -16,8 +16,9 @@ const GiveUsFeedback = () => {
     return (
         <div>
             <div className="md:mx-auto xs:mx-[35px]">
-                <div className="grid lg:grid-cols-10 md:grid-cols-7  lg:relative  ">
-                    <div className=" lg:absolute md:col-span-3 md:order-1 flex justify-center items-center align-middle 2xl:left-[37%] lg:left-[16%] xl:left-[30%] 2xl:top-[16%] xs:align-middle
+                <div className="grid lg:grid-cols-10 md:grid-cols-7 custom-container  lg:relative  ">
+
+                    <div className=" lg:absolute md:col-span-3 md:order-1 flex justify-center items-center align-middle 2xl:left-[20%] lg:left-[16%] xl:left-[20%] 2xl:top-[10%] 4xl:left-[25%]  xs:align-middle
                     lg:top-[20%]  bg-[#188B89] 2xl:my-16 my-8  2xl:py-8 py-5 border shadow-md rounded-md border-black z-50   ">
                         <div className=''>
                             <div className=' 2xl:py-8 py-5 lg:px-10 px-5  '>
@@ -48,7 +49,7 @@ const GiveUsFeedback = () => {
                     </div>
 
 
-                    <div className='xl:col-span-5 lg:col-span-6 md:col-span-4 md:order-2 2xl:ml-64 xl:ml-32 lg:ml-24  lg:py-30 md:flex items-center'>
+                    <div className='xl:col-span-6  lg:col-span-6 md:col-span-4 md:order-2  lg:py-30 md:flex items-center lg:ml-32 2xl:ml-48 3xl:ml-56 4xl:ml-64'>
                         <div className="rounded-lg md:p-8 lg:col-span-3 lg:p-12 items-center">
                             <h2 className='lg:mb-8 mb-5 text-[#188B89]'> Give Us Feedback </h2>
                             <form action="#" className=" ">
@@ -127,7 +128,7 @@ const GiveUsFeedback = () => {
                     </div>
 
 
-                    <div className="w-full -z-10  xl:col-span-5 lg:col-span-4 lg:order-1 lg:block xs:hidden">
+                    <div className="w-full -z-10  xl:col-span-4 lg:col-span-4 lg:order-1 lg:block xs:hidden">
                         <Image
                             src={contactImg}
                             alt="Trusted general contractor"

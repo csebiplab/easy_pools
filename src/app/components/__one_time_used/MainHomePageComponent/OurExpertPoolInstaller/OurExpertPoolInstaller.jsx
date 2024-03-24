@@ -74,21 +74,21 @@ const OurExpertPoolInstaller = () => {
 
   return (
     <div className="container">
-      <div className=" 2xl:py-20 py-10 shadow-sm ">
+      <div className=" 2xl:py-20 py-10 shadow-sm md:mx-0 xs:mx-[35px] ">
         <div className="mx-auto   flex flex-col items-center justify-center">
           <div>
             <HeadingIcon text={headingIconText.expartPool__IconText} />
           </div>
 
           <div>
-            <p className="2xl:text-[36px] text-[20px] ">
+            <p className="2xl:text-[36px] md:text-[20px] xs:text-[18px] md:pb-0 xs:pb-[20px] text-center ">
               Serving the Greater Toronto Horseshoe Area for all your pool's
               needs.
             </p>
           </div>
 
           <div>
-            <p className=" 3xl:text-[16px] text-[14px] text-center 3xl:py-[35px] py-[30px] ">
+            <p className=" md:block xs:hidden 2xl:text-[16px] text-[14px] text-center 3xl:py-[35px] py-[30px] ">
               Trust our professionals to deliver exceptional results that exceed
               expectations, transforming your backyard into a luxurious oasis.
               Choose our expert pool installers in Toronto for a seamless and
@@ -102,9 +102,9 @@ const OurExpertPoolInstaller = () => {
             <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white 2xl:text-[18px] text-[16px]">
               Usual Pool Installers
             </h2>
-            <div className=" grid grid-cols-2 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] text-[14px]   ">
+            <div className=" grid grid-flow-col grid-rows-5 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
               {usualPool.map((usual, idx) => (
-                <div key={idx} className="flex  gap-4 items-center 2xl:leading-[40px] leading-[30px]">
+                <div key={idx} className="flex  gap-4 items-center 3xl:mb-[40px] lg:mb-[30px] xs:mb-[15px]  leading-none  ">
                   <img
                     src={xImg.src}
                     className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px] "
@@ -119,9 +119,9 @@ const OurExpertPoolInstaller = () => {
             <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white 2xl:text-[18px] text-[16px]">
               Easy Pools Pool Installers
             </h2>
-            <div className=" grid grid-cols-2 2xl:p-6 p-3 2xl:text-[16px] text-[14px] ">
+            <div className=" grid grid-flow-col grid-rows-5 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px] ">
               {easyPool.map((usual, idx) => (
-                <div key={idx} className="flex gap-4 items-center 2xl:leading-[40px] leading-[30px] ">
+                <div key={idx} className="flex  gap-4 items-center 3xl:mb-[40px] lg:mb-[30px]  xs:mb-[15px] leading-none ">
                   <img
                     src={rImg.src}
                     className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px] "
