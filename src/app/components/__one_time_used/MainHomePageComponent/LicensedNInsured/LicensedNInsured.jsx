@@ -6,6 +6,7 @@ import latham from "../../../../../../public/assets/licensed/latham.png";
 import permacon from "../../../../../../public/assets/licensed/permacon.png";
 import HeadingIcon from "@/app/components/ui/HeadingIcon";
 import { headingIconText } from "@/app/utils/heading-text";
+import Image from "next/image";
 
 const LicensedNInsured = () => {
   const imgList = [
@@ -27,8 +28,8 @@ const LicensedNInsured = () => {
   ];
 
   return (
-    <div>
-      <div className=" custom-container">
+    <div className=" container ">
+      <div >
         <div className="mx-auto lg:pt-28 pt-12 lg:pb-12 pb-8 flex flex-col items-center justify-center">
           {/* <div className='flex items-center pb-2'>
           <Image src={sectionIcon} className='h-5 w-10 mr-2' />
@@ -42,10 +43,10 @@ const LicensedNInsured = () => {
           </div>
         </div>
       </div>
-      <div className=" grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 md:mx-5 mx-3 gap-5 lg:pb-16 pb-8">
+      <div className=" flex justify-between md:mx-auto xs:mx-[30px] gap-5 lg:pb-16 pb-8">
         {imgList.map((im, idx) => (
           <div key={idx}>
-            <img src={im.img.src} alt="" />
+            <Image src={im.img} width={"200px"} height={"35px"} alt="" />
           </div>
         ))}
       </div>

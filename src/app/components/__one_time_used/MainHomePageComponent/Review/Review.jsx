@@ -62,7 +62,7 @@ const TestimonialSlider = ({ testimonials }) => {
 
       <div className="flex gap-8 mt-10 items-center justify-center py-5">
         {/* ========= first line ======== */}
-        <div className="w-[330px] h-0.5  bg-[#049E43] hidden md:block">
+        <div className="w-[330px] h-0.5  bg-[#049E43] ">
 
         </div>
 
@@ -74,7 +74,7 @@ const TestimonialSlider = ({ testimonials }) => {
 
         </div>
         {/* =============== second line ============= */}
-        <div className="w-[330px] h-0.5 bg-[#049E43] hidden md:block">
+        <div className="w-[330px] h-0.5 bg-[#049E43] ">
 
         </div>
       </div>
@@ -115,7 +115,7 @@ const Review = () => {
             <HeadingIcon text={headingIconText.revidw__IconText} />
 
             <div>
-              <p className="lg:text-[36px] text-[20px] md:mb-20 mb-8 ">
+              <p className="lg:text-[36px] text-[20px] md:mb-20 mb-8 text-center ">
                 Here’s what to expect when you hire us as your Pool Installer in Toronto.
               </p>
             </div>

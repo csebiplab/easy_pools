@@ -73,22 +73,22 @@ const OurExpertPoolInstaller = () => {
   ];
 
   return (
-    <div>
-      <div className=" lg:py-20 py-10 shadow-sm ">
+    <div className="container">
+      <div className=" 2xl:py-20 py-10 shadow-sm md:mx-0 xs:mx-[35px] ">
         <div className="mx-auto   flex flex-col items-center justify-center">
           <div>
             <HeadingIcon text={headingIconText.expartPool__IconText} />
           </div>
 
           <div>
-            <h2 className="lg:text-[36px] text-[20px] lg:mb-8 mb-5">
+            <p className="2xl:text-[36px] md:text-[20px] xs:text-[18px] md:pb-0 xs:pb-[20px] text-center ">
               Serving the Greater Toronto Horseshoe Area for all your pool's
               needs.
-            </h2>
+            </p>
           </div>
 
           <div>
-            <p className=" lg:text-[20px] text-[16px] text-center lg:mb-8 mb-5">
+            <p className=" md:block xs:hidden 2xl:text-[16px] text-[14px] text-center 3xl:py-[35px] py-[30px] ">
               Trust our professionals to deliver exceptional results that exceed
               expectations, transforming your backyard into a luxurious oasis.
               Choose our expert pool installers in Toronto for a seamless and
@@ -97,17 +97,17 @@ const OurExpertPoolInstaller = () => {
           </div>
         </div>
 
-        <div className=" grid md:grid-cols-2 lg:gap-14 md:gap-5 ">
+        <div className=" grid md:grid-cols-2 2xl:gap-[50px] md:gap-[30px] ">
           <div className=" border-2 shadow">
-            <h2 className="title-bg text-center lg:py-8 py-5 text-white lg:text-[25px] text-[20px]">
+            <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white 2xl:text-[18px] text-[16px]">
               Usual Pool Installers
             </h2>
-            <div className=" grid grid-cols-2 lg:p-6 p-3 lg:text-[20px] text-[16px] leading-[50px] ">
+            <div className=" grid grid-flow-col grid-rows-5 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
               {usualPool.map((usual, idx) => (
-                <div key={idx} className="flex gap-4 items-center">
+                <div key={idx} className="flex  gap-4 items-center 3xl:mb-[40px] lg:mb-[30px] xs:mb-[15px]  leading-none  ">
                   <img
                     src={xImg.src}
-                    className="lg:h-[23px] lg:w-[23px] h-[15px] w-[15px] "
+                    className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px] "
                   ></img>
                   <p>{usual.title}</p>
                 </div>
@@ -116,17 +116,17 @@ const OurExpertPoolInstaller = () => {
           </div>
 
           <div className=" border-2 shadow">
-            <h2 className="title-bg2 text-center lg:py-8 py-5 text-white lg:text-[25px] text-[20px]">
+            <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white 2xl:text-[18px] text-[16px]">
               Easy Pools Pool Installers
             </h2>
-            <div className=" grid grid-cols-2 lg:p-6 p-3 lg:text-[20px] text-[16px] leading-[50px] ">
+            <div className=" grid grid-flow-col grid-rows-5 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px] ">
               {easyPool.map((usual, idx) => (
-                <div key={idx} className="flex gap-4 items-center">
+                <div key={idx} className="flex  gap-4 items-center 3xl:mb-[40px] lg:mb-[30px]  xs:mb-[15px] leading-none ">
                   <img
                     src={rImg.src}
-                    className="lg:h-[23px] lg:w-[23px] h-[15px] w-[15px] "
+                    className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px] "
                   ></img>
-                  <p>{usual.title}</p>
+                  <p className="">{usual.title}</p>
                 </div>
               ))}
             </div>

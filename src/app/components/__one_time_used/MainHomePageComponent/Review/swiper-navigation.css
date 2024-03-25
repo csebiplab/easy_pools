@@ -1,0 +1,45 @@
+/* swiper-navigation.css */
+/* Add these styles to your CSS file or module */
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.swiper-button-prev::after {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.swiper-button-next::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+

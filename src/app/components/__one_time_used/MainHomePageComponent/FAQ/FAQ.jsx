@@ -4,6 +4,7 @@ import faqImg from "../../../../../../public/assets/random/faq.png";
 import React from "react";
 import { IoCaretDown } from "react-icons/io5";
 import "./faq.css";
+import Image from "next/image";
 
 const FAQ = () => {
   const faqQuestionsNAns = [
@@ -62,14 +63,16 @@ const FAQ = () => {
 
   return (
     <div>
-      <section className="container">
-        <div className="mx-auto 3xl:py-[120px] lg:py-[100px] py-[60px]">
+      <section className="container ">
+        <div className="mx-auto  xs:px-[35px] 3xl:py-[120px] lg:py-[100px] py-[60px]">
           <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-            <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full  border-r-[15px] rounded-3xl border-green-600 ">
-              <img
+            <div className="flex justify-center items-center  ">
+              <Image
                 alt=""
-                src={faqImg.src}
-                className="absolute inset-0 h-full w-full object-cover rounded-3xl"
+                src={faqImg}
+                className=" "
+                width={"580px"}
+                height={"410px"}
               />
             </div>
 
@@ -79,7 +82,7 @@ const FAQ = () => {
                   <HeadingIcon text={headingIconText.faq__IconText} />
 
                   <div>
-                    <p className="lg:text-[36px] text-[20px] lg:mb-8 mb-5">
+                    <p className="5xl:text-[36px] lg:text-[25px]  text-[20px] lg:mb-8 mb-5">
                       Pool Installation Services in Toronto
                     </p>
                   </div>
@@ -90,14 +93,14 @@ const FAQ = () => {
                   <div key={idx}>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">
                       <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] p-4 border-2">
-                        <h6 className="text-white ">{ques.question}</h6>
+                        <h6 className="text-white md:text-base xs:text-[9px] ">{ques.question}</h6>
 
                         <div className="white-icon">
                           <IoCaretDown className="white-icon" />
                         </div>
                       </summary>
 
-                      <p className=" pt-3 px-4 leading-relaxed border-2 text-gray-700">
+                      <p className=" pt-3 px-4 leading-relaxed border-2 text-gray-700  md:text-base xs:text-[8px]">
                         {ques.answer}
                       </p>
                     </details>
