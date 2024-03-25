@@ -64,7 +64,7 @@ const BenefitsWithEasyPools = () => {
         </div>
 
         <div className=" xs:hidden sm:block"> 
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 3xl:gap-8 md:gap-5 sm:gap-10 md:gap-y-12 xs:gap-y-10 ">
+          <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 3xl:gap-8 md:gap-10 sm:gap-10 md:gap-y-12 xs:gap-y-10 ">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -111,11 +111,10 @@ const BenefitsWithEasyPools = () => {
           </div>
         </div>
 
+
         <div className="xs:block sm:hidden mt-14">
-
-          <div>
+          <div className=" ">
             <div
-
               className="col-span-1 border-2 shadow-md rounded border-green-600 relative md:gap-5 xs:px-[10px] xs:pb-[10px]"
             >
               {/* SVG background for left bottom corner */}

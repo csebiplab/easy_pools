@@ -82,9 +82,9 @@ const FAQ = () => {
                   <HeadingIcon text={headingIconText.faq__IconText} />
 
                   <div>
-                    <h6 className="5xl:text-[36px] lg:text-[25px]  text-[20px] lg:mb-8 mb-5">
+                    <p className="5xl:text-[36px] lg:text-[25px]  text-[20px] lg:mb-8 mb-5">
                       Pool Installation Services in Toronto
-                    </h6>
+                    </p>
                   </div>
                 </div>
               </div>

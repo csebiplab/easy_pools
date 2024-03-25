@@ -63,7 +63,7 @@ const ProjectGallery = () => {
             <HeadingIcon text={headingIconText.gellary__IconText} />
 
             <div>
-              <p className="lg:text-[36px] text-[20px] 3xl:pb-[30px] pb-[25px] ">
+              <p className="lg:text-[36px] text-[18px] 3xl:pb-[30px] pb-[25px] text-center ">
               Swimming Pools Installation Gallery Of Past Projects
               </p>
             </div>
