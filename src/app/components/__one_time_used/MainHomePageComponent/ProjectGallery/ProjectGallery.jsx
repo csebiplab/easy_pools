@@ -56,112 +56,117 @@ const ProjectGallery = () => {
   ];
 
   return (
-    <div className=" bg-[#188B891A] lg:py-24 py-10">
-      <div className="">
-        <div className=" flex flex-col justify-center items-center ">
-          <HeadingIcon text={headingIconText.joinUs__IconText} />
+    <div className="bg-[#188B891A]">
+      <div className="  custom-container 3xl:py-[85px] py-[50px]">
+        <div className="">
+          <div className=" flex flex-col justify-center items-center ">
+            <HeadingIcon text={headingIconText.gellary__IconText} />
 
-          <div>
-            <p className="lg:text-[36px] text-[20px] md:mb-8 mb-5 ">
-              Ready to Start Your Swimming Pool Installation With Us?
-            </p>
+            <div>
+              <p className="lg:text-[36px] text-[18px] 3xl:pb-[30px] pb-[25px] text-center ">
+              Swimming Pools Installation Gallery Of Past Projects
+              </p>
+            </div>
           </div>
         </div>
+
+        <Swiper
+          className="sample-slider w-full"
+          modules={[Autoplay]}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            pauseOnMouseEnter: false,
+            disableOnInteraction: false,
+            reverseDirection: true,
+            stopOnLastSlide: false,
+          }}
+          // slidesPerView={5}
+          speed={4000}
+          allowTouchMove={false}
+          breakpoints={{
+            0: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            }
+          }}
+
+          // ,
+          //   360: {
+          //     slidesPerView: 4,
+          //     spaceBetween: 20,
+          //   },
+          //   750: {
+          //     slidesPerView: 4,
+          //     spaceBetween: 40,
+          //   },
+          //   950: {
+          //     slidesPerView: 4,
+          //     spaceBetween: 50,
+          //   },
+        >
+          {galImgs.map((imgUrl, idx) => (
+            <SwiperSlide key={idx} className="m-2">
+              <Image
+                // width={400}
+                // height={400}
+
+                // className="w-auto h-52 mx-8 select-none"
+                className="object-contain w-auto h-auto mx-auto"
+                src={imgUrl}
+                alt="gallery"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <Swiper
+          className="sample-slider w-full"
+          modules={[Autoplay]}
+          loop={true}
+          autoplay={{
+            delay: 0,
+            pauseOnMouseEnter: false,
+            disableOnInteraction: false,
+            stopOnLastSlide: false,
+            reverseDirection: false,
+          }}
+          // slidesPerView={5}
+          speed={4000}
+          allowTouchMove={false}
+          breakpoints={{
+            0: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            }
+          }}
+          // ,
+          //   360: {
+          //     slidesPerView: 4,
+          //     spaceBetween: 20,
+          //   },
+          //   750: {
+          //     slidesPerView: 4,
+          //     spaceBetween: 40,
+          //   },
+          //   950: {
+          //     slidesPerView: 4,
+          //     spaceBetween: 50,
+          //   },
+        >
+          {galImgs2.map((imgUrl, i) => (
+            <SwiperSlide key={i} className="m-2 ">
+              <Image
+                // width={400}
+                // height={400}
+                // className="w-auto h-52 mx-8 select-none"
+                className="object-contain w-auto h-auto mx-auto "
+                src={imgUrl}
+                alt="gallery"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-
-      <Swiper
-        className="sample-slider w-full"
-        modules={[Autoplay]}
-        loop={true}
-        autoplay={{
-          delay: 0,
-          pauseOnMouseEnter: false,
-          disableOnInteraction: false,
-          reverseDirection: true,
-          stopOnLastSlide: false,
-        }}
-        // slidesPerView={5}
-        speed={4000}
-        allowTouchMove={false}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          360: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          750: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          950: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
-      >
-        {galImgs.map((imgUrl, idx) => (
-          <SwiperSlide key={idx} className="m-2">
-            <Image
-              // width={400}
-              // height={400}
-
-              // className="w-auto h-52 mx-8 select-none"
-              className="object-contain w-auto h-auto mx-auto"
-              src={imgUrl}
-              alt="gallery"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <Swiper
-        className="sample-slider w-full"
-        modules={[Autoplay]}
-        loop={true}
-        autoplay={{
-          delay: 0,
-          pauseOnMouseEnter: false,
-          disableOnInteraction: false,
-          stopOnLastSlide: false,
-          reverseDirection: false,
-        }}
-        // slidesPerView={5}
-        speed={4000}
-        allowTouchMove={false}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          360: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          750: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          950: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
-      >
-        {galImgs2.map((imgUrl, i) => (
-          <SwiperSlide key={i} className="m-2 ">
-            <Image
-              // width={400}
-              // height={400}
-              // className="w-auto h-52 mx-8 select-none"
-              className="object-contain w-auto h-auto mx-auto "
-              src={imgUrl}
-              alt="gallery"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
     </div>
   );
 };
