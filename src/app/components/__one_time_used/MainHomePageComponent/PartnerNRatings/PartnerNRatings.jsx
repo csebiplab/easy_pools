@@ -31,7 +31,7 @@ const ratingImgs = [
 
 const PartnerNRatings = () => {
   return (
-    <div className="flex justify-center w-full border border-red-600 px-4 md:px-8 xl:px-16 2x:px-[120px] -mt-[75px] z-50">
+    <div className="container flex justify-center w-full border border-red-600 -mt-[75px] z-50">
       <div className="w-full mx-auto">
         <div className="px-4 py-4 rating__area w-full 2xl:w-[93%] mx-auto !border !border-red-500">
           <div className="flex justify-between w-full gap-x-[15px]">
