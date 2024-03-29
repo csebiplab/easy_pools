@@ -64,7 +64,7 @@ const ProjectGallery = () => {
 
             <div>
               <p className="lg:text-[36px] text-[18px] 3xl:pb-[30px] pb-[25px] text-center ">
-              Swimming Pools Installation Gallery Of Past Projects
+                Swimming Pools Installation Gallery Of Past Projects
               </p>
             </div>
           </div>
@@ -91,19 +91,19 @@ const ProjectGallery = () => {
             }
           }}
 
-          // ,
-          //   360: {
-          //     slidesPerView: 4,
-          //     spaceBetween: 20,
-          //   },
-          //   750: {
-          //     slidesPerView: 4,
-          //     spaceBetween: 40,
-          //   },
-          //   950: {
-          //     slidesPerView: 4,
-          //     spaceBetween: 50,
-          //   },
+        // ,
+        //   360: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 20,
+        //   },
+        //   750: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 40,
+        //   },
+        //   950: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 50,
+        //   },
         >
           {galImgs.map((imgUrl, idx) => (
             <SwiperSlide key={idx} className="m-2">
@@ -139,19 +139,19 @@ const ProjectGallery = () => {
               spaceBetween: 10,
             }
           }}
-          // ,
-          //   360: {
-          //     slidesPerView: 4,
-          //     spaceBetween: 20,
-          //   },
-          //   750: {
-          //     slidesPerView: 4,
-          //     spaceBetween: 40,
-          //   },
-          //   950: {
-          //     slidesPerView: 4,
-          //     spaceBetween: 50,
-          //   },
+        // ,
+        //   360: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 20,
+        //   },
+        //   750: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 40,
+        //   },
+        //   950: {
+        //     slidesPerView: 4,
+        //     spaceBetween: 50,
+        //   },
         >
           {galImgs2.map((imgUrl, i) => (
             <SwiperSlide key={i} className="m-2 ">
