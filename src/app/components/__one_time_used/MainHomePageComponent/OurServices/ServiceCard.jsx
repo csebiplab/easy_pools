@@ -15,9 +15,9 @@ const ServiceCard = ({ serv }) => {
           className="W-full h-[117px]"
         />
         <div className="px-[10px]">
-          <h5 className="py-[25px]">{title}</h5>
-          <p className="pb-[45px]">{desc}</p>
-          <div className="pb-5 flex justify-center relative">
+          <h5 className="py-[15px] 2xl:text-[24px] text-[20px]">{title}</h5>
+          <p className=" 2xl:text-[15px] text-[12px]">{desc}</p>
+          <div className="pb-5 mt-5 flex justify-center items-b relative">
             <CommonButton />
           </div>
         </div>
