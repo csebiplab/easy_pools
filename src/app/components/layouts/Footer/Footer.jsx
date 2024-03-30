@@ -44,9 +44,9 @@ const Footer = () => {
   
   return (
     <div className="">
-      <div className="footer__bg bg-blend-multiply bg-[#173f3f] lg:px-[35px] xs:px-[20px] !text-white">
+      <div className="  footer__bg bg-blend-multiply bg-[#173f3f] lg:px-[35px] xs:px-[20px] !text-white">
         <footer
-          className="z-50 2xl:pt-[95px] lg:pt-[70px] pt-[50px] text-white "
+          className=" container z-50 2xl:pt-[95px] lg:pt-[70px] pt-[50px] text-white "
         >
           <div className="">
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-7 gap-10 ">

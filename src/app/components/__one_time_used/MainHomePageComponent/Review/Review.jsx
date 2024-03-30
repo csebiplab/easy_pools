@@ -107,7 +107,7 @@ const Review = () => {
   ];
 
   return (
-    <div className='bg-[#188B891A]'>
+    <div className='bg-[#188B891A] md:block hidden'>
       <div className="  container 3xl:py-[50px] py-[30px]">
         <div>
           <div className=" flex flex-col justify-center items-center ">

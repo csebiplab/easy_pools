@@ -32,24 +32,25 @@ const ourServices = [
   {
     imgUrl: "/assets/services/serv4.png",
     title: "ICF pool",
-    desc: `Insulated Concrete Form (ICF) pools are insulated concrete 
-    pools in a nutshell. The efficiency of ICF pools is better than concrete 
-    and you have the option to use a liner, allowing you to facelift your pool in the future.
+    desc: `Insulated Concrete Form (ICF) pools are insulated concrete pools in a nutshell. The efficiency of ICF pools is better than concrete and you have the option to use a liner, allowing you to facelift your pool in the future in the future.
     `,
   },
 ];
 
 const OurServices = () => {
   return (
-    <div className="px-5 md:px-10 xl:px-20 2xl:px-[120px] py-[112px] our__service__box">
-      <HeadingIcon text={headingIconText.ourServices__IconTxt} />
-      <h3 className="text-4xl text-dark">Our Services</h3>
-
-      <div className="mt-[35px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-4 2xl:gap-[27px]">
-          {ourServices.map((serv, index) => (
-            <ServiceCard key={index} serv={serv} />
-          ))}
+    <div className="our__service__box">
+      <div className="container">
+        <div className=" !px-[35px] md:px-0  2xl:py-[65px] py-[50px]  ">
+          <HeadingIcon text={headingIconText.ourServices__IconTxt} />
+          <h3 className="text-4xl text-dark">Our Services</h3>
+          <div className="mt-[35px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-4 2xl:gap-[27px]">
+              {ourServices.map((serv, index) => (
+                <ServiceCard key={index} serv={serv} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
