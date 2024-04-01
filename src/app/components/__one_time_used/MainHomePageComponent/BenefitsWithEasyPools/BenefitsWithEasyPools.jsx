@@ -129,6 +129,7 @@ const BenefitsWithEasyPools = () => {
                 />
               </div>
               {/* SVG background for right top corner */}
+              
               <div className="absolute top-0 right-0 z-10">
                 <Image
                   className="   border-black"
@@ -138,6 +139,7 @@ const BenefitsWithEasyPools = () => {
                   width={"70px"}
                 />
               </div>
+
               <div className="mx-auto rounded-lg relative z-20">
                 <div className="5xl:pt-[30px] pt-[20px]">
                   <p className=" mx-auto text-center lg:text-[24px]  md:text-md xs:text-[18px] mb-2 xs:mt-8">
@@ -160,6 +162,7 @@ const BenefitsWithEasyPools = () => {
                   />
                 </div>
               </div>
+
             </div>
           </div>
 
