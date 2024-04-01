@@ -37,7 +37,7 @@ const TestimonialSlider = ({ testimonials }) => {
     <div className="relative  ">
       <div className="  justify-center items-center mb-4">
 
-        <div className="grid lg:grid-cols-3 grid-cols-1  items-center lg:gap-12">
+        <div className="grid lg:grid-cols-3 grid-cols-1 grid-rows-1  items-center lg:gap-12">
           {testimonials.map((testimonial, index) => {
             const cardIndex = (focusedIndex + index) % testimonials.length;
             const isFocused = index === 1; // Check if this card is focused
@@ -107,7 +107,7 @@ const Review = () => {
   ];
 
   return (
-    <div className='bg-[#188B891A]'>
+    <div className='bg-[#188B891A] md:block hidden'>
       <div className="  container 3xl:py-[50px] py-[30px]">
         <div>
           <div className=" flex flex-col justify-center items-center ">
@@ -115,7 +115,7 @@ const Review = () => {
             <HeadingIcon text={headingIconText.revidw__IconText} />
 
             <div>
-              <p className="lg:text-[36px] text-[20px] md:mb-20 mb-8 text-center ">
+              <p className="lg:text-[36px] text-[20px] md:mb-20 mb-8 text ">
                 Here’s what to expect when you hire us as your Pool Installer in Toronto.
               </p>
             </div>

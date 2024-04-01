@@ -8,8 +8,8 @@ const TopTierPools = () => {
     return (
         <div className=' bg-[#188B891A]
             '>
-            <div className=' container'>
-                <section className="overflow-hidden   xs:px-[35px]  grid md:grid-cols-2 5xl:py-[70px] 3xl:py-[50px] py-[40px] ">
+            <div className=' container '>
+                <div className="overflow-hidden sm:px-0  px-[35px]  grid md:grid-cols-2 5xl:py-[70px] 3xl:py-[50px] py-[40px] ">
                     <div className="4xl:pr-[65px] pr-[45px] xs:order-2 md:order-1 text-center md:text-left">
                         <div className=" flex flex-col md:justify-normal xs:justify-center md:items-start xs:items-center md:mt-0 xs:mt-[25px]  ">
 
@@ -41,7 +41,7 @@ const TopTierPools = () => {
 
                         />
                     </div>
-                </section>
+                </div>
             </div>
         </div>
     );

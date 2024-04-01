@@ -113,6 +113,7 @@ const BenefitsWithEasyPools = () => {
 
 
         <div className="xs:block sm:hidden mt-14">
+
           <div className=" ">
             <div
               className="col-span-1 border-2 shadow-md rounded border-green-600 relative md:gap-5 xs:px-[10px] xs:pb-[10px]"
@@ -128,6 +129,7 @@ const BenefitsWithEasyPools = () => {
                 />
               </div>
               {/* SVG background for right top corner */}
+              
               <div className="absolute top-0 right-0 z-10">
                 <Image
                   className="   border-black"
@@ -137,6 +139,7 @@ const BenefitsWithEasyPools = () => {
                   width={"70px"}
                 />
               </div>
+
               <div className="mx-auto rounded-lg relative z-20">
                 <div className="5xl:pt-[30px] pt-[20px]">
                   <p className=" mx-auto text-center lg:text-[24px]  md:text-md xs:text-[18px] mb-2 xs:mt-8">
@@ -159,8 +162,11 @@ const BenefitsWithEasyPools = () => {
                   />
                 </div>
               </div>
+
             </div>
           </div>
+
+
           <div className="flex gap-8 mt-5 items-center justify-center py-5">
             {/* ========= first line ======== */}
             <div className="w-[330px] h-0.5  bg-[#049E43]  ">
