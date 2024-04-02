@@ -131,7 +131,7 @@ const PartnerNRatings = () => {
           <div className="grid lg:grid-cols-6 grid-cols-3  items-center justify-center gap-9 mt-[25px]">
             {ratingImgs.map(({ imgUrl, text }, index) => (
               <div
-                className=" flex justify-center items-center px-6 py-[15px] lg:border-none border-2 rounded-xl lg:h-auto lg:w-auto md:h-[150px] md:w-[250px] sm:h-[120px] sm:w-[200px] h-[100px] w-[125px]"
+                className=" flex justify-center items-center px-6 py-[15px] lg:border-none border-2 rounded-xl lg:h-auto lg:w-auto md:h-[150px] md:w-[250px] sm:h-[120px] sm:w-[200px] h-[100px] w-[120px]"
                 key={index}
               >
                 <div className="text-center">
@@ -146,7 +146,7 @@ const PartnerNRatings = () => {
                     />
                   </div>
                   <div>
-                    <p className="mt-4 md:text-[14px] text-[8px]">{text}</p>
+                    <p className="md:mt-4 mt-2 md:text-[14px] text-[8px]">{text}</p>
                   </div>
                 </div>
 
