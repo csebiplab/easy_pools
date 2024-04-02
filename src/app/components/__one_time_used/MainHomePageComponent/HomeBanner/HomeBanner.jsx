@@ -5,10 +5,10 @@ const HomeBanner = () => {
     <div className="container home-banner py-20 min-h-screen flex justify-center items-center bg-blend-multiply bg-dark-200">
       <div className="text-center banner-content">
         <div>
-          <h1 className="text-white title">
+          <h1 className="text-white lg:text-[55px] text-[27px] ">
             Swimming Pool Installation in Toronto
           </h1>
-          <p className="mt-8 leading-10 text-white text-2xl font-normal">
+          <p className="mt-8 lg:leading-10 leading-5 text-white lg:text-[25px] text-[13px] font-normal">
             Welcome to our luxury swimming pool installation company in Toronto.
           </p>
           <div className="flex justify-center">
