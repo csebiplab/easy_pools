@@ -51,7 +51,7 @@ const OurServiceAreas = () => {
           </div>
 
           {/* //   ======================= map Card ==================// */}
-          <div className="xs:hidden sm:block">
+          <div className="hidden sm:block">
             <div className="  grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 2xl:gap-[50px]  gap-[30px] lg:gap-[40px]">
               <div className="col-span-1 relative  rounded-xl overflow-hidden">
                 <div className="shadow-md p-0 relative">
@@ -158,10 +158,10 @@ const OurServiceAreas = () => {
 
 
           {/* when xs screen show this type of layout */}
-          <div className="sm:hidden xs:block">
+          <div className="sm:hidden block">
             <div className="  flex justify-center items-center mt-4">
               <button onClick={prevMap} className="p-1 rounded-full border-2 border-[#049E43] hover:text-white hover:bg-[#049E43]  "><FaChevronLeft className='fill-[#049E43] hover:fill-white' /></button>
-              
+
               <div className="px-[45px]">
                 <div className="col-span-1 relative rounded-xl overflow-hidden">
                   <div className="shadow-md p-0 relative">
@@ -185,7 +185,7 @@ const OurServiceAreas = () => {
                   </div>
                 </div>
               </div>
-              
+
               <button onClick={nextMap} className=" hover:text-white bg-active hover:bg-[#049E43] border-2 p-1  rounded-full  border-[#049E43]  "><FaChevronRight className='fill-[#049E43] hover:fill-white' /></button>
             </div>
           </div>
