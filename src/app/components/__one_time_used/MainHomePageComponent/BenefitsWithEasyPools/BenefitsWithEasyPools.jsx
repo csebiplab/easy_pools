@@ -21,7 +21,6 @@ import "swiper/css/grid";
 import { SwipButton } from "./SwipButton";
 
 
-
 const BenefitsWithEasyPools = () => {
   const services = [
     {
