@@ -13,11 +13,11 @@ const Header = () => {
 
       {/* Main navbar */}
       {/* <nav className="px-5 md:px-10 xl:px-20 2xl:px-[120px] py-2 main__header"> */}
-      <nav className="container py-2 main__header">
+      <nav className="container py-1 main__header">
         <div className="flex items-center justify-between">
-          <div>
+          <Link href="/">
             <WebBrandSvg />
-          </div>
+          </Link>
           <div className="hidden lg:block">
             <ul className="flex items-center gap-x-2 md:gap-x-5 xl:gap-x-10 2xl:gap-x-[75px]">
               {UtilsModule.navMenus.map(
@@ -27,7 +27,7 @@ const Header = () => {
                       href={url}
                       className={`${
                         svg ? "flex items-center gap-x-1" : ""
-                      } text-[20px] text-dark-100 font-bold`}
+                      } !text-lg text-dark-100 font-bold`}
                     >
                       {mainMenu} {svg}
                     </Link>
