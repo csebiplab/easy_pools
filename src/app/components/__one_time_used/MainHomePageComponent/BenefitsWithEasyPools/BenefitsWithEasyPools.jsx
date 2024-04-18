@@ -102,9 +102,13 @@ const BenefitsWithEasyPools = () => {
               },
               640: {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 50,
               },
               1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1440: {
                 slidesPerView: 4,
                 spaceBetween: 20,
               }
@@ -116,7 +120,7 @@ const BenefitsWithEasyPools = () => {
             {services.map((service, index) => (
               <SwiperSlide
                 key={index}
-                className="border-2 shadow-md rounded border-green-600 md:gap-5 px-[10px] pb-[10px] !overflow-visible lg:!h-[250px] !h-[180px] "
+                className="border-2 shadow-md rounded border-green-600 md:gap-5 px-[10px] pb-[10px] !overflow-visible lg:!h-[270px] !h-[180px] "
 
               >
                 {/* SVG background for left bottom corner */}
@@ -139,14 +143,14 @@ const BenefitsWithEasyPools = () => {
 
                 <div className="mx-auto rounded-lg relative z-20 ">
 
-                  <div className="5xl:pt-[30px] pt-[25px]">
-                    <p className=" mx-auto text-center lg:text-[24px] text-[15px] mb-2">
+                  <div className="pt-[40px] ">
+                    <p className=" mx-auto text-center 2xl:text-[24px] lg:text-[18px] text-[15px] mb-2">
                       {service.title}{" "}
                     </p>
                   </div>
 
                   <div>
-                    <p className="5xl:px-[20px] lg:px-[15px] px-4 5xl:pb-[30px] lg:pb-[20px] xl:text-[15px] lg:text-[12px] text-[10px] text-center flex items-center md:leading-0 leading-[20px] ">
+                    <p className="2xl:px-[20px] lg:px-[15px] px-4 xl:text-[15px] lg:text-[12px] text-[10px] text-center flex items-center md:leading-0 leading-[20px] ">
                       {" "}
                       {service.details}{" "}
                     </p>
