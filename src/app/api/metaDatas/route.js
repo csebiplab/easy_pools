@@ -8,6 +8,13 @@ export async function POST(request) {
     const createData = await request.json();
     // console.log(createData)
 
+    const { pageName, title, description, keywords } = createData ?? {};
+
+    // Validate input data
+    if (!pageName || !title || !description || !keywords) {
+        return NextResponse.json({ message: "Missing required fields" }, { status: 400 });
+    }
+
 
     await MetaDataModel.create({ ...createData });
     return NextResponse.json(
@@ -25,6 +32,19 @@ export async function GET() {
             message: "Request success",
             data: data
         },
+        { status: 200 }
+    );
+}
+
+export async function DELETE(request) {
+    await connectMongoDB();
+
+    const id = request.nextUrl.searchParams.get("id");
+
+    await MetaDataModel.findByIdAndDelete(id);
+
+    return NextResponse.json(
+        { message: "Request success" },
         { status: 200 }
     );
 }
