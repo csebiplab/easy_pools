@@ -2,10 +2,6 @@ import connectMongoDB from "@/libs/db";
 import MetaDataModel from "@/models/meta-data.model";
 import { NextResponse } from "next/server";
 
-import connectMongoDB from "@/libs/db";
-import MetaDataModel from "@/models/meta-data.model";
-import { NextResponse } from "next/server";
-
 export async function PATCH(request, { params }) {
   await connectMongoDB();
 
