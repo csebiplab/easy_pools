@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const MONGODB_URI = process.env.MONGODB_URI;
 const cached = {};
-async function DB() {
+async function connectMongoDB() {
   if (!MONGODB_URI) {
     throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
   }
@@ -25,4 +25,4 @@ async function DB() {
   }
   return cached.connection;
 }
-export default DB;
+export default connectMongoDB;
