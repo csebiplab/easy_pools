@@ -16,6 +16,16 @@ Almost done
 
 ### main branch is protected for push and merging
 
+## To signup use the provided credentials below and follow the instructions
+
+- To login hit the url
+
+```url
+   https://easypools.ca/signin
+```
+
+### Then use these credentials
+
 #### Easy pools admin credentials
 
 ```text
