@@ -1,4 +1,4 @@
-import MainHomePageComponent from "../components/__one_time_used/MainHomePageComponent/MainHomePageComponent";
+import MainHomePageComponent from "@/components/__one_time_used/MainHomePageComponent/MainHomePageComponent";
 
 export default function Home() {
   return (
