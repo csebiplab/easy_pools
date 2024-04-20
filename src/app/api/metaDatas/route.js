@@ -23,10 +23,16 @@ export async function POST(request) {
     );
 }
 
-export async function GET() {
+export async function GET(request) {
     await connectMongoDB();
 
-    const data = await MetaDataModel.find({});
+    const searchParams = request.nextUrl.searchParams;
+    const pageName = searchParams.get('pageName');
+
+    // console.log(pageName, "search params from get metadats")
+
+
+    const data = await MetaDataModel.findOne({ pageName });
     return NextResponse.json(
         {
             message: "Request success",
