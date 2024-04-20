@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react';
 
-const useFetchData = () => {
+const useFetchData = (url, refetch) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/metaDatas`;
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(baseAPIUrl);
+        const response = await fetch(url);
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -25,7 +24,7 @@ const useFetchData = () => {
     };
 
     fetchData();
-  }, []);
+  }, [url, refetch]);
 
   return { data, loading, error };
 };

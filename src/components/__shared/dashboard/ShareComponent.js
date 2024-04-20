@@ -1,28 +1,35 @@
 "use client";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+// import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-import { HiPencilAlt } from "react-icons/hi";
-// import RemoveBtn from "./RemoveBtn";
+// import { HiPencilAlt } from "react-icons/hi";
+import RemoveBtn from "./RemoveBtn";
 
 const ShareComponent = ({
-  editPath,
-  blogRouteAllMetaData,
-  id,
-  titleValue,
-  descriptionValue,
-  keywordsValue,
-  endPoints,
+  // editPath,
+  metaData,
+  pagename,
+  isUpdateCreateLoading,
+  setIsUpdateCreateLoading,
+  setIsCreateRUpdateFinished
 }) => {
-  const router = useRouter();
   const [inputValue, setInputValue] = useState({
     title: "",
     description: "",
     keywords: "",
   });
 
+
+  const { _id: id,
+    pageName,
+    title: titleValue,
+    description: descriptionValue,
+    keywords: keywordsValue } = metaData ?? {}
+
+
+
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL
+  const endPoints = "metaDatas";
 
   useEffect(() => {
     setInputValue({
@@ -53,48 +60,54 @@ const ShareComponent = ({
 
   const handleSubmit = async () => {
     if (id) {
+      setIsUpdateCreateLoading(true)
       let { title, description, keywords } = inputValue;
       try {
         const res = await fetch(
-          `${baseAPIUrl}/api/metaDatas/${id}`,
+          `${baseAPIUrl}/api/${endPoints}/${id}`,
           {
-            method: "PUT",
+            method: "PATCH",
             headers: {
               "Content-type": "application/json",
             },
-            body: JSON.stringify({ title, description, keywords }),
+            body: JSON.stringify({ pageName, title, description, keywords }),
           }
         );
         if (!res.ok) {
           toast(`Failed to update metaData`);
+          setIsUpdateCreateLoading(false)
+          setIsCreateRUpdateFinished(true)
         }
         if (res.status == 200) {
           toast(`Successfully updated Meta data`);
-          router.refresh();
-          router.push(`/dashboard/allpages/${endPoints}`);
+          setIsUpdateCreateLoading(false)
         }
       } catch (error) {
         console.log(error);
+        setIsUpdateCreateLoading(false)
       }
     } else {
       let { title, description, keywords } = inputValue;
+      setIsUpdateCreateLoading(true)
       try {
-        const res = await fetch(`${baseAPIUrl}/api/metaDatas`, {
+        const res = await fetch(`${baseAPIUrl}/api/${endPoints}`, {
           method: "POST",
           headers: {
             "Content-type": "application/json",
           },
-          body: JSON.stringify({ title, description, keywords }),
+          body: JSON.stringify({ pageName: pagename, title, description, keywords }),
         });
 
         if (res.ok) {
           toast(`Successfully submitted meta data`);
-          router.refresh();
-          router.push(`/dashboard/allpages/${endPoints}`);
+          setIsUpdateCreateLoading(false)
+          setIsCreateRUpdateFinished(true)
         } else {
+          setIsUpdateCreateLoading(false)
           throw new Error(`Failed to create meta data`);
         }
       } catch (error) {
+        setIsUpdateCreateLoading(false)
         console.log(error);
       }
     }
@@ -105,7 +118,7 @@ const ShareComponent = ({
     <div>
 
       <div className="px-5">
-        {/* <h3>BLogs</h3> */}
+        <h3 className="text-2xl uppercase">Create <span className="text-primary border-2 p-2 border-secondary">{pagename}</span> Page Meta Data</h3>
         <div>
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
@@ -171,16 +184,26 @@ const ShareComponent = ({
               </p>
             </div>
           </div>
+
           <button
             onClick={handleSubmit}
             className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 my-5 px-5 border border-blue-500 hover:border-transparent rounded"
+            disabled={isUpdateCreateLoading}
           >
-            {id ? "Update" : "Save"}
+
+            {
+              !isUpdateCreateLoading && <span>{id ? "Update" : "Save"}</span>
+            }
+
+            {
+              isUpdateCreateLoading && <span>Submitting...</span>
+            }
+
           </button>
         </div>
 
         {
-          blogRouteAllMetaData?.length > 0 || id ? (
+          metaData || id ? (
             <>
               <div className="relative mt-4 overflow-x-auto shadow-md sm:rounded-lg">
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -201,37 +224,27 @@ const ShareComponent = ({
                     </tr>
                   </thead>
                   <tbody>
-                    {blogRouteAllMetaData?.map((item) => (
-                      <tr
-                        key={item._id} // Don't forget to add a unique key to each row
-                        className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+                    <tr
+                      key={id}
+                      className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+                    >
+                      <th
+                        scope="row"
+                        className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                       >
-                        <th
-                          scope="row"
-                          className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                        >
-                          {item.title}
-                        </th>
-                        <td className="px-6 py-4">{item?.description}</td>
-                        <td className="px-6 py-4">{item?.keywords}</td>
-                        <td className="px-6 py-4">
-                          <div className="flex gap-2">
-                            {" "}
-                            <Link href={`/${editPath}/${item?._id}`}>
-                              <HiPencilAlt size={24} />
-                            </Link>
-                            {/* <RemoveBtn id={item._id} endPoints={endPoints} /> */}
-                          </div>
-
-                          {/* <a
-                        href="#"
-                        className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                      >
-                        Edit
-                      </a> */}
-                        </td>
-                      </tr>
-                    ))}
+                        {titleValue}
+                      </th>
+                      <td className="px-6 py-4">{descriptionValue}</td>
+                      <td className="px-6 py-4">{keywordsValue}</td>
+                      <td className="px-6 py-4">
+                        <div className="flex gap-2">
+                          {/* <Link href={`/${editPath}/${id}`}>
+                            <HiPencilAlt size={24} />
+                          </Link> */}
+                          <RemoveBtn id={id} endPoints={endPoints} pagename={pagename} />
+                        </div>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>

@@ -1,18 +1,21 @@
 "use client";
 
 import ShareComponent from "@/components/__shared/dashboard/ShareComponent";
+import { pageName } from "@/constants/dashboard/pageName.constants";
 import useFetchData from "@/hooks/useFetchData";
+import { useState } from "react";
 
 
 const CreateHomeMetadata = () => {
   const editRoute = "dashboard/allpages/home/editHome";
-  const endPoints = "home";
-  // const { homeRouteAllMetaData } = await getHomeMetaData() ?? {};
+  const pagename = pageName?.home;
+  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/metaDatas?pageName=${pagename}`
 
-  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/metaDatas`;
-  const { data, loading, error } = useFetchData()
+  const [isCreateRUpdateFinished, setIsCreateRUpdateFinished] = useState(false);
+  const [isUpdateCreateLoading, setIsUpdateCreateLoading] = useState(false);
+  const { data, loading, error } = useFetchData(baseAPIUrl, isCreateRUpdateFinished)
 
-  console.log(data, loading, error, "from home component")
+
 
   if (loading) {
     return <p>Loading...</p>;
@@ -22,12 +25,21 @@ const CreateHomeMetadata = () => {
     return <p>Error: {error.message}</p>;
   }
 
+
+  const metaData = data?.data;
+
+  console.log(metaData)
+
+
   return (
     <>
       <ShareComponent
         editPath={editRoute}
-        metaData={data?.homeRouteAllMetaData}
-        endPoints={endPoints}
+        metaData={metaData}
+        pagename={pagename}
+        isUpdateCreateLoading={isUpdateCreateLoading}
+        setIsUpdateCreateLoading={setIsUpdateCreateLoading}
+        setIsCreateRUpdateFinished={setIsCreateRUpdateFinished}
       />
     </>
   );
