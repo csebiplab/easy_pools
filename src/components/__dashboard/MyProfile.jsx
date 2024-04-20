@@ -54,14 +54,14 @@ const MyProfile = ({ user }) => {
   return (
     <div>
       <div>
-        <p className="text-3xl">
-          <span className="font-bold">User Name:</span>{" "}
-          <span>{user?.name}</span>
+        <p className="text-3xl text-white">
+          <span className="font-bold text-white">User Name:</span>{" "}
+          <span className="text-primary">{user?.name}</span>
         </p>
         {!isUpdating && (
           <button
             onClick={() => setIsUpdating(true)}
-            className="mt-8 bg-red-800 px-3 py-1"
+            className="mt-8 bg-red-800 px-3 py-1 text-white"
           >
             Update
           </button>
@@ -72,7 +72,7 @@ const MyProfile = ({ user }) => {
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col gap-4">
               <div className="flex flex-col">
-                <label>New Username</label>
+                <label className="text-white">New Username</label>
                 <input
                   type="text"
                   placeholder="New username"
@@ -82,7 +82,7 @@ const MyProfile = ({ user }) => {
                 />
               </div>
               <div className="flex flex-col">
-                <label>Current password</label>
+                <label className="text-white">Current password</label>
                 <input
                   type="password"
                   placeholder="********"
@@ -92,7 +92,7 @@ const MyProfile = ({ user }) => {
                 />
               </div>
               <div className="flex flex-col">
-                <label>New password</label>
+                <label className="text-white">New password</label>
                 <input
                   type="password"
                   placeholder="********"
