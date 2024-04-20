@@ -1,12 +1,21 @@
-import mongoose, { Schema, models } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
-const blogSchema = new Schema({
-    title: String,
-    author: String,
-}, {
-    timestamps: true,
-});
+const blogSchema = new Schema(
 
-const Blog = models.Blog || mongoose.model('Blog', blogSchema);
+    {
+        blogTitle: String,
+        metaTitle: String,
+        customLink: String,
+        metaDescription: String,
+        metaKeywords: String,
+        shortDescription: String,
+        content: String
+    },
+    {
+        timestamps: true,
+    }
+);
 
+const Blog =
+    mongoose.models.Blog || mongoose.model("Blog", blogSchema);
 export default Blog;

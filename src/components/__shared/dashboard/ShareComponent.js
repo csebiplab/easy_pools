@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 // import { HiPencilAlt } from "react-icons/hi";
 import RemoveBtn from "./RemoveBtn";
+import NoDataFound from "./NoDataFound";
 
 const ShareComponent = ({
   // editPath,
@@ -250,10 +251,7 @@ const ShareComponent = ({
               </div>
             </>
           ) : (
-            <div>
-              <hr className="mt-5 mb-3" />
-              <h1> No Data Found  </h1>
-            </div>
+            <NoDataFound />
           )
         }
       </div>
