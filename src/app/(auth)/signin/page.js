@@ -40,7 +40,7 @@ export default function () {
       }
 
       if (res.ok && res?.error == null) {
-        router.push("/dashboard/profile");
+        router.push("/dashboard/admin/profile");
       }
 
 
