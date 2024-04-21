@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import contactImg from '../../../../../../public/assets/random/contactus.png'
+import contactImg from "../../../../../public/assets/random/contactus.png";
 
 import { FaMapLocationDot } from "react-icons/fa6";
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -140,9 +140,9 @@ const GiveUsFeedback = () => {
             </div>
           </div>
 
-          <div className="w-full -z-10  xl:col-span-4 lg:col-span-4 lg:order-1 lg:block xs:hidden">
+          <div className="w-full -z-10  xl:col-span-4 lg:col-span-4 lg:order-1 hidden lg:block">
             <Image
-              src="/assets/random/contactus.png"
+              src={contactImg}
               alt="Trusted general contractor"
               width={450}
               height={300}
