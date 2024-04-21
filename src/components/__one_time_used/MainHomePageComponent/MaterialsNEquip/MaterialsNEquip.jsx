@@ -1,8 +1,8 @@
+import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import Image from "next/image";
 import CommonButton from "../../../ui/CommonButton";
 import "./MaterialsNEquip.css";
-import Image from "next/image";
-import HeadingIcon from "@/components/ui/HeadingIcon";
 
 const MaterialsNEquip = () => {
   return (
@@ -50,8 +50,8 @@ const MaterialsNEquip = () => {
                     height={493}
                   />
                 </div>
-                <div>
-                  <div className="text-center  bg-green-600 rounded-xl mx-14 py-5 my-2">
+                <div className="mt-4">
+                  <div className="text-center  bg-green-600 rounded-xl mx-14 px-4 py-5 my-2">
                     <span className=" text-white text-[25px]">25+</span>
                     <p className=" text-white">
                       Year Experience in install pool
@@ -63,6 +63,7 @@ const MaterialsNEquip = () => {
                     src="/assets/images/equip1.png"
                     width={513}
                     height={335}
+                    className="w-full mt-2"
                   />
                 </div>
               </div>
@@ -71,9 +72,9 @@ const MaterialsNEquip = () => {
           <div className=" flex justify-center items-center md:pt-0 pt-[20px]">
             <div>
               <HeadingIcon text={headingIconText.meterialNEquip__IconText} />
-              <h4 className=" text-black 2xl:text-[36px] lg:text-[20px] text-18px mt-4 mb-[25px]">
+              <p className=" text-black text-lg md:text-3xl lg:text-4xl mt-4 mb-[25px]">
                 Materials and Equipment Needed for Pool Installation
-              </h4>
+              </p>
               <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] ">
                 To install a pool, you'll need various materials and pool
                 equipment to ensure a smooth and efficient process. Firstly,
@@ -88,7 +89,7 @@ const MaterialsNEquip = () => {
                 components to ensure proper functioning and maintenance of the
                 pool once installed.
               </p>
-              <div className="mt-[55px] flex lg:justify-end">
+              <div className="mt-5 md:mt-8 lg:mt-[55px] flex lg:justify-end">
                 <CommonButton />
               </div>
             </div>

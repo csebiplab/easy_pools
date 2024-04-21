@@ -1,7 +1,7 @@
 import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 import "./OurServices.css";
 import ServiceCard from "./ServiceCard";
-import { headingIconText } from "@/utils/heading-text";
 
 const ourServices = [
   {
@@ -41,10 +41,13 @@ const OurServices = () => {
   return (
     <div className="our__service__box">
       <div className="container">
-        <div className=" !px-[35px] md:px-0  2xl:py-[65px] py-[50px]  ">
+        <div className=" !px-[35px] md:px-0  2xl:py-[65px] py-[50px] ">
+          <div className="flex md:justify-normal justify-center md:items-start items-center">
           <HeadingIcon text={headingIconText.ourServices__IconTxt} />
-          <h3 className="text-4xl text-dark">Our Services</h3>
-          <div className="mt-[35px]">
+          
+          </div>
+          <p className="text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center mt-2 md:mt-4">Our Services</p>
+          <div className="mt-7 md:mt-[35px]">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-4 2xl:gap-[27px]">
               {ourServices.map((serv, index) => (
                 <ServiceCard key={index} serv={serv} />

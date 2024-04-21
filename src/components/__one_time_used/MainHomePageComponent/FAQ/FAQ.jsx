@@ -1,9 +1,9 @@
 // import faqImg from "../../../../../../public/assets/random/faq.png";
-import { IoCaretDown } from "react-icons/io5";
-import "./faq.css";
-import Image from "next/image";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import Image from "next/image";
+import { IoCaretDown } from "react-icons/io5";
+import "./faq.css";
 
 const faqQuestionsNAns = [
   {
@@ -81,7 +81,7 @@ const FAQ = () => {
                   <HeadingIcon text={headingIconText.faq__IconText} />
 
                   <div>
-                    <p className="5xl:text-[36px] lg:text-[25px]  text-[20px] lg:mb-8 mb-5">
+                    <p className="text-black text-lg md:text-3xl lg:text-4xl lg:mb-8 mb-5">
                       Pool Installation Services in Toronto
                     </p>
                   </div>
@@ -97,7 +97,7 @@ const FAQ = () => {
                         </h6>
 
                         <div className="white-icon">
-                          <IoCaretDown className="white-icon" />
+                          <IoCaretDown className="white-icon" fill="white"/>
                         </div>
                       </summary>
 
