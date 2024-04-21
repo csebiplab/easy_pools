@@ -1,8 +1,8 @@
 import Image from "next/image";
 // import joinUsImg from "../../../../../../public/assets/random/joinus.png";
-import Button from "./Button";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import Button from "./Button";
 
 const JoinWithUs = () => {
   return (
@@ -17,12 +17,12 @@ const JoinWithUs = () => {
               <HeadingIcon text={headingIconText.joinUs__IconText} />
 
               <div>
-                <p className="2xl:text-[36px] xl:text-[20px] lg:text-[18px] text-[16px] 3xl:mb-[20px]  ">
+                <p className="text-black text-lg md:text-3xl lg:text-4xl 3xl:mb-[20px]  ">
                   Ready to Start Your Swimming Pool Installation With Us?
                 </p>
               </div>
             </div>
-            <p className="mt-4 2xl:text-[16px] xl:text-[14px] text-[10px] xl:leading-[35px] lg:leading-[30px] leading-[20px]">
+            <p className="mt-4 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
               Dive into a world of seamless luxury with Easy Pools, your trusted
               partner for swimming pool installation in Toronto. Our expert team
               ensures a hassle-free experience. From concept to completion, we
@@ -34,12 +34,12 @@ const JoinWithUs = () => {
               enjoyment.
             </p>
             <div className=" flex justify-center items-center 2xl:mt-[50px] lg:mt-[25px] md:mt-[15px] mt-7">
-              <Button title={"Get Your Estimate"}></Button>{" "}
-              <p className="mx-5 text-[#049E43] xl:text-[18px] lg:text-[16px] md:text-[14px] text-[10px">
+              <Button title={"Get Your Estimate"} ></Button>{" "}
+              <p className="mx-5 text-[#049E43] xl:text-[18px] lg:text-[16px] text-[14px] font-bold">
                 {" "}
                 or{" "}
               </p>
-              <p className=" xl:text-[18px] lg:text-[16px] md:text-[14px] text-[10px]  text-[#049E43]">
+              <p className=" xl:text-[18px] lg:text-[16px] text-[14px]  text-[#049E43] font-bold">
                 {" "}
                 Call Us: 647-931-0164{" "}
               </p>

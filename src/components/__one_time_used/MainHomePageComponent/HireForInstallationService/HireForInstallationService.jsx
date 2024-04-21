@@ -1,7 +1,6 @@
-import React from "react";
+import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
-import HeadingIcon from "@/components/ui/HeadingIcon";
 
 const HireForInstallationService = () => {
   return (
@@ -17,16 +16,16 @@ const HireForInstallationService = () => {
               className="h-auto w-auto"
             />
           </div>
-
-          <div className="border border-red-500 block md:hidden">
+{/* ==================== mobile device ========== */}
+          <div className="block md:hidden">
             <div className="flex justify-center items-center">
-              <div className="  ">
+              <div className=" ">
                 <div>
                   <Image
                     src="/assets/hire/hire1.png"
-                    width={360}
-                    height={285}
-                    className="h-auto w-auto"
+                    width={650}
+                    height={210}
+                    className="mb-2"
                   />
                 </div>
                 <div className=" w-[240px] h-[128px] border-[10px] border-[#049E43] my-[12px] mx-auto">
@@ -42,9 +41,9 @@ const HireForInstallationService = () => {
                 <div>
                   <Image
                     src="/assets/hire/hire2.png"
-                    width={360}
-                    height={285}
-                    className="h-auto w-auto"
+                    width={650}
+                    height={210}
+                    className=""
                   />
                 </div>
               </div>
@@ -52,17 +51,17 @@ const HireForInstallationService = () => {
           </div>
 
           <div className="">
-            <div className=" flex flex-col justify-center md:items-start xs:items-center  ">
+            <div className="flex flex-col justify-center md:justify-start items-center md:items-start ">
               <HeadingIcon text={headingIconText.hire__IconText} />
 
               <div>
-                <p className="2xl:text-[36px] lg:text-[20px] text-[18px] 3xl:pb-[28px] pb-[16px] xs:text-center md:text-start  ">
+                <p className="text-lg md:text-3xl lg:text-4xl text-dark 3xl:pb-[28px] pb-[16px] text-center md:text-start  ">
                   Hire Easy Pools For Your Pool Installation Services
                 </p>
               </div>
             </div>
             <div>
-              <p className=" xs:text-center md:text-start 2xl:text-[16px] lg:text-[14px] text-[10px] lg:leading-6 xs:leading-4">
+              <p className=" text-center md:text-start 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
                 Looking to transform your backyard into an oasis of relaxation
                 and enjoyment? Look no further than Easy Pools for all your pool
                 installation needs. Our team of experienced professionals is
