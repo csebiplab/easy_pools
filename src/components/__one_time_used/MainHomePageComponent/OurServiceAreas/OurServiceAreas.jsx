@@ -1,6 +1,6 @@
 "use client";
 import "./area.css";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -8,10 +8,30 @@ import "swiper/css/navigation";
 import "swiper/css/virtual";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
+import "swiper/css/autoplay";
 
 import { SwiperButton } from "./SwiperButton";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+
+const breakpoints = {
+  0: {
+    slidesPerView: 1,
+    spaceBetween: 20,
+  },
+  640: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+  1024: {
+    slidesPerView: 3,
+    spaceBetween: 40,
+  },
+  1280: {
+    slidesPerView: 4,
+    spaceBetween: 30,
+  },
+};
 
 const maps = [
   {
@@ -49,75 +69,57 @@ const OurServiceAreas = () => {
           </div>
 
           {/* //   ======================= map Card ==================// */}
-          <div className=" ">
-            <Swiper
-              modules={[Navigation]}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                  spaceBetween: 20,
-                },
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
-                },
-                1280: {
-                  slidesPerView: 4,
-                  spaceBetween: 30,
-                },
-              }}
-              className=""
-            >
-              {maps.map((loc, i) => (
-                <SwiperSlide
-                  key={i}
-                  className=" relative  rounded-xl px-[45px] sm:px-0"
-                >
-                  <div>
-                    <div className="shadow-md p-0 relative">
-                      <iframe
-                        src={loc.src}
-                        height="325"
-                        style={{ border: 0, width: "100%" }}
-                        allowFullScreen={false}
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        className="rounded-xl"
-                      ></iframe>
-                      <div className="absolute rounded-xl inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                        <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">
-                          Visit Map
-                        </button>
+          <>
+            <div className="">
+              <Swiper
+                modules={[Navigation, Autoplay]}
+                loop={true}
+                autoplay={{
+                  delay: 2000,
+                  pauseOnMouseEnter: false,
+                  disableOnInteraction: false,
+                  stopOnLastSlide: false,
+                }}
+                speed={4000}
+                allowTouchMove={false}
+                breakpoints={breakpoints}
+                className="!px-8 !xl:px-0"
+              >
+                {maps.map((loc, i) => (
+                  <SwiperSlide
+                    key={i}
+                    className="relative  rounded-xl px-[45px]"
+                  >
+                    <div>
+                      <div className="shadow-md p-0 relative">
+                        <iframe
+                          src={loc?.src}
+                          height="325"
+                          style={{ border: 0, width: "100%" }}
+                          allowFullScreen={false}
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          className="rounded-xl"
+                        ></iframe>
+                        <div className="absolute rounded-xl inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
+                          <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">
+                            Visit Map
+                          </button>
+                        </div>
+                        <p className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white rounded-b-2xl ">
+                          {loc?.location}
+                        </p>
                       </div>
-                      <p className="text-base py-4 px-10 bg-[#188B89] text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white rounded-b-2xl ">
-                        {loc.location}
-                      </p>
                     </div>
-                  </div>
-                </SwiperSlide>
-              ))}
+                  </SwiperSlide>
+                ))}
 
-              <div className="">
-                <SwiperButton></SwiperButton>
-              </div>
-            </Swiper>
-          </div>
-
-          {/* dot button */}
-          {/* <div className="flex justify-center mt-4 pb-8">
-            {[1, 2, 3, 4].map((dotNumber, idx) => (
-              <div
-                key={idx}
-                className={`w-4 h-4 rounded-full cursor-pointer mx-2 ${activeDot === dotNumber ? "bg-blue-500" : "bg-gray-300"
-                  }`}
-                onClick={() => handleDotClick(dotNumber)}
-              />
-            ))}
-          </div> */}
+                <div className="">
+                  <SwiperButton />
+                </div>
+              </Swiper>
+            </div>
+          </>
         </div>
       </div>
     </div>
