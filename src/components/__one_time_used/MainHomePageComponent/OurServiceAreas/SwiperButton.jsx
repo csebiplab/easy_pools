@@ -7,7 +7,7 @@ export const SwiperButton = () => {
 
   return (
     <div className="!z-[100]">
-      <div className="block xl:hidden">
+      <div className="">
         <div className="flex justify-between items-center">
           <button
             onClick={() => swiper.slidePrev()}

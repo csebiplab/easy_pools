@@ -114,7 +114,7 @@ const OurServiceAreas = () => {
                   </SwiperSlide>
                 ))}
 
-                <div className="">
+                <div className="block lg:hidden">
                   <SwiperButton />
                 </div>
               </Swiper>
