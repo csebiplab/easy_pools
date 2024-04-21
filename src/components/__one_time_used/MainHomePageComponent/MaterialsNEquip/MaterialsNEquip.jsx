@@ -1,8 +1,8 @@
+import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import Image from "next/image";
 import CommonButton from "../../../ui/CommonButton";
 import "./MaterialsNEquip.css";
-import Image from "next/image";
-import HeadingIcon from "@/components/ui/HeadingIcon";
 
 const MaterialsNEquip = () => {
   return (
