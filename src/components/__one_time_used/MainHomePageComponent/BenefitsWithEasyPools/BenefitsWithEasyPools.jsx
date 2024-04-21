@@ -10,14 +10,14 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/virtual";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
+import "swiper/css/navigation";
+import "swiper/css/virtual";
 
-import { SwipButton } from "./SwipButton";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import Image from "next/image";
+import { SwipButton } from "./SwipButton";
 
 const services = [
   {
@@ -74,14 +74,14 @@ const BenefitsWithEasyPools = () => {
           <HeadingIcon text={headingIconText.Benefits__IconText} />
 
           <div>
-            <p className="lg:text-[36px] text-[20px] md:mb-14 xs:mb-10 mb-8 text-center  ">
+            <p className="text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:mb-14xs :mb-10 mb-8 text-center">
               Benefits of Installing Swimming Pools with Easy Pools
             </p>
           </div>
         </div>
 
         {/* show when sm screen to large */}
-        <div className=" ">
+        <div className="mt-4 md:mt-7 ">
           <Swiper
             modules={[Navigation]}
             breakpoints={breakpoints}

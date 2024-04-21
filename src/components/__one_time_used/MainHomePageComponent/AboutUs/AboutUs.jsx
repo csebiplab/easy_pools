@@ -1,7 +1,7 @@
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
 import "./AboutUs.css";
-import { headingIconText } from "@/utils/heading-text";
-import HeadingIcon from "@/components/ui/HeadingIcon";
 
 const AboutUs = () => {
   return (
@@ -24,10 +24,11 @@ const AboutUs = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.aboutUs__IconText} />
             </div>
-            <h3 className="mt-4 lg:mb-[25px] mb-[15px] text-base text-dark leading-normal md:text-start text-center">
+            <p className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
               About Our Pool Installation Company in Toronto
-            </h3>
-            <p className=" 2xl:text-[16px] lg:text-[14px] text-[10px] 2xl:leading-[32px] lg:leading-[25px] leading-[15px] md:text-start text-center">
+            </p>
+            <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+              
               Easy Pools custom designs and builds pool and spa solutions that
               reflect your unique needs and personal aesthetic. With over 10
               combined years of experience in the pool construction industry,
@@ -35,15 +36,16 @@ const AboutUs = () => {
               to create the perfect swimming pool, spa, and landscaped backyard.
               From start to finish, our company does it all. We guarantee
               on-time completion and quality.
-              <br />
-              <br />
+              </p>
+              <p className="mt-3 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
               From start to finish, Easy Pools uses quality materials,
               equipment, and its in-house expert staff to ensure a superior
               finished product. All projects are supervised by our pool
               installation company. With their shared commitment to excellence
               and their involvement in every stage of construction, The Easy
               Pools has a hands-on business approach.
-            </p>
+              </p>
+            
           </div>
         </div>
       </div>

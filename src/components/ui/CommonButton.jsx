@@ -1,9 +1,8 @@
-import React from "react";
 
 const CommonButton = () => {
   return (
     <button className="service__card__btn flex justify-center items-center">
-      <span className="text-white text-[14px] font-bold">Learn More</span>
+      <span className="text-white text-xs md:text-[14px] font-bold">Learn More</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="7"

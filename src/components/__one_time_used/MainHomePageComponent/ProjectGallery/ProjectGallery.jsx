@@ -1,18 +1,17 @@
 "use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
 import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
-import HeadingIcon from "@/components/ui/HeadingIcon";
-import { headingIconText } from "@/utils/heading-text";
 
 // import GalImg1 from "../../../../../../public/assets/gellary/img1.png";
 // import GalImg2 from "../../../../../../public/assets/gellary/img2.png";
@@ -63,7 +62,7 @@ const ProjectGallery = () => {
             <HeadingIcon text={headingIconText.gellary__IconText} />
 
             <div>
-              <p className="lg:text-[36px] text-[18px] 3xl:pb-[30px] pb-[25px] text-center ">
+              <p className="text-black text-lg md:text-3xl lg:text-4xl 3xl:pb-[30px] pb-[25px] text-center ">
                 Swimming Pools Installation Gallery Of Past Projects
               </p>
             </div>

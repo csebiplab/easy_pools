@@ -5,15 +5,15 @@ const HomeBanner = () => {
     <div className="container home-banner py-20 min-h-screen flex justify-center items-center bg-blend-multiply bg-dark-200">
       <div className="text-center banner-content">
         <div>
-          <h1 className="text-white lg:text-[55px] text-[27px] ">
+          <h1 className="text-white text-[27px] lg:text-[55px] leading-normal">
             Swimming Pool Installation in Toronto
           </h1>
-          <p className="mt-8 lg:leading-10 leading-5 text-white lg:text-[25px] text-[13px] font-normal">
+          <p className="mt-4 lg:mt-8 lg:leading-10 leading-normal text-white lg:text-[25px] text-sm font-normal">
             Welcome to our luxury swimming pool installation company in Toronto.
           </p>
           <div className="flex justify-center">
-            <button className="flex items-center rounded-full bg-secondary py-4 px-8 mt-8">
-              <span className="text-white text-lg">Get an Estimate</span>
+            <button className="flex items-center rounded-full bg-secondary py-3 md:py-4 px-8 mt-7 md:mt-8">
+              <span className="text-white text-xs md:text-lg">Get an Estimate</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="8"

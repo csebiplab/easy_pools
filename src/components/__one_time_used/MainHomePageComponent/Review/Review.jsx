@@ -5,15 +5,15 @@
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/virtual";
-import "swiper/css/effect-coverflow";
-import "swiper/css/grid";
-import { SwipButton } from "../BenefitsWithEasyPools/SwipButton";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/grid";
+import "swiper/css/navigation";
+import "swiper/css/virtual";
+import { SwipButton } from "../BenefitsWithEasyPools/SwipButton";
 
 const testimonials = [
   {
@@ -42,7 +42,7 @@ const Review = () => {
             <HeadingIcon text={headingIconText.revidw__IconText} />
 
             <div>
-              <p className="lg:text-[36px] text-[20px] sm:text-start text-center md:mb-20 mb-8 text ">
+              <p className="text-lg md:text-3xl lg:text-4xl text-dark md:text-start text-center md:mb-20 mb-8 text ">
                 Here’s what to expect when you hire us as your Pool Installer in
                 Toronto.
               </p>
@@ -50,7 +50,7 @@ const Review = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="!px-10 md:px-0">
           <Swiper
             modules={[Navigation]}
             breakpoints={{
