@@ -15,22 +15,22 @@ export async function generateMetadata() {
 
 
     // Fetch Google site verification URL
-    const googleVerificationResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/verificationUrl`);
-    const googleVerification = await googleVerificationResponse.json();
+    // const googleVerificationResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/verificationUrl`);
+    // const googleVerification = await googleVerificationResponse.json();
 
     // console.log("googleVerificationResponse", googleVerificationResponse)
     // console.log("googleVerification", googleVerification)
 
     // Extract Google console key from the meta tag content
-    const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
+    // const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
 
     return {
       title: title,
       description: description,
       keywords: keywords,
-      verification: {
-        google: googleConsoleKey,
-      }
+      // verification: {
+      //   google: googleConsoleKey,
+      // }
     }
 
 
