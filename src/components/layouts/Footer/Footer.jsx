@@ -43,7 +43,7 @@ const Footer = () => {
                     src="/assets/footer/easylogo.png"
                     height={128}
                     width={128}
-                    alt=""
+                    alt="easy pools"
                     className="w-[128px] h-[128px]"
                   />
                 </div>

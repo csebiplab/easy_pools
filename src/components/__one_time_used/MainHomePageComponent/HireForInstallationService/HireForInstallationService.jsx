@@ -16,7 +16,7 @@ const HireForInstallationService = () => {
               className="h-auto w-auto"
             />
           </div>
-{/* ==================== mobile device ========== */}
+          {/* ==================== mobile device ========== */}
           <div className="block md:hidden">
             <div className="flex justify-center items-center">
               <div className=" ">
@@ -25,6 +25,7 @@ const HireForInstallationService = () => {
                     src="/assets/hire/hire1.png"
                     width={650}
                     height={210}
+                    alt="hire"
                     className="mb-2"
                   />
                 </div>
@@ -43,6 +44,7 @@ const HireForInstallationService = () => {
                     src="/assets/hire/hire2.png"
                     width={650}
                     height={210}
+                    alt="hire"
                     className=""
                   />
                 </div>

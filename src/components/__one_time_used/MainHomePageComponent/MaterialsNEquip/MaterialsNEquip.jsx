@@ -26,6 +26,7 @@ const MaterialsNEquip = () => {
                   width={650}
                   height={493}
                   loading="lazy"
+                  alt="easy pools"
                   className="h-[493px] w-[650px] pl-32 mr-2 rounded-[9px]"
                 />
                 <div className="-ml-[130px] mt-[-12rem]">
@@ -33,6 +34,7 @@ const MaterialsNEquip = () => {
                     src="/assets/images/equip1.png"
                     width={513}
                     height={335}
+                    alt="easy pools"
                     loading="lazy"
                     className="h-[335px] !w-[513px] pl-32 mr-2 rounded-[9px]"
                   />
@@ -48,6 +50,7 @@ const MaterialsNEquip = () => {
                     src="/assets/images/equip2.png"
                     width={650}
                     height={493}
+                    alt="easy pools"
                   />
                 </div>
                 <div className="mt-4">
@@ -63,6 +66,7 @@ const MaterialsNEquip = () => {
                     src="/assets/images/equip1.png"
                     width={513}
                     height={335}
+                    alt="easy pools"
                     className="w-full mt-2"
                   />
                 </div>
