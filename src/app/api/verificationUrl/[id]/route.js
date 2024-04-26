@@ -1,8 +1,7 @@
-// import connectMongoDB from "../../../../lib/mongodb";
-import connectMongoDB from "@/lib/db";
+import connectMongoDB from "@/libs/db";
 import verificationSite from "@/models/site-verification.model";
 import { NextResponse } from "next/server";
-// import verificationSite from "../../../../models/siteVerification";
+
 export async function PUT(request, { params }) {
   const { id } = params;
   const { title, url } = await request.json();
