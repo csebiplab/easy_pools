@@ -3,7 +3,7 @@ export default async function sitemap() {
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/siteMap`);
         const { data } = await response.json();
 
-        const sitemapData = data?.sitemap?.map((singleData) => ({
+        const sitemapData = data?.map((singleData) => ({
             url: singleData?.url,
             priority: 1,
             changeFrequency: "yearly",
