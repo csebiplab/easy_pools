@@ -3,7 +3,7 @@ export default async function robots() {
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/robotTxt`);
         // console.log(response.ok, "from robot")
         if (!response.ok) {
-            throw new Error('Failed to fetch robot.txt data|-------------------------------->>>>>');
+            console.log('Failed to fetch robot.txt data|-------------------------------->>>>>');
         }
         const { robotTxts } = await response.json();
 
