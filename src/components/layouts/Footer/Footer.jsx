@@ -2,11 +2,9 @@
 import Link from "next/link";
 import { FaMapMarkedAlt } from "react-icons/fa";
 
-// import LOGO from "../../../../../public/assets/footer/easylogo.png";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
-// import gokundo from "../../../../../public/assets/footer/Gokundu-logo(white and green) 1.png";
 import Image from "next/image";
 
 import { FaFacebook } from "react-icons/fa";
@@ -240,12 +238,42 @@ const Footer = () => {
       </div>
 
       {/* creater company credit */}
-      <div className="  footer-bottom-bg    ">
+
+      <div className="footer-bottom-bg">
+        <div className="container flex flex-col lg:flex-row justify-between items-center py-2">
+          <div className="flex justify-center items-center mb-2 lg:mb-0">
+            <p className="text-xs md:text-base font-semibold text-white mr-[10px] lg:mr-4">
+              WEBSITE DESIGN AND SEO BY :-
+            </p>
+            <Image
+              src="/assets/footer/gokundu-logo.png"
+              alt="Gokundo"
+              width={141}
+              height={36}
+              className="w-[114px] h-[30px] md:w-[141px] md:h-9"
+            />
+          </div>
+          <div className="text-center lg:text-left hidden md:block">
+            <p className="text-xs lg:text-base text-white">
+              © All Copyright 2024 by Easy Pools
+            </p>
+          </div>
+          <div className="text-center lg:text-right hidden md:block">
+            <ul className="text-xs lg:text-base flex justify-evenly gap-2">
+              <li className="text-white"> Terms & Condition</li>
+              <li className="text-white"> Privacy Policy </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* <div className="  footer-bottom-bg    ">
         <div className="grid lg:grid-cols-7 gap-5 lg:py-6 xs:py-2   items-center container md:mx-auto text-center ">
           <div className=" lg:col-span-3 flex items-center xs:justify-center lg:justify-normal gap-2  ">
             <p className=" lg:text-[16px] md:text-sm xs:text-[8px]  ">
               {" "}
-              <b className="text-white">WEBSITE DESIGN AND SEO BY :-</b>{" "}
+              <b className="text-white text-base">
+                WEBSITE DESIGN AND SEO BY :-
+              </b>{" "}
             </p>
             <Image
               src="/assets/footer/gokundu-logo.png"
@@ -255,7 +283,7 @@ const Footer = () => {
               className="ml-2"
             />
           </div>
-          <div className=" lg:col-span-2 lg:block xs:hidden ">
+          <div className=" lg:col-span-2 hidden md:block">
             <p className=" 2xl:text-[16px] lg:text-[14px] text-[12px]  text-white">
               © All Copyright 2024 by Easy Pools
             </p>
@@ -267,7 +295,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
