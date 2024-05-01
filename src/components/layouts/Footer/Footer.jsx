@@ -5,7 +5,7 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 
-import "./Footer.css";
+import "./footer.css";
 import { brandSVG, footerIcon, footerLinks } from "./Footer.utilities";
 
 const Footer = () => {
