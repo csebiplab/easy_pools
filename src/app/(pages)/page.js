@@ -41,9 +41,9 @@ export async function generateMetadata() {
   } catch (error) {
     console.log("object err:", error)
     return {
-      title: "Easy pools | Home",
-      keywords: "Home, Easy pools",
-      description: "Easy pools"
+      title: "#1 Swimming Pool Installation in Toronto | Easy Pools",
+      keywords: "easy pools, best pools, great pools, Toronto Pool Installation, Pool Installation Toronto, ",
+      description: "Easy Pools offers expert swimming pool installation services in Toronto. Our skilled Toronto pool installers ensure top-quality workmanship."
     };
   }
 }

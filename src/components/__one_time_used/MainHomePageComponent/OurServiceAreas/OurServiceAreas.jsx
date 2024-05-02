@@ -88,7 +88,8 @@ const OurServiceAreas = () => {
                 {maps.map((loc, i) => (
                   <SwiperSlide
                     key={i}
-                    className="relative  rounded-xl px-[45px]"
+                    // className="relative  rounded-xl px-[45px]"
+                    className="relative  rounded-xl px-7 md:px-8 lg:px-0"
                   >
                     <div>
                       <div className="shadow-md p-0 relative">
