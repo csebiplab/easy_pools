@@ -1,3 +1,4 @@
+/*
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,14 +12,12 @@ import { brandSVG, footerIcon, footerLinks } from "./Footer.utilities";
 const Footer = () => {
   return (
     <div className="">
-      <div className="footer__bg px-5 lg:px-[35px] !text-white">
+      <div className="footer__bg !text-white">
         <footer className="container !z-50 pt-[50px] xl:pt-[90px] 2xl:pt-[311px] pb-9 md:pb-20 text-white">
           <div className="">
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-12 2xl:gap-x-[126px] justify-center">
-              <div className="w-full lg:w-auto">
-                <div className="mx-auto flex justify-center md:justify-normal">
-                  {brandSVG.svg}
-                </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12">
+              <div className="w-[80%] lg:col-span-3 border border-red-500">
+                <div className="">{brandSVG.svg}</div>
                 <p className="text-white py-6 leading-[200%] text-center md:text-start">
                   Easy reno simplifies the process and costs of renovation by
                   bringing design, sourcing and management under one roof.
@@ -108,137 +107,144 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Mapping through footer links */}
-              {footerLinks.map((category, index) => (
-                <div
-                  key={index}
-                  className={`mt-5 md:mt-0 text-center md:text-start ${
-                    category.cat === "News" ? "justify-self-center" : ""
-                  }`}
-                >
-                  <h3 className="text-white !text-xl mb-5">{category.cat}</h3>
-                  <ul>
-                    {category.links.map((link, idx) => (
-                      <li key={idx} className="mb-9">
+              <div className="col-span-9 grid grid-cols-3">
+                {/* Mapping through footer links */}
+{
+    footerLinks.map((category, index) => (
+        <div
+            key={index}
+            className={`mt-5 md:mt-0 text-center md:text-start border border-red-500`}
+        >
+            <h3 className="text-white !text-xl mb-5">{category.cat}</h3>
+            <ul>
+                {category.links.map((link, idx) => (
+                    <li key={idx} className="mb-9">
                         <Link href={link.url}>
-                          <span className="text-white !text-base !font-normal">
-                            {link.label}
-                          </span>
+                            <span className="text-white !text-base !font-normal">
+                                {link.label}
+                            </span>
                         </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-
-              <div className="w-full lg:w-auto text-center md:text-start">
-                <h3 className="text-white !text-xl mb-5">Contact Us</h3>
-                <ul className="text-center md:text-start mx-auto">
-                  <li>
-                    <Link
-                      href=""
-                      className="footer-link items-center justify-center md:justify-normal text-base text-white"
-                    >
-                      <FaMapMarkedAlt className=" lg:h-7 lg:w-7  h-4 w-4" /> 2a
-                      1331 Major Mackenzie dr West, Vaughan
-                    </Link>
-                  </li>
-                  <li className="lg:py-8 xs:py-[12px]">
-                    <a
-                      href="tel:+1(647)449-9512"
-                      className="footer-link items-center justify-center md:justify-normal text-base text-white"
-                    >
-                      <FaPhoneVolume className=" lg:h-7 lg:w-7 h-4 w-4" />{" "}
-                      +1(647)449-9512
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:easypools.landscaping@gmail.com"
-                      className="footer-link items-center justify-center md:justify-normal text-base lg:text-[12px] text-white"
-                    >
-                      <IoIosMail className="lg:h-7 lg:w-7 h-4 w-4" />{" "}
-                      easypools.landscaping@gmail.com
-                    </a>
-                  </li>
-                  <div className="mt-[38px]">
-                    <div className="">
-                      <div className="flex flex-wrap justify-center md:justify-normal gap-5">
-                        {footerIcon.map((fIcon, i) => (
-                          <div key={i} className="col-span-1">
-                            {fIcon?.svg}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="block md:hidden">
-                    <div className="h-[1px] bg-[#8E8E8E] w-full mt-9 mb-4" />
-
-                    <div className="text-center lg:text-left">
-                      <p className="text-xs lg:text-base text-white">
-                        © All Copyright 2024 by Easy Pools
-                      </p>
-                      <ul className="text-sm lg:text-base flex justify-evenly gap-2 mt-4">
-                        <li className="text-white">
-                          <Link href="/" className="text-white">
-                            Terms & Condition
-                          </Link>
-                        </li>
-                        <li className="text-white">
-                          <Link href="/" className="text-white">
-                            Privacy Policy
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-
-      {/* creater company credit */}
-      <div className="footer-bottom-bg">
-        <div className="container flex flex-col lg:flex-row justify-between items-center py-2">
-          <div className="flex justify-center items-center mb-2 lg:mb-0">
-            <p className="text-xs md:text-base font-semibold text-white mr-[10px] lg:mr-4">
-              WEBSITE DESIGN AND SEO BY :-
-            </p>
-            <Image
-              src="/assets/footer/gokundu-logo.png"
-              alt="Gokundo"
-              width={141}
-              height={36}
-              className="w-[114px] h-[30px] md:w-[141px] md:h-9"
-            />
-          </div>
-          <div className="text-center lg:text-left hidden md:block">
-            <p className="text-xs lg:text-base text-white">
-              © All Copyright 2024 by Easy Pools
-            </p>
-          </div>
-          <div className="text-center lg:text-right hidden md:block">
-            <ul className="text-xs lg:text-base flex justify-evenly gap-2">
-              <li className="text-white">
-                <Link href="/" className="text-white">
-                  Terms & Condition
-                </Link>
-              </li>
-              <li className="text-white">
-                <Link href="/" className="text-white">
-                  Privacy Policy
-                </Link>
-              </li>
+                    </li>
+                ))}
             </ul>
-          </div>
         </div>
-      </div>
-    </div>
-  );
-};
+    ))
+}
+
+<div className="w-full lg:w-auto text-center lg:text-start border border-r-red-500">
+    <h3 className="text-white !text-xl mb-5">Contact Us</h3>
+    <ul className="text-center lg:text-start mx-auto">
+        <li>
+            <Link
+                href=""
+                className="footer-link items-center text-base text-white"
+            >
+                <FaMapMarkedAlt className=" lg:h-7 lg:w-7  h-4 w-4" />{" "}
+                2a 1331 Major Mackenzie dr West, Vaughan
+            </Link>
+        </li>
+        <li className="lg:py-8 xs:py-[12px]">
+            <a
+                href="tel:+1 (646) 683-4612"
+                className="footer-link items-center text-base text-white"
+            >
+                <FaPhoneVolume className=" lg:h-7 lg:w-7 h-4 w-4" />{" "}
+                +1(647)449-9512
+            </a>
+        </li>
+        <li>
+            <a
+                href="mailto:rhconusa@gmail.com"
+                className="footer-link items-center text-base text-white"
+            >
+                <IoIosMail className="lg:h-7 lg:w-7 h-4 w-4" />{" "}
+                <span className="break-words">
+                    easypools.landscaping@gmail.com
+                </span>
+            </a>
+        </li>
+        <div className="mt-[38px]">
+            <div className="">
+                <div className="flex flex-wrap gap-5">
+                    {footerIcon.map((fIcon, i) => (
+                        <div key={i} className="col-span-1">
+                            {fIcon?.svg}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+
+        <div className="block md:hidden">
+            <div className="h-[1px] bg-[#8E8E8E] w-full mt-9 mb-4" />
+
+            <div className="text-center lg:text-left">
+                <p className="text-xs lg:text-base text-white">
+                    © All Copyright 2024 by Easy Pools
+                </p>
+                <ul className="text-sm lg:text-base flex justify-evenly gap-2 mt-4">
+                    <li className="text-white">
+                        <Link href="/" className="text-white">
+                            Terms & Condition
+                        </Link>
+                    </li>
+                    <li className="text-white">
+                        <Link href="/" className="text-white">
+                            Privacy Policy
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </ul>
+</div>
+                </div >
+              </div >
+            </div >
+          </footer >
+        </div >
+
+    {/* creater company credit */ }
+    < div className = "footer-bottom-bg" >
+        <div className="container flex flex-col lg:flex-row justify-between items-center py-2">
+            <div className="flex justify-center items-center mb-2 lg:mb-0">
+                <p className="text-xs md:text-base font-semibold text-white mr-[10px] lg:mr-4">
+                    WEBSITE DESIGN AND SEO BY :-
+                </p>
+                <Image
+                    src="/assets/footer/gokundu-logo.png"
+                    alt="Gokundo"
+                    width={141}
+                    height={36}
+                    className="w-[114px] h-[30px] md:w-[141px] md:h-9"
+                />
+            </div>
+            <div className="text-center lg:text-left hidden md:block">
+                <p className="text-xs lg:text-base text-white">
+                    © All Copyright 2024 by Easy Pools
+                </p>
+            </div>
+            <div className="text-center lg:text-right hidden md:block">
+                <ul className="text-xs lg:text-base flex justify-evenly gap-2">
+                    <li className="text-white">
+                        <Link href="/" className="text-white">
+                            Terms & Condition
+                        </Link>
+                    </li>
+                    <li className="text-white">
+                        <Link href="/" className="text-white">
+                            Privacy Policy
+                        </Link>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div >
+      </div >
+    );
+  };
 
 export default Footer;
+  
+
+* /
