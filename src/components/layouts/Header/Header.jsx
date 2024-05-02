@@ -46,7 +46,7 @@ const Header = () => {
                 className="w-[24px] h-[24px]"
               />
               <a
-                href="tel:+1 (646) 683-4612"
+                href="tel:+1(647) 449 9512"
                 className="text-secondary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
               >
                 +1(647) 449 9512
