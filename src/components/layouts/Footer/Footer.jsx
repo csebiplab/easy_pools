@@ -144,22 +144,22 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className="lg:py-8 xs:py-[12px]">
-                    <Link
+                    <a
                       href="tel:+1 (646) 683-4612"
                       className="footer-link items-center justify-center md:justify-normal text-base text-white"
                     >
                       <FaPhoneVolume className=" lg:h-7 lg:w-7 h-4 w-4" />{" "}
                       +1(647)449-9512
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
+                    <a
                       href="mailto:rhconusa@gmail.com"
                       className="footer-link items-center justify-center md:justify-normal text-base lg:text-[12px] text-white"
                     >
                       <IoIosMail className="lg:h-7 lg:w-7 h-4 w-4" />{" "}
                       easypools.landscaping@gmail.com
-                    </Link>
+                    </a>
                   </li>
                   <div className="mt-[38px]">
                     <div className="">

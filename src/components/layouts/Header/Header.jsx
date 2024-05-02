@@ -45,12 +45,12 @@ const Header = () => {
                 alt="canada leaf"
                 className="w-[24px] h-[24px]"
               />
-              <Link
-                href="/"
+              <a
+                href="tel:+1 (646) 683-4612"
                 className="text-secondary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
               >
                 +1(647) 449 9512
-              </Link>
+              </a>
             </div>
             <div className="block lg:hidden">
               <Image
