@@ -109,7 +109,7 @@ const ProjectGallery = () => {
               <Image
                 width={400}
                 height={400}
-                className="object-contain w-auto h-auto mx-auto"
+                className="object-contain w-full h-auto mx-auto"
                 src={imgUrl}
                 alt="gallery"
               />
@@ -155,7 +155,7 @@ const ProjectGallery = () => {
               <Image
                 width={400}
                 height={400}
-                className="object-contain w-auto h-auto mx-auto "
+                className="object-contain w-full h-auto mx-auto "
                 src={imgUrl}
                 alt="gallery"
               />

@@ -17,6 +17,14 @@ footer * {
   @apply max-w-screen-5xl px-3 md:px-5 lg:px-10 xl:px-20 2xl:px-28 3xl:px-40 4xl:px-52 5xl:px-[285px] mx-auto;
 }
 
+.full__section_r_p {
+  @apply max-w-screen-5xl pr-3 md:pr-8 lg:pr-24 xl:pr-28 2xl:pr-32 3xl:pr-40 4xl:pr-52 5xl:pr-[285px] mx-auto;
+}
+
+.full__section_l_p {
+  @apply max-w-screen-5xl pl-3 md:pl-8 lg:pl-24 xl:pl-28 2xl:pl-32 3xl:pl-40 4xl:pl-52 5xl:pl-[285px] mx-auto;
+}
+
 a {
   @apply text-primary underline-offset-2 hover:underline decoration-primary-700;
 }
