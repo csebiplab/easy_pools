@@ -8,4 +8,5 @@ export const projectsHeadingIconText = {
     flatPoolInstallation__IconText : "7 Days Quick Flat Pool Installation",
     permitsandRegulations__IconText : "Permits and Regulations",
     review__IconText : "Review",
+    ourProcess__IconText : "Our Process",
 }

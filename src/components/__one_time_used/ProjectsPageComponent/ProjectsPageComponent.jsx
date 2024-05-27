@@ -5,6 +5,7 @@ import BestChoice from "./BestChoice/BestChoice";
 import CompanyIntroduction from "./CompanyIntroduction/CompanyIntroduction";
 import FlatPoolInstallation from "./FlatPoolInstallation/FlatPoolInstallation";
 import HireUs from "./HireUs/HireUs";
+import OurProcessSteps from "./OurProcess/OurProcessSteps";
 import PermitsandRegulations from "./PermitsandRegulations/PermitsandRegulations";
 import ProjectBanner from "./ProjectBanner/ProjectBanner";
 import "./ProjectsPageComponent.css";
@@ -12,6 +13,8 @@ import QAPoolInstallation from "./QAPoolInstallation/QAPoolInstallation";
 import Review from "./Review/Review";
 import SelectionPreparation from "./SelectionPreparation/SelectionPreparation";
 import StunningDesign from "./StunningDesign/StunningDesign";
+import TopRatedPoolInstallation from "./TopRatedPoolInstallation/TopRatedPoolInstallation";
+import TrustedPartner from "./TrustedPartner/TrustedPartner";
 
 const ProjectsPageComponent = () => {
   return (
@@ -29,11 +32,23 @@ const ProjectsPageComponent = () => {
       </section>
 
       <section>
+        <TopRatedPoolInstallation/>
+      </section>
+
+      <section>
+        <OurProcessSteps/>
+      </section>
+
+      <section>
         <SelectionPreparation/>
       </section>
 
       <section>
         <ProjectGallery/>
+      </section>
+
+      <section>
+        <TrustedPartner/>
       </section>
 
       <section>

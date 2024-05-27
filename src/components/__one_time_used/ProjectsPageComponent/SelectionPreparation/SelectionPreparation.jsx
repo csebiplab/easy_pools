@@ -44,6 +44,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/virtual";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { projectsHeadingIconText } from "@/utils/projects/heading__text";
+import { SwiperNavButtons } from "../OurProcess/SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -63,11 +64,11 @@ const breakpoints = {
     spaceBetween: 20,
   },
   1280: {
-    slidesPerView: 5,
+    slidesPerView: 4,
     spaceBetween: 20,
   },
   1440: {
-    slidesPerView: 6,
+    slidesPerView: 4,
     spaceBetween: 20,
   },
 };
@@ -177,7 +178,7 @@ const SelectionPreparation = () => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="!overflow-hidden">
       <div className="bg__color">
         <div className="container lg:py-20 py-14">
           <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-40 gap-4  p-5 items-center text-sm ">
@@ -289,6 +290,7 @@ const SelectionPreparation = () => {
                     </div>
                   </SwiperSlide>
                 ))}
+                <SwiperNavButtons/>
               </Swiper>
             )}
 
