@@ -66,7 +66,7 @@ const QAPoolInstallationQuestionsNAns = [
 
 const QAPoolInstallation = () => {
   return (
-    <div>
+    <div className="bg__colorQA">
       <section className="container ">
         <div className="mx-auto  xs:px-[35px] 3xl:py-[120px] lg:py-[100px] py-[60px]">
           <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">

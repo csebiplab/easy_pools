@@ -6,7 +6,8 @@ import "./BestChoice.css";
 
 const BestChoice = () => {
   return (
-    <div className="full__section_r_p">
+    <div className="bg__color">
+      <div className="full__section_r_p">
       <div className="relative flex flex-col lg:flex-row items-center px-7 md:px-0">
         <div className="md:mb-5 lg:mb-0 lg:mr-5 lg:w-[50%] mt-8 md:mt-0">
           <Image
@@ -38,6 +39,7 @@ const BestChoice = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
