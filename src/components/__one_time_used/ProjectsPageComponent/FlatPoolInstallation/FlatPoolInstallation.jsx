@@ -11,7 +11,7 @@ const FlatPoolInstallation = () => {
           <div className="order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/projects/images/7 Days Quick Flat Pool Installation.png"
+                src="/assets/projects/images/pool__installation.png"
                 width={596}
                 height={490}
                 alt="about us image"
@@ -26,7 +26,7 @@ const FlatPoolInstallation = () => {
                 text={projectsHeadingIconText.flatPoolInstallation__IconText}
               />
             </div>
-            <p className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
+            <p className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
               Get Your Resort-Style Pool in 7 Days
             </p>
             <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">

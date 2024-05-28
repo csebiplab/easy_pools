@@ -9,7 +9,7 @@ const HireUs = () => {
       <div className="container py-[40px]">
         <div className="flex flex-col justify-center items-center">
           <HeadingIcon text={projectsHeadingIconText.hireUs__IconText} />
-          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-black text-xl md:text-3xl lg:text-4xl font-medium">
+          <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
             What to Consider First When You Want to Hire a Pool Installer?
           </h3>
         </div>
@@ -62,7 +62,7 @@ const HireUs = () => {
               {/* Middle image visible only on phone view */}
               <div className="block">
                 <Image
-                  src="/assets/projects/images/Why Hire us-1.png"
+                  src="/assets/projects/images/Why Hire us-2.png"
                   width={252}
                   height={211}
                   alt="working process"
@@ -72,7 +72,7 @@ const HireUs = () => {
               {/* Right image */}
               <div className="hidden md:block">
                 <Image
-                  src="/assets/projects/images/Why Hire us-1.png"
+                  src="/assets/projects/images/Why Hire us-3.png"
                   width={182}
                   height={153}
                   alt="working process"

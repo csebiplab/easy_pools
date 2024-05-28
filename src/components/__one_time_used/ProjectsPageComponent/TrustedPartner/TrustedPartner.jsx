@@ -104,17 +104,17 @@ const TrustedPartner = () => {
               />
             </div>
             <p className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px">Your Trusted Partner for Pools Installation in Barrie</p>
-            <p className="text-xs xl md:text-base font-normal text-center md:text-left text-black pt-[10px] md:pt-[15px]">
+            <p className="text-xs md:text-sm 5xl:text-base font-normal text-center md:text-left text-black pt-[10px] md:pt-[15px]">
               As your trusted partner for impeccable pool installations in
               Barrie, we bring years of expertise and dedication to every
               project. Why we are trusted or our good keys are:
             </p>
-            <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-1 xl:gap-2 2xl:gap-3 3xl:gap-[14px] 4xl:gap-4 5xl:gap-5">
+            <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-1 xl:gap-2 2xl:gap-3 3xl:gap-[14px] 4xl:gap-4 5xl:gap-[18px] pb-[15px]">
             <div>
                 {
                     trustedLine1?.map((trust)=>{
                         return <ul key={trust.id}>
-                            <li className="flex justify-center lg:justify-start items-center "><BsDot/>{trust.para}</li>
+                            <li className="flex justify-center lg:justify-start items-center text-xs md:text-sm 5xl:text-base font-normal text-center md:text-left text-black pt-[10px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]"><BsDot/>{trust.para}</li>
                         </ul>
                     })
                 }
@@ -123,7 +123,7 @@ const TrustedPartner = () => {
                 {
                     trustedLine2?.map((trust)=>{
                         return <ul key={trust.id}>
-                            <li className="flex justify-center lg:justify-start items-center "><BsDot/>{trust.para}</li>
+                            <li className="flex justify-center lg:justify-start items-center text-xs md:text-sm 5xl:text-base font-normal text-center md:text-left text-black pt-[10px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]"><BsDot/>{trust.para}</li>
                         </ul>
                     })
                 }
@@ -132,7 +132,7 @@ const TrustedPartner = () => {
                 {
                     trustedLine3?.map((trust)=>{
                         return <ul key={trust.id}>
-                            <li className="flex justify-center lg:justify-start items-center "><BsDot/>{trust.para}</li>
+                            <li className="flex justify-center lg:justify-start items-center text-xs md:text-sm 5xl:text-base font-normal text-center md:text-left text-black pt-[10px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]"><BsDot/>{trust.para}</li>
                         </ul>
                     })
                 }

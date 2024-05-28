@@ -20,10 +20,10 @@ const BestChoice = () => {
         </div>
         <div className="card__onImg py-5 px-[10px] lg:p-[13px] xl:p-[15px] 2xl:p-[20px] 3xl:p-[25px] 4xl:p-[30px] 5xl:p-[35px] w-full lg:max-w-[55%] lg:absolute lg:right-0">
           <HeadingIcon text={projectsHeadingIconText.bestChoice__IconText} />
-          <h3 className="mb-[15px] md:mb-[25px] !mt-[10px] md:mt-4  text-black text-lg md:text-3xl lg:text-4xl font-medium">
+          <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
             Your Best Choice for Expert Pool Installers in Barrie
           </h3>
-          <p className="text-sm lg:text-base 2xl:text-lg font-medium leading-[194%]">
+          <p className="text-xs xl md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px]">
             At Easy Pools Barrie, we take pride in being your premier choice for
             expert swimming pool installation. With a dedicated team of skilled
             professionals, we are committed to transforming your backyard dreams
