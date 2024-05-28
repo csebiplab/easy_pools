@@ -61,7 +61,7 @@ const OurServiceAreas = () => {
             <HeadingIcon text={headingIconText.map__IconTxt} />
 
             <div>
-              <p className="lg:text-[36px] md:text-[20px] xs:text-[16px] lg:mb-12 mb-5 text-center">
+              <p className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                 Serving the Greater Toronto Horseshoe Area for all your pool's
                 needs.
               </p>

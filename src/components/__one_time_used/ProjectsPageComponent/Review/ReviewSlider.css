@@ -1,0 +1,33 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+/* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+/* .swiper-nav-btns button {
+    width: 60px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: hsl(210, 100%, 50%);
+    color: #fff;
+    margin: 0px 0.5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    transition: all 0.5s;
+  }
+  
+  .swiper-nav-btns button:hover {
+    background-color: hsl(210, 100%, 40%);
+    cursor: pointer;
+  } */
