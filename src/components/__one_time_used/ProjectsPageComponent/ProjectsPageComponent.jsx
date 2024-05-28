@@ -1,6 +1,5 @@
 import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import PartnerNRatings from "../MainHomePageComponent/PartnerNRatings/PartnerNRatings";
-import ProjectGallery from "../MainHomePageComponent/ProjectGallery/ProjectGallery";
 import BestChoice from "./BestChoice/BestChoice";
 import CompanyIntroduction from "./CompanyIntroduction/CompanyIntroduction";
 import FlatPoolInstallation from "./FlatPoolInstallation/FlatPoolInstallation";
@@ -8,6 +7,7 @@ import HireUs from "./HireUs/HireUs";
 import OurProcessSteps from "./OurProcess/OurProcessSteps";
 import PermitsandRegulations from "./PermitsandRegulations/PermitsandRegulations";
 import ProjectBanner from "./ProjectBanner/ProjectBanner";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import "./ProjectsPageComponent.css";
 import QAPoolInstallation from "./QAPoolInstallation/QAPoolInstallation";
 import Review from "./Review/Review";

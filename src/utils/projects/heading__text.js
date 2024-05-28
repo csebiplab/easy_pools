@@ -9,4 +9,6 @@ export const projectsHeadingIconText = {
     permitsandRegulations__IconText : "Permits and Regulations",
     review__IconText : "Review",
     ourProcess__IconText : "Our Process",
+    topRated__IconText : "Top-Rated Pool Installation",
+    trustedPartner__IconText : "Trusted Partner in Your Arena"
 }
