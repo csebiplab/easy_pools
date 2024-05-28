@@ -13,24 +13,6 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
 
-// import GalImg1 from "../../../../../../public/assets/gellary/img1.png";
-// import GalImg2 from "../../../../../../public/assets/gellary/img2.png";
-// import GalImg3 from "../../../../../../public/assets/gellary/img3.png";
-// import GalImg4 from "../../../../../../public/assets/gellary/img4.png";
-// import GalImg5 from "../../../../../../public/assets/gellary/img1.png";
-// import GalImg6 from "../../../../../../public/assets/gellary/img6.png";
-// import GalImg7 from "../../../../../../public/assets/gellary/img9.png";
-// import GalImg8 from "../../../../../../public/assets/gellary/img10.png";
-
-// import GalImg18 from "../../../../../../public/assets/gellary/img4.png";
-// import GalImg19 from "../../../../../../public/assets/gellary/img3.png";
-// import GalImg20 from "../../../../../../public/assets/gellary/img2.png";
-// import GalImg21 from "../../../../../../public/assets/gellary/img4.png";
-// import GalImg22 from "../../../../../../public/assets/gellary/img6.png";
-// import GalImg23 from "../../../../../../public/assets/gellary/img1.png";
-// import GalImg24 from "../../../../../../public/assets/gellary/img10.png";
-// import GalImg25 from "../../../../../../public/assets/gellary/img9.png";
-
 const ProjectGallery = () => {
   const galImgs = [
     "/assets/gellary/img1.png",
@@ -55,7 +37,7 @@ const ProjectGallery = () => {
   ];
 
   return (
-    <div className="bg-[#188B891A]">
+    <div className="bg-[#fff]">
       <div className="  custom-container 3xl:py-[85px] py-[50px]">
         <div className="">
           <div className=" flex flex-col justify-center items-center ">

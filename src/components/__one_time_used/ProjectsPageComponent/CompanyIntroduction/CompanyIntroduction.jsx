@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./CompanyIntroduction.css";
-import { headingIconText } from "@/utils/heading-text";
 import HeadingIcon from "@/components/ui/HeadingIcon";
+import { projectsHeadingIconText } from "@/utils/projects/heading__text";
 
 const CompanyIntroduction = () => {
   return (
@@ -11,7 +11,7 @@ const CompanyIntroduction = () => {
           <div className="order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/about_us.png"
+                src="/assets/projects/images/introduction__company.png"
                 width={596}
                 height={490}
                 alt="about us image"
@@ -22,27 +22,25 @@ const CompanyIntroduction = () => {
 
           <div className="order-1 md:col-span-4 ">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
-              <HeadingIcon text={headingIconText.aboutUs__IconText} />
+              <HeadingIcon
+                text={projectsHeadingIconText.companyIntroduction__IconText}
+              />
             </div>
             <p className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
-              About Our Pool Installation Company in Toronto
+              Introduction to Our Swimming Pool Company in Barrie
             </p>
             <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
               Easy Pools custom designs and builds pool and spa solutions that
               reflect your unique needs and personal aesthetic. With over 10
-              combined years of experience in the pool construction industry,
-              you can trust the team of designers and construction specialists
-              to create the perfect swimming pool, spa, and landscaped backyard.
-              From start to finish, our company does it all. We guarantee
-              on-time completion and quality.
-            </p>
-            <p className="mt-3 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
-              From start to finish, Easy Pools uses quality materials,
-              equipment, and its in-house expert staff to ensure a superior
-              finished product. All projects are supervised by our pool
-              installation company. With their shared commitment to excellence
-              and their involvement in every stage of construction, The Easy
-              Pools has a hands-on business approach.
+              combined years of experience in the industry of swimming pool
+              installation in Barrie, you can trust our team of designers and
+              construction specialists to create the perfect swimming pool, spa,
+              and landscaped backyard. From start to finish, our company does it
+              all. From initial consultation to final touches, our dedicated
+              team is committed to providing unparalleled craftsmanship and
+              customer satisfaction. Whether you're envisioning a serene oasis
+              for relaxation or a lively space for entertaining, trust us to
+              bring your vision to life in Barrie and beyond.
             </p>
           </div>
         </div>
