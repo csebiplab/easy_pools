@@ -8,7 +8,7 @@ import OurProcessSteps from "./OurProcess/OurProcessSteps";
 import PermitsandRegulations from "./PermitsandRegulations/PermitsandRegulations";
 import ProjectBanner from "./ProjectBanner/ProjectBanner";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
-import "./ProjectsPageComponent.css";
+import "./LocationPageComponent.css";
 import QAPoolInstallation from "./QAPoolInstallation/QAPoolInstallation";
 import Review from "./Review/Review";
 import SelectionPreparation from "./SelectionPreparation/SelectionPreparation";
@@ -16,7 +16,7 @@ import StunningDesign from "./StunningDesign/StunningDesign";
 import TopRatedPoolInstallation from "./TopRatedPoolInstallation/TopRatedPoolInstallation";
 import TrustedPartner from "./TrustedPartner/TrustedPartner";
 
-const ProjectsPageComponent = () => {
+const LocationPageComponent = () => {
   return (
     <div>
       <section>
@@ -86,4 +86,4 @@ const ProjectsPageComponent = () => {
   );
 };
 
-export default ProjectsPageComponent;
+export default LocationPageComponent;

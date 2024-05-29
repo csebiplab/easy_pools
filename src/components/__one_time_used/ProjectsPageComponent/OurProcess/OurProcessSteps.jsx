@@ -118,7 +118,9 @@ const OurProcessSteps = () => {
             speed={3000}
             allowTouchMove={false}
             breakpoints={breakpoints}
+            className="!relative"
           >
+            <div className="process__border absolute inset-y-12 lg:inset-y-16 xl:inset-y-20  left-0 right-0 w-full"/>
             {slideData.map((slide, index) => (
               <SwiperSlide
                 key={index}
@@ -141,6 +143,7 @@ const OurProcessSteps = () => {
                 </div>
               </SwiperSlide>
             ))}
+            
             <SwiperNavButtons />
           </Swiper>
         </div>
