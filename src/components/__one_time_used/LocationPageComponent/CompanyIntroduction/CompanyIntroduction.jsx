@@ -7,7 +7,7 @@ const CompanyIntroduction = () => {
   return (
     <div className=" bg-white">
       <div className=" container">
-        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] 2xl:py-[100px] lg:py-[70px] py-[50px]">
+        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] padding__all">
           <div className="order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
@@ -26,10 +26,10 @@ const CompanyIntroduction = () => {
                 text={projectsHeadingIconText.companyIntroduction__IconText}
               />
             </div>
-            <p className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
+            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
               Introduction to Our Swimming Pool Company in Barrie
-            </p>
-            <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+            </h3>
+            <p className="text-xs md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
               Easy Pools custom designs and builds pool and spa solutions that
               reflect your unique needs and personal aesthetic. With over 10
               combined years of experience in the industry of swimming pool

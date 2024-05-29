@@ -91,23 +91,23 @@ const services = [
     img: soil,
   },
   {
-    title: "Showrooms cleaning",
+    title: "Accessibility and Transportation Logistics",
     img: accessibility,
   },
   {
-    title: " Medical offices cleaning",
+    title: "Utility Infrastructure Evaluation for Pool Installation",
     img: utility,
   },
   {
-    title: " Medical offices cleaning",
+    title: "Budgetary Analysis and Cost Considerations for Site Selection",
     img: budgetary,
   },
   {
-    title: " Medical offices cleaning",
+    title: "Safety and Security Measures for Pool Placement",
     img: safety,
   },
   {
-    title: " Medical offices cleaning",
+    title: "Future Expansion and Maintenance Considerations",
     img: future,
   },
 ];
@@ -125,47 +125,47 @@ const services2 = [
     img: excavation,
   },
   {
-    title: "Brown Stone Repair",
+    title: "Utility Assessments and Adjustments",
     img: utility1,
   },
   {
-    title: "Brick Works",
+    title: "Drainage Considerations",
     img: drainage,
   },
   {
-    title: " Power Wash",
+    title: "Structural Base Installation",
     img: structural,
   },
   {
-    title: " Power Wash",
+    title: "Pool Shell Delivery and Installation",
     img: poll,
   },
   {
-    title: " Power Wash",
+    title: "Filtration System Setup",
     img: filtraation,
   },
   {
-    title: " Power Wash",
+    title: "Plumbing and Electrical Installation",
     img: plumbing,
   },
   {
-    title: " Power Wash",
+    title: "Decking and Surrounding Features",
     img: decking,
   },
   {
-    title: " Power Wash",
+    title: "Safety Measures and Equipment Installation",
     img: safety1,
   },
   {
-    title: " Power Wash",
+    title: "Inspection and Quality Assurance",
     img: inspection,
   },
   {
-    title: " Power Wash",
+    title: "Pool Filling and Initial Testing",
     img: poll__filling,
   },
   {
-    title: " Power Wash",
+    title: "Maintenance and Care Instructions",
     img: maintenance,
   },
 ];
@@ -180,22 +180,22 @@ const SelectionPreparation = () => {
   return (
     <div className="!overflow-hidden">
       <div className="bg__color">
-        <div className="container lg:py-20 py-14">
-          <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-40 gap-4  p-5 items-center text-sm ">
+        <div className="container py-[34px] md:py-[54px]">
+          <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-40 gap-4 items-center text-sm ">
             <div className="  ">
               <div className="flex justify-center lg:justify-normal items-center">
                 <HeadingIcon
                   text={projectsHeadingIconText.selectionPreparation__IconText}
                 />
               </div>
-              <h2 className="text-lg lg:text-2xl 2xl:text-[32px] font-semibold text-[#1F1F1F] mt-[15px]">
+              <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                 Site Selection & <br className=" hidden lg:block" /> Preparation
                 for Pool <br className=" hidden lg:block" /> Installation
-              </h2>
+              </h3>
             </div>
 
             <div className="flex justify-center items-center">
-              <p className="text-[12px] lg:text-base">
+              <p className="text-xs md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
                 When considering the installation of a pool,{" "}
                 <br className=" hidden lg:block" /> site selection and
                 preparation are crucial steps{" "}
@@ -216,7 +216,7 @@ const SelectionPreparation = () => {
                 onChange={handleCheckboxChange}
               />
               <span
-                className={`flex items-center border pr-5  lg:px-32 rounded-3xl lg:py-4 py-2  text-[10px] md:text-base font-semibold ${
+                className={`flex items-center border pr-5  lg:px-32 rounded-3xl lg:py-4 py-2  text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
                   !isChecked ? "text-white bg-secondary-50 " : "text-body-color"
                 }`}
               >
@@ -233,10 +233,10 @@ const SelectionPreparation = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                Commercial Cleaning
+                Site Selection
               </span>
               <span
-                className={`flex items-center pr-5 lg:px-32 rounded-3xl lg:py-4 py-2 text-[10px] md:text-base font-semibold ${
+                className={`flex items-center pr-5 lg:px-32 rounded-3xl lg:py-4 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
                   isChecked ? "text-white bg-secondary-50 " : "text-body-color"
                 }`}
               >
@@ -246,12 +246,12 @@ const SelectionPreparation = () => {
                   viewBox="0 0 16 16"
                   className="mr-[6px] fill-current"
                 ></svg>
-                Residential Cleaning
+                Preparation
               </span>
             </label>
           </div>
 
-          <div className="lg:my-10 my-5">
+          <div className="lg:mt-15 mt-10">
             {!isChecked && (
               <Swiper
                 modules={[Navigation, Autoplay]}
@@ -273,12 +273,12 @@ const SelectionPreparation = () => {
                     className="bg-white border-4 rounded border-secondary-50 !h-auto !md:h-full px-2 py-6 md:py-0"
                   >
                     <div className="mx-auto relative px-2">
-                      <div className="">
-                        <p className="mt-4 py-5 mx-auto text-center text-base">
+                      <div className="py-7">
+                        <p className="mt-4 py-5 mx-auto text-center text-xs md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
                           {service.title}{" "}
                         </p>
                       </div>
-                      <div className="absolute  -top-10 md:-top-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      <div className="absolute  -top-10 md:-top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                         <Image
                           src={service.img}
                           height={58}
@@ -307,7 +307,7 @@ const SelectionPreparation = () => {
                 }}
                 speed={3000}
                 allowTouchMove={false}
-                className="!px-5 md:px-0 !overflow-visible"
+                className="!px-5 md:px-0 !overflow-hidden"
               >
                 {services2.map((service, index) => (
                   <SwiperSlide
@@ -316,7 +316,7 @@ const SelectionPreparation = () => {
                   >
                     <div className="mx-auto rounded-lg relative">
                       <div className=" py-7 ">
-                        <p className="mt-4 py-5 mx-auto text-center text-base">
+                        <p className="mt-4 py-5 mx-auto text-center text-xs md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
                           {service.title}{" "}
                         </p>
                       </div>
@@ -332,6 +332,7 @@ const SelectionPreparation = () => {
                     </div>
                   </SwiperSlide>
                 ))}
+                <SwiperNavButtons/>
               </Swiper>
             )}
           </div>

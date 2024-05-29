@@ -68,8 +68,8 @@ const QAPoolInstallation = () => {
   return (
     <div className="bg__colorQA">
       <section className="container ">
-        <div className="mx-auto  xs:px-[35px] 3xl:py-[120px] lg:py-[100px] py-[60px]">
-          <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+        <div className="mx-auto xs:px-[35px] padding__all">
+          <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
             <div className="order-2 flex justify-center items-center ">
               <Image
                 alt="faq"
@@ -88,9 +88,9 @@ const QAPoolInstallation = () => {
                   />
 
                   <div>
-                    <p className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                       Questions & Answers for Pool Installation
-                    </p>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -98,8 +98,8 @@ const QAPoolInstallation = () => {
                 {QAPoolInstallationQuestionsNAns.map((ques, idx) => (
                   <div key={idx}>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">
-                      <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] p-4 border-2">
-                        <h6 className="text-white md:text-base xs:text-[9px] ">
+                      <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] py-3 px-5 5xl:py-[14px] 5xl:px-8 border-2">
+                        <h6 className="text-white text-xs lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
                           {ques.question}
                         </h6>
 
@@ -108,7 +108,7 @@ const QAPoolInstallation = () => {
                         </div>
                       </summary>
 
-                      <p className=" pt-3 px-4 leading-relaxed border-2 text-gray-700  md:text-base xs:text-[8px]">
+                      <p className="py-3 pl-4 pr-8 lg:py-4 lg:px-6 5xl:py-5 5xl:px-7  border-2 text-black text-xs lg:text-sm 5xl:text-base font-normal 5xl:leading-[30px]">
                         {ques.answer}
                       </p>
                     </details>

@@ -1,4 +1,4 @@
-import LocationPageComponent from '@/components/__one_time_used/ProjectsPageComponent/LocationPageComponent';
+import LocationPageComponent from '@/components/__one_time_used/LocationPageComponent/LocationPageComponent';
 import React from 'react';
 
 const LocationPage = () => {

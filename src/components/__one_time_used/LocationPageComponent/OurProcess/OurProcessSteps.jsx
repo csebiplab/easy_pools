@@ -93,7 +93,7 @@ const OurProcessSteps = () => {
   return (
     <div className="bg-white">
       <div className="container">
-        <div className="py-6 lg:py-[55px]">
+        <div className="padding__all">
           <div className="text-center">
             <div className="flex justify-center items-center">
               <HeadingIcon
@@ -101,9 +101,9 @@ const OurProcessSteps = () => {
               />
             </div>
 
-            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center">
+            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
               Process of Our Swimming Pool Installation in Barrie
-            </h2>
+            </h3>
           </div>
 
           <Swiper
@@ -120,11 +120,11 @@ const OurProcessSteps = () => {
             breakpoints={breakpoints}
             className="!relative"
           >
-            <div className="process__border absolute inset-y-12 lg:inset-y-16 xl:inset-y-20  left-0 right-0 w-full"/>
+            <div className="process__border absolute inset-y-8 lg:inset-y-12 xl:inset-y-12  left-0 right-0 w-full"/>
             {slideData.map((slide, index) => (
               <SwiperSlide
                 key={index}
-                className={`text-center py-4 lg:py-10 px-20 md:px-14 lg:px-6`}
+                className={`text-center pb-6 lg:pb-20 px-20 md:px-14 lg:px-6`}
               >
                 <div className="w-full h-auto md:h-[153px] card-sd rounded-sm p-[10px]">
                   <Image
@@ -132,11 +132,10 @@ const OurProcessSteps = () => {
                     width={100}
                     height={95}
                     alt="RH"
-                    // className="mx-auto mt-[10px] w-[61px] md:w-[75px] lg:w-[100px] h-[61px] md:h-[70px] lg:h-[95px]"
                     className="w-14 h-14 lg:w-[80px] lg:h-[80px] mx-auto p-[14px] lg:p-[20px] bg-white rounded-full border-[3px] border-secondary-50"
                   />
                   <div className="text-center">
-                    <p className="text-[10px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
+                    <p className="text-[12px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">
                       {slide.description}
                     </p>
                   </div>

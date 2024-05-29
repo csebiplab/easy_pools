@@ -38,15 +38,15 @@ const ProjectGallery = () => {
 
   return (
     <div className="bg-[#fff]">
-      <div className="  custom-container 3xl:py-[85px] py-[50px]">
+      <div className="  custom-container padding__all">
         <div className="">
           <div className=" flex flex-col justify-center items-center ">
             <HeadingIcon text={headingIconText.gellary__IconText} />
 
             <div>
-              <p className="text-black text-lg md:text-3xl lg:text-4xl 3xl:pb-[30px] pb-[25px] text-center ">
+              <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                 Swimming Pools Installation Gallery Of Past Projects
-              </p>
+              </h3>
             </div>
           </div>
         </div>

@@ -66,14 +66,14 @@ const Review = () => {
   return (
     <div className="bg-white">
       <div className="container">
-        <div className="py-6 lg:py-[55px]">
+        <div className="padding__all">
           <div className="text-center">
             <div className="flex justify-center items-center">
               <HeadingIcon text={projectsHeadingIconText.review__IconText}/>
             </div>
-            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
+            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
             Here’s what to expect when you hire us as your Pool Installer in Toronto.
-            </h2>
+            </h3>
           </div>
           {/* =================== Card Section =============== */}
           <Swiper
