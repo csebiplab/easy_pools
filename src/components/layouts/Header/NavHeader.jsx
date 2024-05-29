@@ -26,44 +26,17 @@ import React from "react";
 import UpperNavbar from "./UpperNavbar";
 import WebBrandSvg from "@/components/ui/WebBrandSvg";
 
-const our_service_menu_items = {
-  interior: [
-    { title: "Bathroom Remodeling", route: "/bathroom-remodeling-brooklyn" },
-    { title: "Kitchen Remodeling", route: "/kitchen-remodeling" },
-    { title: "Painting", route: "/painting" },
-    { title: "Sheetrock", route: "/sheetrock" },
-    { title: "Plastering", route: "/plastering" },
-    {
-      title: "Electrical & Plumbing",
-      route: "/emergency-electrical-service",
-    },
-  ],
-  exterior: [
-    { title: "Concrete Contractor", route: "/concrete-contractor" },
-    { title: "Roofing", route: "/roofing" },
-    { title: "Pointing", route: "/pointing" },
-    { title: "Water Proofing", route: "/water-proofing" },
-    {
-      title: "Sidewalk Repair and Replace",
-      route: "/sidewalk-repair-and-replace",
-    },
-    { title: "Brown Stone Repair", route: "/brown-stone" },
-    { title: "Exterior Brickwork", route: "/exterior-brickwork" },
-    {
-      title: "Emergency Plumbing",
-      route: "/emergency-plumber-brooklyn",
-    },
-    { title: "Brick Works", route: "/exterior-brickwork" },
-    { title: "Power Wash", route: "/power-wash" },
-    { title: "Siding", route: "/siding-contractors" },
-    {
-      title: "All kinds of Masonry Work",
-      route: "/all-kinds-of-masonry-work",
-    },
-  ],
-};
+const our__location__menuItem = [
+    
+        {
+          title: "Barrie",
+          route : "/barrie"
+        }
+      
+    ]
 
-function OurServiceManu() {
+
+function OurLocationMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = (data = []) => {
@@ -84,22 +57,22 @@ function OurServiceManu() {
         offset={{ mainAxis: 20 }}
         placement="bottom"
         allowHover={true}
-        className="bg-gray-100"
+        className="bg-gray-100 border border-red-500"
       >
         <MenuHandler>
           <Typography
             as={Link}
-            href="/our-services"
+            href="/barrie"
             variant="small"
             color="blue-gray"
-            className="font-medium text-lg"
+            // className="font-medium text-lg "
           >
             <ListItem
-              className="flex items-center gap-2 rounded-full py-1  pr-4 text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black font-medium"
+               className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Our Services
+              Location
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
@@ -115,34 +88,17 @@ function OurServiceManu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-[100vw] w-screen lg:block border-0 outline-0 bg-gray-100">
-          <div className="container grid grid-cols-3 gap-y-2">
+        <MenuList className="hidden max-w-[300px] w-full lg:block  outline-0 bg-gray-100">
+          <div className="container !border-none !outline-none ">
             <div>
-              <h3 className="mb-1 text-primary font-semibold">Interior</h3>
-              <ul>{renderItems(our_service_menu_items.interior)}</ul>
-            </div>
-            <div>
-              <h3 className="mb-1 text-primary font-semibold">Exterior</h3>
-              <ul>
-                {renderItems(our_service_menu_items.exterior.slice(0, 6))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-1 text-primary font-semibold"></h3>
-              <ul>
-                {renderItems(our_service_menu_items.exterior.slice(6, 12))}
-              </ul>
+              <ul>{renderItems(our__location__menuItem)}</ul>
             </div>
           </div>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
-          <h4 className="text-primary mb-1 font-semibold">Interior</h4>
-          <ul>{renderItems(our_service_menu_items.interior)}</ul>
-          <hr className="my-1" />
-          <h4 className="text-primary mb-1 font-semibold">Exterior</h4>
-          <ul>{renderItems(our_service_menu_items.exterior)}</ul>
+          <ul>{renderItems(our__location__menuItem)}</ul>
           <hr className="my-1" />
         </Collapse>
       </div>
@@ -152,21 +108,31 @@ function OurServiceManu() {
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row  border-0 outline-none">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row items-center border-0 outline-none">
       <Typography
         as={Link}
-        href="/about-rh-constraction"
+        href="/about-us"
         variant="small"
         color="blue-gray"
         className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
         About Us
         </ListItem>
       </Typography>
-      <div className="mt-[6px]">
-        <OurServiceManu />
-      </div>
+
+      <Typography
+        as={Link}
+        href="/our-services"
+        variant="small"
+        color="blue-gray"
+        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-lg text-black"
+      >
+        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        Our Services
+        </ListItem>
+      </Typography>
+      
       <Typography
         as={Link}
         href="/customer-reviews"
@@ -174,7 +140,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
         Blog
         </ListItem>
       </Typography>
@@ -185,21 +151,14 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
         Projects
         </ListItem>
       </Typography>
-      <Typography
-        as={Link}
-        href="/contactus"
-        variant="small"
-        color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
-      >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
-        Location
-        </ListItem>
-      </Typography>
+      
+      <div className="mt-[6px]">
+        <OurLocationMenu/>
+      </div>
 
       <Typography
         as={Link}
@@ -208,7 +167,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center rounded-full hover:bg-primary px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact Us
         </ListItem>
       </Typography>
@@ -244,6 +203,7 @@ export function NavHeader() {
                 <NavList />
               </div>
               
+              <div className="flex ">
               <div className="flex items-center gap-x-6 md:gap-x-7 lg:gap-x-8">
                 <div className="flex items-center gap-2">
                   <Image
@@ -260,17 +220,9 @@ export function NavHeader() {
                     +1(647) 449 9512
                   </a>
                 </div>
-                <div className="block lg:hidden">
-                  <Image
-                    src="/assets/icons/menu.png"
-                    width={22}
-                    height={22}
-                    alt="Menu"
-                    className="w-[22px] h-[22px]"
-                  />
-                </div>
               </div>
               <IconButton
+                
                 variant="text"
                 color="blue-gray"
                 className="lg:hidden"
@@ -279,9 +231,11 @@ export function NavHeader() {
                 {openNav ? (
                   <XMarkIcon className="h-6 w-6" strokeWidth={2} />
                 ) : (
-                  <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+                //   <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+                  <Image src="/assets/projects/images/nenu-bar.png" alt="menu bar" width={20} height={20}/>
                 )}
               </IconButton>
+              </div>
             </div>
           </Navbar>
         </div>
@@ -294,7 +248,7 @@ export function NavHeader() {
       >
         <div className="mb-6 flex items-center justify-between">
           <Typography variant="h5" color="blue-gray">
-            RH Construction
+            Easy Pools
           </Typography>
           <IconButton
             variant="text"
