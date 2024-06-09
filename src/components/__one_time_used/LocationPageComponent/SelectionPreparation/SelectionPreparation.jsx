@@ -180,7 +180,7 @@ const SelectionPreparation = () => {
   return (
     <div className="!overflow-hidden">
       <div className="bg__color">
-        <div className="container py-[34px] md:py-[54px]">
+        <div className="container  py-[34px] md:py-[54px]">
           <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-40 gap-4 items-center text-sm ">
             <div className="  ">
               <div className="flex justify-center lg:justify-normal items-center">
@@ -307,7 +307,7 @@ const SelectionPreparation = () => {
                 }}
                 speed={3000}
                 allowTouchMove={false}
-                className="!px-5 md:px-0 !overflow-hidden"
+                className="!px-5 md:px-0 !overflow-visible"
               >
                 {services2.map((service, index) => (
                   <SwiperSlide
