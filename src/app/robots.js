@@ -1,6 +1,8 @@
 export default async function robots() {
     try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/robotTxt`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/robotTxt`, {
+            cache: "no-store",
+        });
         // console.log(response.ok, "from robot")
         if (!response.ok) {
             console.log('Failed to fetch robot.txt data|-------------------------------->>>>>');
