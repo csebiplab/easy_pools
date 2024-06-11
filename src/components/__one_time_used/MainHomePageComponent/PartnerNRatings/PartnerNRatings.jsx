@@ -138,10 +138,10 @@ const PartnerNRatings = () => {
           </div>
 
           {/* partner company card */}
-          <div className="grid lg:grid-cols-6 grid-cols-3  items-center justify-center gap-9 mt-[25px]">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 items-center justify-center gap-3 md:gap-9 mt-[25px]">
             {ratingImgs.map(({ imgUrl, text }, index) => (
               <div
-                className=" flex justify-center items-center px-6 py-[15px] lg:border-none border-2 rounded-xl lg:h-auto lg:w-auto md:h-[150px] md:w-[250px] sm:h-[120px] sm:w-[200px] h-[100px] w-[120px]"
+                className="flex justify-center items-center px-6 py-[15px] lg:border-none border-2 rounded-xl h-full"
                 key={index}
               >
                 <div className="text-center">
