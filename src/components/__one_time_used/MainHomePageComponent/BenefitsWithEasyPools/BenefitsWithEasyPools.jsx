@@ -6,7 +6,7 @@
 // import topright from "../../../../../../public/assets/benefits/topcorner.png";
 import { headingIconText } from "@/utils/heading-text";
 
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -83,14 +83,24 @@ const BenefitsWithEasyPools = () => {
         {/* show when sm screen to large */}
         <div className="mt-4 md:mt-7 ">
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              pauseOnMouseEnter: false,
+              disableOnInteraction: false,
+              reverseDirection: false,
+              stopOnLastSlide: false,
+            }}
+            speed={4000}
+            allowTouchMove={true}
             breakpoints={breakpoints}
             className=" !overflow-visible "
           >
             {services.map((service, index) => (
               <SwiperSlide
                 key={index}
-                className="border-2 shadow-md rounded border-green-600 md:gap-5 px-[10px] pb-[10px] !overflow-visible lg:!h-[270px] !h-[180px] "
+                className="border-2 shadow-md rounded border-green-600 md:gap-5 px-[10px] pb-[10px] !overflow-visible lg:!h-[270px] !h-auto "
               >
                 {/* SVG background for left bottom corner */}
                 <div className="absolute bottom-0 left-0 z-10">

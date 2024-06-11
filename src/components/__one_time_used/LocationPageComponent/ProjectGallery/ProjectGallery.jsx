@@ -13,24 +13,6 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/grid";
 
-// import GalImg1 from "../../../../../../public/assets/gellary/img1.png";
-// import GalImg2 from "../../../../../../public/assets/gellary/img2.png";
-// import GalImg3 from "../../../../../../public/assets/gellary/img3.png";
-// import GalImg4 from "../../../../../../public/assets/gellary/img4.png";
-// import GalImg5 from "../../../../../../public/assets/gellary/img1.png";
-// import GalImg6 from "../../../../../../public/assets/gellary/img6.png";
-// import GalImg7 from "../../../../../../public/assets/gellary/img9.png";
-// import GalImg8 from "../../../../../../public/assets/gellary/img10.png";
-
-// import GalImg18 from "../../../../../../public/assets/gellary/img4.png";
-// import GalImg19 from "../../../../../../public/assets/gellary/img3.png";
-// import GalImg20 from "../../../../../../public/assets/gellary/img2.png";
-// import GalImg21 from "../../../../../../public/assets/gellary/img4.png";
-// import GalImg22 from "../../../../../../public/assets/gellary/img6.png";
-// import GalImg23 from "../../../../../../public/assets/gellary/img1.png";
-// import GalImg24 from "../../../../../../public/assets/gellary/img10.png";
-// import GalImg25 from "../../../../../../public/assets/gellary/img9.png";
-
 const ProjectGallery = () => {
   const galImgs = [
     "/assets/gellary/img1.png",
@@ -55,16 +37,16 @@ const ProjectGallery = () => {
   ];
 
   return (
-    <div className="bg-[#188B891A]">
-      <div className="  custom-container 3xl:py-[85px] py-[50px]">
+    <div className="bg-[#fff]">
+      <div className="  custom-container padding__all">
         <div className="">
           <div className=" flex flex-col justify-center items-center ">
             <HeadingIcon text={headingIconText.gellary__IconText} />
 
             <div>
-              <p className="px-3 text-black text-lg md:text-3xl lg:text-4xl 3xl:pb-[30px] pb-[25px] text-center ">
+              <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                 Swimming Pools Installation Gallery Of Past Projects
-              </p>
+              </h3>
             </div>
           </div>
         </div>

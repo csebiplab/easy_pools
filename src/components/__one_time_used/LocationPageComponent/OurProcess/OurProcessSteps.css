@@ -1,0 +1,9 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.process__border {
+  height: 9px;
+  border-radius: 6px;
+  background: #049e43;
+}

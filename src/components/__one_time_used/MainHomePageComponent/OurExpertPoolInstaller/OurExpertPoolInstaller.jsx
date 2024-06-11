@@ -99,12 +99,12 @@ const OurExpertPoolInstaller = () => {
           </div>
         </div>
 
-        <div className=" grid md:grid-cols-2 2xl:gap-[50px] md:gap-[30px] ">
+        <div className="grid md:grid-cols-2 md:gap-[50px] gap-7">
           <div className=" border-2 shadow">
             <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white 2xl:text-[18px] text-[16px]">
               Usual Pool Installers
             </h2>
-            <div className=" grid grid-flow-col grid-rows-5 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
               {usualPool.map((usual, idx) => (
                 <div
                   key={idx}
@@ -117,7 +117,7 @@ const OurExpertPoolInstaller = () => {
                     height={23}
                     className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px]"
                   />
-                  <p>{usual.title}</p>
+                  <p className="text-xs md:text-sm">{usual.title}</p>
                 </div>
               ))}
             </div>
@@ -127,7 +127,7 @@ const OurExpertPoolInstaller = () => {
             <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white 2xl:text-[18px] text-[16px]">
               Easy Pools Pool Installers
             </h2>
-            <div className=" grid grid-flow-col grid-rows-5 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px] ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px] ">
               {easyPool.map((usual, idx) => (
                 <div
                   key={idx}
@@ -140,7 +140,7 @@ const OurExpertPoolInstaller = () => {
                     height={23}
                     className="h-[15px] w-[15px] 2xl:h-[23px] 2xl:w-[23px]"
                   />
-                  <p className="">{usual.title}</p>
+                  <p className="text-xs md:text-sm">{usual.title}</p>
                 </div>
               ))}
             </div>

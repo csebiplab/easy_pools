@@ -2,8 +2,8 @@ import Image from "next/image";
 import UpperNavbar from "./UpperNavbar";
 import "./Header.css";
 import Link from "next/link";
-import { UtilsModule } from "@/utils/nav-menus";
 import WebBrandSvg from "../../ui/WebBrandSvg";
+import { navMenus } from "@/utils/nav-menus";
 
 const Header = () => {
   return (
@@ -20,7 +20,7 @@ const Header = () => {
           </Link>
           <div className="hidden lg:block">
             <ul className="flex items-center gap-x-2 md:gap-x-5 xl:gap-x-10 2xl:gap-x-[75px]">
-              {UtilsModule.navMenus.map(
+              {navMenus.map(
                 ({ mainMenu, url, subMenu, svg = null }, index) => (
                   <li key={index}>
                     <Link

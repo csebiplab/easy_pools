@@ -33,16 +33,19 @@ const JoinWithUs = () => {
               dedication take your backyard to new heights of relaxation and
               enjoyment.
             </p>
-            <div className=" flex justify-center items-center 2xl:mt-[50px] lg:mt-[25px] md:mt-[15px] mt-7">
-              <Button title={"Get Your Estimate"} ></Button>{" "}
+            <div className="flex flex-col md:flex-row justify-center items-center gap-3 2xl:mt-[50px] lg:mt-[25px] md:mt-[15px] mt-7">
+              <Button title={"Get Your Estimate"} />
               <p className="mx-5 text-[#049E43] xl:text-[18px] lg:text-[16px] text-[14px] font-bold">
                 {" "}
-                or{" "}
+                Or{" "}
               </p>
-              <p className=" xl:text-[18px] lg:text-[16px] text-[14px]  text-[#049E43] font-bold">
+              <a
+                href="tel:+1(647) 449 9512"
+                className=" xl:text-[18px] lg:text-[16px] text-[14px]  text-[#049E43] font-bold"
+              >
                 {" "}
-                Call Us: 647-931-0164{" "}
-              </p>
+                Call Us: +1(647) 449 9512
+              </a>
             </div>
           </div>
 

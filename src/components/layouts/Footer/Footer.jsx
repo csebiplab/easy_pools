@@ -137,7 +137,7 @@ const Footer = () => {
                   <li>
                     <Link
                       href=""
-                      className="footer-link items-center justify-center md:justify-normal text-base text-white"
+                      className="footer-link items-center justify-center md:justify-normal text-sm md:text-base text-white"
                     >
                       <FaMapMarkedAlt className=" lg:h-7 lg:w-7  h-4 w-4" /> 2a
                       1331 Major Mackenzie dr West, Vaughan
@@ -146,7 +146,7 @@ const Footer = () => {
                   <li className="lg:py-8 xs:py-[12px]">
                     <a
                       href="tel:+1(647)449-9512"
-                      className="footer-link items-center justify-center md:justify-normal text-base text-white"
+                      className="footer-link items-center justify-center md:justify-normal text-sm md:text-base text-white"
                     >
                       <FaPhoneVolume className=" lg:h-7 lg:w-7 h-4 w-4" />{" "}
                       +1(647)449-9512
@@ -155,7 +155,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="mailto:easypools.landscaping@gmail.com"
-                      className="footer-link items-center justify-center md:justify-normal text-base lg:text-[12px] text-white"
+                      className="footer-link items-center justify-center md:justify-normal text-sm md:text-base lg:text-[12px] text-white"
                     >
                       <IoIosMail className="lg:h-7 lg:w-7 h-4 w-4" />{" "}
                       easypools.landscaping@gmail.com

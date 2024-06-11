@@ -1,9 +1,9 @@
-import ProjectsPageComponent from '@/components/__one_time_used/ProjectsPageComponent/ProjectsPageComponent';
+
 
 const ProjectsPage = () => {
     return (
-        <div>
-            <ProjectsPageComponent />
+        <div className="h-screen flex justify-center items-center ">
+            <h2 className="text-2xl font-bold">Projects page</h2>
         </div>
     );
 };
