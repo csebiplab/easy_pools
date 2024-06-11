@@ -1,0 +1,10 @@
+
+
+  .bg__uppernav {
+    background: linear-gradient(90deg, #062524 0%, #188b89 100%);
+  }
+  
+  .main__header {
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }

@@ -25,6 +25,16 @@ footer * {
   @apply max-w-screen-5xl pl-3 md:pl-8 lg:pl-24 xl:pl-28 2xl:pl-32 3xl:pl-40 4xl:pl-52 5xl:pl-[285px] mx-auto;
 }
 
+.padding__top{
+  @apply pt-14 md:pt-16 lg:pt-20 xl:pt-[90px] 2xl:pt-24 3xl:pt-[105px] 4xl:pt-28 5xl:pt-[120px]
+}
+.padding__bottom{
+  @apply pb-14 md:pb-16 lg:pb-20 xl:pb-[90px] 2xl:pb-24 3xl:pb-[105px] 4xl:pb-28 5xl:pb-[120px]
+}
+.padding__all{
+  @apply py-14 md:py-16 lg:py-20 xl:py-[90px] 2xl:py-24 3xl:py-[105px] 4xl:py-28 5xl:py-[120px]
+}
+
 a {
   @apply text-primary underline-offset-2 hover:underline decoration-primary-700;
 }
