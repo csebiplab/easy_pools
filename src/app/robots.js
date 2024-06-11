@@ -5,7 +5,14 @@ export default async function robots() {
         });
         // console.log(response.ok, "from robot")
         if (!response.ok) {
-            console.log('Failed to fetch robot.txt data|-------------------------------->>>>>');
+            return {
+                rules: {
+                    userAgent: '*',
+                    allow: '/',
+                    disallow: '/private/',
+                },
+                sitemap: `${process.env.NEXT_PUBLIC_API_URL}`,
+            }
         }
         const data = await response.json();
 
