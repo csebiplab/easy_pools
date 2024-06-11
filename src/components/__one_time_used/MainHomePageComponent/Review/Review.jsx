@@ -1,6 +1,4 @@
 "use client";
-// import googleIcon from "../../../../../../public/assets/review/Google-Review-Logo 3.png";
-// import starIcon from "../../../../../../public/assets/review/ratingstar.png";
 
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -34,19 +32,6 @@ const breakpoints = {
     spaceBetween: 20,
   },
 };
-
-/*
-""
-""
-""
-""
-""
-""
-""
-""
-""
-
-*/
 
 const reviews = [
   {
@@ -120,7 +105,7 @@ const Review = () => {
 
             <div>
               <p className="text-lg md:text-3xl lg:text-4xl text-dark md:text-start text-center md:mb-20 mb-8 text ">
-                Here’s what to expect when you hire us as your Pool Installer in
+                Here's what to expect when you hire us as your Pool Installer in
                 Toronto.
               </p>
             </div>
@@ -138,12 +123,12 @@ const Review = () => {
               stopOnLastSlide: false,
             }}
             speed={4000}
-            allowTouchMove={false}
+            allowTouchMove={true}
             breakpoints={breakpoints}
           >
             {reviews.map((test, i) => (
-              <SwiperSlide key={i}>
-                <div className=" bg-[#D9D9D980] rounded-lg shadow-md p-[13px] ">
+              <SwiperSlide key={i} className="!h-auto">
+                <div className="!h-full bg-[#D9D9D980] rounded-lg shadow-md p-[13px] ">
                   <div>
                     <Image
                       src="/assets/review/Google-Review-Logo 3.png"
