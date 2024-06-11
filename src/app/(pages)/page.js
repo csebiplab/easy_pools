@@ -1,69 +1,60 @@
 import MainHomePageComponent from "@/components/__one_time_used/MainHomePageComponent/MainHomePageComponent";
 import { pageName } from "@/constants/dashboard/pageName.constants";
 
+function extractGoogleConsoleKey(verificationData) {
+  try {
+    const metaTagContent = verificationData.verificationUrl?.[0]?.title;
+    if (!metaTagContent) return "";
 
-// Dynamic Metadata
+    const parts = metaTagContent.split(" ");
+    if (parts.length < 3) return "";
+
+    const consoleKeyPart = parts[2].split("=")[1];
+    return consoleKeyPart.slice(1, -1);
+  } catch (error) {
+    console.error('Error extracting Google console key:', error);
+    return "";
+  }
+}
+
 export async function generateMetadata() {
   try {
-    const metaDataResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/metaDatas?pageName=${pageName.home}`);
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+    const metaDataResponse = await fetch(`${apiUrl}/api/metaDatas?pageName=${pageName.home}`, {
+      cache: "no-store",
+    });
     const metaData = await metaDataResponse.json();
+    const { title, description, keywords } = metaData?.data ?? {};
 
-    const { data } = metaData ?? {};
-
-    const { title, description, keywords } = data ?? {}
-
-
-
-    // Fetch Google site verification URL
-    const googleVerificationResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/verificationUrl`);
+    const googleVerificationResponse = await fetch(`${apiUrl}/api/verificationUrl`, {
+      cache: "no-store",
+    });
     const googleVerification = await googleVerificationResponse.json();
-
-    // console.log("googleVerificationResponse", googleVerificationResponse)
-    // console.log("googleVerification", googleVerification)
-
-    // Extract Google console key from the meta tag content
-    let googleConsoleKey = "";
-    if (googleVerification?.verificationUrl?.length > 0) {
-      googleConsoleKey = googleVerification
-      extractGoogleConsoleKey(googleVerification);
-    }
+    const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
 
     return {
-      title: title,
-      description: description,
-      keywords: keywords,
+      title: title || "#1 Swimming Pool Installation in Toronto | Easy Pools",
+      description: description || "Easy Pools offers expert swimming pool installation services in Toronto. Our skilled Toronto pool installers ensure top-quality workmanship.",
+      keywords: keywords || "easy pools, best pools, great pools, Toronto Pool Installation, Pool Installation Toronto, ",
       verification: {
-        google: googleConsoleKey || "",
-      }
-    }
-
-
+        google: googleConsoleKey,
+      },
+    };
   } catch (error) {
-    console.log("object err:", error)
+    console.error('Error generating metadata:', error);
     return {
       title: "#1 Swimming Pool Installation in Toronto | Easy Pools",
       keywords: "easy pools, best pools, great pools, Toronto Pool Installation, Pool Installation Toronto, ",
-      description: "Easy Pools offers expert swimming pool installation services in Toronto. Our skilled Toronto pool installers ensure top-quality workmanship."
+      description: "Easy Pools offers expert swimming pool installation services in Toronto. Our skilled Toronto pool installers ensure top-quality workmanship.",
     };
   }
 }
 
-function extractGoogleConsoleKey(googleVerification) {
-  try {
-    const { verificationUrl } = googleVerification ?? {};
-    const metaTagContent = verificationUrl[0]?.title;
-    const consoleKey = metaTagContent?.split(" ")[2]?.split("=")[1]?.slice(1, -1);
-    return consoleKey;
-  } catch (error) {
-    console.error('Error extracting Google console key:', error);
-  }
-}
-
-
-
+// Main Home component
 export default function Home() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen">
       <MainHomePageComponent />
     </main>
   );
