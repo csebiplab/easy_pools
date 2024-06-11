@@ -6,7 +6,7 @@
 // import topright from "../../../../../../public/assets/benefits/topcorner.png";
 import { headingIconText } from "@/utils/heading-text";
 
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -83,7 +83,17 @@ const BenefitsWithEasyPools = () => {
         {/* show when sm screen to large */}
         <div className="mt-4 md:mt-7 ">
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              pauseOnMouseEnter: false,
+              disableOnInteraction: false,
+              reverseDirection: false,
+              stopOnLastSlide: false,
+            }}
+            speed={4000}
+            allowTouchMove={true}
             breakpoints={breakpoints}
             className=" !overflow-visible "
           >
