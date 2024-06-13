@@ -40,8 +40,8 @@ export const dashboardConfig = {
                     icon: "dessert",
                 },
                 {
-                    title: "Testimonials",
-                    href: "/dashboard/allpages/testimonials",
+                    title: "Barrie",
+                    href: "/dashboard/allpages/barrie",
                     icon: "dessert",
                 },
                 {
