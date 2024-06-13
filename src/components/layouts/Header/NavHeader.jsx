@@ -25,6 +25,8 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import UpperNavbar from "./UpperNavbar";
 import WebBrandSvg from "@/components/ui/WebBrandSvg";
+import "./Header.css";
+import "./NavHeader.css";
 
 const our__location__menuItem = [
   {
