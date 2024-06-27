@@ -14,4 +14,9 @@ export const headingIconText = {
     gellary__IconText: "Projects Gallery",
     Benefits__IconText: "Benefits with Easy Pools",
 
+
+
+    // Fiberglass in Toronto
+    about__usInFiberglassText: "About Us"
+
 }
