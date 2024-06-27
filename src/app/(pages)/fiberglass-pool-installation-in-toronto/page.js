@@ -2,7 +2,7 @@ import FiberglassPoolInstallationInToronto from '@/components/__one_time_used/Fi
 
 const FiberglassPoolInstallationPage = () => {
     return (
-        <div className='!bg-red-500'>
+        <div className=''>
             <FiberglassPoolInstallationInToronto />
         </div>
     );

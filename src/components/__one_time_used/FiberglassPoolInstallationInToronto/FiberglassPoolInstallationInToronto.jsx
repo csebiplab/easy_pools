@@ -1,13 +1,14 @@
 import HomeBanner from "../MainHomePageComponent/HomeBanner/HomeBanner";
 import PartnerNRatings from "../MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import AboutUsInFiberglass from "./AboutUsInFiberglass/AboutUsInFiberglass";
-import FiberglassPoolBanner from "./FiberglassPoolBanner/FiberglassPoolBanner";
+import MeaningFiberglass from "./MeaningFiberglass/MeaningFiberglass";
 
 import "./FiberglassPoolInstallationInToronto.css";
+import PermitsandRegulations from "../LocationPageComponent/PermitsandRegulations/PermitsandRegulations";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
-    <div className="bg__fiberglassPage">
+    <div className="">
       {/* <FiberglassPoolBanner /> */}
       <section>
         <HomeBanner />
@@ -19,6 +20,14 @@ const FiberglassPoolInstallationInToronto = () => {
 
       <section>
         <AboutUsInFiberglass />
+      </section>
+
+      <section>
+        <MeaningFiberglass />
+      </section>
+
+      <section>
+        <PermitsandRegulations />
       </section>
     </div>
   );
