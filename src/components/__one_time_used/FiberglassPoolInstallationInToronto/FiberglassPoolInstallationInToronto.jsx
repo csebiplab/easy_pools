@@ -4,7 +4,7 @@ import AboutUsInFiberglass from "./AboutUsInFiberglass/AboutUsInFiberglass";
 import MeaningFiberglass from "./MeaningFiberglass/MeaningFiberglass";
 
 import "./FiberglassPoolInstallationInToronto.css";
-import PermitsandRegulations from "../LocationPageComponent/PermitsandRegulations/PermitsandRegulations";
+import Excelence from "./Excelence/Excelence";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -27,7 +27,7 @@ const FiberglassPoolInstallationInToronto = () => {
       </section>
 
       <section>
-        <PermitsandRegulations />
+        <Excelence />
       </section>
     </div>
   );
