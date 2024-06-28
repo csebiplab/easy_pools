@@ -1,9 +1,9 @@
+import "./FiberglassPoolInstallationInToronto.css";
+
 import HomeBanner from "../MainHomePageComponent/HomeBanner/HomeBanner";
 import PartnerNRatings from "../MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import AboutUsInFiberglass from "./AboutUsInFiberglass/AboutUsInFiberglass";
 import MeaningFiberglass from "./MeaningFiberglass/MeaningFiberglass";
-
-import "./FiberglassPoolInstallationInToronto.css";
 import Excelence from "./Excelence/Excelence";
 
 const FiberglassPoolInstallationInToronto = () => {
