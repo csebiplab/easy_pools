@@ -25,5 +25,6 @@ export const headingIconText = {
     benefits__inFiberglassText: "Benefits",
     process__inFiberglassText: "Process",
     cost__inFiberglassText: "Cost Calculating",
+    flawlessDesign__inFiberglassText: "Flawless Design",
 
 }
