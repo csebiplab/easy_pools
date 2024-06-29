@@ -9,6 +9,7 @@ import LeadsTheFiberglasss from "./LeadsTheFiberglasss/LeadsTheFiberglasss";
 import Expert from "./BestChoiceForExpert/Expert";
 import Benefits from "./Benefits/Benefits";
 import Process from "./Process/Process";
+import CostCalculating from "./CostCalculating/CostCalculating";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -48,6 +49,10 @@ const FiberglassPoolInstallationInToronto = () => {
 
       <section>
         <Process />
+      </section>
+
+      <section>
+        <CostCalculating />
       </section>
     </div>
   );

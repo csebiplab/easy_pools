@@ -1,17 +1,17 @@
 import React from "react";
-import "./LeadsTheFiberglasss.css";
+import "./CostCalculating.css";
 import Image from "next/image";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
-const LeadsTheFiberglasss = () => {
+const CostCalculating = () => {
   return (
     <div className="bg__color">
       <div className="full__section_l_p">
         <div className="grid md:grid-cols-6 grid-cols-1 gap-10">
           <div className="md:col-span-3 pt-[25px] md:pt-[28px] lg:pt-[30px] xl:pt-[32px] 2xl:pt-[35px] 3xl:pt-[37px] 4xl:pt-[40px] 5xl:pt-[43px]">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
-              <HeadingIcon text={headingIconText.leads__inFiberglassText} />
+              <HeadingIcon text={headingIconText.cost__inFiberglassText} />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px">
               Easy Pools Leads the Fiberglass Pool Installation Industry
@@ -52,4 +52,4 @@ const LeadsTheFiberglasss = () => {
   );
 };
 
-export default LeadsTheFiberglasss;
+export default CostCalculating;
