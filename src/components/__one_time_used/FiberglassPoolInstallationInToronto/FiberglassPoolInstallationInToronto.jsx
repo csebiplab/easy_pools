@@ -10,6 +10,7 @@ import Expert from "./BestChoiceForExpert/Expert";
 import Benefits from "./Benefits/Benefits";
 import Process from "./Process/Process";
 import CostCalculating from "./CostCalculating/CostCalculating";
+import ProjectGallery from "../MainHomePageComponent/ProjectGallery/ProjectGallery";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -53,6 +54,10 @@ const FiberglassPoolInstallationInToronto = () => {
 
       <section>
         <CostCalculating />
+      </section>
+
+      <section>
+        <ProjectGallery />
       </section>
     </div>
   );
