@@ -14,6 +14,8 @@ import ProjectGallery from "../MainHomePageComponent/ProjectGallery/ProjectGalle
 import FlawlessDesign from "./FlawlessDesign/FlawlessDesign";
 import Review from "../MainHomePageComponent/Review/Review";
 import QA from "./QA/QA";
+import WhyChooseEasyPools from "./WhyChooseEasyPools/WhyChooseEasyPools";
+import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -73,6 +75,14 @@ const FiberglassPoolInstallationInToronto = () => {
 
       <section>
         <QA />
+      </section>
+
+      <section>
+        <WhyChooseEasyPools />
+      </section>
+
+      <section>
+        <OurServiceAreas />
       </section>
     </div>
   );

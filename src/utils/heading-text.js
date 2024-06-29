@@ -27,5 +27,6 @@ export const headingIconText = {
     cost__inFiberglassText: "Cost Calculating",
     flawlessDesign__inFiberglassText: "Flawless Design",
     qnda__inFiberglassText: "Q&A",
+    whyChooseEasyPools__inFiberglassText: "Why Choose Easy Pools",
 
 }
