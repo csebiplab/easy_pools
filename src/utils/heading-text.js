@@ -22,5 +22,6 @@ export const headingIconText = {
     excelence__inFiberglassText: "Excelence",
     leads__inFiberglassText: "Leads the Fiberglass",
     expert__inFiberglassText: "Expert",
+    benefits__inFiberglassText: "Benefits",
 
 }
