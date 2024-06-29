@@ -13,6 +13,7 @@ import CostCalculating from "./CostCalculating/CostCalculating";
 import ProjectGallery from "../MainHomePageComponent/ProjectGallery/ProjectGallery";
 import FlawlessDesign from "./FlawlessDesign/FlawlessDesign";
 import Review from "../MainHomePageComponent/Review/Review";
+import QA from "./QA/QA";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -68,6 +69,10 @@ const FiberglassPoolInstallationInToronto = () => {
 
       <section>
         <Review />
+      </section>
+
+      <section>
+        <QA />
       </section>
     </div>
   );
