@@ -5,6 +5,7 @@ import PartnerNRatings from "../MainHomePageComponent/PartnerNRatings/PartnerNRa
 import AboutUsInFiberglass from "./AboutUsInFiberglass/AboutUsInFiberglass";
 import MeaningFiberglass from "./MeaningFiberglass/MeaningFiberglass";
 import Excelence from "./Excelence/Excelence";
+import LeadsTheFiberglasss from "./LeadsTheFiberglasss/LeadsTheFiberglasss";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -28,6 +29,10 @@ const FiberglassPoolInstallationInToronto = () => {
 
       <section>
         <Excelence />
+      </section>
+
+      <section>
+        <LeadsTheFiberglasss />
       </section>
     </div>
   );

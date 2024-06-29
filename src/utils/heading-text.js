@@ -19,6 +19,7 @@ export const headingIconText = {
     // Fiberglass in Toronto
     about__usInFiberglassText: "About Us",
     meaning__inFiberglassText: "Meaning",
-    excelence__inFiberglassText: "Excelence"
+    excelence__inFiberglassText: "Excelence",
+    leads__inFiberglassText: "Leads the Fiberglass",
 
 }
