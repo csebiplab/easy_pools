@@ -1,9 +1,8 @@
 "use client";
-import HeadingIcon from "@/components/ui/HeadingIcon";
-import "./HireUs.css";
-import Image from "next/image";
-import { projectsHeadingIconText } from "@/utils/projects/heading__text";
 
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import "./Process.css";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
@@ -11,6 +10,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/virtual";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { headingIconText } from "@/utils/heading-text";
 
 const breakpoints = {
   0: {
@@ -26,54 +26,19 @@ const allImages = [
   "/assets/projects/images/Why Hire us-2.png",
   "/assets/projects/images/Why Hire us-3.png",
   "/assets/projects/images/Why Hire us-4.png",
+  "/assets/projects/images/Why Hire us-3.png",
+  "/assets/projects/images/Why Hire us-1.png",
+  "/assets/projects/images/Why Hire us-2.png",
 ];
 
-const WhyHireUs = [
-  {
-    id: 1,
-    title: "Portfolio of Past Projects",
-    description: "Review the company's portfolio of past pool installations.",
-  },
-  {
-    id: 2,
-    title: "Expertise in Pool Design & Construction",
-    description:
-      "Choose a company that offers expertise in both pool design and construction.",
-  },
-  {
-    id: 3,
-    title: "Quality of Materials & Equipment",
-    description:
-      "Inquire about the quality of materials & equipment the company uses for pool.",
-  },
-  {
-    id: 4,
-    title: "Timelines and Project Management",
-    description:
-      "Make sure they can provide a clear timeline for the installation process.",
-  },
-  {
-    id: 5,
-    title: "Cost and Payment Terms",
-    description:
-      "Get multiple quotes from different pool installer companies and compare their costs.",
-  },
-  {
-    id: 6,
-    title: "Communication and Customer Service",
-    description:
-      "Choose a company that is responsive, transparent, and willing to address concerns",
-  },
-];
-
-const HireUs = () => {
+const Process = () => {
   return (
     <div className="bg__color">
       <div className="container py-[40px]">
         <div className="flex flex-col justify-center items-center">
-          <HeadingIcon text={projectsHeadingIconText.hireUs__IconText} />
+          <HeadingIcon text={headingIconText.process__inFiberglassText} />
           <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-            What to Consider First When You Want to Hire a Pool Installer?
+            Process of Installing Fiberglass Pools in Toronto
           </h3>
         </div>
 
@@ -112,8 +77,15 @@ const HireUs = () => {
             </button>
           </div>
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             speed={3000}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              pauseOnMouseEnter: false,
+              disableOnInteraction: false,
+              stopOnLastSlide: false,
+            }}
             allowTouchMove={false}
             breakpoints={breakpoints}
             className="!flex justify-between !overflow-hidden"
@@ -147,4 +119,4 @@ const HireUs = () => {
   );
 };
 
-export default HireUs;
+export default Process;

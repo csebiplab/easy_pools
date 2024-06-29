@@ -1,5 +1,5 @@
 export const headingIconText = {
-    licensed__IconTxt: "SINCE ’94",
+    licensed__IconTxt: "SINCE '94",
     map__IconTxt: "Our Service Areas",
     ourServices__IconTxt: "Services",
     expartPool__IconText: 'Choose Our Expert Pool Installers in Toronto',
@@ -23,5 +23,6 @@ export const headingIconText = {
     leads__inFiberglassText: "Leads the Fiberglass",
     expert__inFiberglassText: "Expert",
     benefits__inFiberglassText: "Benefits",
+    process__inFiberglassText: "Process",
 
 }
