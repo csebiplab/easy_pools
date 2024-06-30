@@ -1,3 +1,7 @@
 .bg__fiberglassPage {
   background: #e1fffe;
 }
+
+.common__padding__top {
+  padding-top: 120px;
+}

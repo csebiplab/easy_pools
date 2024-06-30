@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const AboutUsInFiberglass = () => {
   return (
-    <div className="bg__color">
+    <div className="bg__fiberglassPage">
       <div className="full__section_r_p">
-        <div className="grid md:grid-cols-7 grid-cols-1 gap-7 common__padding__top">
-          <div className="md:col-span-4 flex items-center ">
+        <div className="grid md:grid-cols-7 grid-cols-1 gap-7 border border-red-500 common__padding__top">
+          <div className="md:col-span-4 flex items-center md:items-start">
             <div className="">
               <Image
                 src="/assets/fiberglass/aboutus.png"

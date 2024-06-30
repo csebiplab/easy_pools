@@ -26,7 +26,7 @@ const FiberglassPoolInstallationInToronto = () => {
       </section>
 
       <section>
-        <PartnerNRatings />
+        <PartnerNRatings classNames={{ bg: "bg__fiberglassPage " }} />
       </section>
 
       <section>
