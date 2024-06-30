@@ -33,6 +33,10 @@ const our__location__menuItem = [
     title: "Barrie",
     route: "/pool-installation-services-in-barrie",
   },
+  {
+    title: "Fiberglass Pool Installation",
+    route: "/fiberglass-pool-installation-in-toronto",
+  },
 ];
 
 function OurLocationMenu() {
@@ -56,7 +60,7 @@ function OurLocationMenu() {
         offset={{ mainAxis: 20 }}
         placement="bottom"
         allowHover={true}
-        className="bg-gray-100 border border-red-500"
+        className="bg-gray-100 "
       >
         <MenuHandler>
           <Typography
@@ -87,10 +91,12 @@ function OurLocationMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-[300px] w-full lg:block  outline-0 bg-gray-100">
-          <div className="container !border-none !outline-none ">
-            <div>
-              <ul>{renderItems(our__location__menuItem)}</ul>
+        <MenuList className="!p-0  hidden max-w-[300px] w-full lg:block  outline-0 bg-gray-100">
+          <div className="!p-0 !border-none !outline-none w-full ">
+            <div className="w-full ">
+              <ul className="w-full ">
+                {renderItems(our__location__menuItem)}
+              </ul>
             </div>
           </div>
         </MenuList>
@@ -155,7 +161,7 @@ function NavList() {
         </ListItem>
       </Typography>
 
-      <div className="mt-[6px]">
+      <div className="mt-[6px] ">
         <OurLocationMenu />
       </div>
 

@@ -29,16 +29,23 @@ const ratingImgs = [
   },
 ];
 
-const PartnerNRatings = () => {
+const PartnerNRatings = ({ classNames }) => {
   return (
-    <div className=" bg-white">
+    <div className={`${classNames ? classNames?.bg : "bg-white"}`}>
       <div className="container flex justify-center w-full  z-50 ">
-        <div className="w-full mx-auto lg:px-0 px-[30px] mt-4 md:mt-0 bg-white lg:rounded-xl  ">
-          <div className="px-4 py-4  mx-auto border-2 ">
+        <div
+          className={`${
+            classNames ? classNames?.bg : "bg-white"
+          } w-full mx-auto lg:px-0 px-[30px] mt-4 md:mt-0 lg:rounded-xl`}
+        >
+          <div
+            className={`bg-white
+             p-4 mx-auto border-2`}
+          >
             <div className="grid lg:grid-cols-9 grid-cols-1 lg:justify-between justify-center items-center w-full gap-x-[15px] p-2 ">
               <div className=" lg:col-span-1 flex items-center justify-center text-center mx-auto py-5  ">
-                <div className="h-full  flex items-center">
-                  <div>
+                <div className="h-full flex items-center">
+                  <div className="">
                     <div className="flex items-center gap-x-1">
                       <h4 className="text-dark-300 text-base font-bold">
                         Star Score
