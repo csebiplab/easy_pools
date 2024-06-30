@@ -6,10 +6,10 @@ import { headingIconText } from "@/utils/heading-text";
 
 const CostCalculating = () => {
   return (
-    <div className="bg__color">
+    <div className="bg__fiberglassPage common__padding__top">
       <div className="full__section_l_p">
         <div className="grid md:grid-cols-6 grid-cols-1 gap-10">
-          <div className="md:col-span-3 pt-[25px] md:pt-[28px] lg:pt-[30px] xl:pt-[32px] 2xl:pt-[35px] 3xl:pt-[37px] 4xl:pt-[40px] 5xl:pt-[43px]">
+          <div className="md:col-span-3">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.cost__inFiberglassText} />
             </div>
@@ -35,14 +35,14 @@ const CostCalculating = () => {
               forefront of the fiberglass pool installation industry.
             </p>
           </div>
-          <div className="md:col-span-3 flex justify-end items-center">
+          <div className="md:col-span-3 flex">
             <div>
               <Image
-                src="/assets/projects/images/Trusted-Partner.png"
+                src="/assets/fiberglass/cost-calculating.png"
                 alt="Trusted-Partner"
                 width={200}
                 height={200}
-                className="w-[815px] h-[564px]"
+                className="w-[815px] h-[528px]"
               />
             </div>
           </div>
