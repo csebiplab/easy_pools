@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: "Cost Savings",
-    desc: " Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    desc: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
   },
 ];
 
