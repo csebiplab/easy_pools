@@ -1,6 +1,5 @@
 import "./FiberglassPoolInstallationInToronto.css";
 
-import HomeBanner from "../MainHomePageComponent/HomeBanner/HomeBanner";
 import PartnerNRatings from "../MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import AboutUsInFiberglass from "./AboutUsInFiberglass/AboutUsInFiberglass";
 import MeaningFiberglass from "./MeaningFiberglass/MeaningFiberglass";
@@ -16,13 +15,13 @@ import WhyChooseEasyPools from "./WhyChooseEasyPools/WhyChooseEasyPools";
 import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import ProjectGalleryInFiberglass from "./FiberglassProjectGal/FiberglassProjectGal";
 import ReviewsInFiberglass from "./ReviewsInFiberglass/ReviewsInFiberglass";
+import FiberglassPoolBanner from "./FiberglassPoolBanner/FiberglassPoolBanner";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
     <div className="">
-      {/* <FiberglassPoolBanner /> */}
       <section>
-        <HomeBanner />
+        <FiberglassPoolBanner />
       </section>
 
       <section>
