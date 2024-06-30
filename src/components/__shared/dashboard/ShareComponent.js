@@ -1,13 +1,10 @@
 "use client";
-// import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
-// import { HiPencilAlt } from "react-icons/hi";
 import RemoveBtn from "./RemoveBtn";
 import NoDataFound from "./NoDataFound";
 
 const ShareComponent = ({
-  // editPath,
   metaData,
   pagename,
   isUpdateCreateLoading,
