@@ -5,13 +5,13 @@ import { headingIconText } from "@/utils/heading-text";
 
 const WhyChooseEasyPools = () => {
   return (
-    <div className="bg__color">
+    <div className="bg__fiberglassPage common__padding__top">
       <div className="full__section_r_p">
         <div className="relative flex flex-col lg:flex-row items-center px-7 md:px-0">
           <div className="md:mb-5 lg:mb-0 lg:mr-5 lg:w-[50%] mt-8 md:mt-0">
             <Image
               alt="Is Concrete Pumping Costly"
-              src="/assets/projects/images/bestChoice.png"
+              src="/assets/fiberglass/whychooseus.png"
               width={910}
               height={650}
               className="w-full h-auto lg:w-[910px] lg:h-[650px]"

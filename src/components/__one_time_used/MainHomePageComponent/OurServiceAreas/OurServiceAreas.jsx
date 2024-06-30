@@ -52,11 +52,15 @@ const maps = [
   },
 ];
 
-const OurServiceAreas = () => {
+const OurServiceAreas = ({ classNames }) => {
   return (
-    <div className="area-bg ">
+    <div className={`${classNames ? classNames?.bg : "area-bg"}`}>
       <div className="container">
-        <div className=" 2xl:py-[55px] py-[30px] md:mx-0 xs:mx-[30px]  ">
+        <div
+          className={`${
+            classNames ? classNames?.pdy : "2xl:py-[55px] py-[30px]"
+          } md:mx-0 xs:mx-[30px] `}
+        >
           <div className="mx-auto   flex flex-col items-center justify-center">
             <HeadingIcon text={headingIconText.map__IconTxt} />
 

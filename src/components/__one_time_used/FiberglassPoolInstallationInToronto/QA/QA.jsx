@@ -65,17 +65,17 @@ const QAPoolInstallationQuestionsNAns = [
 
 const QA = () => {
   return (
-    <div className="bg__colorQA">
-      <section className="container ">
-        <div className="mx-auto xs:px-[35px] padding__all">
+    <div className="bg__fiberglassPage common__padding__top border border-red-500">
+      <section className="container">
+        <div className="mx-auto xs:px-[35px]">
           <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
             <div className="order-2 flex justify-center items-center ">
               <Image
                 alt="faq"
-                src="/assets/projects/images/qa__pool.png"
-                className=" "
+                src="/assets/fiberglass/qa.png"
                 width={580}
-                height={410}
+                height={810}
+                className="h-dvh"
               />
             </div>
 

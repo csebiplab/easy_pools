@@ -11,11 +11,11 @@ import Benefits from "./Benefits/Benefits";
 import Process from "./Process/Process";
 import CostCalculating from "./CostCalculating/CostCalculating";
 import FlawlessDesign from "./FlawlessDesign/FlawlessDesign";
-import Review from "../MainHomePageComponent/Review/Review";
 import QA from "./QA/QA";
 import WhyChooseEasyPools from "./WhyChooseEasyPools/WhyChooseEasyPools";
 import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import ProjectGalleryInFiberglass from "./FiberglassProjectGal/FiberglassProjectGal";
+import ReviewsInFiberglass from "./ReviewsInFiberglass/ReviewsInFiberglass";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -70,7 +70,7 @@ const FiberglassPoolInstallationInToronto = () => {
       </section>
 
       <section>
-        <Review />
+        <ReviewsInFiberglass />
       </section>
 
       <section>
@@ -82,7 +82,12 @@ const FiberglassPoolInstallationInToronto = () => {
       </section>
 
       <section>
-        <OurServiceAreas />
+        <OurServiceAreas
+          classNames={{
+            bg: "bg__fiberglassPage ",
+            pdy: "common__padding__top common__padding__btm",
+          }}
+        />
       </section>
     </div>
   );
