@@ -5,13 +5,13 @@ import "./Excelence.css";
 
 const Excelence = () => {
   return (
-    <div className="bg__color">
-      <div className=" container">
-        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] py-[40px] md:py-[48px]">
+    <div className="bg__fiberglassPage">
+      <div className="container">
+        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] common__padding__top ">
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/projects/images/Top-Rated.png"
+                src="/assets/fiberglass/fiberglass-excelence.png"
                 width={596}
                 height={490}
                 alt="about us image"
