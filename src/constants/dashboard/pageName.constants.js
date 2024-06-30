@@ -3,4 +3,5 @@ export const pageName = {
     contactus: "contactus",
     blog: "blog",
     barrie: "barrie",
+    fiberglass: "fiberglass",
 }

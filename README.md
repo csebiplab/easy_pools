@@ -25,10 +25,3 @@ Almost done
 ```
 
 ### Then use these credentials
-
-#### Easy pools admin credentials
-
-```text
-   username: easy pools upd
-   password: admin
-```
