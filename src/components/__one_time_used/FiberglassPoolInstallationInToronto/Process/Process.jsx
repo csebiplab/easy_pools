@@ -22,13 +22,17 @@ const breakpoints = {
 };
 
 const allImages = [
-  "/assets/projects/images/Why Hire us-1.png",
-  "/assets/projects/images/Why Hire us-2.png",
-  "/assets/projects/images/Why Hire us-3.png",
-  "/assets/projects/images/Why Hire us-4.png",
-  "/assets/projects/images/Why Hire us-3.png",
-  "/assets/projects/images/Why Hire us-1.png",
-  "/assets/projects/images/Why Hire us-2.png",
+  "/assets/fiberglass/process/process1.png",
+  "/assets/fiberglass/process/process2.png",
+  "/assets/fiberglass/process/process3.png",
+  "/assets/fiberglass/process/process4.png",
+  "/assets/fiberglass/process/process5.png",
+  "/assets/fiberglass/process/process6.png",
+  "/assets/fiberglass/process/process7.png",
+  "/assets/fiberglass/process/process8.png",
+  "/assets/fiberglass/process/process9.png",
+  "/assets/fiberglass/process/process10.png",
+  "/assets/fiberglass/process/process11.png",
 ];
 
 const Process = () => {
@@ -108,10 +112,11 @@ const Process = () => {
 
         <div className="text__card w-full md:w-[385px] px-3 py-4 mx-auto mt-28">
           <h5 className="text-center text-2xl font-medium text-[#049E43] mb-1">
-            Portfolio of Past Projects
+            Excavate with precision
           </h5>
           <p className="text-center text-base font-medium leading-[218%]">
-            Review the company's portfolio of past pool installations.
+            Ensure accurate dimensions and smooth contours for a seamless pool
+            foundation.
           </p>
         </div>
       </div>

@@ -65,7 +65,7 @@ const QAPoolInstallationQuestionsNAns = [
 
 const QA = () => {
   return (
-    <div className="bg__fiberglassPage common__padding__top border border-red-500">
+    <div className="bg__fiberglassPage common__padding__top ">
       <section className="container">
         <div className="mx-auto xs:px-[35px]">
           <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">

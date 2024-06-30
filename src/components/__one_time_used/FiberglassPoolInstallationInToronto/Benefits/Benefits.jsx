@@ -63,7 +63,7 @@ const SelectionPreparation = () => {
             <div className="!px-5 md:px-0 grid grid-cols-5">
               {services.map((service, index) => (
                 <div key={index} className="">
-                  <div className="mx-auto w-[210px] cart p-4 border border-red-500">
+                  <div className="mx-auto w-[210px] cart p-4 ">
                     <div>
                       <h6 className="heading">{service.title}</h6>
                       <p>{service.desc}</p>
