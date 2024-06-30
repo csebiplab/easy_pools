@@ -10,12 +10,12 @@ import Expert from "./BestChoiceForExpert/Expert";
 import Benefits from "./Benefits/Benefits";
 import Process from "./Process/Process";
 import CostCalculating from "./CostCalculating/CostCalculating";
-import ProjectGallery from "../MainHomePageComponent/ProjectGallery/ProjectGallery";
 import FlawlessDesign from "./FlawlessDesign/FlawlessDesign";
 import Review from "../MainHomePageComponent/Review/Review";
 import QA from "./QA/QA";
 import WhyChooseEasyPools from "./WhyChooseEasyPools/WhyChooseEasyPools";
 import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurServiceAreas";
+import ProjectGalleryInFiberglass from "./FiberglassProjectGal/FiberglassProjectGal";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -62,7 +62,7 @@ const FiberglassPoolInstallationInToronto = () => {
       </section>
 
       <section>
-        <ProjectGallery />
+        <ProjectGalleryInFiberglass />
       </section>
 
       <section>
