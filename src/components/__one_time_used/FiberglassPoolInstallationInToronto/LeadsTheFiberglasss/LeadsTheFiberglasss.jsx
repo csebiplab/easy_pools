@@ -6,8 +6,8 @@ import { headingIconText } from "@/utils/heading-text";
 
 const LeadsTheFiberglasss = () => {
   return (
-    <div className="bg__color">
-      <div className="full__section_l_p">
+    <div className="bg__fiberglassPage">
+      <div className="full__section_l_p common__padding__top">
         <div className="grid md:grid-cols-6 grid-cols-1 gap-10">
           <div className="md:col-span-3 pt-[25px] md:pt-[28px] lg:pt-[30px] xl:pt-[32px] 2xl:pt-[35px] 3xl:pt-[37px] 4xl:pt-[40px] 5xl:pt-[43px]">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
@@ -38,7 +38,7 @@ const LeadsTheFiberglasss = () => {
           <div className="md:col-span-3 flex justify-end items-center">
             <div>
               <Image
-                src="/assets/projects/images/Trusted-Partner.png"
+                src="/assets/fiberglass/leadsthefiberglass.png"
                 alt="Trusted-Partner"
                 width={200}
                 height={200}
