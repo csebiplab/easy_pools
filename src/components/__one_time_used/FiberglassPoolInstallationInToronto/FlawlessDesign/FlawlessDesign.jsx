@@ -2,16 +2,6 @@
 
 import "./FlawlessDesign.css";
 
-import location from "../../../../../public/assets/projects/images/location.png";
-import environmental from "../../../../../public/assets/projects/images/environmental.png";
-import legal from "../../../../../public/assets/projects/images/legal.png";
-import soil from "../../../../../public/assets/projects/images/soil.png";
-import accessibility from "../../../../../public/assets/projects/images/accessibility.png";
-import utility from "../../../../../public/assets/projects/images/utility.png";
-import budgetary from "../../../../../public/assets/projects/images/budgetary.png";
-import safety from "../../../../../public/assets/projects/images/safety.png";
-import future from "../../../../../public/assets/projects/images/future.png";
-
 import Image from "next/image";
 
 import { Navigation, Autoplay } from "swiper/modules";
@@ -25,6 +15,13 @@ import "swiper/css/virtual";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import { SwiperNavButtons } from "../../LocationPageComponent/OurProcess/SwiperSliderButton";
+
+import ee1 from "../../../../../public/assets/fiberglass/ee1.png";
+import ao2 from "../../../../../public/assets/fiberglass/ao2.png";
+import zr3 from "../../../../../public/assets/fiberglass/zr3.png";
+import cs4 from "../../../../../public/assets/fiberglass/cs4.png";
+import ii5 from "../../../../../public/assets/fiberglass/ii5.png";
+import ss6 from "../../../../../public/assets/fiberglass/ss6.png";
 
 const breakpoints = {
   0: {
@@ -40,63 +37,57 @@ const breakpoints = {
     spaceBetween: 20,
   },
   1024: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
   },
   1280: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
   },
   1440: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
   },
 };
 
 const services = [
   {
-    title: "Location Assessment for Pool Installation",
-    img: location,
+    desc: "Merge timeless charm with modern aesthetics, crafting a fiberglass pool that seamlessly blends sophistication and contemporary design.",
+    title: "Eternal Elegance",
+    img: ee1,
   },
   {
-    title: "Environmental Considerations for Pool Placement",
-    img: environmental,
+    desc: "Transform your space into a serene haven with a flawlessly installed fiberglass pool, harmonizing nature-inspired elements for ultimate relaxation.",
+    title: "Aquatic Oasis",
+    img: ao2,
   },
   {
-    title: "Legal and Regulatory Compliance for Pool Installation Sites",
-    img: legal,
+    desc: "Infuse tranquility into your backyard with a minimalist design, marrying sleek fiberglass lines with Zen-inspired landscaping for a serene retreat.",
+    title: "Zen Retreat",
+    img: zr3,
   },
   {
-    title: "Soil and Ground Conditions Analysis",
-    img: soil,
+    desc: "Illuminate your nights with an ethereal fiberglass pool, featuring LED lighting that turns your backyard into a celestial oasis for unforgettable evening dips.",
+    title: "Celestial Soak",
+    img: cs4,
   },
   {
-    title: "Accessibility and Transportation Logistics",
-    img: accessibility,
+    desc: "Redefine luxury with an infinity-edge fiberglass pool, offering a seamless blend of modern innovation and classic opulence for an unparalleled swimming experience.",
+    title: "Innovative Infinity",
+    img: ii5,
   },
   {
-    title: "Utility Infrastructure Evaluation for Pool Installation",
-    img: utility,
-  },
-  {
-    title: "Budgetary Analysis and Cost Considerations for Site Selection",
-    img: budgetary,
-  },
-  {
-    title: "Safety and Security Measures for Pool Placement",
-    img: safety,
-  },
-  {
-    title: "Future Expansion and Maintenance Considerations",
-    img: future,
+    desc: "Capture the breathtaking hues of a sunset with a carefully crafted fiberglass pool design, providing a front-row seat to nature's daily masterpiece.",
+    title: "Sunset Serenity",
+    img: ss6,
   },
 ];
 
 const FlawlessDesign = () => {
   return (
     <div className="!overflow-hidden">
-      <div className="bg__color">
-        <div className="container  py-[34px] md:py-[54px]">
+      <div className="bg__fiberglassPage common__padding__top">
+        <div className="container">
           <div className="flex flex-col items-center">
             <div className="flex justify-center lg:justify-normal items-center">
               <HeadingIcon
@@ -130,16 +121,19 @@ const FlawlessDesign = () => {
                 >
                   <div className="mx-auto relative px-2">
                     <div className="py-7">
-                      <p className="mt-4 py-5 mx-auto text-center text-xs md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
+                      <h6 className="mt-4 mx-auto text-center text-2xl font-bold">
                         {service.title}{" "}
-                      </p>
+                      </h6>
+                      <h6 className="mx-auto text-center text-xs md:text-sm xl:text-base 3xl:text-lg font-normal">
+                        {service.desc}{" "}
+                      </h6>
                     </div>
                     <div className="absolute  -top-10 md:-top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                       <Image
                         src={service.img}
-                        height={58}
-                        width={58}
-                        className="w-14 h-14 lg:w-[80px] lg:h-[80px] p-[14px] lg:p-[20px] bg-white rounded-full border-[3px] border-secondary-50"
+                        height={100}
+                        width={100}
+                        className="w-20 h-20 lg:w-[100px] lg:h-[100px]"
                         alt="Profile"
                       />
                     </div>
