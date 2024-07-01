@@ -25,16 +25,19 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import UpperNavbar from "./UpperNavbar";
 import WebBrandSvg from "@/components/ui/WebBrandSvg";
+import "./Header.css";
+import "./NavHeader.css";
 
 const our__location__menuItem = [
-    
-        {
-          title: "Barrie",
-          route : "/barrie"
-        }
-      
-    ]
-
+  {
+    title: "Barrie",
+    route: "/pool-installation-services-in-barrie",
+  },
+  {
+    title: "Fiberglass Pool Installation",
+    route: "/fiberglass-pool-installation-in-toronto",
+  },
+];
 
 function OurLocationMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -57,7 +60,7 @@ function OurLocationMenu() {
         offset={{ mainAxis: 20 }}
         placement="bottom"
         allowHover={true}
-        className="bg-gray-100 border border-red-500"
+        className="bg-gray-100 "
       >
         <MenuHandler>
           <Typography
@@ -68,7 +71,7 @@ function OurLocationMenu() {
             // className="font-medium text-lg "
           >
             <ListItem
-               className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -88,10 +91,12 @@ function OurLocationMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-[300px] w-full lg:block  outline-0 bg-gray-100">
-          <div className="container !border-none !outline-none ">
-            <div>
-              <ul>{renderItems(our__location__menuItem)}</ul>
+        <MenuList className="!p-0  hidden max-w-[300px] w-full lg:block  outline-0 bg-gray-100">
+          <div className="!p-0 !border-none !outline-none w-full ">
+            <div className="w-full ">
+              <ul className="w-full ">
+                {renderItems(our__location__menuItem)}
+              </ul>
             </div>
           </div>
         </MenuList>
@@ -117,7 +122,7 @@ function NavList() {
         className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
-        About Us
+          About Us
         </ListItem>
       </Typography>
 
@@ -129,10 +134,10 @@ function NavList() {
         className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
-        Our Services
+          Our Services
         </ListItem>
       </Typography>
-      
+
       <Typography
         as={Link}
         href="/customer-reviews"
@@ -141,7 +146,7 @@ function NavList() {
         className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
-        Blog
+          Blog
         </ListItem>
       </Typography>
       <Typography
@@ -152,12 +157,12 @@ function NavList() {
         className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
       >
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
-        Projects
+          Projects
         </ListItem>
       </Typography>
-      
-      <div className="mt-[6px]">
-        <OurLocationMenu/>
+
+      <div className="mt-[6px] ">
+        <OurLocationMenu />
       </div>
 
       <Typography
@@ -202,39 +207,43 @@ export function NavHeader() {
               <div className="hidden lg:block">
                 <NavList />
               </div>
-              
+
               <div className="flex ">
-              <div className="flex items-center gap-x-6 md:gap-x-7 lg:gap-x-8">
-                <div className="flex items-center gap-2">
-                  <Image
-                    src="/assets/images/phone-call.png"
-                    width={24}
-                    height={24}
-                    alt="canada leaf"
-                    className="w-[24px] h-[24px]"
-                  />
-                  <a
-                    href="tel:+1(647) 449 9512"
-                    className="text-secondary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
-                  >
-                    +1(647) 449 9512
-                  </a>
+                <div className="flex items-center gap-x-6 md:gap-x-7 lg:gap-x-8">
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="/assets/images/phone-call.png"
+                      width={24}
+                      height={24}
+                      alt="canada leaf"
+                      className="w-[24px] h-[24px]"
+                    />
+                    <a
+                      href="tel:+1(647) 449 9512"
+                      className="text-secondary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
+                    >
+                      +1(647) 449 9512
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <IconButton
-                
-                variant="text"
-                color="blue-gray"
-                className="lg:hidden"
-                onClick={() => setOpenNav(!openNav)}
-              >
-                {openNav ? (
-                  <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-                ) : (
-                //   <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-                  <Image src="/assets/projects/images/nenu-bar.png" alt="menu bar" width={20} height={20}/>
-                )}
-              </IconButton>
+                <IconButton
+                  variant="text"
+                  color="blue-gray"
+                  className="lg:hidden"
+                  onClick={() => setOpenNav(!openNav)}
+                >
+                  {openNav ? (
+                    <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+                  ) : (
+                    //   <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+                    <Image
+                      src="/assets/projects/images/nenu-bar.png"
+                      alt="menu bar"
+                      width={20}
+                      height={20}
+                    />
+                  )}
+                </IconButton>
               </div>
             </div>
           </Navbar>

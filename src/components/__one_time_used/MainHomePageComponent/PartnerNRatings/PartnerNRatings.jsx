@@ -29,19 +29,23 @@ const ratingImgs = [
   },
 ];
 
-const PartnerNRatings = () => {
+const PartnerNRatings = ({ classNames }) => {
   return (
-    <div className=" bg-white">
+    <div className={`${classNames ? classNames?.bg : "bg-white"}`}>
       <div className="container flex justify-center w-full  z-50 ">
-        <div className="w-full mx-auto lg:px-0 px-[30px] mt-4 md:mt-0 lg:-mt-20 bg-white lg:rounded-xl  ">
-
-
-          <div className="px-4 py-4  mx-auto border-2 ">
+        <div
+          className={`${
+            classNames ? classNames?.bg : "bg-white"
+          } w-full mx-auto lg:px-0 px-[30px] mt-4 md:mt-0 lg:rounded-xl`}
+        >
+          <div
+            className={`bg-white
+             p-4 mx-auto border-2`}
+          >
             <div className="grid lg:grid-cols-9 grid-cols-1 lg:justify-between justify-center items-center w-full gap-x-[15px] p-2 ">
-
               <div className=" lg:col-span-1 flex items-center justify-center text-center mx-auto py-5  ">
-                <div className="h-full  flex items-center">
-                  <div>
+                <div className="h-full flex items-center">
+                  <div className="">
                     <div className="flex items-center gap-x-1">
                       <h4 className="text-dark-300 text-base font-bold">
                         Star Score
@@ -68,22 +72,30 @@ const PartnerNRatings = () => {
               <div className=" lg:col-span-4  ">
                 <div className="flex flex-col gap-y-3">
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">Average Rating</p>
+                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">
+                      Average Rating
+                    </p>
                     <div className="border-[6px] w-[70%] 4xl:w-[80%] 2xl:w-[75%] sm:w-[80%]  border-[#8BC540] rounded-full" />
                     <CiCircleInfo className="h-4 w-4 fill-dark-300 lg:block hidden" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">Recency</p>
+                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">
+                      Recency
+                    </p>
                     <div className="border-[6px] w-[70%] 4xl:w-[80%] 2xl:w-[75%] sm:w-[80%]  border-[#8BC540] rounded-full" />
                     <CiCircleInfo className="h-4 w-4 fill-dark-300 lg:block hidden" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">Reputation</p>
+                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">
+                      Reputation
+                    </p>
                     <div className="border-[6px] w-[70%] 4xl:w-[80%] 2xl:w-[75%] sm:w-[80%]  border-[#8BC540] rounded-full" />
                     <CiCircleInfo className="h-4 w-4 fill-dark-300 lg:block hidden" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">Responsiveness</p>
+                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">
+                      Responsiveness
+                    </p>
                     <div className="border-[6px] w-[70%] 4xl:w-[80%] 2xl:w-[75%] sm:w-[80%]  border-[#8BC540] rounded-full" />
                     <CiCircleInfo className="h-4 w-4 fill-dark-300 lg:block hidden" />
                   </div>
@@ -99,15 +111,21 @@ const PartnerNRatings = () => {
                     </p>
                   </div>
                   <div className="flex items-center lg:justify-end justify-between gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px] ">Great</p>
+                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px] ">
+                      Great
+                    </p>
                     <div className="border-[6px] w-[70%] sm:w-[80%] lg:w-[85%] border-[#8BC540] rounded-full" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px] ">Average</p>
+                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px] ">
+                      Average
+                    </p>
                     <div className="border-[6px] w-[70%] sm:w-[80%] lg:w-[85%]  rounded-full" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]  text-right ">Poor</p>
+                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]  text-right ">
+                      Poor
+                    </p>
                     <div className="border-[6px] w-[70%] sm:w-[80%] lg:w-[85%]  rounded-full " />
                   </div>
                 </div>
@@ -123,15 +141,14 @@ const PartnerNRatings = () => {
                   loading="lazy"
                 />
               </div>
-
             </div>
           </div>
 
           {/* partner company card */}
-          <div className="grid lg:grid-cols-6 grid-cols-3  items-center justify-center gap-9 mt-[25px]">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 items-center justify-center gap-3 md:gap-9 mt-[25px]">
             {ratingImgs.map(({ imgUrl, text }, index) => (
               <div
-                className=" flex justify-center items-center px-6 py-[15px] lg:border-none border-2 rounded-xl lg:h-auto lg:w-auto md:h-[150px] md:w-[250px] sm:h-[120px] sm:w-[200px] h-[100px] w-[120px]"
+                className="flex justify-center items-center px-6 py-[15px] lg:border-none border-2 rounded-xl h-full"
                 key={index}
               >
                 <div className="text-center">
@@ -146,15 +163,14 @@ const PartnerNRatings = () => {
                     />
                   </div>
                   <div>
-                    <p className="md:mt-4 mt-2 md:text-[14px] text-[8px]">{text}</p>
+                    <p className="md:mt-4 mt-2 md:text-[14px] text-[8px]">
+                      {text}
+                    </p>
                   </div>
                 </div>
-
               </div>
             ))}
           </div>
-
-
         </div>
       </div>
     </div>

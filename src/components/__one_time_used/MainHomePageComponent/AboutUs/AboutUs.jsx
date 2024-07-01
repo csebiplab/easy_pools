@@ -28,7 +28,6 @@ const AboutUs = () => {
               About Our Pool Installation Company in Toronto
             </p>
             <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
-              
               Easy Pools custom designs and builds pool and spa solutions that
               reflect your unique needs and personal aesthetic. With over 10
               combined years of experience in the pool construction industry,
@@ -36,16 +35,15 @@ const AboutUs = () => {
               to create the perfect swimming pool, spa, and landscaped backyard.
               From start to finish, our company does it all. We guarantee
               on-time completion and quality.
-              </p>
-              <p className="mt-3 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
+            </p>
+            <p className="mt-3 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
               From start to finish, Easy Pools uses quality materials,
               equipment, and its in-house expert staff to ensure a superior
               finished product. All projects are supervised by our pool
               installation company. With their shared commitment to excellence
               and their involvement in every stage of construction, The Easy
               Pools has a hands-on business approach.
-              </p>
-            
+            </p>
           </div>
         </div>
       </div>
