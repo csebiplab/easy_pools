@@ -20,11 +20,11 @@ export const SwiperNavButtons = () => {
           <div className="flex lg:gap-5 gap-3">
             <button
               onClick={() => swiper.slidePrev()}
-              className="p-3 rounded-full border-2 hover:text-white hover:bg-secondary-50 border-secondary-50"><FaChevronLeft />
+              className="p-3 rounded-full border-2  hover:bg-secondary-50 border-secondary-50"><FaChevronLeft className="hover:text-white"/>
             </button>
             <button
               onClick={() => swiper.slideNext()}
-              className="text-white hover:text-secondary-50 hover:bg-white border-2 p-3 bg-secondary-50 rounded-full border-secondary-50"><FaChevronRight />
+              className=" hover:text-secondary-50 hover:bg-white border-2 p-3 bg-secondary-50 rounded-full border-secondary-50"><FaChevronRight  className="hover:text-white"/>
             </button>
           </div>
           {/* =============== second line ============= */}
