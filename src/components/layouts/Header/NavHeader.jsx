@@ -111,6 +111,135 @@ function OurLocationMenu() {
   );
 }
 
+
+
+// our services nav menu 
+const our_service_menu_items = {
+  interior: [
+    { title: "Vaughan Swimming Pool", route: "/swimming-pool-installation-company-in-vaughan" },
+    { title: "Vinyl Pool Installation", route: "/vinyl-pool-installation-in-toronto" },
+    { title: "Painting", route: "/painting" },
+    { title: "Sheetrock", route: "/sheetrock" },
+    { title: "Plastering", route: "/plastering" },
+    {
+      title: "Electrical & Plumbing",
+      route: "/emergency-electrical-service",
+    },
+  ],
+  exterior: [
+    { title: "Concrete Contractor", route: "/concrete-contractor" },
+    { title: "Roofing", route: "/roofing" },
+    { title: "Pointing", route: "/pointing" },
+    { title: "Water Proofing", route: "/water-proofing" },
+    {
+      title: "Sidewalk Repair and Replace",
+      route: "/sidewalk-repair-and-replace",
+    },
+    { title: "Brown Stone Repair", route: "/brown-stone" },
+    { title: "Exterior Brickwork", route: "/exterior-brickwork" },
+    {
+      title: "Emergency Plumbing",
+      route: "/emergency-plumber-brooklyn",
+    },
+    { title: "Brick Works", route: "/exterior-brickwork" },
+    { title: "Power Wash", route: "/power-wash" },
+    { title: "Siding", route: "/siding-contractors" },
+    {
+      title: "All kinds of Masonry Work",
+      route: "/all-kinds-of-masonry-work",
+    },
+  ],
+};
+
+function OurServiceManu() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const renderItems = (data = []) => {
+    return data?.map(({ route, title }, key) => (
+      <Link href={route} key={key}>
+        <MenuItem className="rounded-md">
+          <Typography color="blue-gray">{title}</Typography>
+        </MenuItem>
+      </Link>
+    ));
+  };
+
+  return (
+    <>
+      <Menu
+        open={isMenuOpen}
+        handler={setIsMenuOpen}
+        offset={{ mainAxis: 20 }}
+        placement="bottom"
+        allowHover={true}
+        className="bg-gray-100"
+      >
+        <MenuHandler>
+          <Typography
+            as={Link}
+            href="/our-services"
+            variant="small"
+            color="blue-gray"
+            className="font-medium text-lg"
+          >
+            <ListItem
+              className="flex items-center gap-2 rounded-full py-1  pr-4 font-bold  text-lg    text-black"
+              selected={isMenuOpen || isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+            >
+              Our Services
+              <ChevronDownIcon
+                strokeWidth={2.5}
+                className={`hidden h-3 w-3 transition-transform lg:block ${
+                  isMenuOpen ? "rotate-180" : ""
+                }`}
+              />
+              <ChevronDownIcon
+                strokeWidth={2.5}
+                className={`block h-3 w-3 transition-transform lg:hidden ${
+                  isMobileMenuOpen ? "rotate-180" : ""
+                }`}
+              />
+            </ListItem>
+          </Typography>
+        </MenuHandler>
+        <MenuList className="hidden max-w-[100vw] w-screen lg:block border-0 outline-0 bg-gray-100">
+          <div className="container grid grid-cols-3 gap-y-2">
+            <div>
+              <h3 className="mb-1 text-primary font-semibold">Interior</h3>
+              <ul>{renderItems(our_service_menu_items.interior)}</ul>
+            </div>
+            <div>
+              <h3 className="mb-1 text-primary font-semibold">Exterior</h3>
+              <ul>
+                {renderItems(our_service_menu_items.exterior.slice(0, 6))}
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-1 text-primary font-semibold"></h3>
+              <ul>
+                {renderItems(our_service_menu_items.exterior.slice(6, 12))}
+              </ul>
+            </div>
+          </div>
+        </MenuList>
+      </Menu>
+      <div className="block lg:hidden">
+        <Collapse open={isMobileMenuOpen}>
+          <h4 className="text-primary mb-1 font-semibold">Interior</h4>
+          <ul>{renderItems(our_service_menu_items.interior)}</ul>
+          <hr className="my-1" />
+          <h4 className="text-primary mb-1 font-semibold">Exterior</h4>
+          <ul>{renderItems(our_service_menu_items.exterior)}</ul>
+          <hr className="my-1" />
+        </Collapse>
+      </div>
+    </>
+  );
+}
+
+// our services nav list end 
+
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row items-center border-0 outline-none">
@@ -126,7 +255,7 @@ function NavList() {
         </ListItem>
       </Typography>
 
-      <Typography
+      {/* <Typography
         as={Link}
         href="/our-services"
         variant="small"
@@ -136,7 +265,11 @@ function NavList() {
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Our Services
         </ListItem>
-      </Typography>
+      </Typography> */}
+
+      <div className="mt-[6px]">
+        <OurServiceManu />
+      </div>
 
       <Typography
         as={Link}
