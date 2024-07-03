@@ -33,10 +33,10 @@ const our__location__menuItem = [
     title: "Barrie",
     route: "/pool-installation-services-in-barrie",
   },
-  {
-    title: "Fiberglass Pool Installation",
-    route: "/fiberglass-pool-installation-in-toronto",
-  },
+  // {
+  //   title: "Fiberglass Pool Installation",
+  //   route: "/fiberglass-pool-installation-in-toronto",
+  // },
 ];
 
 function OurLocationMenu() {
@@ -121,6 +121,10 @@ const our_service_menu_items = {
     {
       title: "Vinyl Pool Installation",
       route: "/vinyl-pool-installation-in-toronto",
+    },
+    {
+      title: "Fiberglass Pool Installation",
+      route: "/fiberglass-pool-installation-in-toronto",
     },
     // { title: "Painting", route: "/painting" },
     // { title: "Sheetrock", route: "/sheetrock" },
