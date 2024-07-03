@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutUsInSwimmingPool = () => {
   return (
-    <div className="bg__fiberglassPage">
+    <div className="bg_swimmingPool">
       <div className="full__section_r_p padding__top">
         <div className="grid md:grid-cols-7 grid-cols-1 gap-7  common__padding__top common__padding__btm">
           <div className="md:col-span-4 flex items-center md:items-start">
@@ -12,7 +12,7 @@ const AboutUsInSwimmingPool = () => {
               <Image
                 src="/assets/swimmingPool/About Us.png"
                 width={836}
-                height={479}
+                height={449}
                 alt="about us image"
                 className=""
               />
@@ -24,25 +24,11 @@ const AboutUsInSwimmingPool = () => {
               <HeadingIcon text={headingIconText.about__usInFiberglassText} />
             </div>
             <h2 className="text-black text-3xl md:text-4xl font-medium leading-normal not-italic text-center md:text-left">
-              About Our Pool Company in Toronto
+            About Easy Pools Vaughan
             </h2>
 
             <p className="text-black text-base leading-normal mt-4 text-center md:text-left">
-              Easy Pools is a premier fiberglass pool installation company
-              dedicated to transforming backyards into luxurious retreats. With
-              years of experience and a commitment to excellence, we specialize
-              in providing high-quality, durable fiberglass pools tailored to
-              your unique vision. Our team of skilled professionals ensures a
-              seamless installation process, delivering stunning results on time
-              and within budget. We pride ourselves on exceptional customer
-              service, innovative designs, and a passion for creating your
-              perfect oasis. We believe in making the pool installation journey
-              as enjoyable as possible. From initial consultation and custom
-              design to excavation and finishing touches, our attentive team
-              guides you through each step with transparency and
-              professionalism. We also offer a variety of add-on features such
-              as lighting, heating, and water features to personalize your pool
-              and elevate your backyard ambiance.
+            Easy Pools is a reputable provider of top-quality pool services in Vaughan, Ontario. Specializing in pool installation, maintenance, and repair, our company caters to both residential and commercial clients. And ensure their pools are kept in pristine condition year-round. With a commitment to customer satisfaction, we offer personalized solutions tailored to meet each client's unique needs. Whether installing a new pool or addressing repairs, Easy Pools Vaughan delivers professional service with reliability and expertise.
             </p>
           </div>
         </div>

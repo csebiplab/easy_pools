@@ -33,5 +33,11 @@ export const headingIconText = {
     // Swimming Pool Installation Company in Vaughan
 
     installationProcess__IconText: "Installation Process",
+    trusUs__IconText: "Trus Us",
+    expert__IconText: "Expert",
+    experienced__IconText: "Experienced",
+    poolProject__IconText: "Pool Project",
+    installation__IconText:"Installation Cost",
+    faq_IconText: "FAQ",
 
 }
