@@ -29,4 +29,9 @@ export const headingIconText = {
     qnda__inFiberglassText: "Q&A",
     whyChooseEasyPools__inFiberglassText: "Why Choose Easy Pools",
 
+
+    // Swimming Pool Installation Company in Vaughan
+
+    installationProcess__IconText: "Installation Process",
+
 }
