@@ -84,7 +84,7 @@ const services = [
 
 const InstallationProcess = () => {
   return (
-    <div className="bg__fiberglassPage">
+    <div className="bg_swimmingPool">
       <div className="!overflow-hidden padding__top">
         <div className="bg__fiberglassPage">
           <div className="container">
