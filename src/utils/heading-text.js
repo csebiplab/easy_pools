@@ -39,5 +39,8 @@ export const headingIconText = {
     poolProject__IconText: "Pool Project",
     installation__IconText:"Installation Cost",
     faq_IconText: "FAQ",
+    gallery_IconText:"Gallery",
+    installationServices_IconText:"Installation Services",
+    hireUs_IconText: "Hire Us"
 
 }

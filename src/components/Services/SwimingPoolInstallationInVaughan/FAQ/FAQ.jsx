@@ -7,39 +7,39 @@ import { headingIconText } from "@/utils/heading-text";
 const QAPoolInstallationQuestionsNAns = [
   {
     id: 1,
-    question: "What sets Easy Pools apart from other fiberglass pool installers?",
+    question: "What is Easy Pools?",
     answer:
-      "Discover our commitment to quality, personalized service, and a seamless installation process that ensures your satisfaction.",
+      "Easy Pools is a user-friendly platform designed to simplify the process of installing and maintaining swimming pools. It offers a range of tools and services to help pool owners monitor water quality, schedule maintenance tasks, and access professional assistance when needed.",
   },
   {
     id: 2,
-    question: "How long does it take to install a fiberglass pool with Easy Pools?",
+    question: "What services does Easy Pools offer?",
     answer:
-      "Our efficient installation process typically takes 7-10 days, ensuring you can enjoy your new pool in no time.",
+      "Easy Pools provides a range of services including pool maintenance scheduling, water quality monitoring, equipment management, and customer support. Additionally, we offer resources and tips for pool care to ensure a safe and enjoyable swimming experience.",
   },
   {
     id: 3,
-    question: "Are Easy Pools' fiberglass pools customizable?",
+    question: "Are Easy Pools suitable for both residential and commercial pools?",
     answer:
-      "Absolutely! We offer a range of designs, sizes, and features to suit your preferences, creating a tailor-made pool for your backyard.",
+      "Yes, Easy Pools caters to the needs of both residential and commercial pool owners. Whether you have a small backyard pool or a large commercial facility, our platform is designed to streamline pool management for any scale.",
   },
   {
     id: 4,
-    question: "What maintenance is required for Easy Pools' fiberglass pools?",
+    question: "What are the benefits of using Easy Pools?",
     answer:
-      "Our low-maintenance pools require minimal upkeep, and we provide clear guidelines to ensure your pool stays in pristine condition year-round.",
+      "By using Easy Pools, users can save time and effort on pool maintenance tasks, ensure optimal water quality, prolong the lifespan of pool equipment, and ultimately enjoy a cleaner and safer swimming environment.",
   },
   {
     id: 5,
-    question: "Is financing available for Easy Pools' fiberglass pool installations?",
+    question: "Are Easy Pools suitable for all types of pools?",
     answer:
-      "Yes, we offer flexible financing options to make turning your backyard into a personal oasis even more accessible.",
+      "Yes, Easy Pools is designed to be compatible with a wide range of pool types, including residential pools, commercial pools, and even public pools. Whether you have an in-ground or above-ground pool, Easy Pools can help simplify the maintenance process and keep your pool in top condition.",
   },
   {
     id: 6,
-    question: "Can Easy Pools assist with landscaping around the fiberglass pool?",
+    question: " How can I get help or support with Easy Pools?",
     answer:
-      "We offer landscaping services to complement your new pool, creating a cohesive and visually appealing outdoor space.",
+      "If you need assistance with Easy Pools or have any questions or concerns, you can contact our customer support team directly through the Easy Pools app or website",
   }
 ];
 
@@ -65,13 +65,13 @@ const FAQ = () => {
                   <HeadingIcon text={headingIconText.faq_IconText} />
 
                   <div>
-                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+                    <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
                     Some Questions for Choosing the Best Company
                     </h3>
                   </div>
                 </div>
               </div>
-              <div className="pr-3 md:pr-0">
+              <div className="pr-3 md:pr-0 pt-6">
                 {QAPoolInstallationQuestionsNAns.map((ques, idx) => (
                   <div key={idx}>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">

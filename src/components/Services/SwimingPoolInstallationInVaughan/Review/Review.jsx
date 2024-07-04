@@ -71,7 +71,7 @@ const Review = () => {
             <div className="flex justify-center items-center">
               <HeadingIcon text={projectsHeadingIconText.review__IconText}/>
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
             Here's what to expect when you hire us
             </h3>
           </div>
