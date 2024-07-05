@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutUsInSwimmingPool = () => {
   return (
     <div className="bg_swimmingPool">
-      <div className="full__section_r_p padding__top">
+      <div className="full__section_r_p pl-3 md:pl-0 padding__top">
         <div className="grid md:grid-cols-7 grid-cols-1 gap-7  common__padding__top common__padding__btm">
           <div className="md:col-span-4 flex items-center md:items-start">
             <div className="">

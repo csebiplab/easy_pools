@@ -61,7 +61,7 @@ const FAQ = () => {
 
             <div>
               <div>
-                <div className="order-1 flex flex-col">
+                <div className="order-1 flex flex-col items-center md:items-start">
                   <HeadingIcon text={headingIconText.faq_IconText} />
 
                   <div>

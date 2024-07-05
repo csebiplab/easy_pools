@@ -5,7 +5,7 @@ import Image from "next/image";
 const TrustUs = () => {
   return (
     <div className="bg_swimmingPool">
-      <div className="full__section_r_p">
+      <div className="full__section_r_p pl-3 md:pr-0">
         <div className="grid md:grid-cols-7 grid-cols-1 gap-7 padding__top">
           <div className="md:col-span-4 flex items-center md:items-start">
             <div className="">

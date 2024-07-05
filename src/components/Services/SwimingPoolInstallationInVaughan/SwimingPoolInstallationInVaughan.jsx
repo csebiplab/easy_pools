@@ -20,13 +20,12 @@ import ProjectGallery from "./ProjectGallery/ProjectGallery";
 const SwimingPoolInstallationInVaughan = () => {
   return (
     <div>
-
       <section>
         <SwimmingPoolBanner />
       </section>
 
       <section>
-        <PartnerNRatings classNames={{ bg: "bg_swimmingPool " }} />
+        <PartnerNRatings classNames={{ bg: "bg_swimmingPool" }} />
       </section>
 
       <section>
@@ -42,11 +41,11 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <ProjectGallery/>
+        <ProjectGallery />
       </section>
 
       <section>
-        <InstallationServices/>
+        <InstallationServices />
       </section>
 
       <section>
@@ -54,11 +53,11 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <InstallationCost/>
+        <InstallationCost />
       </section>
 
       <sectioin>
-        <PoolProject/>
+        <PoolProject />
       </sectioin>
 
       <section>
@@ -70,17 +69,16 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <FAQ/>
+        <FAQ />
       </section>
 
       <section>
-        <HireUs/>
+        <HireUs />
       </section>
 
-      <section>
-        <OurServiceAreas />
+      <section className="padding__all bg_swimmingPool">
+        <OurServiceAreas classNames={{ bg: "bg_swimmingPool" }}  />
       </section>
-
     </div>
   );
 };
