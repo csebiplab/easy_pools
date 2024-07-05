@@ -13,6 +13,9 @@ import Experienced from "./Experienced/Experienced";
 import PoolProject from "./PoolProject/PoolProject";
 import InstallationCost from "./InstallationCost/InstallationCost";
 import FAQ from "./FAQ/FAQ";
+import HireUs from "./HireUs/HireUs";
+import InstallationServices from "./InstallationServices/InstallationServices";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
 
 const SwimingPoolInstallationInVaughan = () => {
   return (
@@ -20,28 +23,41 @@ const SwimingPoolInstallationInVaughan = () => {
       <section>
         <SwimmingPoolBanner />
       </section>
+
       <section>
-        <PartnerNRatings classNames={{ bg: "bg__fiberglassPage " }} />
+        <PartnerNRatings classNames={{ bg: "bg_swimmingPool" }} />
       </section>
+
       <section>
         <AboutUsInSwimmingPool />
       </section>
+
       <section>
         <Expert />
       </section>
+
       <section>
         <Experienced />
       </section>
+
+      <section>
+        <ProjectGallery />
+      </section>
+
+      <section>
+        <InstallationServices />
+      </section>
+
       <section>
         <InstallationProcess />
       </section>
 
       <section>
-        <InstallationCost/>
+        <InstallationCost />
       </section>
 
       <sectioin>
-        <PoolProject/>
+        <PoolProject />
       </sectioin>
 
       <section>
@@ -53,11 +69,15 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <FAQ/>
+        <FAQ />
       </section>
 
       <section>
-        <OurServiceAreas />
+        <HireUs />
+      </section>
+
+      <section className="padding__all bg_swimmingPool">
+        <OurServiceAreas classNames={{ bg: "bg_swimmingPool" }}  />
       </section>
     </div>
   );
