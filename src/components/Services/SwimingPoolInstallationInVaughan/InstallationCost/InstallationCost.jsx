@@ -5,7 +5,7 @@ import Image from "next/image";
 const InstallationCost = () => {
   return (
     <div className="bg_swimmingPool">
-      <div className="full__section_l_p padding__top">
+      <div className="full__section_l_p pr-3 md:pr-0 padding__top">
         <div className="grid md:grid-cols-7 grid-cols-1 gap-7  common__padding__top common__padding__btm">
           <div className="order-2 md:col-span-4 flex items-center md:items-start">
             <div className="">
@@ -23,11 +23,11 @@ const InstallationCost = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center mb-4">
               <HeadingIcon text={headingIconText.installation__IconText} />
             </div>
-            <h2 className="text-black text-3xl md:text-4xl font-medium leading-normal not-italic text-center md:text-left">
+            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
             Installation Cost of Swimming Pool Vaughan
-            </h2>
+            </h3>
 
-            <p className="text-black text-base leading-normal mt-4 text-center md:text-left">
+            <p className="text-black text-lg font-normal mt-4 text-center md:text-left">
             The installation cost of a swimming pool in Vaughan can vary depending on various factors such as the size, type, and features of the pool, as well as the site conditions and any additional amenities desired. Generally, the cost includes excavation, materials, labor, permits, and any necessary landscaping or decking. Homeowners in Vaughan should expect to budget a significant amount for a quality swimming pool installation, with prices typically ranging from several thousand to tens of thousands of dollars.
             </p>
             <p className="text-black text-base leading-normal mt-4 text-center md:text-left">
