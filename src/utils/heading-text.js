@@ -41,6 +41,11 @@ export const headingIconText = {
     faq_IconText: "FAQ",
     gallery_IconText:"Gallery",
     installationServices_IconText:"Installation Services",
-    hireUs_IconText: "Hire Us"
+    hireUs_IconText: "Hire Us",
 
+    // Vinyl Pool Installation in Toronto
+
+    qualityExcellence__IconText : "QualityExcellence",
+    readyToStart__IconText : "Ready to Start",
+    faq__IconText : "Q&A"
 }

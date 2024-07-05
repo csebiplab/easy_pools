@@ -1,0 +1,25 @@
+
+/* Hero section */
+.hero-section {
+  width: 100%;
+  height: auto;
+  background-image: url("/assets/swimmingPool/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-right {
+  width: 42%;
+}
+
+.hero-right .hero-main-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero_btn{
+  border-radius: 50px;
+background: #049E43;
+box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+}

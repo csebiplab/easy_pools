@@ -62,9 +62,9 @@ const reviews = [
   },
 ];
 
-const Review = () => {
+const Review = ({ classNames }) => {
   return (
-    <div className="bg_swimmingPool">
+    <div  className={`${classNames ? classNames?.bg : "bg_swimmingPool"}`}>
       <div className="container">
         <div className="padding__all">
           <div className="text-center">
