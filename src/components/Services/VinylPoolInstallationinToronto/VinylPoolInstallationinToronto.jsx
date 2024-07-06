@@ -9,45 +9,93 @@ import QA from "./Q&A/Q&A";
 import AboutUsInVinylPool from "./AboutUsInVinylPool/AboutUsInVinylPool";
 import QualityExcellence from "./QualityExcellence/QualityExcellence";
 import ReadyToStart from "./ReadyToStart/ReadyToStart";
+import { bHeadingTexts } from "@/utils/bHeadingText";
+import { headingIconText } from "@/utils/heading-text";
+import Definition from "./Definition/Definition";
+import Unveils from "./Unveils/Unveils";
+import Process from "@/components/__one_time_used/FiberglassPoolInstallationInToronto/Process/Process";
+import Design from "./Design/Design";
+import VinylCompare from "./VinylCompare/VinylCompare";
+import Benifits from "./Benifits/Benifits";
+import EnsureLongevity from "./EnsureLongevity/EnsureLongevity";
+import HireUs from "./HireUs/HireUs";
 
 const VinylPoolInstallationinToronto = () => {
   return (
     <div>
       <section>
-      <VinylPoolBanner />
+        <VinylPoolBanner />
       </section>
-      
+
       <section>
         <PartnerNRatings classNames={{ bg: "bg_vinylPool" }} />
       </section>
 
       <section>
-        <AboutUsInVinylPool/>
+        <AboutUsInVinylPool />
       </section>
 
       <section>
-        <ProjectGallery/>
+        <Definition />
       </section>
 
       <section>
-        <QualityExcellence/>
+        <Design />
       </section>
 
       <section>
-        <Review classNames={{ bg: "bg_vinylPool" }}/>
+        <Unveils />
       </section>
 
       <section>
-        <QA/>
+        <EnsureLongevity />
       </section>
 
       <section>
-      <ReadyToStart/>
+        <ProjectGallery />
       </section>
-      
+
+      <section>
+        <QualityExcellence />
+      </section>
+
+      <section>
+        <VinylCompare />
+      </section>
+
+      <section className="bg_vinylPool padding__top">
+        <Process
+          bHeading={bHeadingTexts.vinylPoolProcess__bHeading}
+          sHeading={headingIconText.process__inFiberglassText}
+        />
+      </section>
+
+      <section>
+        <Review classNames={{ bg: "bg_vinylPool" }} />
+      </section>
+
+      <section>
+        <Benifits />
+      </section>
+
+      <section>
+        <HireUs/>
+      </section>
+
+      <section>
+        <QA />
+      </section>
+
+      <section>
+        <ReadyToStart />
+      </section>
 
       <section className="padding__all bg_vinylPool">
-        <OurServiceAreas classNames={{ bg: "bg_vinylPool" }}  />
+        <OurServiceAreas
+          classNames={{ bg: "bg_vinylPool" }}
+          sHeading={headingIconText.map__IconTxt}
+          bHeading={bHeadingTexts.vinylPoolMap__bHeading}
+        />
       </section>
     </div>
   );
