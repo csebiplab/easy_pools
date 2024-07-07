@@ -35,14 +35,14 @@ const allImages = [
   "/assets/fiberglass/process/process11.png",
 ];
 
-const Process = () => {
+const Process = ({sHeading="empty", bHeading="empty"}) => {
   return (
-    <div className="bg__fiberglassPage">
+    <div className="">
       <div className="container common__padding__top">
         <div className="flex flex-col justify-center items-center">
-          <HeadingIcon text={headingIconText.process__inFiberglassText} />
+          <HeadingIcon text={sHeading} />
           <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-            Process of Installing Fiberglass Pools in Toronto
+            {bHeading}
           </h3>
         </div>
 

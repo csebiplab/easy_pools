@@ -16,6 +16,8 @@ import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurService
 import ProjectGalleryInFiberglass from "./FiberglassProjectGal/FiberglassProjectGal";
 import ReviewsInFiberglass from "./ReviewsInFiberglass/ReviewsInFiberglass";
 import FiberglassPoolBanner from "./FiberglassPoolBanner/FiberglassPoolBanner";
+import { headingIconText } from "@/utils/heading-text";
+import { bHeadingTexts } from "@/utils/bHeadingText";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
@@ -52,8 +54,14 @@ const FiberglassPoolInstallationInToronto = () => {
         <Benefits />
       </section>
 
-      <section>
-        <Process />
+      <section className="bg__fiberglassPage">
+        <Process  sHeading={
+          headingIconText.process__inFiberglassText
+        }
+        bHeading={
+          bHeadingTexts.fibeerGlassPoolProcess__bHeading
+        }
+        />
       </section>
 
       <section>
@@ -85,7 +93,14 @@ const FiberglassPoolInstallationInToronto = () => {
           classNames={{
             bg: "bg__fiberglassPage ",
             pdy: "common__padding__top common__padding__btm",
+            
           }}
+          sHeading={
+            headingIconText.map__IconTxt
+          }
+          bHeading={
+            bHeadingTexts.fiberglassMap__bHeading
+          }
         />
       </section>
     </div>

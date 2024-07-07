@@ -47,5 +47,13 @@ export const headingIconText = {
 
     qualityExcellence__IconText : "QualityExcellence",
     readyToStart__IconText : "Ready to Start",
-    faq__IconText : "Q&A"
+    faq__IconText : "Q&A",
+    definition__IconText : "Definition",
+    unveils__IconText : "Unveils",
+    design__IconText : "Design",
+    ensureLongevity__IconText : "Ensure Longevity",
+    comparePool__IconText : "Compare to Other Pool Materials",
+    benefits__IconText : "Benefits",
+    hireUs__IconText : "Why Hire Us"
+
 }
