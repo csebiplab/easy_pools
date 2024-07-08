@@ -7,66 +7,78 @@ import { headingIconText } from "@/utils/heading-text";
 
 const usualPool = [
   {
-    title: "Subpar craftsmanship leads to frequent.",
+    title: "High initial cost",
   },
   {
-    title: "Poor communication causes delays",
+    title: "Maintenance requirements",
   },
   {
-    title: "Unreliable scheduling disrupts daily life.",
+    title: "Potential for construction delays",
   },
   {
-    title: "Low-quality materials result in rapid",
+    title: "Risk of structural issues",
   },
   {
-    title: "Lack of attention to detail leaves shoddy",
+    title: "Limited seasonal use",
   },
   {
-    title: "Unprofessional conduct creates stress.",
+    title: "High energy consumption",
   },
   {
-    title: "Hidden costs inflate the final bill.",
+    title: "Water evaporation and loss",
   },
   {
-    title: "Limited design options fail to inspire.",
+    title: "Chemical usage for maintenance",
   },
   {
-    title: "Inadequate planning leads to incomplete",
+    title: "Safety concerns, especially for children",
   },
   {
-    title: "Disregarding safety standards poses",
+    title: "Possible zoning restrictions",
+  },
+  {
+    title: "Environmental impact",
+  },
+  {
+    title: "Noise during construction",
   },
 ];
 const easyPool = [
   {
-    title: "Expert Craftsmanship",
+    title: "Highly experienced professionals",
   },
   {
-    title: "Customized Designs",
+    title: "Exceptional craftsmanship",
   },
   {
-    title: "Premium Quality Materials",
+    title: "Innovative design solutions",
   },
   {
-    title: "Seamless Installation Process",
+    title: "Timely project completion",
   },
   {
-    title: "Innovative Solutions",
+    title: "Competitive Pricing",
   },
   {
-    title: "Attention to Detail",
+    title: "Excellent customer service",
   },
   {
-    title: "Timely Project Completion",
+    title: "High-quality materials",
   },
   {
-    title: "Budget-Friendly Options",
+    title: "Customizable pool options",
   },
   {
-    title: "Dedicated Customer Service",
+    title: "Comprehensive maintenance services",
   },
   {
-    title: "Stunning Transformation",
+    title: "Eco-friendly construction practices",
+  },
+  {
+    title: "Reliable project management",
+  },
+  {
+    title: "Extensive industry knowledge",
   },
 ];
 
@@ -83,22 +95,22 @@ const HireUs = () => {
               </div>
 
               <div>
-                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
-                Why Hire Our 
-                  <span className="text-primary"> Kitchen Renovation Brooklyn Contractors?</span>
+                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
+                Why Hire Our Pool Contractors in Toronto
                 </h3>
               </div>
 
               <div>
                 <p className="text-lg font-normal md:text-start text-center py-[10px]">
-                Hiring our kitchen renovators ensures expertise, quality, and efficiency in transforming your kitchen space. With years of experience, our kitchen remodeling in Brooklyn team brings innovative design ideas, precise craftsmanship, and attention to detail to every projec
+                Are you envisioning a serene oasis in your backyard or a vibrant centerpiece for your community space? Look no further than our expert vinyl pool installation contractors in Toronto. Whether you dream of a luxurious private pool or a functional public aquatic facility, our contractors specialize in bringing aquatic visions to life.
+
                 </p>
               </div>
             </div>
 
             <div className="w-full border-2 my-6 md:my-0 cart1">
               <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
-              Usual Kitchen Renovators
+              Usual Swimming Pool Contractors
               </p>
               <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {usualPool.map((usual, idx) => (
@@ -122,7 +134,7 @@ const HireUs = () => {
             </div>
             <div className="border-2 my-6 md:my-0 cart2">
               <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
-              Our Kitchen Renovation Contractors
+              Our Swimming Pool Contractors
               </p>
               <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {easyPool.map((usual, idx) => (

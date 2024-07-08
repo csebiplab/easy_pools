@@ -62,7 +62,7 @@ const reviews = [
   },
 ];
 
-const Review = ({ classNames }) => {
+const Review = ({ classNames, bHeading="emapy" }) => {
   return (
     <div  className={`${classNames ? classNames?.bg : "bg_swimmingPool"}`}>
       <div className="container">
@@ -71,8 +71,8 @@ const Review = ({ classNames }) => {
             <div className="flex justify-center items-center">
               <HeadingIcon text={projectsHeadingIconText.review__IconText}/>
             </div>
-            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-            Here's what to expect when you hire us
+            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
+            {bHeading}
             </h3>
           </div>
           {/* =================== Card Section =============== */}

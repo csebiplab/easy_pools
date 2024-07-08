@@ -12,7 +12,7 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
-// import { SwipButton } from "../BenefitsWithEasyPools/SwipButton";
+import { SwiperNavButtons } from "@/components/__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -31,28 +31,36 @@ const breakpoints = {
 
 const slideData = [
   {
-    title: "Outdoor Pools in Vaughan",
-    description: `Outdoor pools are recreational water facilities situated outside, typically found in parks, resorts, or private residences. We specialize in crafting stunning pools tailored to your style and space, enhancing your outdoor living experience.`,
+    title: "Durability and Longevity",
+    description: `Vinyl pools boast exceptional durability, resisting cracks and tears. Their longevity ensures a lasting investment in your home.`,
   },
   {
-    title: "Indoor Pools",
-    description: `Our dedicated team handles every aspect of the indoor pool installation process, ensuring a stress-free experience for you. Using high-quality materials and cutting-edge techniques, we guarantee a durable and visually stunning indoor pool.`,
+    title: "Design Versatility",
+    description: `Easy Pools offers a myriad of design options with vinyl liners, allowing homeowners to customize their pool's appearance to match their aesthetic.`,
   },
   {
-    title: "Above-Ground Pools",
-    description: `Above-ground pools are freestanding swimming pools installed on top of the ground's surface, rather than being dug into the ground like traditional in-ground pools. We offer a hassle-free setup, quality materials, and personalized designs.`,
+    title: "Cost-Effective",
+    description: `Compared to other pool types, vinyl pools are often more budget-friendly, providing homeowners with a cost-effective solution for creating a refreshing oasis.`,
   },
   {
-    title: "Inground Pools",
-    description: `Transform your outdoor space into a luxurious retreat with a custom-designed inground pool tailored to your specifications. Our team of experts ensures a seamless installation process, utilizing top-quality materials to create a stunning.`,
+    title: "Low Maintenance",
+    description: `Vinyl pools require minimal maintenance, simplifying the upkeep process for homeowners. This translates to more time enjoying the pool and less time.`,
   },
   {
-    title: "Saltwater Pools",
-    description: `Discover the epitome of luxury and relaxation with our premium saltwater pool installation service. Say goodbye to the harsh chemicals of traditional pools and immerse yourself in the gentle embrace of saltwater. Our expert team ensures.`,
+    title: "Seamless Repairs",
+    description: `In the event of any damage, vinyl pool repairs are often seamless and cost-effective. Small tears or punctures can be quickly addressed.`,
   },
   {
-    title: "Freshwater Pools",
-    description: `Transform your backyard oasis dreams into reality with our professional freshwater pool installation service. With meticulous attention to detail, we'll create a serene retreat where you can unwind and make lasting memories with family.`,
+    title: "Energy Efficiency",
+    description: `Vinyl pools can be insulated to help maintain water temperatures efficiently. This energy-saving feature not only contributes to environmental sustainability`,
+  },
+  {
+    title: "Quick Installation",
+    description: `Our company's vinyl construction facilitates quicker installation compared to other pool types. Homeowners can enjoy their aquatic retreat sooner, minimizing`,
+  },
+  {
+    title: "Algae Resistance",
+    description: `The smooth, non-porous surface of vinyl liners resists algae growth more effectively than other pool materials. This not only keeps the pool water clearer.`,
   }
   
 ];
@@ -66,8 +74,8 @@ const Benifits = () => {
           <div className="flex justify-center gap-[54px]">
             <HeadingIcon text={headingIconText.benefits__IconText}/>
           </div>
-          <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-          Our Swimming Pool Installation Services
+          <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
+          The Benefits of Vinyl Pools for Homeowners
           </h3>
         </div>
 
@@ -100,7 +108,7 @@ const Benifits = () => {
               </div>
             </SwiperSlide>
           ))}
-          {/* <SwipButton/> */}
+          <SwiperNavButtons />
         </Swiper>
       </div>
     </div>
