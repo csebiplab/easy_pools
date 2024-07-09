@@ -15,6 +15,8 @@ import OurExpertPoolInstaller from "./OurExpertPoolInstaller/OurExpertPoolInstal
 import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import GiveUsFeedback from "./GiveUsFeedback/GiveUsFeedback";
 import LicensedNInsured from "./LicensedNInsured/LicensedNInsured";
+import { bHeadingTexts } from "@/utils/bHeadingText";
+import { headingIconText } from "@/utils/heading-text";
 
 const MainHomePageComponent = () => {
   return (
@@ -72,7 +74,14 @@ const MainHomePageComponent = () => {
       </section>
 
       <section>
-        <OurServiceAreas />
+        <OurServiceAreas 
+         sHeading={
+          headingIconText.map__IconTxt
+        }
+        bHeading={
+          bHeadingTexts.hpeasyPoolsMap__bHeading
+        }
+        />
       </section>
 
       <section>

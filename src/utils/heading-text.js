@@ -39,5 +39,21 @@ export const headingIconText = {
     poolProject__IconText: "Pool Project",
     installation__IconText:"Installation Cost",
     faq_IconText: "FAQ",
+    gallery_IconText:"Gallery",
+    installationServices_IconText:"Installation Services",
+    hireUs_IconText: "Hire Us",
+
+    // Vinyl Pool Installation in Toronto
+
+    qualityExcellence__IconText : "QualityExcellence",
+    readyToStart__IconText : "Ready to Start",
+    faq__IconText : "Q&A",
+    definition__IconText : "Definition",
+    unveils__IconText : "Unveils",
+    design__IconText : "Design",
+    ensureLongevity__IconText : "Ensure Longevity",
+    comparePool__IconText : "Compare to Other Pool Materials",
+    benefits__IconText : "Benefits",
+    hireUs__IconText : "Why Hire Us"
 
 }

@@ -15,6 +15,8 @@ import SelectionPreparation from "./SelectionPreparation/SelectionPreparation";
 import StunningDesign from "./StunningDesign/StunningDesign";
 import TopRatedPoolInstallation from "./TopRatedPoolInstallation/TopRatedPoolInstallation";
 import TrustedPartner from "./TrustedPartner/TrustedPartner";
+import { headingIconText } from "@/utils/heading-text";
+import { bHeadingTexts } from "@/utils/bHeadingText";
 
 const LocationPageComponent = () => {
   return (
@@ -23,7 +25,7 @@ const LocationPageComponent = () => {
         <ProjectBanner/>
       </section>
 
-      <section>
+      <section className="mt-6">
         <PartnerNRatings />
       </section>
 
@@ -80,7 +82,14 @@ const LocationPageComponent = () => {
       </section>
 
       <section>
-        <OurServiceAreas/>
+        <OurServiceAreas 
+        sHeading={
+          headingIconText.map__IconTxt
+        }
+        bHeading={
+          bHeadingTexts.barriePoolMap__bHeading
+        }
+        />
       </section>
     </div>
   );

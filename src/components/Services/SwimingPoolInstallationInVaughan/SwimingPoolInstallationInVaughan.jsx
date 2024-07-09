@@ -13,6 +13,11 @@ import Experienced from "./Experienced/Experienced";
 import PoolProject from "./PoolProject/PoolProject";
 import InstallationCost from "./InstallationCost/InstallationCost";
 import FAQ from "./FAQ/FAQ";
+import HireUs from "./HireUs/HireUs";
+import InstallationServices from "./InstallationServices/InstallationServices";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
+import { headingIconText } from "@/utils/heading-text";
+import { bHeadingTexts } from "@/utils/bHeadingText";
 
 const SwimingPoolInstallationInVaughan = () => {
   return (
@@ -20,28 +25,41 @@ const SwimingPoolInstallationInVaughan = () => {
       <section>
         <SwimmingPoolBanner />
       </section>
+
       <section>
-        <PartnerNRatings classNames={{ bg: "bg__fiberglassPage " }} />
+        <PartnerNRatings classNames={{ bg: "bg_swimmingPool" }} />
       </section>
+
       <section>
         <AboutUsInSwimmingPool />
       </section>
+
       <section>
         <Expert />
       </section>
+
       <section>
         <Experienced />
       </section>
+
+      <section>
+        <ProjectGallery />
+      </section>
+
+      <section>
+        <InstallationServices />
+      </section>
+
       <section>
         <InstallationProcess />
       </section>
 
       <section>
-        <InstallationCost/>
+        <InstallationCost />
       </section>
 
       <sectioin>
-        <PoolProject/>
+        <PoolProject />
       </sectioin>
 
       <section>
@@ -49,15 +67,30 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <Review />
+        <Review 
+         bHeading={
+          bHeadingTexts.swimmingPoolReview__bHeading
+         }
+        />
       </section>
 
       <section>
-        <FAQ/>
+        <FAQ />
       </section>
 
       <section>
-        <OurServiceAreas />
+        <HireUs />
+      </section>
+
+      <section className="padding__all bg_swimmingPool">
+        <OurServiceAreas classNames={{ bg: "bg_swimmingPool" }}  
+        sHeading={
+          headingIconText.map__IconTxt
+        }
+        bHeading={
+          bHeadingTexts.swimmgingPoolMap__bHeading
+        }
+        />
       </section>
     </div>
   );

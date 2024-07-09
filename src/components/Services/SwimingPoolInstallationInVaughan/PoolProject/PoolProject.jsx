@@ -24,10 +24,10 @@ const PoolProject = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.poolProject__IconText} />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
+            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
             Complete Your Pool Project Within 7 Days
             </h3>
-            <p className="text-xs md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
+            <p className="text-black text-lg font-normal mt-4 text-center md:text-left">
             Our team of expert pool designers and builders is here to make your dream pool a reality in just 7 days. With meticulous planning and efficient execution, we'll create a stunning pool that perfectly complements your outdoor space, providing endless enjoyment for you and your family. From sleek modern designs to classic elegance, we'll work with you every step of the way to ensure your vision comes to life on time and within budget. Dive into luxury and relaxation sooner than you thought possible with our expedited pool project services!
             </p>
           </div>

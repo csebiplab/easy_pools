@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutUsInSwimmingPool = () => {
   return (
     <div className="bg_swimmingPool">
-      <div className="full__section_r_p padding__top">
+      <div className="full__section_r_p pl-3 md:pl-0 padding__top">
         <div className="grid md:grid-cols-7 grid-cols-1 gap-7  common__padding__top common__padding__btm">
           <div className="md:col-span-4 flex items-center md:items-start">
             <div className="">
@@ -23,11 +23,11 @@ const AboutUsInSwimmingPool = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center mb-4">
               <HeadingIcon text={headingIconText.about__usInFiberglassText} />
             </div>
-            <h2 className="text-black text-3xl md:text-4xl font-medium leading-normal not-italic text-center md:text-left">
+            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
             About Easy Pools Vaughan
-            </h2>
+            </h3>
 
-            <p className="text-black text-base leading-normal mt-4 text-center md:text-left">
+            <p className="text-black text-lg font-normal mt-4 text-center md:text-left">
             Easy Pools is a reputable provider of top-quality pool services in Vaughan, Ontario. Specializing in pool installation, maintenance, and repair, our company caters to both residential and commercial clients. And ensure their pools are kept in pristine condition year-round. With a commitment to customer satisfaction, we offer personalized solutions tailored to meet each client's unique needs. Whether installing a new pool or addressing repairs, Easy Pools Vaughan delivers professional service with reliability and expertise.
             </p>
           </div>

@@ -15,9 +15,9 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/virtual";
-// import { SwiperNavButtons } from "../../LocationPageComponent/OurProcess/SwiperSliderButton";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import { SwiperNavButtons } from "@/components/__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -37,49 +37,54 @@ const breakpoints = {
     spaceBetween: 20,
   },
   1280: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
   },
   1440: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
   },
   1536: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
   },
   1736: {
-    slidesPerView: 5,
-    spaceBetween: 20,
+    slidesPerView: 4,
+    spaceBetween: 40,
   },
 };
 
 const services = [
   {
-    img: "/assets/fiberglass/s1.png",
-    title: "Extended Seasons",
-    para: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    img: "/assets/swimmingPool/ip1.png",
+    title: "Initial Consultation",
+    para: "We begin by scheduling a consultation with our clients to discuss their vision, and budget for their swimming pool. During this meeting, we also conduct a site assessment to determine the best location for the pool and identify any potential challenges.",
   },
   {
-    img: "/assets/fiberglass/s2.png",
-    title: "Low Maintenance",
-    para: "Enjoy hassle-free pool ownership with minimal maintenance, as fiberglass pools require less upkeep compared to traditional options.",
+    img: "/assets/swimmingPool/ip2.png",
+    title: "Design and Planning",
+    para: "Once we have a clear understanding of the client's requirements, our team of experts works closely with them to create a customized design plan. This includes selecting the size, shape, and features of the pool, as well as any additional amenities.",
   },
   {
-    img: "/assets/fiberglass/s3.png",
-    title: "Energy Efficiency",
-    para: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    img: "/assets/swimmingPool/ip3.png",
+    title: "Permitting & Approvals",
+    para: "Before any construction begins, we handle all necessary permits and approvals to ensure compliance with local building codes and regulations. This step helps to streamline the installation process and prevent any delays or complications down the line.",
   },
   {
-    img: "/assets/fiberglass/s4.png",
-    title: "Quick Installation",
-    para: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    img: "/assets/swimmingPool/ip4.png",
+    title: "Construction & Install",
+    para: "Once the site is prepared, we begin the construction process according to the approved design plan. This includes installing the pool shell, plumbing, filtration system, and any additional features or accessories."
   },
   {
-    img: "/assets/fiberglass/s5.png",
-    title: "Cost Savings",
-    para: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    img: "/assets/swimmingPool/ip5.png",
+    title: "Finishing Touches",
+    para: "With the main construction complete, we focus on adding the finishing touches to the pool and its surroundings. This may include applying finishes to the pool surface, installing decking and coping, landscaping the surrounding",
   },
+  {
+    img: "/assets/swimmingPool/ip6.png",
+    title: "Final Inspection",
+    para: "Before handing over the completed pool to the client, we conduct a thorough inspection to ensure that everything meets our high standards of quality and safety. Once satisfied, we provide the client with a comprehensive orientation to familiarize .",
+  }
 ];
 
 const InstallationProcess = () => {
@@ -94,12 +99,12 @@ const InstallationProcess = () => {
                   text={headingIconText.installationProcess__IconText}
                 />
               </div>
-              <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
+              <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
               Our Vaughan Swimming Pools Installation Process
               </h3>
             </div>
 
-            <div className="w-full h-[3px] bg-primary-500" />
+            <div className="w-full h-[3px] bg-primary-500 mt-8" />
 
             <div className="">
               <Swiper
@@ -142,7 +147,7 @@ const InstallationProcess = () => {
                     </div>
                     
 
-                    <div className="mx-auto w-[250px] h-[230px] cart px-4 py-[13px]">
+                    <div className="mx-auto w-[323px] h-[305px] cart px-4 py-[13px]">
                       <div className="">
                         <h5 className="text-black text-2xl font-bold text-center">
                           {service.title}{" "}
@@ -154,7 +159,7 @@ const InstallationProcess = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                {/* <SwiperNavButtons /> */}
+                <SwiperNavButtons/>
               </Swiper>
             </div>
           </div>
