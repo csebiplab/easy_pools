@@ -48,7 +48,7 @@ const VinylPoolBanner = () => {
             <Image
               width={858}
               height={832}
-              src="/assets/swimmingPool/hero-section.jpg"
+              src="/assets/VinylPool/hero-section.jpg"
               alt="hero small image"
               className="hero-main-image mb-0"
             />

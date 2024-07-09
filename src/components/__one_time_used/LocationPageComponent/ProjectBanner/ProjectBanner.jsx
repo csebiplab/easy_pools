@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./ProjectBanner.css";
 
 const ProjectBanner = () => {
@@ -12,6 +13,7 @@ const ProjectBanner = () => {
           Welcome to our swimming pool installation services in Barrie, where your dream of a luxurious and refreshing pool oasis becomes a reality!
           </p>
           <div className="flex justify-center">
+            <Link href={`tel:+1(647) 449 9512`}>
             <button className="flex items-center rounded-full bg-secondary py-3 md:py-4 px-8 mt-7 md:mt-8">
               <span className="text-white text-xs md:text-lg">Get an Estimate</span>
               <svg
@@ -28,6 +30,8 @@ const ProjectBanner = () => {
                 />
               </svg>
             </button>
+            </Link>
+            
           </div>
         </div>
       </div>

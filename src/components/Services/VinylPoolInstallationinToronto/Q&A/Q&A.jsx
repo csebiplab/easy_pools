@@ -65,11 +65,11 @@ const QAPoolInstallationQuestionsNAns = [
 
 const QA = () => {
   return (
-    <div className="bg_vinylPool common__padding__top ">
-      <section className="full__section_r_p">
+    <div className="bg_vinylPool padding__top ">
+      <section className="full__section_r_p pl-3 md:pl-0">
         <div className="mx-auto">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="flex justify-end items-center pr-3 md:pr-0">
+            <div className="flex justify-end items-center">
               <Image
                 alt="faq"
                 src="/assets/VinylPool/faq.png"

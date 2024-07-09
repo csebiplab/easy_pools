@@ -11,31 +11,31 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 const galImgs = [
-  "/assets/swimmingPool/pg1.png",
-  "/assets/swimmingPool/pg2.png",
-  "/assets/swimmingPool/pg3.png",
-  "/assets/swimmingPool/pg4.png",
-  "/assets/swimmingPool/pg5.png",
-  "/assets/swimmingPool/pg6.png",
-  "/assets/swimmingPool/pg7.png",
-  "/assets/swimmingPool/pg8.png",
-  "/assets/swimmingPool/pg9.png",
-  "/assets/swimmingPool/pg10.png",
-  "/assets/swimmingPool/pg11.png",
+  "/assets/VinylPool/pg1.png",
+  "/assets/VinylPool/pg2.png",
+  "/assets/VinylPool/pg3.png",
+  "/assets/VinylPool/pg4.png",
+  "/assets/VinylPool/pg5.png",
+  "/assets/VinylPool/pg6.png",
+  "/assets/VinylPool/pg7.png",
+  "/assets/VinylPool/pg8.png",
+  "/assets/VinylPool/pg9.png",
+  "/assets/VinylPool/pg10.png",
+  "/assets/VinylPool/pg11.png",
 ];
 
 const galImgs2 = [
-  "/assets/swimmingPool/pg11.png",
-  "/assets/swimmingPool/pg10.png",
-  "/assets/swimmingPool/pg9.png",
-  "/assets/swimmingPool/pg8.png",
-  "/assets/swimmingPool/pg7.png",
-  "/assets/swimmingPool/pg6.png",
-  "/assets/swimmingPool/pg5.png",
-  "/assets/swimmingPool/pg4.png",
-  "/assets/swimmingPool/pg3.png",
-  "/assets/swimmingPool/pg2.png",
-  "/assets/swimmingPool/pg1.png",
+  "/assets/VinylPool/pg11.png",
+  "/assets/VinylPool/pg10.png",
+  "/assets/VinylPool/pg9.png",
+  "/assets/VinylPool/pg8.png",
+  "/assets/VinylPool/pg7.png",
+  "/assets/VinylPool/pg6.png",
+  "/assets/VinylPool/pg5.png",
+  "/assets/VinylPool/pg4.png",
+  "/assets/VinylPool/pg3.png",
+  "/assets/VinylPool/pg2.png",
+  "/assets/VinylPool/pg1.png",
 ];
 
 const ProjectGallery = () => {
@@ -63,10 +63,10 @@ const ProjectGallery = () => {
       <div className="custom-container padding__top">
         <div className="">
           <div className="flex flex-col justify-center items-center">
-            <HeadingIcon text={headingIconText.gallery_IconText}/>
+            <HeadingIcon text={headingIconText.gallery_IconText} />
             <div className="pb-5">
-              <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-              Past Projects Gallery of Our Swimming Pool Installation
+              <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
+                Past Projects Gallery of Our Swimming Pool Installation
               </h3>
             </div>
           </div>
@@ -75,17 +75,19 @@ const ProjectGallery = () => {
         {isMobileView ? (
           <div>
             <div className="grid grid-cols-1 gap-2">
-              {galImgs.slice(0, showAll ? galImgs.length : 4).map((imgUrl, idx) => (
-                <div key={idx} className="m-2 px-6">
-                  <Image
-                    width={370}
-                    height={250}
-                    src={imgUrl}
-                    alt="gallery"
-                    className="object-contain w-full h-auto mx-auto"
-                  />
-                </div>
-              ))}
+              {galImgs
+                .slice(0, showAll ? galImgs.length : 4)
+                .map((imgUrl, idx) => (
+                  <div key={idx} className="m-2 px-6">
+                    <Image
+                      width={370}
+                      height={250}
+                      src={imgUrl}
+                      alt="gallery"
+                      className="object-contain w-full h-auto mx-auto"
+                    />
+                  </div>
+                ))}
             </div>
             {!showAll && (
               <div className="flex justify-center text-center mt-4 px-10">
@@ -93,10 +95,19 @@ const ProjectGallery = () => {
                   onClick={handleLoadMore}
                   className="w-2/3 flex items-center justify-center gap-2 text-sm font-bold px-4 py-2 bg-[#049E43] text-white rounded-[20px]"
                 >
-                  Load More 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
-  <path d="M0 11.3066L4.59 6.71593L0 2.12527L1.42 0.715071L7.42 6.71593L1.42 12.7168L0 11.3066Z" fill="white"/>
-</svg>
+                  Load More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="13"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 11.3066L4.59 6.71593L0 2.12527L1.42 0.715071L7.42 6.71593L1.42 12.7168L0 11.3066Z"
+                      fill="white"
+                    />
+                  </svg>
                 </button>
               </div>
             )}

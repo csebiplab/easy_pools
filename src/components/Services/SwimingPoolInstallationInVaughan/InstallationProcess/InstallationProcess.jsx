@@ -15,9 +15,9 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/virtual";
-// import { SwiperNavButtons } from "../../LocationPageComponent/OurProcess/SwiperSliderButton";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import { SwiperNavButtons } from "@/components/__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -159,7 +159,7 @@ const InstallationProcess = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                {/* <SwiperNavButtons /> */}
+                <SwiperNavButtons/>
               </Swiper>
             </div>
           </div>

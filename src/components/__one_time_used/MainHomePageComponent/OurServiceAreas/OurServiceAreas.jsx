@@ -52,7 +52,7 @@ const maps = [
   },
 ];
 
-const OurServiceAreas = ({ classNames }) => {
+const OurServiceAreas = ({ classNames, sHeading="empty" , bHeading="empty"}) => {
   return (
     <div className={`${classNames ? classNames?.bg : "area-bg"}`}>
       <div className="container">
@@ -62,12 +62,11 @@ const OurServiceAreas = ({ classNames }) => {
           } md:mx-0 xs:mx-[30px] `}
         >
           <div className="mx-auto   flex flex-col items-center justify-center">
-            <HeadingIcon text={headingIconText.map__IconTxt} />
+            <HeadingIcon text={sHeading} />
 
             <div>
               <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-                Serving the Greater Toronto Horseshoe Area for all your pool's
-                needs.
+                {bHeading}
               </h3>
             </div>
           </div>
