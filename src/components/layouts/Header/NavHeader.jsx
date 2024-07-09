@@ -63,13 +63,7 @@ function OurLocationMenu() {
         className="bg-gray-100 "
       >
         <MenuHandler>
-          <Typography
-            as={Link}
-            href="/barrie"
-            variant="small"
-            color="blue-gray"
-            // className="font-medium text-lg "
-          >
+          <div>
             <ListItem
               className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -89,7 +83,7 @@ function OurLocationMenu() {
                 }`}
               />
             </ListItem>
-          </Typography>
+          </div>
         </MenuHandler>
         <MenuList className="!p-0  hidden max-w-[300px] w-full lg:block  outline-0 bg-gray-100">
           <div className="!p-0 !border-none !outline-none w-full ">
@@ -183,13 +177,7 @@ function OurServiceManu() {
         className="bg-gray-100"
       >
         <MenuHandler>
-          <Typography
-            as={Link}
-            href="/our-services"
-            variant="small"
-            color="blue-gray"
-            className="font-medium text-lg"
-          >
+          <div className="font-medium text-lg">
             <ListItem
               className="flex items-center gap-2 rounded-full py-1  pr-4 font-bold  text-lg    text-black"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -209,7 +197,7 @@ function OurServiceManu() {
                 }`}
               />
             </ListItem>
-          </Typography>
+          </div>
         </MenuHandler>
         <MenuList className="hidden max-w-[100vw] w-screen lg:block border-0 outline-0 bg-gray-100">
           <div className="container grid grid-cols-3 gap-y-2">
@@ -262,18 +250,6 @@ function NavList() {
           About Us
         </ListItem>
       </Typography>
-
-      {/* <Typography
-        as={Link}
-        href="/our-services"
-        variant="small"
-        color="blue-gray"
-        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-lg text-black"
-      >
-        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
-          Our Services
-        </ListItem>
-      </Typography> */}
 
       <div className="mt-[6px]">
         <OurServiceManu />
