@@ -1,4 +1,3 @@
-// import faqImg from "../../../../../../public/assets/random/faq.png";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
@@ -92,16 +91,16 @@ const FAQ = () => {
                   <div key={idx}>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">
                       <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] p-4 border-2">
-                        <h6 className="text-white md:text-base xs:text-[9px] ">
+                        <h6 className="text-white text-sm md:text-base">
                           {ques.question}
                         </h6>
 
                         <div className="white-icon">
-                          <IoCaretDown className="white-icon" fill="white"/>
+                          <IoCaretDown className="white-icon" fill="white" />
                         </div>
                       </summary>
 
-                      <p className=" pt-3 px-4 leading-relaxed border-2 text-gray-700  md:text-base xs:text-[8px]">
+                      <p className=" pt-3 px-4 leading-relaxed border-2 text-gray-700 text-xs md:text-sm">
                         {ques.answer}
                       </p>
                     </details>
