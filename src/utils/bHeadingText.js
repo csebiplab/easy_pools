@@ -5,5 +5,6 @@ export const bHeadingTexts = {
     vinylPoolMap__bHeading : "Serving the Greater Toronto Horseshoe Area for all your pool's",
     swimmgingPoolMap__bHeading : "Serving Area for all your pool's",
     vinylPoolProcess__bHeading : "Process for Vinyl Pool Manufacturing",
-    fibeerGlassPoolProcess__bHeading : "Process of Installing Fiberglass Pools in Toronto"
+    fibeerGlassPoolProcess__bHeading : "Process of Installing Fiberglass Pools in Toronto",
+    swimmingPoolReview__bHeading : "Here's what to expect when you hire us"
 }

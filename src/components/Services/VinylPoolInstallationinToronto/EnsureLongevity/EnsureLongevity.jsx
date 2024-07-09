@@ -1,8 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { MdArrowForwardIos } from "react-icons/md";
-
 import "./EnsureLongevity.css";
 
 import Image from "next/image";
@@ -15,9 +12,10 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/virtual";
-// import { SwiperNavButtons } from "../../LocationPageComponent/OurProcess/SwiperSliderButton";
+
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import { SwiperNavButtons } from "@/components/__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -56,29 +54,44 @@ const breakpoints = {
 
 const services = [
   {
-    img: "/assets/fiberglass/s1.png",
-    title: "Extended Seasons",
-    para: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    img: "/assets/VinylPool/s1.png",
+    title: "Premium Vinyl Liner",
+    para: "Easy Pools prioritizes top-grade vinyl liners, enhancing resilience against wear, tear, and UV rays.",
   },
   {
-    img: "/assets/fiberglass/s2.png",
-    title: "Low Maintenance",
-    para: "Enjoy hassle-free pool ownership with minimal maintenance, as fiberglass pools require less upkeep compared to traditional options.",
+    img: "/assets/VinylPool/s2.png",
+    title: "Robust Frame Structure",
+    para: "Easy Pools prioritizes top-grade vinyl liners, enhancing resilience against wear, tear, and UV rays.",
   },
   {
-    img: "/assets/fiberglass/s3.png",
-    title: "Energy Efficiency",
-    para: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    img: "/assets/VinylPool/s3.png",
+    title: "Seamless Installation",
+    para: "Precision in construction minimizes potential vulnerabilities, guaranteeing ",
   },
   {
-    img: "/assets/fiberglass/s4.png",
-    title: "Quick Installation",
-    para: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    img: "/assets/VinylPool/s4.png",
+    title: "Chemical Resistance",
+    para: "Our company integrates vinyl compounds resistant to pool chemicals, preserving",
   },
   {
-    img: "/assets/fiberglass/s5.png",
-    title: "Cost Savings",
-    para: "Fibreglass pools in Toronto and Barrie offer a longer swimming season with their durable and weather-resistant material.",
+    img: "/assets/VinylPool/s5.png",
+    title: "Welding Techniques",
+    para: "Advanced welding technologies in vinyl pool installation eliminate weak points, contributing",
+  },
+  {
+    img: "/assets/VinylPool/s6.png",
+    title: "Tailored Reinforcement",
+    para: "Strategic reinforcement in high-stress areas adds an extra layer of durability, addressing specific.",
+  },
+  {
+    img: "/assets/VinylPool/s7.png",
+    title: "Control Standards",
+    para: "Precision in construction minimizes potential vulnerabilities, guaranteeing ",
+  },
+  {
+    img: "/assets/VinylPool/s8.png",
+    title: "Environment Adapt",
+    para: "Our company is designed to adapt to temperature variations, preventing cracking or warping",
   },
 ];
 
@@ -95,7 +108,7 @@ const EnsureLongevity = () => {
                 />
               </div>
               <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
-                Benefits of Installing a Fiberglass Swimming Pool in Toronto
+              Ensure Longevity for Vinyl Pool Installation in Toronto
               </h3>
             </div>
 
@@ -128,10 +141,10 @@ const EnsureLongevity = () => {
                     <div className="">
                       <Image
                         src={service.img}
-                        width={37}
-                        height={37}
+                        width={58}
+                        height={58}
                         alt="benifits image"
-                        className="w-[50px] h-[50px] mx-auto p-2 border-2 border-primary-500 rounded-full"
+                        className="w-[58px] h-[58px] mx-auto p-2 border-2 border-primary-500 rounded-full"
                       />
                     </div>
 
@@ -154,7 +167,7 @@ const EnsureLongevity = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                {/* <SwiperNavButtons /> */}
+                <SwiperNavButtons/>
               </Swiper>
             </div>
           </div>

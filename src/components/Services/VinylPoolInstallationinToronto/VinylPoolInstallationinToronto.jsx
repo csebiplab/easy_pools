@@ -55,14 +55,6 @@ const VinylPoolInstallationinToronto = () => {
         <ProjectGallery />
       </section>
 
-      <section>
-        <QualityExcellence />
-      </section>
-
-      <section>
-        <VinylCompare />
-      </section>
-
       <section className="bg_vinylPool padding__top">
         <Process
           bHeading={bHeadingTexts.vinylPoolProcess__bHeading}
@@ -71,7 +63,19 @@ const VinylPoolInstallationinToronto = () => {
       </section>
 
       <section>
-        <Review classNames={{ bg: "bg_vinylPool" }} />
+        <QualityExcellence />
+      </section>
+
+      <section>
+        <VinylCompare />
+      </section>
+
+      <section>
+        <Review classNames={{ bg: "bg_vinylPool" }} 
+        bHeading={
+          bHeadingTexts.swimmingPoolReview__bHeading
+        }
+        />
       </section>
 
       <section>

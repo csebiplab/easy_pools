@@ -67,7 +67,11 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <Review />
+        <Review 
+         bHeading={
+          bHeadingTexts.swimmingPoolReview__bHeading
+         }
+        />
       </section>
 
       <section>

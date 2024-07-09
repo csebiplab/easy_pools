@@ -126,7 +126,7 @@ const OurProcessSteps = () => {
                 key={index}
                 className={`text-center pb-6 lg:pb-20 px-20 md:px-14 lg:px-6`}
               >
-                <div className="w-full h-auto md:h-[153px] card-sd rounded-sm p-[10px]">
+                <div className="w-full h-auto md:h-[153px]  p-[10px]">
                   <Image
                     src={slide.imgSrc}
                     width={100}

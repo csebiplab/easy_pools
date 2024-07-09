@@ -12,7 +12,7 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
-// import { SwipButton } from "../BenefitsWithEasyPools/SwipButton";
+import { SwiperNavButtons } from "@/components/__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -31,28 +31,36 @@ const breakpoints = {
 
 const slideData = [
   {
-    title: "Outdoor Pools in Vaughan",
-    description: `Outdoor pools are recreational water facilities situated outside, typically found in parks, resorts, or private residences. We specialize in crafting stunning pools tailored to your style and space, enhancing your outdoor living experience.`,
+    title: "Tailored Patterns",
+    description: `Easy Pools offer a myriad of vinyl patterns, from mosaics to geometric designs, allowing for a personalized touch that suits your aesthetic preferences.`,
   },
   {
-    title: "Indoor Pools",
-    description: `Our dedicated team handles every aspect of the indoor pool installation process, ensuring a stress-free experience for you. Using high-quality materials and cutting-edge techniques, we guarantee a durable and visually stunning indoor pool.`,
+    title: "Color Palette Diversity",
+    description: `Choose from a wide array of vinyl colors to harmonize with your outdoor space, creating a pool that seamlessly integrates into your landscape.`,
   },
   {
-    title: "Above-Ground Pools",
-    description: `Above-ground pools are freestanding swimming pools installed on top of the ground's surface, rather than being dug into the ground like traditional in-ground pools. We offer a hassle-free setup, quality materials, and personalized designs.`,
+    title: "Texture Selection",
+    description: `Customizable vinyl textures provide a luxurious feel, enhancing both the visual and tactile appeal of your pool and elevating its overall elegance.`,
   },
   {
-    title: "Inground Pools",
-    description: `Transform your outdoor space into a luxurious retreat with a custom-designed inground pool tailored to your specifications. Our team of experts ensures a seamless installation process, utilizing top-quality materials to create a stunning.`,
+    title: "Inlay Options",
+    description: `Our company allows for unique inlays, such as logos or intricate designs, adding a distinctive flair that transforms your pool into a true reflection of your style.`,
   },
   {
-    title: "Saltwater Pools",
-    description: `Discover the epitome of luxury and relaxation with our premium saltwater pool installation service. Say goodbye to the harsh chemicals of traditional pools and immerse yourself in the gentle embrace of saltwater. Our expert team ensures.`,
+    title: "Border Varieties",
+    description: `Select from different border options, like decorative tiles or contrasting vinyl strips, to frame your pool and enhance its visual appeal.`,
   },
   {
-    title: "Freshwater Pools",
-    description: `Transform your backyard oasis dreams into reality with our professional freshwater pool installation service. With meticulous attention to detail, we'll create a serene retreat where you can unwind and make lasting memories with family.`,
+    title: "Underwater Illumination",
+    description: `Enhance the nighttime ambiance by choosing vinyl with light-diffusing properties, transforming your pool into a captivating display with customizable.`,
+  },
+  {
+    title: "Transition Effects",
+    description: `Our company provides options for gradient vinyl designs, allowing for subtle color transitions that create a visually stunning and dynamic effect.`,
+  },
+  {
+    title: "Custom Vinyl Murals",
+    description: `Commission bespoke vinyl murals that showcase your creativity, turning your pool into a one-of-a-kind art vinyl pool installation that captivates and inspires.`,
   }
   
 ];
@@ -66,8 +74,8 @@ const Design = () => {
           <div className="flex justify-center gap-[54px]">
             <HeadingIcon text={headingIconText.design__IconText}/>
           </div>
-          <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-          Our Swimming Pool Installation Services
+          <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
+          Design Options for Vinyl Pool Installation in Toronto
           </h3>
         </div>
 
@@ -100,7 +108,7 @@ const Design = () => {
               </div>
             </SwiperSlide>
           ))}
-          {/* <SwipButton/> */}
+          <SwiperNavButtons/>
         </Swiper>
       </div>
     </div>

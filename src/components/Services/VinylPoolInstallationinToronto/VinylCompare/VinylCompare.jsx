@@ -14,14 +14,18 @@ import "swiper/css/scrollbar";
 import "swiper/css/virtual";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
-// import { SwiperNavButtons } from "../../LocationPageComponent/OurProcess/SwiperSliderButton";
 
-import ee1 from "../../../../../public/assets/fiberglass/ee1.png";
-import ao2 from "../../../../../public/assets/fiberglass/ao2.png";
-import zr3 from "../../../../../public/assets/fiberglass/zr3.png";
-import cs4 from "../../../../../public/assets/fiberglass/cs4.png";
-import ii5 from "../../../../../public/assets/fiberglass/ii5.png";
-import ss6 from "../../../../../public/assets/fiberglass/ss6.png";
+import vc1 from "../../../../../public/assets/VinylPool/vc1.png";
+import vc2 from "../../../../../public/assets/VinylPool/vc2.png";
+import vc3 from "../../../../../public/assets/VinylPool/vc3.png";
+import vc4 from "../../../../../public/assets/VinylPool/vc4.png";
+import vc5 from "../../../../../public/assets/VinylPool/vc5.png";
+import vc6 from "../../../../../public/assets/VinylPool/vc6.png";
+import vc7 from "../../../../../public/assets/VinylPool/vc7.png";
+import vc8 from "../../../../../public/assets/VinylPool/vc8.png";
+import vc9 from "../../../../../public/assets/VinylPool/vc9.png";
+import vc10 from "../../../../../public/assets/VinylPool/vc10.png";
+import { SwiperNavButtons } from "@/components/__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -41,45 +45,65 @@ const breakpoints = {
     spaceBetween: 20,
   },
   1280: {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 20,
   },
   1440: {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 20,
   },
 };
 
 const services = [
   {
-    desc: "Merge timeless charm with modern aesthetics, crafting a fiberglass pool that seamlessly blends sophistication and contemporary design.",
-    title: "Eternal Elegance",
-    img: ee1,
+    desc: "Vinyl excellence boasts superior resilience, outlasting traditional pool materials.",
+    title: "Unmatched Durability",
+    img: vc1,
   },
   {
-    desc: "Transform your space into a serene haven with a flawlessly installed fiberglass pool, harmonizing nature-inspired elements for ultimate relaxation.",
-    title: "Aquatic Oasis",
-    img: ao2,
+    desc: "Dive into opulence without breaking the bank—vinyl offers affordable elegance.",
+    title: "Budget-Friendly Luxury",
+    img: vc2,
   },
   {
-    desc: "Infuse tranquility into your backyard with a minimalist design, marrying sleek fiberglass lines with Zen-inspired landscaping for a serene retreat.",
-    title: "Zen Retreat",
-    img: zr3,
+    desc: "Experience limitless design possibilities with vinyl, tailored to suit your unique vision.",
+    title: "Seamless Customization",
+    img: vc3,
   },
   {
-    desc: "Illuminate your nights with an ethereal fiberglass pool, featuring LED lighting that turns your backyard into a celestial oasis for unforgettable evening dips.",
-    title: "Celestial Soak",
-    img: cs4,
+    desc: "Enjoy a smooth and comfortable feel underfoot, enhancing the overall swimming experience.",
+    title: "Comfortable Texture",
+    img: vc4,
   },
   {
-    desc: "Redefine luxury with an infinity-edge fiberglass pool, offering a seamless blend of modern innovation and classic opulence for an unparalleled swimming experience.",
-    title: "Innovative Infinity",
-    img: ii5,
+    desc: "Vinyl pools simplify upkeep, requiring minimal time and resources for long-lasting beauty.",
+    title: "Effortless Maintenance",
+    img: vc5,
   },
   {
-    desc: "Capture the breathtaking hues of a sunset with a carefully crafted fiberglass pool design, providing a front-row seat to nature's daily masterpiece.",
-    title: "Sunset Serenity",
-    img: ss6,
+    desc: "Vinyl's vibrant colors resist fading, maintaining a picturesque pool aesthetic over time.",
+    title: "Fade-Resistant",
+    img: vc6,
+  },
+  {
+    desc: "Opt for sustainability with vinyl excellence, a material that aligns with environmental ",
+    title: "Eco-Friendly Choice",
+    img: vc7,
+  },
+  {
+    desc: "Experience optimal water temperature retention, ensuring comfortable swims in any season.",
+    title: "Temperature Control",
+    img: vc8,
+  },
+  {
+    desc: "Vinyl's flexibility guards against cracks, providing a durable and worry-free pool surface.",
+    title: "Crack-Resistant",
+    img: vc9,
+  },
+  {
+    desc: "Choose vinyl for a swift & efficient pool setup, minimizing disruptions to your outdoor",
+    title: "Quick Installation",
+    img: vc10,
   },
 ];
 
@@ -95,7 +119,7 @@ const VinylCompare = () => {
               />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-              Impeccable Flawless Design for Fiberglass Pool Installation
+            How Does Vinyl Compare to Other Pool Materials in Your Catalogue?
             </h3>
           </div>
 
@@ -117,7 +141,7 @@ const VinylCompare = () => {
               {services.map((service, index) => (
                 <SwiperSlide
                   key={index}
-                  className="bg-white border-4 rounded border-secondary-50 !h-auto !md:h-full px-2 py-6 md:py-0"
+                  className="border-4 rounded-[12px] border-secondary-50 !h-auto !md:h-full px-2 py-6 md:py-0"
                 >
                   <div className="mx-auto relative px-2">
                     <div className="py-7">
@@ -128,19 +152,19 @@ const VinylCompare = () => {
                         {service.desc}{" "}
                       </h6>
                     </div>
-                    <div className="absolute  -top-10 md:-top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <div className="absolute -top-10 md:-top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                       <Image
                         src={service.img}
                         height={100}
                         width={100}
-                        className="w-20 h-20 lg:w-[100px] lg:h-[100px]"
+                        className="w-20 h-20 lg:w-[100px] lg:h-[100px] border-4 border-[#049E43] p-2 rounded-full"
                         alt="Profile"
                       />
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
-              {/* <SwiperNavButtons /> */}
+              <SwiperNavButtons />
             </Swiper>
           </div>
         </div>

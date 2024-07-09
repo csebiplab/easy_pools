@@ -25,7 +25,7 @@ const LocationPageComponent = () => {
         <ProjectBanner/>
       </section>
 
-      <section>
+      <section className="mt-6">
         <PartnerNRatings />
       </section>
 
