@@ -310,11 +310,8 @@ export function NavHeader() {
   if (pathname.startsWith("/admin")) return null;
   return (
     <>
-      <header>
-        <>
-          <UpperNavbar />
-        </>
-
+      <UpperNavbar />
+      <header className="sticky top-0 z-50">
         <div className="custom-container main__nav">
           <Navbar className="container rounded-none py-2 shadow-none max-w-full">
             <div className="flex items-center justify-between text-blue-gray-900">
@@ -399,7 +396,6 @@ export function NavHeader() {
         </div>
         <NavList />
       </Drawer>
-      {/* <BottomMenu /> */}
     </>
   );
 }
