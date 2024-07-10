@@ -21,14 +21,14 @@ const FiberglassPoolBanner = () => {
                 for modern living.
               </p>
               <div className="mb-4 md:mb-0">
-                <Link href={`tel:+1 (646) 683-4612`} className="inline-block">
+                <a href="tel:+1(647) 449 9512" className="inline-block">
                   <Button className="!px-[34px] !py-4 btn__bannerFiberglass !text-white text-xs lg:text-lg font-bold capitalize flex items-center gap-x-2">
                     <span className="!text-white">Get an Estimate</span>
                     <span>
                       <FaChevronRight fill="white" />
                     </span>
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
