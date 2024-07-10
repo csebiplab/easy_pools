@@ -12,7 +12,6 @@ import "swiper/css/autoplay";
 
 import { SwiperButton } from "./SwiperButton";
 import HeadingIcon from "@/components/ui/HeadingIcon";
-import { headingIconText } from "@/utils/heading-text";
 
 const breakpoints = {
   0: {
@@ -52,7 +51,11 @@ const maps = [
   },
 ];
 
-const OurServiceAreas = ({ classNames, sHeading="empty" , bHeading="empty"}) => {
+const OurServiceAreas = ({
+  classNames,
+  sHeading = "empty",
+  bHeading = "empty",
+}) => {
   return (
     <div className={`${classNames ? classNames?.bg : "area-bg"}`}>
       <div className="container">

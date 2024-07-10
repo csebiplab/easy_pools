@@ -1,8 +1,9 @@
 import CommonButton from "@/components/ui/CommonButton";
 import Image from "next/image";
+import Link from "next/link";
 
 const ServiceCard = ({ serv }) => {
-  const { imgUrl, title, desc } = serv ?? {};
+  const { imgUrl, title, desc, url } = serv ?? {};
 
   return (
     <div className="service__card">
@@ -20,7 +21,9 @@ const ServiceCard = ({ serv }) => {
           </h5>
           <p className=" 2xl:text-[15px] text-[10px] leading-[20px]">{desc}</p>
           <div className="pb-5 mt-5 flex justify-center items-b relative">
-            <CommonButton />
+            <Link href={`/${url}`}>
+              <CommonButton />
+            </Link>
           </div>
         </div>
       </div>
