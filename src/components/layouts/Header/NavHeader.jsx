@@ -311,7 +311,7 @@ export function NavHeader() {
   return (
     <>
       <UpperNavbar />
-      <header className="sticky top-0 z-50">
+      <header className="sticky top-0 z-[500000]">
         <div className="custom-container main__nav">
           <Navbar className="container rounded-none py-2 shadow-none max-w-full">
             <div className="flex items-center justify-between text-blue-gray-900">
