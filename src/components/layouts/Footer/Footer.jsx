@@ -136,11 +136,11 @@ const Footer = () => {
                 <ul className="text-center md:text-start mx-auto">
                   <li>
                     <Link
-                      href=""
+                      href="/"
                       className="footer-link items-center justify-center md:justify-normal text-sm md:text-base text-white"
                     >
                       <FaMapMarkedAlt className=" lg:h-7 lg:w-7  h-4 w-4" /> 2a
-                      1331 Major Mackenzie dr West, Vaughan
+                      1331 Major MacKenzie Dr W, Vaughan, ON L6A 4W4, Canada
                     </Link>
                   </li>
                   <li className="lg:py-8 xs:py-[12px]">
