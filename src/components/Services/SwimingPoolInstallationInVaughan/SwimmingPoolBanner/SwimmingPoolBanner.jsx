@@ -1,8 +1,6 @@
 "use client";
 import { Button } from "@material-tailwind/react";
 import Image from "next/image";
-import Link from "next/link";
-import { FaChevronRight } from "react-icons/fa6";
 import "./SwimmingPoolBanner.css";
 
 const SwimmingPoolBanner = () => {
