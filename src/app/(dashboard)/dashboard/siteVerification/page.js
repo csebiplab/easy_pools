@@ -1,12 +1,12 @@
 "use client";
 
-import SiteVerificationComponent from "@/components/__dashboard/siteMapComponent/SiteMapComponent";
+import SiteVerificationComponent from "@/components/__dashboard/siteVerificationComponent/SiteVerificationComponent";
 import useFetchData from "@/hooks/useFetchData";
 
 
 
 export default function SeoSiteVerification() {
-  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/siteMap`;
+  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/verificationUrl`;
 
   const { data, loading, error } = useFetchData(baseAPIUrl)
 
@@ -19,12 +19,11 @@ export default function SeoSiteVerification() {
     return <p>Error: {error.message}</p>;
   }
 
-  console.log(data)
-  const sitemaps = data?.data
+  const siteVerification = data?.verificationUrl
 
   return (
     <>
-      <SiteVerificationComponent sitemaps={sitemaps} />
+      <SiteVerificationComponent data={siteVerification} />
     </>
   );
 }

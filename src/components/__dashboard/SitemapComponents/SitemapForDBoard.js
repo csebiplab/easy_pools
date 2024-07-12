@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import RemoveBtnComponent from "./RemoveButtonComponent";
 
 
-function SiteVerificationComponent({ sitemaps, id, titleValue, urlValue }) {
+function SiteVerificationComponent({ data, id, titleValue, urlValue }) {
   const router = useRouter();
   const [inputValue, setInputValue] = useState({
     title: "",
@@ -46,11 +46,11 @@ function SiteVerificationComponent({ sitemaps, id, titleValue, urlValue }) {
         });
 
         if (res.ok) {
-          toast(`Successfully updated verification url & meta data`);
+          toast(`Successfully updated siteMap url & meta data`);
           router.refresh();
-          router.push(`/dashboard/siteVerification`);
+          router.push(`/dashboard/siteMap`);
         } else {
-          throw new Error(`Failed to update verification url & meta data`);
+          throw new Error(`Failed to update siteMap url & meta data`);
         }
       } catch (error) {
         console.log(error);
@@ -67,11 +67,11 @@ function SiteVerificationComponent({ sitemaps, id, titleValue, urlValue }) {
         });
 
         if (res.ok) {
-          toast(`Successfully submitted verification url & meta data`);
+          toast(`Successfully submitted siteMap url & meta data`);
           router.refresh();
-          router.push(`/dashboard/siteVerification`);
+          router.push(`/dashboard/sitesiteMap`);
         } else {
-          throw new Error(`Failed to create sitemap url`);
+          throw new Error(`Failed to create siteMapUrl url`);
         }
       } catch (error) {
         console.log(error);
@@ -81,17 +81,17 @@ function SiteVerificationComponent({ sitemaps, id, titleValue, urlValue }) {
   return (
     <div>
       <div className="px-5">
-        {sitemaps?.length > 0 && !id ? (
+        {data?.length > 0 && !id ? (
           <>
             <div className="relative mt-4 overflow-x-auto shadow-md sm:rounded-lg">
               <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                   <tr>
                     <th scope="col" className="px-6 py-3">
-                      Meta Title
+                      Message
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      Verification Url
+                      siteMap Url
                     </th>
                     <th scope="col" className="px-6 py-3">
                       Action
@@ -99,7 +99,7 @@ function SiteVerificationComponent({ sitemaps, id, titleValue, urlValue }) {
                   </tr>
                 </thead>
                 <tbody>
-                  {sitemaps?.map((item) => (
+                  {data?.map((item) => (
                     <tr
                       key={item._id}
                       className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
@@ -116,7 +116,7 @@ function SiteVerificationComponent({ sitemaps, id, titleValue, urlValue }) {
                         <div className="flex gap-2">
                           {" "}
                           {/* <Link
-                            href={`/dashboard/siteMap/editSiteMap/${item?._id}`}
+                            href={`/dashboard/siteMapUrl/editsiteMapUrl/${item?._id}`}
                           >
                             <HiPencilAlt size={24} />
                           </Link> */}
@@ -137,7 +137,7 @@ function SiteVerificationComponent({ sitemaps, id, titleValue, urlValue }) {
                   htmlFor="first-name"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Meta Title
+                  Message
                 </label>
                 <div className="mt-2">
                   <input required
@@ -157,7 +157,7 @@ function SiteVerificationComponent({ sitemaps, id, titleValue, urlValue }) {
                   htmlFor="last-name"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Sitemap Url
+                  Verification Url
                 </label>
                 <div className="mt-2">
                   <input required
