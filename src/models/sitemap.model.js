@@ -2,8 +2,9 @@ import mongoose, { Schema } from "mongoose";
 
 const sitemapSchema = new Schema(
     {
-        title: String,
-        url: String,
+        changefreq: String,
+        loc: String,
+        priority: Number,
     },
     {
         timestamps: true,
