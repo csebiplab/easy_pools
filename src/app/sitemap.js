@@ -8,7 +8,7 @@ export default async function sitemap() {
         const sitemapData = data?.map((singleData) => ({
             url: singleData?.loc,
             priority: singleData?.priority,
-            changeFrequency: "yearly",
+            changeFrequency: singleData?.changefreq,
             lastModified: singleData?.updatedAt,
         }));
 
