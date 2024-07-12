@@ -4,13 +4,12 @@ import { NextResponse } from "next/server";
 
 export async function PATCH(request, { params }) {
   const { id } = params;
-  const { title, url } = await request.json();
+  const updatedFields = await request.json();
 
   await connectMongoDB();
 
   const data = await Sitemap.findByIdAndUpdate(id, {
-    title,
-    url,
+    ...updatedFields
   });
 
   return NextResponse.json(
