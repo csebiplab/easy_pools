@@ -29,7 +29,7 @@ export const footerLinks = [
             { label: "Gallery", url: "/" },
             { label: "Testimonial", url: "/" },
             { label: "Careers", url: "/" },
-            { label: "Sitemap", url: "/" },
+            { label: "Sitemap", url: "/sitemap" },
         ],
     },
     {
