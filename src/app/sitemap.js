@@ -6,9 +6,9 @@ export default async function sitemap() {
         const { data } = await response.json();
 
         const sitemapData = data?.map((singleData) => ({
-            url: singleData?.url,
-            priority: 1,
-            changeFrequency: "yearly",
+            url: singleData?.loc,
+            priority: singleData?.priority,
+            changeFrequency: singleData?.changefreq,
             lastModified: singleData?.updatedAt,
         }));
 

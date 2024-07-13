@@ -5,10 +5,10 @@ import { NextResponse } from "next/server";
 
 
 export async function POST(request) {
-  const { title, url } = await request.json();
+  const { changefreq, loc, priority } = await request.json();
   await connectMongoDB();
 
-  const data = await Sitemap.create({ title, url });
+  const data = await Sitemap.create({ changefreq, loc, priority });
 
   return NextResponse.json(
     {
