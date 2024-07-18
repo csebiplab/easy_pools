@@ -54,6 +54,9 @@ export const headingIconText = {
     ensureLongevity__IconText : "Ensure Longevity",
     comparePool__IconText : "Compare to Other Pool Materials",
     benefits__IconText : "Benefits",
-    hireUs__IconText : "Why Hire Us"
+    hireUs__IconText : "Why Hire Us",
+
+    // #1 Pool Installation Company in Markham
+    aboutUs__IconText : "About Us",
 
 }
