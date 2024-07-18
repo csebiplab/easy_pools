@@ -120,7 +120,10 @@ const our_service_menu_items = {
       title: "Fiberglass Pool Installation",
       route: "/fiberglass-pool-installation-in-toronto",
     },
-    // { title: "Painting", route: "/painting" },
+    {
+      title: "Pool Installation Company In Markham",
+      route: "/pool-installation-company-in-markham",
+    },
     // { title: "Sheetrock", route: "/sheetrock" },
     // { title: "Plastering", route: "/plastering" },
     // {
