@@ -18,11 +18,11 @@ footer * {
 }
 
 .full__section_r_p {
-  @apply max-w-screen-5xl pr-3 md:pr-8 lg:pr-24 xl:pr-28 2xl:pr-32 3xl:pr-40 4xl:pr-52 5xl:pr-[285px] mx-auto;
+  @apply max-w-screen-5xl pr-3 md:pr-5 lg:pr-10 xl:pr-20 2xl:pr-28 3xl:pr-40 4xl:pr-52 5xl:pr-[285px] mx-auto;
 }
 
 .full__section_l_p {
-  @apply max-w-screen-5xl pl-3 md:pl-8 lg:pl-24 xl:pl-28 2xl:pl-32 3xl:pl-40 4xl:pl-52 5xl:pl-[285px] mx-auto;
+  @apply max-w-screen-5xl pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px] mx-auto;
 }
 
 .padding__top{
