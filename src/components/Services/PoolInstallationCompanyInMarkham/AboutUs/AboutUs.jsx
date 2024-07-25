@@ -5,7 +5,7 @@ import React from 'react';
 
 const AboutUs = () => {
     return (
-        <div className="full__section_r_p padding__top">
+        <div className="full__section_r_p padding__top pl-3 md:pl-0">
             <div className="grid md:grid-cols-6 grid-cols-1 gap-5 xl:gap-6 3xl:gap-7 5xl:gap-[30px]">
                 <div className="md:col-span-3">
                     <div>
