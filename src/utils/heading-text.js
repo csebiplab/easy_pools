@@ -58,5 +58,15 @@ export const headingIconText = {
 
     // #1 Pool Installation Company in Markham
     aboutUs__IconText : "About Us",
+    installationAndConstruction__IconText : "Installation and Construction",
+    bestPoolDesigners__IconText : "Best Pool Designers",
+    qualities__IconText : "Qualities",
+    ourApproach__IconText : "Our Approach",
+    howMuchCost__IconText : "How Much  Cost?",
+    avoidMistakes__IconText : "Avoid Mistakes",
+    skilledContractors__IconText : "Skilled Contractors",
+    vetPoolInstallers__IconText : "Vet Pool Installers",
+    faq__IconText : "FAQ",
+    whyChooseUs__IconText : "Why Choose US",
 
 }

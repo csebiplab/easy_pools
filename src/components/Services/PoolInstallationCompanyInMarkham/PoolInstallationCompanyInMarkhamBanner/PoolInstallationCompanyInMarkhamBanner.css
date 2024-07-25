@@ -1,22 +1,22 @@
 
 /* Hero section */
 .hero-section {
-    width: 100%;
-    height: auto;
-    background-image: url("/assets/poolInstallationCompanyInMarkham/hero-section.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .hero-right {
-    width: 50%;
-  }
-  
-  .hero-right .hero-main-image {
-    width: 100%;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: auto;
+  background-image: url("/assets/poolInstallationCompanyInMarkham/hero-section.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-right .hero-main-image {
+  width: 100%;
+  object-fit: cover;
+}
   
   .hero_btn{
     border-radius: 50px;
