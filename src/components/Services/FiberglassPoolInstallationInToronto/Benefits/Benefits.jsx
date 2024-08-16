@@ -15,7 +15,7 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/virtual";
-import { SwiperNavButtons } from "../../LocationPageComponent/OurProcess/SwiperSliderButton";
+import { SwiperNavButtons } from "../../../__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
@@ -118,13 +118,12 @@ const Benefits = () => {
               >
                 {services.map((service, index) => (
                   <SwiperSlide key={index} className="">
-
                     <div className="">
                       <div className="flex justify-around ">
                         <div className="w-[3px] h-[40px] bg-primary-500" />
                       </div>
                     </div>
-                      
+
                     <div className="">
                       <Image
                         src={service.img}
@@ -140,7 +139,6 @@ const Benefits = () => {
                         <div className="w-[3px] h-[40px] bg-primary-500" />
                       </div>
                     </div>
-                    
 
                     <div className="mx-auto w-[250px] h-[230px] cart px-4 py-[13px]">
                       <div className="">

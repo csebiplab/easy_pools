@@ -14,7 +14,7 @@ import "swiper/css/scrollbar";
 import "swiper/css/virtual";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
-import { SwiperNavButtons } from "../../LocationPageComponent/OurProcess/SwiperSliderButton";
+import { SwiperNavButtons } from "../../../__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 
 import ee1 from "../../../../../public/assets/fiberglass/ee1.png";
 import ao2 from "../../../../../public/assets/fiberglass/ao2.png";

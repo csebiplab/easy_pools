@@ -1,4 +1,4 @@
-import FiberglassPoolInstallationInToronto from '@/components/__one_time_used/FiberglassPoolInstallationInToronto/FiberglassPoolInstallationInToronto';
+import FiberglassPoolInstallationInToronto from '@/components/Services/FiberglassPoolInstallationInToronto/FiberglassPoolInstallationInToronto';
 import { pageName } from '@/constants/dashboard/pageName.constants';
 
 export async function generateMetadata() {

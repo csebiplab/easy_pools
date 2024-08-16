@@ -7,7 +7,7 @@ import "./FiberglassPoolBanner.css";
 const FiberglassPoolBanner = () => {
   return (
     <>
-      <div className="hero-section container">
+      <div className="hero-section custom-container">
         <div className="md:flex items-center relative h-full">
           <div className="flex items-center w-full h-full  md:w-[52%] pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px]">
             <div className=" py-[300px] md:py-0 px-4 md:pl-0">

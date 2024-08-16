@@ -41,11 +41,11 @@ const PoolInstallationCompanyInMarkham = () => {
       </section>
 
       <section>
-        <Qualities/>
+        <Qualities />
       </section>
 
       <section>
-        <OurApproach/>
+        <OurApproach />
       </section>
 
       <section>
@@ -61,19 +61,19 @@ const PoolInstallationCompanyInMarkham = () => {
       </section>
 
       <section>
-        <AvoidMistakes/>
+        <AvoidMistakes />
       </section>
 
       <section>
-        <SkilledContractors/>
+        <SkilledContractors />
       </section>
 
       <section>
-        <VetPoolInstallers/>
+        <VetPoolInstallers />
       </section>
 
       <section>
-        <Faq/>
+        <Faq />
       </section>
 
       <section>
@@ -86,7 +86,7 @@ const PoolInstallationCompanyInMarkham = () => {
       </section>
 
       <section>
-        <WhyChooseUs/>
+        <WhyChooseUs />
       </section>
 
       <section className="padding__all bg_poolInstallationCompanyInMarkham">

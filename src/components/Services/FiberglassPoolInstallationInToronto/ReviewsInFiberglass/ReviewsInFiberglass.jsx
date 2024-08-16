@@ -12,7 +12,7 @@ import "swiper/css/grid";
 import "swiper/css/navigation";
 import "swiper/css/virtual";
 import "swiper/css/autoplay";
-import { SwipButton } from "../../MainHomePageComponent/BenefitsWithEasyPools/SwipButton";
+import { SwipButton } from "../../../__one_time_used/MainHomePageComponent/BenefitsWithEasyPools/SwipButton";
 
 const breakpoints = {
   0: {

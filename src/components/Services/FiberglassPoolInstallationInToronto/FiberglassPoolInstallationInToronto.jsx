@@ -1,6 +1,6 @@
 import "./FiberglassPoolInstallationInToronto.css";
 
-import PartnerNRatings from "../MainHomePageComponent/PartnerNRatings/PartnerNRatings";
+import PartnerNRatings from "../../__one_time_used/MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import AboutUsInFiberglass from "./AboutUsInFiberglass/AboutUsInFiberglass";
 import MeaningFiberglass from "./MeaningFiberglass/MeaningFiberglass";
 import Excelence from "./Excelence/Excelence";
@@ -12,7 +12,7 @@ import CostCalculating from "./CostCalculating/CostCalculating";
 import FlawlessDesign from "./FlawlessDesign/FlawlessDesign";
 import QA from "./QA/QA";
 import WhyChooseEasyPools from "./WhyChooseEasyPools/WhyChooseEasyPools";
-import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurServiceAreas";
+import OurServiceAreas from "../../__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import ProjectGalleryInFiberglass from "./FiberglassProjectGal/FiberglassProjectGal";
 import ReviewsInFiberglass from "./ReviewsInFiberglass/ReviewsInFiberglass";
 import FiberglassPoolBanner from "./FiberglassPoolBanner/FiberglassPoolBanner";
@@ -55,12 +55,9 @@ const FiberglassPoolInstallationInToronto = () => {
       </section>
 
       <section className="bg__fiberglassPage">
-        <Process  sHeading={
-          headingIconText.process__inFiberglassText
-        }
-        bHeading={
-          bHeadingTexts.fibeerGlassPoolProcess__bHeading
-        }
+        <Process
+          sHeading={headingIconText.process__inFiberglassText}
+          bHeading={bHeadingTexts.fibeerGlassPoolProcess__bHeading}
         />
       </section>
 
@@ -93,14 +90,9 @@ const FiberglassPoolInstallationInToronto = () => {
           classNames={{
             bg: "bg__fiberglassPage ",
             pdy: "common__padding__top common__padding__btm",
-            
           }}
-          sHeading={
-            headingIconText.map__IconTxt
-          }
-          bHeading={
-            bHeadingTexts.fiberglassMap__bHeading
-          }
+          sHeading={headingIconText.map__IconTxt}
+          bHeading={bHeadingTexts.fiberglassMap__bHeading}
         />
       </section>
     </div>

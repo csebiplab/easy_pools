@@ -18,7 +18,6 @@ import InstallationServices from "./InstallationServices/InstallationServices";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import { headingIconText } from "@/utils/heading-text";
 import { bHeadingTexts } from "@/utils/bHeadingText";
-import "../../../app/globals.css";
 
 const SwimingPoolInstallationInVaughan = () => {
   return (
