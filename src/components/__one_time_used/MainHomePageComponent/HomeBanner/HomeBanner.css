@@ -13,6 +13,7 @@
   background-image: url("/assets/images/banner_img.png");
   background-size: cover;
   background-position: center;
+  object-fit: cover;
   mix-blend-mode: multiply;
 }
 
