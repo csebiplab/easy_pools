@@ -50,6 +50,11 @@ export const dashboardConfig = {
                     icon: "dessert",
                 },
                 {
+                    title: "Vaughan Pools",
+                    href: "/dashboard/allpages/vaughan-pool",
+                    icon: "dessert",
+                },
+                {
                     title: "Contact Us",
                     href: "/dashboard/allpages/contactUs",
                     icon: "dessert",

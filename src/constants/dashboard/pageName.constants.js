@@ -4,4 +4,5 @@ export const pageName = {
     blog: "blog",
     barrie: "barrie",
     fiberglass: "fiberglass",
+    vaughanPool: "vaughan pool",
 }
