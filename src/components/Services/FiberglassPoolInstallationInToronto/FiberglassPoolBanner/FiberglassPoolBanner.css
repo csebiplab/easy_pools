@@ -1,7 +1,7 @@
 /* Hero section */
 .hero-section {
   height: auto;
-  background-image: url("/assets/fiberglass/banner.png");
+  background-image: url("/assets/fiberglass/banner-small.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

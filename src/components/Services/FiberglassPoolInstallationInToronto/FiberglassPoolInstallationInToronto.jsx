@@ -15,9 +15,9 @@ import WhyChooseEasyPools from "./WhyChooseEasyPools/WhyChooseEasyPools";
 import OurServiceAreas from "../../__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import ProjectGalleryInFiberglass from "./FiberglassProjectGal/FiberglassProjectGal";
 import ReviewsInFiberglass from "./ReviewsInFiberglass/ReviewsInFiberglass";
-import FiberglassPoolBanner from "./FiberglassPoolBanner/FiberglassPoolBanner";
 import { headingIconText } from "@/utils/heading-text";
 import { bHeadingTexts } from "@/utils/bHeadingText";
+import FiberglassPoolBanner from "./FiberglassPoolBanner/FiberglassPoolBanner";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
