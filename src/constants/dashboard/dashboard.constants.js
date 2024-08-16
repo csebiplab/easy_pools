@@ -45,13 +45,23 @@ export const dashboardConfig = {
                     icon: "dessert",
                 },
                 {
-                    title: "Fiberglass",
+                    title: "Toronto Fiberglass",
                     href: "/dashboard/allpages/fiberglass",
                     icon: "dessert",
                 },
                 {
                     title: "Vaughan Pools",
                     href: "/dashboard/allpages/vaughan-pool",
+                    icon: "dessert",
+                },
+                {
+                    title: "Vinyl Pools",
+                    href: "/dashboard/allpages/vinyl-pool",
+                    icon: "dessert",
+                },
+                {
+                    title: "Markham Pools",
+                    href: "/dashboard/allpages/markham-pool",
                     icon: "dessert",
                 },
                 {

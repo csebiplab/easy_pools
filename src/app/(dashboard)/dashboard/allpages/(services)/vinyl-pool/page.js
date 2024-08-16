@@ -7,8 +7,8 @@ import { useState } from "react";
 
 
 const page = () => {
-    const editRoute = "dashboard/allpages/home/editVaughan";
-    const pagename = pageName?.vaughanPool;
+    const editRoute = "dashboard/allpages/home/editVinyl";
+    const pagename = pageName?.vinylPool;
     const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/metaDatas?pageName=${pagename}`
 
     const [isCreateRUpdateFinished, setIsCreateRUpdateFinished] = useState(false);
