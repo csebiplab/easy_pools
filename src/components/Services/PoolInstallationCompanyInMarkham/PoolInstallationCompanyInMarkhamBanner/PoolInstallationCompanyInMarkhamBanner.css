@@ -1,5 +1,5 @@
 /* Hero section */
-.hero-section {
+.hero__section__markham {
   height: auto;
   background-image: url("/assets/poolInstallationCompanyInMarkham/hero-section.jpg");
   background-position: center center;
@@ -7,11 +7,11 @@
   background-repeat: no-repeat;
 }
 
-.hero-right {
+.hero__right__markham {
   width: 50%;
 }
 
-.hero-right .hero-main-image {
+.hero__right__markham .hero-main-image {
   width: 100%;
   object-fit: cover;
 }

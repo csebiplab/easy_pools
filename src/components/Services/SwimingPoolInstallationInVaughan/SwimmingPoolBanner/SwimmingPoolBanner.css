@@ -1,5 +1,5 @@
 /* Hero section */
-.hero-section {
+.hero__section__vaughan {
   height: auto;
   background-image: url("/assets/swimmingPool/hero-bg.jpg");
   background-position: center center;
@@ -7,11 +7,11 @@
   background-repeat: no-repeat;
 }
 
-.hero-right {
+.hero__right__vaughan {
   width: 42%;
 }
 
-.hero-right .hero-main-image {
+.hero__right__vaughan .hero-main-image {
   width: 100%;
   object-fit: cover;
 }
