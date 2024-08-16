@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Button } from "@material-tailwind/react";
 import { FaChevronRight } from "react-icons/fa6";
 import "./FiberglassPoolBanner.css";
@@ -8,9 +9,9 @@ const FiberglassPoolBanner = () => {
   return (
     <>
       <div className="hero-section custom-container">
-        <div className="md:flex items-center relative h-full">
-          <div className="flex items-center w-full h-full  md:w-[52%] pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px]">
-            <div className=" py-[300px] md:py-0 px-4 md:pl-0">
+        <div className="md:flex items-center relative">
+          <div className="w-full md:w-[50%] pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px]">
+            <div className="py-14 md:py-0 px-4 md:pl-0">
               <h1 className="leading-normal text-[34px] md:text-[36px] xl:text-[38px] 2xl:text-[42px] 3xl:text-[46px] 4xl:text-[50px] 5xl:text-[55px] font-bold text-left">
                 Fiberglass Pool <br /> Installation in Toronto
               </h1>
@@ -30,6 +31,15 @@ const FiberglassPoolBanner = () => {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="hero-right relative hidden md:block">
+            <Image
+              width={858}
+              height={832}
+              src="/assets/fiberglass/pool-installation.png"
+              alt="hero small image"
+              className="hero-main-image mb-0"
+            />
           </div>
         </div>
       </div>
