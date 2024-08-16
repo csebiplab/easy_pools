@@ -18,6 +18,7 @@ import InstallationServices from "./InstallationServices/InstallationServices";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import { headingIconText } from "@/utils/heading-text";
 import { bHeadingTexts } from "@/utils/bHeadingText";
+import "../../../app/globals.css";
 
 const SwimingPoolInstallationInVaughan = () => {
   return (
@@ -67,11 +68,7 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <Review 
-         bHeading={
-          bHeadingTexts.swimmingPoolReview__bHeading
-         }
-        />
+        <Review bHeading={bHeadingTexts.swimmingPoolReview__bHeading} />
       </section>
 
       <section>
@@ -83,13 +80,10 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section className="padding__all bg_swimmingPool">
-        <OurServiceAreas classNames={{ bg: "bg_swimmingPool" }}  
-        sHeading={
-          headingIconText.map__IconTxt
-        }
-        bHeading={
-          bHeadingTexts.swimmgingPoolMap__bHeading
-        }
+        <OurServiceAreas
+          classNames={{ bg: "bg_swimmingPool" }}
+          sHeading={headingIconText.map__IconTxt}
+          bHeading={bHeadingTexts.swimmgingPoolMap__bHeading}
         />
       </section>
     </div>
