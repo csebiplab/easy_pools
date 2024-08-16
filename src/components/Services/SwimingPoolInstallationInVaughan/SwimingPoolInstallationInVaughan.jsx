@@ -67,11 +67,7 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <Review 
-         bHeading={
-          bHeadingTexts.swimmingPoolReview__bHeading
-         }
-        />
+        <Review bHeading={bHeadingTexts.swimmingPoolReview__bHeading} />
       </section>
 
       <section>
@@ -83,13 +79,10 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section className="padding__all bg_swimmingPool">
-        <OurServiceAreas classNames={{ bg: "bg_swimmingPool" }}  
-        sHeading={
-          headingIconText.map__IconTxt
-        }
-        bHeading={
-          bHeadingTexts.swimmgingPoolMap__bHeading
-        }
+        <OurServiceAreas
+          classNames={{ bg: "bg_swimmingPool" }}
+          sHeading={headingIconText.map__IconTxt}
+          bHeading={bHeadingTexts.swimmgingPoolMap__bHeading}
         />
       </section>
     </div>

@@ -12,8 +12,9 @@ const PoolInstallationCompanyInMarkhamBanner = () => {
               <h1 className="leading-normal text-[36px] md:text-[39px] lg:text-[42px] xl:text-[45px] 2xl:text-[48px] 3xl:text-[50px] 4xl:text-[53px] 5xl:text-[55px] font-bold text-left text-black">
                 #1 Pool Installation Company in Markham
               </h1>
-              <p  className="text-lg font-normal mb-5 leading-6 mt-4 text-black">
-              Transform your backyard with our professional pool installation services in Markham.
+              <p className="text-lg font-normal mb-5 leading-6 mt-4 text-black">
+                Transform your backyard with our professional pool installation
+                services in Markham.
               </p>
               <div className="mb-4 md:mb-0">
                 <a
@@ -23,9 +24,18 @@ const PoolInstallationCompanyInMarkhamBanner = () => {
                   <button className="px-[34px] py-2 hero_btn text-white text-xs lg:text-lg font-bold capitalize flex items-center gap-x-2">
                     <span className="text-white">Get an Estimate </span>
                     <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
-                    <path d="M0 10.5902L4.59 6.00095L0 1.41168L1.42 0.00190926L7.42 6.00095L1.42 12L0 10.5902Z" fill="white"/>
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="12"
+                        viewBox="0 0 8 12"
+                        fill="none"
+                      >
+                        <path
+                          d="M0 10.5902L4.59 6.00095L0 1.41168L1.42 0.00190926L7.42 6.00095L1.42 12L0 10.5902Z"
+                          fill="white"
+                        />
+                      </svg>
                     </span>
                   </button>
                 </a>

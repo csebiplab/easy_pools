@@ -1,7 +1,5 @@
-
 /* Hero section */
 .hero-section {
-  width: 100%;
   height: auto;
   background-image: url("/assets/poolInstallationCompanyInMarkham/hero-section.jpg");
   background-position: center center;
@@ -17,10 +15,9 @@
   width: 100%;
   object-fit: cover;
 }
-  
-  .hero_btn{
-    border-radius: 50px;
-  background: #049E43;
+
+.hero_btn {
+  border-radius: 50px;
+  background: #049e43;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
-  }
-  
+}

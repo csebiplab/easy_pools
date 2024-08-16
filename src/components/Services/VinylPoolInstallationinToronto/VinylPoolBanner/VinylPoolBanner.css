@@ -1,7 +1,5 @@
-
 /* Hero section */
 .hero-section {
-  width: 100%;
   height: auto;
   background-image: url("/assets/VinylPool/hero-bg.jpg");
   background-position: center center;
@@ -18,8 +16,8 @@
   object-fit: cover;
 }
 
-.hero_btn{
+.hero_btn {
   border-radius: 50px;
-background: #049E43;
-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  background: #049e43;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
 }

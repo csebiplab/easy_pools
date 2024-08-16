@@ -13,7 +13,7 @@ import { bHeadingTexts } from "@/utils/bHeadingText";
 import { headingIconText } from "@/utils/heading-text";
 import Definition from "./Definition/Definition";
 import Unveils from "./Unveils/Unveils";
-import Process from "@/components/__one_time_used/FiberglassPoolInstallationInToronto/Process/Process";
+import Process from "@/components/Services/FiberglassPoolInstallationInToronto/Process/Process";
 import Design from "./Design/Design";
 import VinylCompare from "./VinylCompare/VinylCompare";
 import Benifits from "./Benifits/Benifits";
@@ -71,10 +71,9 @@ const VinylPoolInstallationinToronto = () => {
       </section>
 
       <section>
-        <Review classNames={{ bg: "bg_vinylPool" }} 
-        bHeading={
-          bHeadingTexts.swimmingPoolReview__bHeading
-        }
+        <Review
+          classNames={{ bg: "bg_vinylPool" }}
+          bHeading={bHeadingTexts.swimmingPoolReview__bHeading}
         />
       </section>
 
@@ -83,7 +82,7 @@ const VinylPoolInstallationinToronto = () => {
       </section>
 
       <section>
-        <HireUs/>
+        <HireUs />
       </section>
 
       <section>
