@@ -37,7 +37,7 @@ export default function ShowMetadatas({ data }) {
               key={item?._id}
               className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
             >
-              <td className="px-6 py-4 font-medium text-green-800 whitespace-nowrap !uppercase">
+              <td className="px-6 py-4 font-medium text-green-800 !uppercase">
                 {item?.pageName}
                 <br />
                 <span className="text-blue-500 underline !lowercase">
