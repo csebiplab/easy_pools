@@ -15,8 +15,6 @@ export async function POST(request) {
         return NextResponse.json({ message: "Missing required fields" }, { status: 400 });
     }
 
-    console.log({ ...createData })
-
     await MetaDataModel.create({ ...createData });
     return NextResponse.json(
         { message: "Request success", data: createData },
