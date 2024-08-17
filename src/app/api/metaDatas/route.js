@@ -29,10 +29,13 @@ export async function GET(request) {
     const searchParams = request.nextUrl.searchParams;
     const pageName = searchParams.get('pageName');
 
-    // console.log(pageName, "search params from get metadats")
+    const query = {}
 
+    if (pageName) {
+        query['pageName'] = pageName
+    }
 
-    const data = await MetaDataModel.findOne({ pageName });
+    const data = await MetaDataModel.find(query).select('_id pageName title description keywords')
     return NextResponse.json(
         {
             message: "Request success",
