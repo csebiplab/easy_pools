@@ -7,6 +7,10 @@ const metaDataSchema = new Schema(
         title: String,
         description: String,
         keywords: String,
+        pageLink: {
+            type: String,
+            required: true
+        },
     },
     {
         timestamps: true,
