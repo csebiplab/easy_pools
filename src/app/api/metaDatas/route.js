@@ -15,7 +15,6 @@ export async function POST(request) {
         return NextResponse.json({ message: "Missing required fields" }, { status: 400 });
     }
 
-
     await MetaDataModel.create({ ...createData });
     return NextResponse.json(
         { message: "Request success", data: createData },
@@ -35,7 +34,7 @@ export async function GET(request) {
         query['pageName'] = pageName
     }
 
-    const data = await MetaDataModel.find(query).select('_id pageName title description keywords')
+    const data = await MetaDataModel.find(query).select('_id pageLink pageName title description keywords')
     return NextResponse.json(
         {
             message: "Request success",

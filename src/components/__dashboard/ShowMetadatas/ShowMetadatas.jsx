@@ -39,6 +39,10 @@ export default function ShowMetadatas({ data }) {
             >
               <td className="px-6 py-4 font-medium text-green-800 whitespace-nowrap !uppercase">
                 {item?.pageName}
+                <br />
+                <span className="text-blue-500 underline !lowercase">
+                  {item?.pageLink ? item?.pageLink : "Please add page link"}
+                </span>
               </td>
               <td className="px-6 py-4">{item?.title}</td>
               <td className="px-6 py-4">{item?.description}</td>
