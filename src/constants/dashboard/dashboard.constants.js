@@ -30,6 +30,16 @@ export const dashboardConfig = {
             submenu: true,
             submenus: [
                 {
+                    title: "Create Metadata",
+                    href: "/dashboard/allpages/create-all-pages-metadata",
+                    icon: "dessert",
+                },
+                {
+                    title: "Show All Metadata",
+                    href: "/dashboard/allpages/create-all-pages-metadata",
+                    icon: "dessert",
+                },
+                {
                     title: "Home",
                     href: "/dashboard/allpages/home",
                     icon: "dessert",
