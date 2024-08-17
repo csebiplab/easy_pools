@@ -138,7 +138,8 @@ const CreateAndUpdateFormForPageMeta = ({
 
             <div className="px-5">
                 {
-                    id ? <h3 className="text-2xl uppercase">Update <span className="text-primary border-2 p-2 border-secondary">{pageName} | (Link: {pageLink ? pageLink : ""})</span> Page Meta Data</h3> :
+                    id ? <> <h3 className="text-2xl uppercase">Update <span className="text-primary border-2 p-2 border-secondary">{pageName}</span> Page Meta Data</h3>
+                        <h3 className="text-xl mt-1">Update <span className="text-primary">{pageLink ? pageLink : "Please Add Page Link"}</span> Page Meta Data</h3> </> :
                         <h3 className="text-2xl uppercase">Create Page Meta Data</h3>
                 }
                 <div>
