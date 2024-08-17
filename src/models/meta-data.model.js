@@ -1,15 +1,14 @@
 import mongoose, { Schema, models } from "mongoose";
 
-
 const metaDataSchema = new Schema(
     {
-        pageName: String,
-        title: String,
-        description: String,
-        keywords: String,
+        pageName: { type: String },
+        title: { type: String },
+        description: { type: String },
+        keywords: { type: String },
         pageLink: {
             type: String,
-            required: true
+            required: false,
         },
     },
     {
@@ -17,9 +16,6 @@ const metaDataSchema = new Schema(
     }
 );
 
-const MetaDataModel =
-    models.MetaDataModel ||
-    mongoose.model("MetaDataModel", metaDataSchema);
-
+const MetaDataModel = models.MetaDataModel || mongoose.model("MetaDataModel", metaDataSchema);
 
 export default MetaDataModel;

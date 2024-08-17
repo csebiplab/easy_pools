@@ -8,6 +8,7 @@ const CreateAndUpdateFormForPageMeta = ({
     setIsUpdateCreateLoading,
 }) => {
     const [inputValue, setInputValue] = useState({
+        pageLink: "",
         pageName: "",
         title: "",
         description: "",
@@ -16,6 +17,7 @@ const CreateAndUpdateFormForPageMeta = ({
 
 
     const { _id: id,
+        pageLink,
         pageName,
         title: titleValue,
         description: descriptionValue,
@@ -28,12 +30,20 @@ const CreateAndUpdateFormForPageMeta = ({
 
     useEffect(() => {
         setInputValue({
+            pageLink: pageLink,
             pageName: pageName,
             title: titleValue,
             description: descriptionValue,
             keywords: keywordsValue,
         });
     }, [id]);
+
+    const handlepageLinkChange = (e) => {
+        setInputValue((prevInputValue) => ({
+            ...prevInputValue,
+            pageLink: e.target.value,
+        }));
+    };
 
     const handlepageNameChange = (e) => {
         setInputValue((prevInputValue) => ({
@@ -66,7 +76,7 @@ const CreateAndUpdateFormForPageMeta = ({
     const handleSubmit = async () => {
         if (id) {
             setIsUpdateCreateLoading(true)
-            let { pageName, title, description, keywords } = inputValue;
+            let { pageLink, pageName, title, description, keywords } = inputValue;
             try {
                 const res = await fetch(
                     `${baseAPIUrl}/api/${endPoints}/${id}`,
@@ -75,7 +85,7 @@ const CreateAndUpdateFormForPageMeta = ({
                         headers: {
                             "Content-type": "application/json",
                         },
-                        body: JSON.stringify({ pageName, title, description, keywords }),
+                        body: JSON.stringify({ pageLink, pageName, title, description, keywords }),
                     }
                 );
                 if (!res.ok) {
@@ -105,6 +115,7 @@ const CreateAndUpdateFormForPageMeta = ({
                     toast(`Successfully submitted meta data`);
                     setIsUpdateCreateLoading(false)
                     setInputValue({
+                        pageLink: "",
                         pageName: "",
                         title: "",
                         description: "",
@@ -127,11 +138,30 @@ const CreateAndUpdateFormForPageMeta = ({
 
             <div className="px-5">
                 {
-                    id ? <h3 className="text-2xl uppercase">Update <span className="text-primary border-2 p-2 border-secondary">{pageName}</span> Page Meta Data</h3> :
+                    id ? <h3 className="text-2xl uppercase">Update <span className="text-primary border-2 p-2 border-secondary">{pageName} | (Link: {pageLink ? pageLink : ""})</span> Page Meta Data</h3> :
                         <h3 className="text-2xl uppercase">Create Page Meta Data</h3>
                 }
                 <div>
                     <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                        <div className="sm:col-span-3">
+                            <label
+                                htmlFor="pageLink"
+                                className="block text-sm font-extrabold leading-6 text-gray-900"
+                            >
+                                Page Link
+                            </label>
+                            <div className="mt-2">
+                                <input
+                                    type="text"
+                                    name="pageLink"
+                                    id="pageLink"
+                                    autoComplete="given-name"
+                                    className="block lg:w-4/6 w-full px-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    value={inputValue.pageLink}
+                                    onChange={handlepageLinkChange}
+                                />
+                            </div>
+                        </div>
                         <div className="sm:col-span-3">
                             <label
                                 htmlFor="pageName"
@@ -153,32 +183,33 @@ const CreateAndUpdateFormForPageMeta = ({
                                 />
                             </div>
                         </div>
-                        <div className="sm:col-span-3">
-                            <label
-                                htmlFor="first-name"
-                                className="block text-sm font-medium leading-6 text-gray-900"
-                            >
-                                Meta Title
-                            </label>
-                            <div className="mt-2">
-                                <input
-                                    required
-                                    type="text"
-                                    name="title"
-                                    id="title"
-                                    autoComplete="given-name"
-                                    className="block lg:w-4/6 w-full px-5 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                    value={inputValue.title}
-                                    onChange={handleTitleChange}
-                                />
-                            </div>
-                        </div>
+
 
 
                         <div className="col-span-full">
                             <label
+                                htmlFor="title"
+                                className="block text-sm font-extrabold leading-6 text-gray-900"
+                            >
+                                Meta Title
+                            </label>
+                            <div className="mt-2">
+                                <textarea
+                                    id="title"
+                                    name="title"
+                                    rows={3}
+                                    className="block w-full px-5  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    defaultValue={""}
+                                    value={inputValue.title}
+                                    onChange={handleTitleChange}
+                                />
+
+                            </div>
+                        </div>
+                        <div className="col-span-full">
+                            <label
                                 htmlFor="description"
-                                className="block text-sm font-medium leading-6 text-gray-900"
+                                className="block text-sm font-extrabold leading-6 text-gray-900"
                             >
                                 Meta Description
                             </label>
@@ -198,7 +229,7 @@ const CreateAndUpdateFormForPageMeta = ({
                         <div className="col-span-full">
                             <label
                                 htmlFor="keyword"
-                                className="block text-sm font-medium leading-6 text-gray-900"
+                                className="block text-sm font-extrabold leading-6 text-gray-900"
                             >
                                 Keywords
                             </label>
