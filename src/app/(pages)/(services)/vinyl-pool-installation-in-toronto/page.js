@@ -9,7 +9,7 @@ export async function generateMetadata() {
             cache: "no-store",
         });
         const metaData = await metaDataResponse.json();
-        const { title, description, keywords } = metaData?.data ?? {};
+        const { title, description, keywords } = metaData?.data[0] ?? {};
 
 
         return {

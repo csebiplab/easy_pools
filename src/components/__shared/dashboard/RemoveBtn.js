@@ -4,7 +4,7 @@ import { HiOutlineTrash } from "react-icons/hi";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
-export default function RemoveBtn({ id, endPoints, pagename = "home" }) {
+export default function RemoveBtn({ id, pagename = "home" }) {
   const router = useRouter();
   const removeTopic = async () => {
     const confirmed = confirm("Are you sure?");
@@ -13,7 +13,7 @@ export default function RemoveBtn({ id, endPoints, pagename = "home" }) {
 
     if (confirmed) {
       const res = await fetch(
-        `${baseAPIUrl}/api/${endPoints}?id=${id}`,
+        `${baseAPIUrl}/api/metaDatas?id=${id}`,
         {
           method: "DELETE",
         }
@@ -23,8 +23,6 @@ export default function RemoveBtn({ id, endPoints, pagename = "home" }) {
         router.refresh();
       }
       toast(`${pagename} meta data successfully deleted.`);
-      router.push(`/dashboard/allpages/${pagename}`);
-      console.log("resposne for delete", res);
     }
   };
 

@@ -36,49 +36,49 @@ export const dashboardConfig = {
                 },
                 {
                     title: "Show All Metadata",
-                    href: "/dashboard/allpages/create-all-pages-metadata",
+                    href: "/dashboard/allpages/see-all-page-metadata",
                     icon: "dessert",
                 },
-                {
-                    title: "Home",
-                    href: "/dashboard/allpages/home",
-                    icon: "dessert",
-                },
-                {
-                    title: "Blogs",
-                    href: "/dashboard/allpages/blogs",
-                    icon: "dessert",
-                },
-                {
-                    title: "Barrie",
-                    href: "/dashboard/allpages/barrie",
-                    icon: "dessert",
-                },
-                {
-                    title: "Toronto Fiberglass",
-                    href: "/dashboard/allpages/fiberglass",
-                    icon: "dessert",
-                },
-                {
-                    title: "Vaughan Pools",
-                    href: "/dashboard/allpages/vaughan-pool",
-                    icon: "dessert",
-                },
-                {
-                    title: "Vinyl Pools",
-                    href: "/dashboard/allpages/vinyl-pool",
-                    icon: "dessert",
-                },
-                {
-                    title: "Markham Pools",
-                    href: "/dashboard/allpages/markham-pool",
-                    icon: "dessert",
-                },
-                {
-                    title: "Contact Us",
-                    href: "/dashboard/allpages/contactUs",
-                    icon: "dessert",
-                },
+                // {
+                //     title: "Home",
+                //     href: "/dashboard/allpages/home",
+                //     icon: "dessert",
+                // },
+                // {
+                //     title: "Blogs",
+                //     href: "/dashboard/allpages/blogs",
+                //     icon: "dessert",
+                // },
+                // {
+                //     title: "Barrie",
+                //     href: "/dashboard/allpages/barrie",
+                //     icon: "dessert",
+                // },
+                // {
+                //     title: "Toronto Fiberglass",
+                //     href: "/dashboard/allpages/fiberglass",
+                //     icon: "dessert",
+                // },
+                // {
+                //     title: "Vaughan Pools",
+                //     href: "/dashboard/allpages/vaughan-pool",
+                //     icon: "dessert",
+                // },
+                // {
+                //     title: "Vinyl Pools",
+                //     href: "/dashboard/allpages/vinyl-pool",
+                //     icon: "dessert",
+                // },
+                // {
+                //     title: "Markham Pools",
+                //     href: "/dashboard/allpages/markham-pool",
+                //     icon: "dessert",
+                // },
+                // {
+                //     title: "Contact Us",
+                //     href: "/dashboard/allpages/contactUs",
+                //     icon: "dessert",
+                // },
             ],
         },
         {
