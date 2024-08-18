@@ -3,13 +3,17 @@ import { pageName } from "@/constants/dashboard/pageName.constants";
 
 function extractGoogleConsoleKey(verificationData) {
   try {
-    const metaTagContent = verificationData.verificationUrl?.[0]?.title;
+    const metaTagContent = verificationData.verificationUrl?.[0]?.url;
+    // console.log(metaTagContent, "META TAG CONTNT")
     if (!metaTagContent) return "";
 
     const parts = metaTagContent.split(" ");
     if (parts.length < 3) return "";
 
+    // console.log(parts, "key parts")
+
     const consoleKeyPart = parts[2].split("=")[1];
+    // console.log(consoleKeyPart, "gvid")
     return consoleKeyPart.slice(1, -1);
   } catch (error) {
     console.error('Error extracting Google console key:', error);
@@ -31,6 +35,7 @@ export async function generateMetadata() {
       cache: "no-store",
     });
     const googleVerification = await googleVerificationResponse.json();
+    // console.log("verificaion", googleVerification)
     const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
 
     return {
@@ -40,6 +45,9 @@ export async function generateMetadata() {
       verification: {
         google: googleConsoleKey,
       },
+      alternates: {
+        canonical: 'https://easypools.ca/',
+      }
     };
   } catch (error) {
     console.error('Error generating metadata:', error);
