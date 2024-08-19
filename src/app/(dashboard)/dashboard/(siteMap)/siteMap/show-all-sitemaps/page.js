@@ -4,6 +4,7 @@ import RemoveBtnComponent from '@/components/__dashboard/SitemapComponents/Remov
 import useFetchData from '@/hooks/useFetchData';
 import Link from 'next/link';
 import React from 'react';
+import { HiPencilAlt } from 'react-icons/hi';
 
 const page = () => {
     const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL + `/api/siteMap`;
@@ -55,6 +56,11 @@ const page = () => {
                                     <td className="px-6 py-4">{item?.priority}</td>
                                     <td className="px-6 py-4">
                                         <div className="flex gap-2">
+                                            <Link
+                                                href={`/dashboard/siteMap/${item?._id}`}
+                                            >
+                                                <HiPencilAlt size={24} />
+                                            </Link>
                                             <RemoveBtnComponent id={item._id} />
                                         </div>
                                     </td>

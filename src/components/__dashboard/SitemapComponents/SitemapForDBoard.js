@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import Link from "next/link";
 
-function SitemapForDBoard({ data, id, changefreqValue, locValue, priorityValue }) {
+function SitemapForDBoard({ data }) {
   const router = useRouter();
   const [inputValue, setInputValue] = useState({
     changefreq: "weekly", // Default value for changefreq
@@ -13,10 +13,12 @@ function SitemapForDBoard({ data, id, changefreqValue, locValue, priorityValue }
   });
 
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
+  const { _id: id, changefreq: changefreqValue, loc: locValue, priority: priorityValue } = data ?? {};
+
 
   useEffect(() => {
     setInputValue({
-      changefreq: changefreqValue || "weekly", // Use the provided value or default to "weekly"
+      changefreq: changefreqValue || "weekly",
       loc: locValue || "",
       priority: priorityValue || 0.5,
     });
@@ -38,7 +40,7 @@ function SitemapForDBoard({ data, id, changefreqValue, locValue, priorityValue }
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify({ changefreq, loc, priority }), // Send payload with proper field names
+      body: JSON.stringify({ changefreq, loc, priority }),
     };
 
     const apiUrl = `${baseAPIUrl}/api/siteMap${id ? `/${id}` : ""}`;
