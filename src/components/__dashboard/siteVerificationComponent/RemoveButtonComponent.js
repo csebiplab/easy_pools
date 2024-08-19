@@ -4,28 +4,27 @@ import { HiOutlineTrash } from "react-icons/hi";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
-export default function RemoveBtnComponent({ id }) {
+export default function RemoveBtnComponent({ id, endpoint }) {
   const router = useRouter();
-  const removeTopic = async () => {
+  const deleteDataHandler = async () => {
     const confirmed = confirm("Are you sure?");
 
     const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL
 
     if (confirmed) {
-      const res = await fetch(`${baseAPIUrl}/api/siteVerification?id=${id}`, {
+      const res = await fetch(`${baseAPIUrl}/api/${endpoint}?id=${id}`, {
         method: "DELETE",
       });
 
       if (res.ok) {
         router.refresh();
       }
-      toast(`Site map URL successfully deleted.`);
-      router.push(`/dashboard/siteVerification`);
+      toast(`Successfully deleted.`);
     }
   };
 
   return (
-    <button onClick={removeTopic} className="text-red-400">
+    <button onClick={deleteDataHandler} className="text-red-400">
       <HiOutlineTrash size={24} />
     </button>
   );
