@@ -1,5 +1,5 @@
 export default async function robots() {
-    const sitemapUrl = `${process.env.NEXT_PUBLIC_API_URL}/sitemap.xml`;
+    const sitemapUrl = `https://easypools.ca/sitemap.xml`;
     const robotStatic = {
         rules: [
             {
@@ -19,8 +19,8 @@ export default async function robots() {
 
         const rules = data?.map((singleData) => ({
             userAgent: singleData?.user_agent || '*',
-            allow: singleData?.allow || ['/public/'],
-            disallow: singleData?.disallow || ['/private/'],
+            allow: [singleData?.allow] || ['/public/'],
+            disallow: [singleData?.disallow] || ['/private/'],
         }));
 
         return {
