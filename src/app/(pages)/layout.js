@@ -3,6 +3,8 @@ import { Roboto_Slab } from "next/font/google";
 import "../globals.css"
 import { NavHeader } from "@/components/layouts/Header/NavHeader";
 import { pageName } from "@/constants/dashboard/pageName.constants";
+import { headers } from "next/headers";
+
 
 const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
 
@@ -24,6 +26,11 @@ function extractGoogleConsoleKey(verificationData) {
 }
 
 export async function generateMetadata() {
+
+  const headerList = headers();
+  const pathname = headerList.get("x-current-path");
+
+
   try {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
@@ -47,8 +54,9 @@ export async function generateMetadata() {
         google: googleConsoleKey,
       },
       alternates: {
-        canonical: 'https://easypools.ca/',
-      }
+        canonical: `https://easypools.ca${pathname}`,
+      },
+      robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     };
   } catch (error) {
     return {
@@ -60,6 +68,7 @@ export async function generateMetadata() {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body className={robotoSlab.className}>
