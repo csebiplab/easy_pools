@@ -16,9 +16,6 @@ export async function generateMetadata() {
             title: title ? title : "Fiberglass Pool Installation in Toronto | Easy Pools",
             description: description ? description : "Easy Pools specializes in expert fiberglass pool installation in Toronto with our experienced pool installers.",
             keywords: keywords ? keywords : "fiberglass pools, fiberglass inground pools, fiberglass swimming pool, fiberglass pools Toronto,",
-            alternates: {
-                canonical: 'https://easypools.ca/vinyl-pool-installation-in-toronto',
-            }
         };
     } catch (error) {
         return {

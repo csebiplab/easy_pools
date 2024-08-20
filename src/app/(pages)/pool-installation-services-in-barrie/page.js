@@ -17,9 +17,7 @@ export async function generateMetadata() {
             title: title ? title : "#1 Swimming Pool Installation in Barrie | Easy Pools",
             description: description ? description : "Easy Pools offers the best swimming pool installation services and a wide range of pool supplies in Barrie.",
             keywords: keywords ? keywords : "easy pools, best pools, great pools, Barrie Pool Installation, Pool Installation Barrie, ",
-            alternates: {
-                canonical: 'https://easypools.ca/pool-installation-services-in-barrie',
-            }
+
         };
     } catch (error) {
         return {
