@@ -4,6 +4,8 @@ import "../globals.css"
 import { NavHeader } from "@/components/layouts/Header/NavHeader";
 import { pageName } from "@/constants/dashboard/pageName.constants";
 import { headers } from "next/headers";
+import { GoogleTagManager } from '@next/third-parties/google'
+
 
 
 const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
@@ -71,10 +73,23 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-WLRGDBZW" />
+
       <body className={robotoSlab.className}>
-        <NavHeader />
-        {children}
-        <Footer />
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLRGDBZW"
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
+
+        <>
+          <NavHeader />
+        </>
+        <>
+          {children}
+        </>
+        <>
+          <Footer />
+        </>
       </body>
     </html>
   );
