@@ -30,7 +30,7 @@ import "./NavHeader.css";
 
 const our__location__menuItem = [
   {
-    title: "Barrie",
+    title: "Pool Installation Services In Barrie",
     route: "/pool-installation-services-in-barrie",
   },
   // {
@@ -109,51 +109,22 @@ function OurLocationMenu() {
 const our_service_menu_items = {
   interior: [
     {
-      title: "Vaughan Swimming Pool",
+      title: "Swimming Pool Installation Company in Vaughan",
       route: "/swimming-pool-installation-company-in-vaughan",
     },
     {
-      title: "Vinyl Pool Installation",
+      title: "Vinyl Pool Installation in Toronto",
       route: "/vinyl-pool-installation-in-toronto",
     },
     {
-      title: "Fiberglass Pool Installation",
+      title: "Fiberglass Pool Installation in Toronto",
       route: "/fiberglass-pool-installation-in-toronto",
     },
     {
       title: "Pool Installation Company In Markham",
       route: "/pool-installation-company-in-markham",
     },
-    // { title: "Sheetrock", route: "/sheetrock" },
-    // { title: "Plastering", route: "/plastering" },
-    // {
-    //   title: "Electrical & Plumbing",
-    //   route: "/emergency-electrical-service",
-    // },
   ],
-  // exterior: [
-  //   { title: "Concrete Contractor", route: "/concrete-contractor" },
-  //   { title: "Roofing", route: "/roofing" },
-  //   { title: "Pointing", route: "/pointing" },
-  //   { title: "Water Proofing", route: "/water-proofing" },
-  //   {
-  //     title: "Sidewalk Repair and Replace",
-  //     route: "/sidewalk-repair-and-replace",
-  //   },
-  //   { title: "Brown Stone Repair", route: "/brown-stone" },
-  //   { title: "Exterior Brickwork", route: "/exterior-brickwork" },
-  //   {
-  //     title: "Emergency Plumbing",
-  //     route: "/emergency-plumber-brooklyn",
-  //   },
-  //   { title: "Brick Works", route: "/exterior-brickwork" },
-  //   { title: "Power Wash", route: "/power-wash" },
-  //   { title: "Siding", route: "/siding-contractors" },
-  //   {
-  //     title: "All kinds of Masonry Work",
-  //     route: "/all-kinds-of-masonry-work",
-  //   },
-  // ],
 };
 
 function OurServiceManu() {
@@ -208,18 +179,6 @@ function OurServiceManu() {
               <h3 className="mb-1 text-primary font-semibold">Interior</h3>
               <ul>{renderItems(our_service_menu_items.interior)}</ul>
             </div>
-            {/* <div>
-              <h3 className="mb-1 text-primary font-semibold">Exterior</h3>
-              <ul>
-                {renderItems(our_service_menu_items.exterior.slice(0, 6))}
-              </ul>
-            </div> */}
-            {/* <div>
-              <h3 className="mb-1 text-primary font-semibold"></h3>
-              <ul>
-                {renderItems(our_service_menu_items.exterior.slice(6, 12))}
-              </ul>
-            </div> */}
           </div>
         </MenuList>
       </Menu>
@@ -228,9 +187,6 @@ function OurServiceManu() {
           <h4 className="text-primary mb-1 font-semibold">Interior</h4>
           <ul>{renderItems(our_service_menu_items.interior)}</ul>
           <hr className="my-1" />
-          {/* <h4 className="text-primary mb-1 font-semibold">Exterior</h4> */}
-          {/* <ul>{renderItems(our_service_menu_items.exterior)}</ul> */}
-          {/* <hr className="my-1" /> */}
         </Collapse>
       </div>
     </>
