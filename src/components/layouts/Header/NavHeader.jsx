@@ -1,11 +1,6 @@
 "use client";
 
-import constants from "@/libs/constants";
-import {
-  Bars3Icon,
-  ChevronDownIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { ChevronDownIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import {
   Collapse,
   Drawer,
@@ -33,10 +28,6 @@ const our__location__menuItem = [
     title: "Pool Installation Services In Barrie",
     route: "/pool-installation-services-in-barrie",
   },
-  // {
-  //   title: "Fiberglass Pool Installation",
-  //   route: "/fiberglass-pool-installation-in-toronto",
-  // },
 ];
 
 function OurLocationMenu() {
@@ -44,7 +35,7 @@ function OurLocationMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = (data = []) => {
     return data?.map(({ route, title }, key) => (
-      <Link href={route} key={key}>
+      <Link href={route} key={key} aria-label={title}>
         <MenuItem className="rounded-md">
           <Typography color="blue-gray">{title}</Typography>
         </MenuItem>
@@ -132,7 +123,7 @@ function OurServiceManu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = (data = []) => {
     return data?.map(({ route, title }, key) => (
-      <Link href={route} key={key}>
+      <Link href={route} key={key} aria-label={title}>
         <MenuItem className="rounded-md">
           <Typography color="blue-gray">{title}</Typography>
         </MenuItem>
@@ -194,7 +185,6 @@ function OurServiceManu() {
 }
 
 // our services nav list end
-
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row items-center border-0 outline-none">
@@ -308,7 +298,6 @@ export function NavHeader() {
                   {openNav ? (
                     <XMarkIcon className="h-6 w-6" strokeWidth={2} />
                   ) : (
-                    //   <Bars3Icon className="h-6 w-6" strokeWidth={2} />
                     <Image
                       src="/assets/projects/images/nenu-bar.png"
                       alt="menu bar"
