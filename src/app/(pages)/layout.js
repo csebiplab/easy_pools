@@ -53,6 +53,10 @@ export async function generateMetadata() {
       title: title || "#1 Swimming Pool Installation in Toronto | Easy Pools",
       description: description || "Easy Pools offers expert swimming pool installation services in Toronto. Our skilled Toronto pool installers ensure top-quality workmanship.",
       keywords: keywords || "easy pools, best pools, great pools, Toronto Pool Installation, Pool Installation Toronto, ",
+      openGraph: {
+        title: title,
+        description: description,
+      },
       verification: {
         google: googleConsoleKey,
       },
