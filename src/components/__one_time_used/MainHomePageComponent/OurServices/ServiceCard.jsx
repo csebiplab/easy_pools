@@ -22,7 +22,7 @@ const ServiceCard = ({ serv }) => {
           <p className=" 2xl:text-[15px] text-[10px] leading-[20px]">{desc}</p>
           <div className="pb-5 mt-5 flex justify-center items-b relative">
             <Link href={`/${url}`}>
-              <CommonButton />
+              <CommonButton buttonText={`Learn More About ${title}`} />
             </Link>
           </div>
         </div>
