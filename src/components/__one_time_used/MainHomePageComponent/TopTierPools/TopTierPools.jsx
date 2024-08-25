@@ -20,47 +20,44 @@ const TopTierPools = () => {
                 </p>
               </div>
             </div>
-            <div className=" ltr:sm:text-left rtl:sm:text-right">
-            <p className="2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] text-center md:text-start mt-0 md:mt-2 font-bold">
-            
-                  Looking for top-tier pool installation solutions in Toronto?
-                
-            </p>
+            <div className="ltr:sm:text-left rtl:sm:text-right">
+              <p className="2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] text-center md:text-start mt-0 md:mt-2 font-bold">
+                Looking for top-tier pool installation solutions in Toronto?
+              </p>
               <p className="2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] text-center md:text-start mt-3 md:mt-1">
                 {" "}
-               
                 Look no further. Our company specializes in providing premium
                 pool installation services tailored to meet your specific needs
                 and preferences. With our team of skilled professionals and
                 years of experience in the industry, we ensure that every aspect
                 of your pool installation project is handled with utmost care
-                and precision, from design to completion.
-                Quality and reliability are paramount for pool installation, and
-                that's exactly what we deliver.
+                and precision, from design to completion. Quality and
+                reliability are paramount for pool installation, and that's
+                exactly what we deliver.
               </p>
             </div>
           </div>
 
-          <div className=" flex justify-center items-center xs:order-1 md:order-2 ">
+          <div className="flex justify-center items-center xs:order-1 md:order-2 ">
             {/* ========== Large Screen ======== */}
             <div className="hidden md:block">
-            <Image
-              alt="top tire pools"
-              src="/assets/random/toptier.png"
-              height={700}
-              width={425}
-              className="w-full"
-            />
+              <Image
+                alt="top tire pools"
+                src="/assets/random/toptier.png"
+                height={700}
+                width={551}
+                className="w-full"
+              />
             </div>
             {/* ========= Mobile view ========== */}
             <div className="block md:hidden">
-            <Image
-              alt="top tire pools"
-              src="/assets/random/toptier.png"
-              height={700}
-              width={425}
-              className=""
-            />
+              <Image
+                alt="top tire pools"
+                src="/assets/random/toptier.png"
+                height={700}
+                width={551}
+                className="w-full"
+              />
             </div>
           </div>
         </div>
