@@ -19,7 +19,8 @@ const QAPoolInstallationQuestionsNAns = [
   },
   {
     id: 3,
-    question: "Are Easy Pools suitable for both residential and commercial pools?",
+    question:
+      "Are Easy Pools suitable for both residential and commercial pools?",
     answer:
       "Yes, Easy Pools caters to the needs of both residential and commercial pool owners. Whether you have a small backyard pool or a large commercial facility, our platform is designed to streamline pool management for any scale.",
   },
@@ -40,7 +41,7 @@ const QAPoolInstallationQuestionsNAns = [
     question: " How can I get help or support with Easy Pools?",
     answer:
       "If you need assistance with Easy Pools or have any questions or concerns, you can contact our customer support team directly through the Easy Pools app or website",
-  }
+  },
 ];
 
 const FAQ = () => {
@@ -66,7 +67,7 @@ const FAQ = () => {
 
                   <div>
                     <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
-                    Some Questions for Choosing the Best Company
+                      Some Questions for Choosing the Best Company
                     </h3>
                   </div>
                 </div>
@@ -76,7 +77,7 @@ const FAQ = () => {
                   <div key={idx}>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">
                       <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] py-3 px-5 5xl:py-[14px] 5xl:px-8 border-2">
-                        <h6 className="text-white text-xs lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
+                        <h6 className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
                           {ques.question}
                         </h6>
 
@@ -85,7 +86,7 @@ const FAQ = () => {
                         </div>
                       </summary>
 
-                      <p className="py-3 pl-4 pr-8 lg:py-4 lg:px-6 5xl:py-5 5xl:px-7  border-2 text-black text-xs lg:text-sm 5xl:text-base font-normal 5xl:leading-[30px]">
+                      <p className="py-3 pl-4 pr-8 lg:py-4 lg:px-6 5xl:py-5 5xl:px-7  border-2 text-black text-sm lg:text-sm 5xl:text-base font-normal 5xl:leading-[30px]">
                         {ques.answer}
                       </p>
                     </details>

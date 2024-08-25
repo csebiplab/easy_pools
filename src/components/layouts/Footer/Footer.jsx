@@ -177,7 +177,7 @@ const Footer = () => {
                     <div className="h-[1px] bg-[#8E8E8E] w-full mt-9 mb-4" />
 
                     <div className="text-center lg:text-left">
-                      <p className="text-xs lg:text-base text-white">
+                      <p className="text-sm lg:text-base text-white">
                         © All Copyright 2024 by Easy Pools
                       </p>
                       <ul className="text-sm lg:text-base flex justify-evenly gap-2 mt-4">
@@ -205,7 +205,7 @@ const Footer = () => {
       <div className="footer-bottom-bg">
         <div className="container flex flex-col lg:flex-row justify-between items-center py-2">
           <div className="flex justify-center items-center mb-2 lg:mb-0">
-            <p className="text-xs md:text-base font-semibold text-white mr-[10px] lg:mr-4">
+            <p className="text-sm md:text-base font-semibold text-white mr-[10px] lg:mr-4">
               WEBSITE DESIGN AND SEO BY :-
             </p>
             <Image
@@ -217,12 +217,12 @@ const Footer = () => {
             />
           </div>
           <div className="text-center lg:text-left hidden md:block">
-            <p className="text-xs lg:text-base text-white">
+            <p className="text-sm lg:text-base text-white">
               © All Copyright 2024 by Easy Pools
             </p>
           </div>
           <div className="text-center lg:text-right hidden md:block">
-            <ul className="text-xs lg:text-base flex justify-evenly gap-2">
+            <ul className="text-sm lg:text-base flex justify-evenly gap-2">
               <li className="text-white">
                 <Link href="/" className="text-white">
                   Terms & Condition

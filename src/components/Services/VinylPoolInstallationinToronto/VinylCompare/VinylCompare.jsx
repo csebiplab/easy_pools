@@ -114,12 +114,10 @@ const VinylCompare = () => {
         <div className="container">
           <div className="flex flex-col items-center">
             <div className="flex justify-center lg:justify-normal items-center">
-              <HeadingIcon
-                text={headingIconText.comparePool__IconText}
-              />
+              <HeadingIcon text={headingIconText.comparePool__IconText} />
             </div>
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-            How Does Vinyl Compare to Other Pool Materials in Your Catalogue?
+              How Does Vinyl Compare to Other Pool Materials in Your Catalogue?
             </h3>
           </div>
 
@@ -148,7 +146,7 @@ const VinylCompare = () => {
                       <h6 className="mt-4 mx-auto text-center text-2xl font-bold">
                         {service.title}{" "}
                       </h6>
-                      <h6 className="mx-auto text-center text-xs md:text-sm xl:text-base 3xl:text-lg font-normal">
+                      <h6 className="mx-auto text-center text-sm md:text-sm xl:text-base 3xl:text-lg font-normal">
                         {service.desc}{" "}
                       </h6>
                     </div>

@@ -29,7 +29,7 @@ const FlatPoolInstallation = () => {
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
               Get Your Resort-Style Pool in 7 Days
             </h3>
-            <p className="text-xs md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
+            <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
               Easy Pools is a premier destination for your swimming pool
               installation in Barrie in just seven days! At our company, we
               understand the importance of having a refreshing and luxurious

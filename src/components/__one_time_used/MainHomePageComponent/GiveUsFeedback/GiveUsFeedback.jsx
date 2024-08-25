@@ -26,7 +26,7 @@ const GiveUsFeedback = () => {
                 </h2>
                 <div className=" flex gap-1 md:gap-2 md:items-center text-center 2xl:text-[18px] text-[14px] lg:py-8 py-5 md:justify-start xs:justify-center ">
                   <FaMapLocationDot className=" 2xl:w-5 lg:h-5 w-auto h-auto fill-white" />
-                  <p className="text-xs md:text-base text-white">
+                  <p className="text-sm md:text-base text-white">
                     {" "}
                     1331 Major Mackenzie dr West, Vaughan
                   </p>
@@ -35,7 +35,7 @@ const GiveUsFeedback = () => {
                   <FaPhoneVolume className=" 2xl:w-5 lg:h-5 w-auto h-auto fill-white" />
                   <a
                     href="tel:+1(647)449-9512"
-                    className="text-xs md:text-base text-white"
+                    className="text-sm md:text-base text-white"
                   >
                     +1(647)449-9512
                   </a>
@@ -44,7 +44,7 @@ const GiveUsFeedback = () => {
                   <IoIosMail className=" 2xl:w-6 2xl:h-6 w-5 h-5 fill-white" />
                   <a
                     href="mailto:easypools.landscaping@gmail.com"
-                    className="text-xs md:text-base text-white"
+                    className="text-sm md:text-base text-white"
                   >
                     easypools.landscaping@gmail.com
                   </a>

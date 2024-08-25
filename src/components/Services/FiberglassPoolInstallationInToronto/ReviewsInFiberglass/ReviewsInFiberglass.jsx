@@ -153,7 +153,7 @@ const ReviewsInFiberglass = () => {
                   <h6 className="font-semibold text-gray-900 ">
                     {test.author}
                   </h6>
-                  <p className="text-gray-600 text-xs ">{test.location}</p>
+                  <p className="text-gray-600 text-sm ">{test.location}</p>
                 </div>
               </SwiperSlide>
             ))}

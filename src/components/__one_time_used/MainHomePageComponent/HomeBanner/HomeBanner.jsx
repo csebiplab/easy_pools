@@ -16,7 +16,7 @@ const HomeBanner = () => {
           <div className="flex justify-center">
             <a href="tel:+1(647) 449 9512">
               <button className="flex items-center rounded-full bg-secondary py-3 md:py-4 px-8 mt-7 md:mt-8">
-                <span className="text-white text-xs md:text-lg">
+                <span className="text-white text-sm md:text-lg">
                   Get an Estimate
                 </span>
                 <svg
