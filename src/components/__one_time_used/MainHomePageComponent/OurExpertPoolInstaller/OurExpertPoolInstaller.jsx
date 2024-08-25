@@ -101,7 +101,7 @@ const OurExpertPoolInstaller = () => {
 
         <div className="grid md:grid-cols-2 md:gap-[50px] gap-7">
           <div className=" border-2 shadow">
-            <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white 2xl:text-[18px] text-[16px]">
+            <h2 className="title-bg text-center 2xl:py-[15px] py-[14px] text-white 2xl:text-[18px] text-[16px]">
               Usual Pool Installers
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
@@ -117,14 +117,14 @@ const OurExpertPoolInstaller = () => {
                     height={23}
                     className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px]"
                   />
-                  <p className="text-sm md:text-sm">{usual.title}</p>
+                  <p className="text-sm ">{usual.title}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className=" border-2 shadow">
-            <h2 className="title-bg text-center 2xl:py-[15px] py-[10px] text-white 2xl:text-[18px] text-[16px]">
+            <h2 className="title-bg text-center 2xl:py-[15px] py-[14px] text-white 2xl:text-[18px] text-[16px]">
               Easy Pools Pool Installers
             </h2>
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px] ">
@@ -140,7 +140,7 @@ const OurExpertPoolInstaller = () => {
                     height={23}
                     className="h-[15px] w-[15px] 2xl:h-[23px] 2xl:w-[23px]"
                   />
-                  <p className="text-sm md:text-sm">{usual.title}</p>
+                  <p className="text-sm ">{usual.title}</p>
                 </div>
               ))}
             </div>

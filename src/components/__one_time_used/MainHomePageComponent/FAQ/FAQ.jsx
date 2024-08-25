@@ -65,7 +65,7 @@ const FAQ = () => {
                         />
                       </div>
                     </AccordionHeader>
-                    <AccordionBody className="pt-3 px-4 leading-relaxed border-2 text-gray-700 text-sm md:text-sm">
+                    <AccordionBody className="pt-3 px-4 leading-relaxed border-2 text-gray-700 text-sm ">
                       {ques.answer}
                     </AccordionBody>
                   </Accordion>

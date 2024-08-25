@@ -73,7 +73,7 @@ const slideData = [
   },
   {
     imgSrc: p9,
-    description: `Apply finishes such as tiles, plaster, or other selected materials to enhance the pool's aesthetic appeal.`
+    description: `Apply finishes such as tiles, plaster, or other selected materials to enhance the pool's aesthetic appeal.`,
   },
   {
     imgSrc: p10,
@@ -86,7 +86,7 @@ const slideData = [
   {
     imgSrc: p12,
     description: `Provide the client with a thorough orientation on pool operation, maintenance, and safety measures.`,
-  }
+  },
 ];
 
 const OurProcessSteps = () => {
@@ -120,13 +120,13 @@ const OurProcessSteps = () => {
             breakpoints={breakpoints}
             className="!relative"
           >
-            <div className="process__border absolute inset-y-8 lg:inset-y-12 xl:inset-y-12  left-0 right-0 w-full"/>
+            <div className="process__border absolute inset-y-8 lg:inset-y-12 xl:inset-y-12  left-0 right-0 w-full" />
             {slideData.map((slide, index) => (
               <SwiperSlide
                 key={index}
                 className={`text-center pb-6 lg:pb-20 px-20 md:px-14 lg:px-6`}
               >
-                <div className="w-full h-auto md:h-[153px]  p-[10px]">
+                <div className="w-full h-auto md:h-[153px]  p-[14px]">
                   <Image
                     src={slide.imgSrc}
                     width={100}
@@ -142,7 +142,7 @@ const OurProcessSteps = () => {
                 </div>
               </SwiperSlide>
             ))}
-            
+
             <SwiperNavButtons />
           </Swiper>
         </div>

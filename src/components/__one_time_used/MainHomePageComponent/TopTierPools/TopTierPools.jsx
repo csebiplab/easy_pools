@@ -11,11 +11,11 @@ const TopTierPools = () => {
           <h2 className="text-black text-lg md:text-3xl lg:text-4xl py-2 md:py-3 !font-semibold">
             Toronto's Top-Tier Pools Installation Solutions
           </h2>
-          <p className="text-[10px] md:text-[14px] 2xl:text-[16px] font-bold mt-2">
+          <p className="text-[14px] md:text-[14px] 2xl:text-[16px] font-bold mt-2">
             Looking for top-tier pool installation solutions in Toronto? Look no
             further.
           </p>
-          <p className="text-[10px] md:text-[14px] 2xl:text-[16px] mt-3">
+          <p className="text-[14px] md:text-[14px] 2xl:text-[16px] mt-3">
             Our company specializes in providing premium pool installation
             services tailored to meet your specific needs and preferences. With
             our team of skilled professionals and years of experience in the

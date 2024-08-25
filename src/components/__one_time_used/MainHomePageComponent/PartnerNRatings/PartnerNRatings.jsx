@@ -72,28 +72,28 @@ const PartnerNRatings = ({ classNames }) => {
               <div className=" lg:col-span-4  ">
                 <div className="flex flex-col gap-y-3">
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">
+                    <p className="2xl:text-[12px] lg:text-[14px] text-[9px]">
                       Average Rating
                     </p>
                     <div className="border-[6px] w-[70%] 4xl:w-[80%] 2xl:w-[75%] sm:w-[80%]  border-[#8BC540] rounded-full" />
                     <CiCircleInfo className="h-4 w-4 fill-dark-300 lg:block hidden" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">
+                    <p className="2xl:text-[12px] lg:text-[14px] text-[9px]">
                       Recency
                     </p>
                     <div className="border-[6px] w-[70%] 4xl:w-[80%] 2xl:w-[75%] sm:w-[80%]  border-[#8BC540] rounded-full" />
                     <CiCircleInfo className="h-4 w-4 fill-dark-300 lg:block hidden" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">
+                    <p className="2xl:text-[12px] lg:text-[14px] text-[9px]">
                       Reputation
                     </p>
                     <div className="border-[6px] w-[70%] 4xl:w-[80%] 2xl:w-[75%] sm:w-[80%]  border-[#8BC540] rounded-full" />
                     <CiCircleInfo className="h-4 w-4 fill-dark-300 lg:block hidden" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]">
+                    <p className="2xl:text-[12px] lg:text-[14px] text-[9px]">
                       Responsiveness
                     </p>
                     <div className="border-[6px] w-[70%] 4xl:w-[80%] 2xl:w-[75%] sm:w-[80%]  border-[#8BC540] rounded-full" />
@@ -111,19 +111,19 @@ const PartnerNRatings = ({ classNames }) => {
                     </p>
                   </div>
                   <div className="flex items-center lg:justify-end justify-between gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px] ">
+                    <p className="2xl:text-[12px] lg:text-[14px] text-[9px] ">
                       Great
                     </p>
                     <div className="border-[6px] w-[70%] sm:w-[80%] lg:w-[85%] border-[#8BC540] rounded-full" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px] ">
+                    <p className="2xl:text-[12px] lg:text-[14px] text-[9px] ">
                       Average
                     </p>
                     <div className="border-[6px] w-[70%] sm:w-[80%] lg:w-[85%]  rounded-full" />
                   </div>
                   <div className="flex items-center lg:justify-end justify-between  gap-x-1">
-                    <p className="2xl:text-[12px] lg:text-[10px] text-[9px]  text-right ">
+                    <p className="2xl:text-[12px] lg:text-[14px] text-[9px]  text-right ">
                       Poor
                     </p>
                     <div className="border-[6px] w-[70%] sm:w-[80%] lg:w-[85%]  rounded-full " />

@@ -57,7 +57,7 @@ const MeaningFiberglass = () => {
           <h3 className="text-white text-center text-[32px] font-normal px-6">
             What Is the Meaning of a Fiberglass Pool?
           </h3>
-          <p className="text-white text-center text-lg font-normal px-6 pt-[10px]">
+          <p className="text-white text-center text-lg font-normal px-6 pt-[14px]">
             A fiberglass pool is a swimming pool structure made predominantly of
             fiberglass-reinforced plastic. This material offers durability,
             flexibility, and a smooth surface, making it an increasingly popular

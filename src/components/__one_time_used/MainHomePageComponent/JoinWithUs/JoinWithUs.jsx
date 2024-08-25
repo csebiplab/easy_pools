@@ -22,7 +22,7 @@ const JoinWithUs = () => {
                 </p>
               </div>
             </div>
-            <p className="mt-4 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
+            <p className="mt-4 2xl:text-[16px] md:text-[14px] text-[14px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
               Dive into a world of seamless luxury with Easy Pools, your trusted
               partner for swimming pool installation in Toronto. Our expert team
               ensures a hassle-free experience. From concept to completion, we

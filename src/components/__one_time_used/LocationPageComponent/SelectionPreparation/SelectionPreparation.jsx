@@ -274,7 +274,7 @@ const SelectionPreparation = () => {
                   >
                     <div className="mx-auto relative px-2">
                       <div className="py-7">
-                        <p className="mt-4 py-5 mx-auto text-center text-sm md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
+                        <p className="mt-4 py-5 mx-auto text-center text-sm  xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
                           {service.title}{" "}
                         </p>
                       </div>
@@ -316,7 +316,7 @@ const SelectionPreparation = () => {
                   >
                     <div className="mx-auto rounded-lg relative">
                       <div className=" py-7 ">
-                        <p className="mt-4 py-5 mx-auto text-center text-sm md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
+                        <p className="mt-4 py-5 mx-auto text-center text-sm  xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
                           {service.title}{" "}
                         </p>
                       </div>

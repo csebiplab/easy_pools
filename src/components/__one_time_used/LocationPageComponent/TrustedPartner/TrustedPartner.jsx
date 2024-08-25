@@ -106,7 +106,7 @@ const TrustedPartner = () => {
             <p className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px">
               Your Trusted Partner for Pools Installation in Barrie
             </p>
-            <p className="text-sm md:text-sm 5xl:text-base font-normal text-center md:text-left text-black pt-[10px] md:pt-[15px]">
+            <p className="text-sm  5xl:text-base font-normal text-center md:text-left text-black pt-[14px] md:pt-[15px]">
               As your trusted partner for impeccable pool installations in
               Barrie, we bring years of expertise and dedication to every
               project. Why we are trusted or our good keys are:
@@ -116,7 +116,7 @@ const TrustedPartner = () => {
                 {trustedLine1?.map((trust) => {
                   return (
                     <ul key={trust.id}>
-                      <li className="flex justify-center lg:justify-start items-center text-sm md:text-sm 5xl:text-base font-normal text-center md:text-left text-black pt-[10px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]">
+                      <li className="flex justify-center lg:justify-start items-center text-sm  5xl:text-base font-normal text-center md:text-left text-black pt-[14px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]">
                         <BsDot />
                         {trust.para}
                       </li>
@@ -128,7 +128,7 @@ const TrustedPartner = () => {
                 {trustedLine2?.map((trust) => {
                   return (
                     <ul key={trust.id}>
-                      <li className="flex justify-center lg:justify-start items-center text-sm md:text-sm 5xl:text-base font-normal text-center md:text-left text-black pt-[10px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]">
+                      <li className="flex justify-center lg:justify-start items-center text-sm  5xl:text-base font-normal text-center md:text-left text-black pt-[14px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]">
                         <BsDot />
                         {trust.para}
                       </li>
@@ -140,7 +140,7 @@ const TrustedPartner = () => {
                 {trustedLine3?.map((trust) => {
                   return (
                     <ul key={trust.id}>
-                      <li className="flex justify-center lg:justify-start items-center text-sm md:text-sm 5xl:text-base font-normal text-center md:text-left text-black pt-[10px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]">
+                      <li className="flex justify-center lg:justify-start items-center text-sm  5xl:text-base font-normal text-center md:text-left text-black pt-[14px] xl:pt-[11px] 2xl:pt-[12px] 3xl:pt-[13px] 4xl:pt-[14px] 5xl:pt-[15px]">
                         <BsDot />
                         {trust.para}
                       </li>

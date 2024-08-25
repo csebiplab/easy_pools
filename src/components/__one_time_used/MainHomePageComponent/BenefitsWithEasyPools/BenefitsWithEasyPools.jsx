@@ -100,7 +100,7 @@ const BenefitsWithEasyPools = () => {
             {services.map((service, index) => (
               <SwiperSlide
                 key={index}
-                className="border-2 shadow-md rounded border-green-600 md:gap-5 px-[10px] pb-[10px] !overflow-visible lg:!h-[270px] !h-auto "
+                className="border-2 shadow-md rounded border-green-600 md:gap-5 px-[14px] pb-[14px] !overflow-visible lg:!h-[270px] !h-auto "
               >
                 {/* SVG background for left bottom corner */}
                 <div className="absolute bottom-0 left-0 z-10">
@@ -132,7 +132,7 @@ const BenefitsWithEasyPools = () => {
                   </div>
 
                   <div>
-                    <p className="2xl:px-[20px] lg:px-[15px] px-4 xl:text-[15px] lg:text-[12px] text-[10px] text-center flex items-center md:leading-0 leading-[20px] ">
+                    <p className="2xl:px-[20px] lg:px-[15px] px-4 xl:text-[15px] lg:text-[12px] text-[14px] text-center flex items-center md:leading-0 leading-[20px] ">
                       {" "}
                       {service.details}{" "}
                     </p>
