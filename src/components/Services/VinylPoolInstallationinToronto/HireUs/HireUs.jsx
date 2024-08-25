@@ -100,7 +100,7 @@ const HireUs = () => {
               </div>
 
               <div>
-                <p className="text-lg font-normal md:text-start text-center py-[10px]">
+                <p className="text-lg font-normal md:text-start text-center py-[14px]">
                   Are you envisioning a serene oasis in your backyard or a
                   vibrant centerpiece for your community space? Look no further
                   than our expert vinyl pool installation contractors in
@@ -112,10 +112,10 @@ const HireUs = () => {
             </div>
 
             <div className="w-full border-2 my-6 md:my-0 cart1">
-              <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
+              <p className="title-bg text-center 2xl:py-[15px] py-[14px] text-white text-base md:text-lg font-bold">
                 Usual Swimming Pool Contractors
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]  ">
                 {usualPool.map((usual, idx) => (
                   <div
                     key={idx}
@@ -128,7 +128,7 @@ const HireUs = () => {
                       height={20}
                       className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm md:text-sm text-black font-bold">
+                    <p className="text-sm  text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
@@ -136,10 +136,10 @@ const HireUs = () => {
               </div>
             </div>
             <div className="border-2 my-6 md:my-0 cart2">
-              <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
+              <p className="title-bg2 text-center 2xl:py-[15px] py-[14px] text-white text-base md:text-lg font-bold">
                 Our Swimming Pool Contractors
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]  ">
                 {easyPool.map((usual, idx) => (
                   <div
                     key={idx}
@@ -152,7 +152,7 @@ const HireUs = () => {
                       height={20}
                       className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm md:text-sm text-black font-bold">
+                    <p className="text-sm  text-black font-bold">
                       {usual.title}
                     </p>
                   </div>

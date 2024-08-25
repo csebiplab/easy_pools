@@ -8,7 +8,7 @@
 .rating__progress {
   width: 424px;
   /* width: 20%; */
-  height: 10px;
+  height: 14px;
   border-radius: 50px;
   border: 1px solid #7eb537;
   background: #8bc540;
@@ -17,7 +17,7 @@
 .review__progress__first {
   /* width: 393px; */
   width: 100%;
-  height: 10px;
+  height: 14px;
   border-radius: 50px;
   border: 1px solid #7eb537;
   background: #8bc540;
@@ -26,13 +26,12 @@
 .review__progress {
   /* width: 393px; */
   width: 100%;
-  height: 10px;
+  height: 14px;
   border-radius: 50px;
   background: #efeeec;
   box-shadow: -1px 1px 0px 0px #e3e2de inset, -1px -1px 0px 0px #e3e2de inset,
     1px -1px 0px 0px #e3e2de inset, 1px 1px 0px 0px #e3e2de inset;
 }
-
 
 /* Big screen size Media Query */
 @media screen and (min-width: 768) {

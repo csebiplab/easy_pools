@@ -81,7 +81,7 @@ const MaterialsNEquip = () => {
               <p className=" text-black text-lg md:text-3xl lg:text-4xl mt-4 mb-[25px]">
                 Materials and Equipment Needed for Pool Installation
               </p>
-              <p className=" 2xl:text-[16px] md:text-[14px] text-[10px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px] ">
+              <p className=" 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px] ">
                 To install a pool, you'll need various materials and pool
                 equipment to ensure a smooth and efficient process. Firstly,
                 you'll require essential construction materials such as

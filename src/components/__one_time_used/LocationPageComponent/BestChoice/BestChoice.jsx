@@ -17,7 +17,7 @@ const BestChoice = () => {
               className="w-full h-auto lg:w-[910px] lg:h-[650px]"
             />
           </div>
-          <div className="card__onImg py-5 px-[10px] lg:p-[13px] xl:p-[15px] 2xl:p-[20px] 3xl:p-[25px] 4xl:p-[30px] 5xl:p-[35px] w-full lg:max-w-[55%] lg:absolute lg:right-0">
+          <div className="card__onImg py-5 px-[14px] lg:p-[13px] xl:p-[15px] 2xl:p-[20px] 3xl:p-[25px] 4xl:p-[30px] 5xl:p-[35px] w-full lg:max-w-[55%] lg:absolute lg:right-0">
             <HeadingIcon text={projectsHeadingIconText.bestChoice__IconText} />
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
               Your Best Choice for Expert Pool Installers in Barrie

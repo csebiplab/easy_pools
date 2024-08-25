@@ -193,7 +193,7 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm lg:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm lg:text-sm xl:text-base 2xl:text-lg text-black"
       >
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           About Us
@@ -209,7 +209,7 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Blog
@@ -220,7 +220,7 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Projects
@@ -236,7 +236,7 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-[14px] xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
         <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact Us

@@ -205,7 +205,7 @@ const Footer = () => {
       <div className="footer-bottom-bg">
         <div className="container flex flex-col lg:flex-row justify-between items-center py-2">
           <div className="flex justify-center items-center mb-2 lg:mb-0">
-            <p className="text-sm md:text-base font-semibold text-white mr-[10px] lg:mr-4">
+            <p className="text-sm md:text-base font-semibold text-white mr-[14px] lg:mr-4">
               WEBSITE DESIGN AND SEO BY :-
             </p>
             <Image

@@ -22,13 +22,29 @@ const HowMuchCost = () => {
             <HeadingIcon text={headingIconText.howMuchCost__IconText} />
           </div>
           <h3 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
-          How Much Does the Pool Installation Project Cost?
+            How Much Does the Pool Installation Project Cost?
           </h3>
-          <p className="text-lg font-normal text-center md:text-left text-black pt-[10px]">
-          The cost of a pool installation project can vary widely depending on factors such as the size, type, materials used, labor costs, and additional features like landscaping or decking. On average, basic inground pool installations can range from $20,000 to $50,000, while more luxurious options with custom designs and high-end features can cost upwards of $100,000 or more. It's essential to obtain multiple quotes from reputable contractors and factor in any additional expenses to ensure an accurate budget for your specific project.
+          <p className="text-lg font-normal text-center md:text-left text-black pt-[14px]">
+            The cost of a pool installation project can vary widely depending on
+            factors such as the size, type, materials used, labor costs, and
+            additional features like landscaping or decking. On average, basic
+            inground pool installations can range from $20,000 to $50,000, while
+            more luxurious options with custom designs and high-end features can
+            cost upwards of $100,000 or more. It's essential to obtain multiple
+            quotes from reputable contractors and factor in any additional
+            expenses to ensure an accurate budget for your specific project.
           </p>
           <p className="text-lg font-normal text-center md:text-left text-black">
-          Factors that contribute to the overall cost include excavation, permits, plumbing, electrical work, and any necessary site preparation. Additionally, the choice of pool materials, such as fiberglass, vinyl, or concrete, will influence the final price. It's crucial to consider long-term maintenance and operating costs, such as water and energy expenses when budgeting for a pool installation project. Hiring a professional contractor with experience in pool installation ensures quality workmanship and adherence to safety regulations, ultimately providing peace of mind throughout the process.
+            Factors that contribute to the overall cost include excavation,
+            permits, plumbing, electrical work, and any necessary site
+            preparation. Additionally, the choice of pool materials, such as
+            fiberglass, vinyl, or concrete, will influence the final price. It's
+            crucial to consider long-term maintenance and operating costs, such
+            as water and energy expenses when budgeting for a pool installation
+            project. Hiring a professional contractor with experience in pool
+            installation ensures quality workmanship and adherence to safety
+            regulations, ultimately providing peace of mind throughout the
+            process.
           </p>
         </div>
       </div>

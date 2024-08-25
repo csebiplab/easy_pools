@@ -147,7 +147,7 @@ const Review = () => {
                       className="h-auto w-auto"
                     />
                   </div>
-                  <p className="text-sm text-gray-800 py-3 3xl:text-[14px] ">
+                  <p className="text-sm text-gray-800 py-3 3xl:text-sm ">
                     {test.text}
                   </p>
                   <h6 className="font-semibold text-gray-900 ">

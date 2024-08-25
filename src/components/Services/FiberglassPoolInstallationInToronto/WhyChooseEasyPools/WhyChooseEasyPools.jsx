@@ -17,7 +17,7 @@ const WhyChooseEasyPools = () => {
               className="w-full h-auto lg:w-[910px] lg:h-[650px]"
             />
           </div>
-          <div className="card__onImg py-5 px-[10px] lg:p-[13px] xl:p-[15px] 2xl:p-[20px] 3xl:p-[25px] 4xl:p-[30px] 5xl:p-[35px] w-full lg:max-w-[55%] lg:absolute lg:right-0">
+          <div className="card__onImg py-5 px-[14px] lg:p-[13px] xl:p-[15px] 2xl:p-[20px] 3xl:p-[25px] 4xl:p-[30px] 5xl:p-[35px] w-full lg:max-w-[55%] lg:absolute lg:right-0">
             <HeadingIcon
               text={headingIconText.whyChooseEasyPools__inFiberglassText}
             />

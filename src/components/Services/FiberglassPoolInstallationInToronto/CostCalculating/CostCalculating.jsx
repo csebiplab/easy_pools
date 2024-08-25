@@ -16,7 +16,7 @@ const CostCalculating = () => {
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px">
               Easy Pools Leads the Fiberglass Pool Installation Industry
             </h3>
-            <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[10px] md:pt-[15px]">
+            <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[14px] md:pt-[15px]">
               Easy Pools is a leader in the fiberglass pool installation
               industry, renowned for its exceptional craftsmanship and customer
               service. With a commitment to quality and innovation, our company
