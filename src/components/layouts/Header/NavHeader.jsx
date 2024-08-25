@@ -35,7 +35,7 @@ function OurLocationMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = (data = []) => {
     return data?.map(({ route, title }, key) => (
-      <Link href={route} key={key} aria-label={title}>
+      <Link href={route} key={key}>
         <MenuItem className="rounded-md">
           <Typography color="blue-gray">{title}</Typography>
         </MenuItem>
@@ -123,7 +123,7 @@ function OurServiceManu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = (data = []) => {
     return data?.map(({ route, title }, key) => (
-      <Link href={route} key={key} aria-label={title}>
+      <Link href={route} key={key}>
         <MenuItem className="rounded-md">
           <Typography color="blue-gray">{title}</Typography>
         </MenuItem>
