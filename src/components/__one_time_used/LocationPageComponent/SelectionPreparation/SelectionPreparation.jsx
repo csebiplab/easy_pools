@@ -195,7 +195,7 @@ const SelectionPreparation = () => {
             </div>
 
             <div className="flex justify-center items-center">
-              <p className="text-xs md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
+              <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
                 When considering the installation of a pool,{" "}
                 <br className=" hidden lg:block" /> site selection and
                 preparation are crucial steps{" "}
@@ -216,7 +216,7 @@ const SelectionPreparation = () => {
                 onChange={handleCheckboxChange}
               />
               <span
-                className={`flex items-center border pr-5  lg:px-32 rounded-3xl lg:py-4 py-2  text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
+                className={`flex items-center border pr-5  lg:px-32 rounded-3xl lg:py-4 py-2  text-sm md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
                   !isChecked ? "text-white bg-secondary-50 " : "text-body-color"
                 }`}
               >
@@ -236,7 +236,7 @@ const SelectionPreparation = () => {
                 Site Selection
               </span>
               <span
-                className={`flex items-center pr-5 lg:px-32 rounded-3xl lg:py-4 py-2 text-xs md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
+                className={`flex items-center pr-5 lg:px-32 rounded-3xl lg:py-4 py-2 text-sm md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
                   isChecked ? "text-white bg-secondary-50 " : "text-body-color"
                 }`}
               >
@@ -274,7 +274,7 @@ const SelectionPreparation = () => {
                   >
                     <div className="mx-auto relative px-2">
                       <div className="py-7">
-                        <p className="mt-4 py-5 mx-auto text-center text-xs md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
+                        <p className="mt-4 py-5 mx-auto text-center text-sm md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
                           {service.title}{" "}
                         </p>
                       </div>
@@ -290,7 +290,7 @@ const SelectionPreparation = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                <SwiperNavButtons/>
+                <SwiperNavButtons />
               </Swiper>
             )}
 
@@ -316,7 +316,7 @@ const SelectionPreparation = () => {
                   >
                     <div className="mx-auto rounded-lg relative">
                       <div className=" py-7 ">
-                        <p className="mt-4 py-5 mx-auto text-center text-xs md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
+                        <p className="mt-4 py-5 mx-auto text-center text-sm md:text-sm xl:text-base 3xl:text-lg 5xl:text-[20px] font-bold">
                           {service.title}{" "}
                         </p>
                       </div>
@@ -332,7 +332,7 @@ const SelectionPreparation = () => {
                     </div>
                   </SwiperSlide>
                 ))}
-                <SwiperNavButtons/>
+                <SwiperNavButtons />
               </Swiper>
             )}
           </div>

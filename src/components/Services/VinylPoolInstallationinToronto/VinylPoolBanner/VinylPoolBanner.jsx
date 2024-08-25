@@ -23,7 +23,7 @@ const VinylPoolBanner = () => {
                   href={`tel:+1(647) 449 9512`}
                   className="text-sm font-bold text-white"
                 >
-                  <Button className="hero_btn text-white text-xs lg:text-base font-bold capitalize flex items-center gap-x-2">
+                  <Button className="hero_btn text-white text-sm lg:text-base font-bold capitalize flex items-center gap-x-2">
                     <span className="text-white">Get an Estimate </span>
                     <span>
                       <svg

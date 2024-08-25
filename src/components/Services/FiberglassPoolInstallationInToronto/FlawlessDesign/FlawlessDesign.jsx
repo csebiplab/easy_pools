@@ -124,7 +124,7 @@ const FlawlessDesign = () => {
                       <h6 className="mt-4 mx-auto text-center text-2xl font-bold">
                         {service.title}{" "}
                       </h6>
-                      <h6 className="mx-auto text-center text-xs md:text-sm xl:text-base 3xl:text-lg font-normal">
+                      <h6 className="mx-auto text-center text-sm md:text-sm xl:text-base 3xl:text-lg font-normal">
                         {service.desc}{" "}
                       </h6>
                     </div>

@@ -117,7 +117,7 @@ const OurExpertPoolInstaller = () => {
                     height={23}
                     className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px]"
                   />
-                  <p className="text-xs md:text-sm">{usual.title}</p>
+                  <p className="text-sm md:text-sm">{usual.title}</p>
                 </div>
               ))}
             </div>
@@ -140,7 +140,7 @@ const OurExpertPoolInstaller = () => {
                     height={23}
                     className="h-[15px] w-[15px] 2xl:h-[23px] 2xl:w-[23px]"
                   />
-                  <p className="text-xs md:text-sm">{usual.title}</p>
+                  <p className="text-sm md:text-sm">{usual.title}</p>
                 </div>
               ))}
             </div>

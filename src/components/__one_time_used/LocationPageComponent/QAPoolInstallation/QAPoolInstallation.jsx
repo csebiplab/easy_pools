@@ -99,7 +99,7 @@ const QAPoolInstallation = () => {
                   <div key={idx}>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">
                       <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] py-3 px-5 5xl:py-[14px] 5xl:px-8 border-2">
-                        <h6 className="text-white text-xs lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
+                        <h6 className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
                           {ques.question}
                         </h6>
 
@@ -108,7 +108,7 @@ const QAPoolInstallation = () => {
                         </div>
                       </summary>
 
-                      <p className="py-3 pl-4 pr-8 lg:py-4 lg:px-6 5xl:py-5 5xl:px-7  border-2 text-black text-xs lg:text-sm 5xl:text-base font-normal 5xl:leading-[30px]">
+                      <p className="py-3 pl-4 pr-8 lg:py-4 lg:px-6 5xl:py-5 5xl:px-7  border-2 text-black text-sm lg:text-sm 5xl:text-base font-normal 5xl:leading-[30px]">
                         {ques.answer}
                       </p>
                     </details>

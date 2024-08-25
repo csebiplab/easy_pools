@@ -37,7 +37,7 @@ const Experienced = () => {
               aesthetics, we specialize in creating customized pools that blend
               seamlessly with your surroundings.
             </p>
-            <p className="text-xs md:text-base font-normal text-center md:text-left text-black pt-[5px] leading-6 lg:leading-8">
+            <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[5px] leading-6 lg:leading-8">
               At Easy Pools designers, we also prioritize quality craftsmanship
               and attention to detail during the construction process. From
               excavation to finishing touches, we handle every aspect of the

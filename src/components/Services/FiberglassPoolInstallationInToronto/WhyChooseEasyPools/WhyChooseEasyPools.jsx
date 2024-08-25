@@ -24,7 +24,7 @@ const WhyChooseEasyPools = () => {
             <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
               Choose Easy Pools and Have a Relaxed
             </h3>
-            <p className="text-xs md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
+            <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
               Choose the best and relax with Easy Pools, your fiberglass pool
               installation experts. We specialize in transforming your backyard
               into an oasis with our expert fiberglass pool installations. With

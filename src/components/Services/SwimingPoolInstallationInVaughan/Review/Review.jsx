@@ -62,17 +62,17 @@ const reviews = [
   },
 ];
 
-const Review = ({ classNames, bHeading="emapy" }) => {
+const Review = ({ classNames, bHeading = "emapy" }) => {
   return (
-    <div  className={`${classNames ? classNames?.bg : "bg_swimmingPool"}`}>
+    <div className={`${classNames ? classNames?.bg : "bg_swimmingPool"}`}>
       <div className="container">
         <div className="padding__all">
           <div className="text-center">
             <div className="flex justify-center items-center">
-              <HeadingIcon text={projectsHeadingIconText.review__IconText}/>
+              <HeadingIcon text={projectsHeadingIconText.review__IconText} />
             </div>
             <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
-            {bHeading}
+              {bHeading}
             </h3>
           </div>
           {/* =================== Card Section =============== */}
@@ -119,7 +119,7 @@ const Review = ({ classNames, bHeading="emapy" }) => {
                     <p className="text-[10px] md:text-[12px] mt-4  text-black leading-[22px] md:leading-6">
                       {reviewText}
                     </p>
-                    <h6 className="font-semibold lg:text-sm text-xs mt-3">
+                    <h6 className="font-semibold lg:text-sm text-sm mt-3">
                       {author}
                     </h6>
                     <p className="text-[#4A4A4A] text-[8px] mt-2">{address}</p>

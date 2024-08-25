@@ -21,7 +21,7 @@ const MeaningFiberglass = () => {
                     What Is the Meaning of a Fiberglass Pool?
                   </h3>
                 </div>
-                <p className="text-xs md:text-base font-normal text-white leading-6 lg:leading-8">
+                <p className="text-sm md:text-base font-normal text-white leading-6 lg:leading-8">
                   A fiberglass pool is a swimming pool structure made
                   predominantly of fiberglass-reinforced plastic. This material
                   offers durability, flexibility, and a smooth surface, making
@@ -48,12 +48,11 @@ const MeaningFiberglass = () => {
       {/* small device  */}
       <div className="block md:hidden">
         <div className="meaning__sm_bg pb-[400px] ">
-          
           <div className="flex justify-center pt-[26px]">
-          <HeadingIcon
-            text={headingIconText.meaning__inFiberglassText}
-            classes={{ textWhite: "text-white" }}
-          />
+            <HeadingIcon
+              text={headingIconText.meaning__inFiberglassText}
+              classes={{ textWhite: "text-white" }}
+            />
           </div>
           <h3 className="text-white text-center text-[32px] font-normal px-6">
             What Is the Meaning of a Fiberglass Pool?

@@ -21,7 +21,7 @@ const PoolInstallationCompanyInMarkhamBanner = () => {
                   href={`tel:+1(647) 449 9512`}
                   className="text-sm font-bold text-white"
                 >
-                  <button className="px-[34px] py-2 hero_btn text-white text-xs lg:text-lg font-bold capitalize flex items-center gap-x-2">
+                  <button className="px-[34px] py-2 hero_btn text-white text-sm lg:text-lg font-bold capitalize flex items-center gap-x-2">
                     <span className="text-white">Get an Estimate </span>
                     <span>
                       <svg
