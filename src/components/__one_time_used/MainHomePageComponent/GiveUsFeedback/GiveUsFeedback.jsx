@@ -24,14 +24,14 @@ const GiveUsFeedback = () => {
                 <h2 className=" 2xl:text-[36px] text-[20px] text-white md:text-start xs:text-center  ">
                   Contact Us
                 </h2>
-                <div className=" flex gap-1 md:gap-2 md:items-center text-center 2xl:text-[18px] text-[14px] lg:py-8 py-5 md:justify-start xs:justify-center ">
+                <div className=" flex gap-1 md:gap-2 md:items-center text-center 2xl:text-[18px] text-sm lg:py-8 py-5 md:justify-start xs:justify-center ">
                   <FaMapLocationDot className=" 2xl:w-5 lg:h-5 w-auto h-auto fill-white" />
                   <p className="text-sm md:text-base text-white">
                     {" "}
                     1331 Major Mackenzie dr West, Vaughan
                   </p>
                 </div>
-                <div className="my-2 flex gap-1 md:gap-2  items-center md:justify-start xs:justify-center 2xl:text-[18px] text-[14px]  ">
+                <div className="my-2 flex gap-1 md:gap-2  items-center md:justify-start xs:justify-center 2xl:text-[18px] text-sm  ">
                   <FaPhoneVolume className=" 2xl:w-5 lg:h-5 w-auto h-auto fill-white" />
                   <a
                     href="tel:+1(647)449-9512"
@@ -40,7 +40,7 @@ const GiveUsFeedback = () => {
                     +1(647)449-9512
                   </a>
                 </div>
-                <div className=" flex gap-2 my-auto items-center 2xl:text-[18px] text-[14px] 2xl:py-8 py-5 md:justify-start xs:justify-center ">
+                <div className=" flex gap-2 my-auto items-center 2xl:text-[18px] text-sm 2xl:py-8 py-5 md:justify-start xs:justify-center ">
                   <IoIosMail className=" 2xl:w-6 2xl:h-6 w-5 h-5 fill-white" />
                   <a
                     href="mailto:easypools.landscaping@gmail.com"

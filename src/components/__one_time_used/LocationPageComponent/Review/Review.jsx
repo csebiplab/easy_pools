@@ -117,7 +117,7 @@ const Review = () => {
                   />
 
                   <div className="text-start">
-                    <p className="text-[14px] md:text-[12px] mt-4  text-black leading-[22px] md:leading-6">
+                    <p className="text-sm md:text-[12px] mt-4  text-black leading-[22px] md:leading-6">
                       {reviewText}
                     </p>
                     <h6 className="font-semibold lg:text-sm text-sm mt-3">

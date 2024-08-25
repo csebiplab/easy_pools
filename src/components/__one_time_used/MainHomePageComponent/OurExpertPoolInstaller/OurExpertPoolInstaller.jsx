@@ -90,7 +90,7 @@ const OurExpertPoolInstaller = () => {
           </div>
 
           <div>
-            <p className=" md:block xs:hidden 2xl:text-[16px] text-[14px] text-center 3xl:py-[35px] py-[30px] ">
+            <p className=" md:block xs:hidden 2xl:text-[16px] text-sm text-center 3xl:py-[35px] py-[30px] ">
               Trust our professionals to deliver exceptional results that exceed
               expectations, transforming your backyard into a luxurious oasis.
               Choose our expert pool installers in Toronto for a seamless and
@@ -104,7 +104,7 @@ const OurExpertPoolInstaller = () => {
             <h2 className="title-bg text-center 2xl:py-[15px] py-[14px] text-white 2xl:text-[18px] text-[16px]">
               Usual Pool Installers
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]  ">
               {usualPool.map((usual, idx) => (
                 <div
                   key={idx}
@@ -127,7 +127,7 @@ const OurExpertPoolInstaller = () => {
             <h2 className="title-bg text-center 2xl:py-[15px] py-[14px] text-white 2xl:text-[18px] text-[16px]">
               Easy Pools Pool Installers
             </h2>
-            <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px] ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px] ">
               {easyPool.map((usual, idx) => (
                 <div
                   key={idx}

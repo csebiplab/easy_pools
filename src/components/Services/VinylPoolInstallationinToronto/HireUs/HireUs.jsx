@@ -115,7 +115,7 @@ const HireUs = () => {
               <p className="title-bg text-center 2xl:py-[15px] py-[14px] text-white text-base md:text-lg font-bold">
                 Usual Swimming Pool Contractors
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]  ">
                 {usualPool.map((usual, idx) => (
                   <div
                     key={idx}
@@ -139,7 +139,7 @@ const HireUs = () => {
               <p className="title-bg2 text-center 2xl:py-[15px] py-[14px] text-white text-base md:text-lg font-bold">
                 Our Swimming Pool Contractors
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]  ">
                 {easyPool.map((usual, idx) => (
                   <div
                     key={idx}

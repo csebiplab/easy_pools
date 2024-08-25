@@ -63,7 +63,7 @@ const HireForInstallationService = () => {
               </div>
             </div>
             <div>
-              <p className=" text-center md:text-start 2xl:text-[16px] md:text-[14px] text-[14px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
+              <p className=" text-center md:text-start 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
                 Looking to transform your backyard into an oasis of relaxation
                 and enjoyment? Look no further than Easy Pools for all your pool
                 installation needs. Our team of experienced professionals is

@@ -132,7 +132,7 @@ const BenefitsWithEasyPools = () => {
                   </div>
 
                   <div>
-                    <p className="2xl:px-[20px] lg:px-[15px] px-4 xl:text-[15px] lg:text-[12px] text-[14px] text-center flex items-center md:leading-0 leading-[20px] ">
+                    <p className="2xl:px-[20px] lg:px-[15px] px-4 xl:text-[15px] lg:text-[12px] text-sm text-center flex items-center md:leading-0 leading-[20px] ">
                       {" "}
                       {service.details}{" "}
                     </p>

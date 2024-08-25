@@ -22,7 +22,7 @@ const JoinWithUs = () => {
                 </p>
               </div>
             </div>
-            <p className="mt-4 2xl:text-[16px] md:text-[14px] text-[14px] 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
+            <p className="mt-4 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
               Dive into a world of seamless luxury with Easy Pools, your trusted
               partner for swimming pool installation in Toronto. Our expert team
               ensures a hassle-free experience. From concept to completion, we
@@ -35,13 +35,13 @@ const JoinWithUs = () => {
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-3 2xl:mt-[50px] lg:mt-[25px] md:mt-[15px] mt-7">
               <Button title={"Get Your Estimate"} />
-              <p className="mx-5 text-[#049E43] xl:text-[18px] lg:text-[16px] text-[14px] font-bold">
+              <p className="mx-5 text-[#049E43] xl:text-[18px] lg:text-[16px] text-sm font-bold">
                 {" "}
                 Or{" "}
               </p>
               <a
                 href="tel:+1(647) 449 9512"
-                className=" xl:text-[18px] lg:text-[16px] text-[14px]  text-[#049E43] font-bold"
+                className=" xl:text-[18px] lg:text-[16px] text-sm  text-[#049E43] font-bold"
               >
                 {" "}
                 Call Us: +1(647) 449 9512
