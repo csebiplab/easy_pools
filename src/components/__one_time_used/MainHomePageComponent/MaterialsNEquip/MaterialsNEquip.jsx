@@ -24,10 +24,11 @@ const MaterialsNEquip = () => {
                 <Image
                   src="/assets/images/equip2.png"
                   width={650}
-                  height={493}
+                  height={474}
                   loading="lazy"
                   alt="easy pools"
-                  className="h-[493px] w-[650px] pl-32 mr-2 rounded-[9px]"
+                  layout="responsive"
+                  className="w-[650px] pl-32 mr-2 rounded-[9px]"
                 />
                 <div className="-ml-[130px] mt-[-12rem]">
                   <Image
@@ -36,7 +37,7 @@ const MaterialsNEquip = () => {
                     height={335}
                     alt="easy pools"
                     loading="lazy"
-                    className="h-[335px] !w-[513px] pl-32 mr-2 rounded-[9px]"
+                    className="!w-[513px] pl-32 mr-2 rounded-[9px]"
                   />
                 </div>
               </div>
@@ -49,8 +50,9 @@ const MaterialsNEquip = () => {
                   <Image
                     src="/assets/images/equip2.png"
                     width={650}
-                    height={493}
+                    height={474}
                     alt="easy pools"
+                    loading="lazy"
                   />
                 </div>
                 <div className="mt-4">
@@ -94,7 +96,7 @@ const MaterialsNEquip = () => {
                 pool once installed.
               </p>
               <div className="mt-5 md:mt-8 lg:mt-[55px] flex lg:justify-end">
-                <CommonButton />
+                <CommonButton buttonText={"Learn More"} />
               </div>
             </div>
           </div>
