@@ -10,11 +10,13 @@ const ServiceCard = ({ serv }) => {
       <div className="text-center">
         <Image
           src={imgUrl}
-          width={400}
-          height={117}
           alt="easy pools"
-          className="W-full h-[117px]"
+          layout="responsive"
+          width={400}
+          height={177}
+          className="w-full"
         />
+
         <div className="px-[10px]">
           <h5 className="py-3 md:py-[15px] 2xl:text-[24px] lg:text-xl text-sm leading-normal">
             {title}
