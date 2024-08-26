@@ -18,9 +18,9 @@ const ServiceCard = ({ serv }) => {
         />
 
         <div className="px-[14px]">
-          <h5 className="py-3 md:py-[15px] 2xl:text-[24px] lg:text-xl text-sm leading-normal">
+          <h4 className="py-3 md:py-[15px] 2xl:text-[24px] lg:text-xl text-sm leading-normal">
             {title}
-          </h5>
+          </h4>
           <p className=" 2xl:text-[15px] text-sm leading-[20px]">{desc}</p>
           <div className="pb-5 mt-5 flex justify-center items-b relative">
             <Link href={`/${url}`}>
