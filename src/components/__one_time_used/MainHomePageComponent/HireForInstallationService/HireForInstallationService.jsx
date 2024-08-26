@@ -35,7 +35,7 @@ const HireForInstallationService = () => {
                       <p className="text-[16px] leading-4 mb-2">
                         We Provide Service Almost
                       </p>
-                      <h6 className=" text-[25px]">45+ State</h6>
+                      <p className="font-bold text-[25px]">45+ State</p>
                     </div>
                   </div>
                 </div>
