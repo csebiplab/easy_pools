@@ -50,13 +50,13 @@ function OurLocationMenu() {
         offset={{ mainAxis: 20 }}
         placement="bottom"
         allowHover={true}
-        className="bg-gray-100 "
+        className="bg-gray-100"
       >
         <MenuHandler>
           <div
-            lassName="font-medium text-lg"
-            aria-expanded="false"
-            aria-haspopup="menu"
+            className="font-medium text-lg"
+            aria-expanded={isMenuOpen} // Dynamically set the value based on the menu state
+            aria-haspopup="true" // Indicating this element triggers a popup
             id=":RrarjtaH2:"
           >
             <ListItem
@@ -80,16 +80,15 @@ function OurLocationMenu() {
             </ListItem>
           </div>
         </MenuHandler>
-        <MenuList className="!p-0  hidden max-w-[300px] w-full lg:block  outline-0 bg-gray-100">
-          <div className="!p-0 !border-none !outline-none w-full ">
-            <div className="w-full ">
-              <ul className="w-full ">
-                {renderItems(our__location__menuItem)}
-              </ul>
+        <MenuList className="!p-0 hidden max-w-[300px] w-full lg:block outline-0 bg-gray-100">
+          <div className="!p-0 !border-none !outline-none w-full">
+            <div className="w-full">
+              <ul className="w-full">{renderItems(our__location__menuItem)}</ul>
             </div>
           </div>
         </MenuList>
       </Menu>
+
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
           <ul>{renderItems(our__location__menuItem)}</ul>
@@ -148,9 +147,9 @@ function OurServiceManu() {
         <MenuHandler>
           <div
             className="font-medium text-lg"
-            aria-expanded="false"
-            aria-haspopup="menu"
-            id=":R1ajjtaH2:"
+            aria-expanded={isMenuOpen} // Dynamically set the value based on the menu state
+            aria-haspopup="true" // Indicating this element triggers a popup
+            id=":RrarjtaH2:"
           >
             <ListItem
               className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
