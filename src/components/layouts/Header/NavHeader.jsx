@@ -16,7 +16,6 @@ import {
 } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React from "react";
 import UpperNavbar from "./UpperNavbar";
 import WebBrandSvg from "@/components/ui/WebBrandSvg";
@@ -54,7 +53,12 @@ function OurLocationMenu() {
         className="bg-gray-100 "
       >
         <MenuHandler>
-          <div>
+          <div
+            lassName="font-medium text-lg"
+            aria-expanded="false"
+            aria-haspopup="menu"
+            id=":RrarjtaH2:"
+          >
             <ListItem
               className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -142,9 +146,14 @@ function OurServiceManu() {
         className="bg-gray-100"
       >
         <MenuHandler>
-          <div className="font-medium text-lg">
+          <div
+            className="font-medium text-lg"
+            aria-expanded="false"
+            aria-haspopup="menu"
+            id=":R1ajjtaH2:"
+          >
             <ListItem
-              className="flex items-center gap-2 rounded-full py-1  pr-4 font-bold  text-lg    text-black"
+              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -187,7 +196,7 @@ function OurServiceManu() {
 // our services nav list end
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row items-center border-0 outline-none">
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row md:items-center border-0 outline-none">
       <Typography
         as={Link}
         href="/"
@@ -195,7 +204,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm lg:text-sm xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           About Us
         </ListItem>
       </Typography>
@@ -211,7 +220,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Blog
         </ListItem>
       </Typography>
@@ -222,7 +231,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Projects
         </ListItem>
       </Typography>
@@ -238,7 +247,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact Us
         </ListItem>
       </Typography>
@@ -247,7 +256,6 @@ function NavList() {
 }
 
 export function NavHeader() {
-  const pathname = usePathname();
   const [openNav, setOpenNav] = React.useState(false);
   React.useEffect(() => {
     window.addEventListener(
@@ -256,7 +264,6 @@ export function NavHeader() {
     );
   }, []);
 
-  if (pathname.startsWith("/admin")) return null;
   return (
     <>
       <UpperNavbar />
