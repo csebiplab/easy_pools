@@ -270,8 +270,9 @@ export function NavHeader() {
         <div className="custom-container main__nav">
           <Navbar className="container rounded-none py-2 shadow-none max-w-full">
             <div className="flex items-center justify-between text-blue-gray-900">
-              <Link href="/">
+              <Link href="/" aria-label="Home">
                 <WebBrandSvg />
+                <span class="sr-only">Home</span>
               </Link>
               <div className="hidden lg:block">
                 <NavList />
