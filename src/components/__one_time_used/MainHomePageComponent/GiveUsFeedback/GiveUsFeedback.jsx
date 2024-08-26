@@ -21,9 +21,9 @@ const GiveUsFeedback = () => {
           >
             <div className="">
               <div className=" 2xl:py-8 py-5 lg:px-10 px-5  ">
-                <h2 className=" 2xl:text-[36px] text-[20px] text-white md:text-start xs:text-center  ">
+                <p className=" 2xl:text-[36px] text-[20px] text-white md:text-start xs:text-center  ">
                   Contact Us
-                </h2>
+                </p>
                 <div className=" flex gap-1 md:gap-2 md:items-center text-center 2xl:text-[18px] text-sm lg:py-8 py-5 md:justify-start xs:justify-center ">
                   <FaMapLocationDot className=" 2xl:w-5 lg:h-5 w-auto h-auto fill-white" />
                   <p className="text-sm md:text-base text-white">
@@ -61,18 +61,14 @@ const GiveUsFeedback = () => {
 
           <div className="xl:col-span-6  lg:col-span-6 md:col-span-4 md:order-2  lg:py-30 md:flex items-center lg:ml-32 2xl:ml-48 3xl:ml-56 4xl:ml-64">
             <div className="rounded-lg md:p-8 lg:col-span-3 lg:p-12 items-center">
-              <h2 className="lg:mb-8 mb-5 text-[#188B89]">
-                {" "}
-                Give Us Feedback{" "}
-              </h2>
+              <p className="lg:mb-8 mb-5 text-[#188B89]"> Give Us Feedback </p>
               <form action="#" className=" ">
                 <div>
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:mb-8 mb-4">
                     <div>
                       {" "}
-                      <h5 className="mb-2 text-[#188B89]">Your name *</h5>
-                      <label className="sr-only" htmlFor="name">
-                        name
+                      <label className="mb-2 text-[#188B89] font-bold">
+                        Your name *
                       </label>
                       <input
                         className="w-full rounded-lg bg-[#188B8926] shadow-sm shadow-black p-3 lg:pr-16 pr-3 text-sm" // Added pr-12 class for padding-right
@@ -83,9 +79,8 @@ const GiveUsFeedback = () => {
                     </div>
 
                     <div>
-                      <h5 className="mb-2 text-[#188B89]">Email *</h5>
-                      <label className="sr-only" htmlFor="email">
-                        Email
+                      <label className="mb-2 text-[#188B89] font-bold">
+                        Email *
                       </label>
                       <input
                         className="w-full rounded-lg bg-[#188B8926]  shadow-sm shadow-black p-3 lg:pr-16 pr-3  text-sm"
@@ -99,9 +94,8 @@ const GiveUsFeedback = () => {
 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:mb-8 mb-4  ">
                   <div>
-                    <h5 className="mb-2 text-[#188B89]">Subjects *</h5>
-                    <label className="sr-only" htmlFor="subjects">
-                      Subjects
+                    <label className="mb-2 text-[#188B89] font-bold">
+                      Subjects *
                     </label>
                     <input
                       className="w-full rounded-lg bg-[#188B8926] shadow-sm shadow-black p-3 lg:pr-16 pr-3  text-sm"
@@ -112,9 +106,8 @@ const GiveUsFeedback = () => {
                   </div>
 
                   <div>
-                    <h5 className="mb-2 text-[#188B89]">Your Phone *</h5>
-                    <label className="sr-only" htmlFor="phone">
-                      Phone
+                    <label className="mb-2 text-[#188B89] font-bold">
+                      Your Phone *
                     </label>
                     <input
                       className="w-full rounded-lg bg-[#188B8926] shadow-sm shadow-black p-3 lg:pr-16 pr-3  text-sm"
@@ -126,10 +119,9 @@ const GiveUsFeedback = () => {
                 </div>
 
                 <div>
-                  <label className="sr-only" htmlFor="message">
-                    Message
+                  <label className="mb-2 text-[#188B89] font-bold">
+                    Message *
                   </label>
-                  <h5 className="mb-2 text-[#188B89]">Message *</h5>
                   <textarea
                     className="w-full rounded-lg bg-[#188B8926] shadow-sm shadow-black p-4 lg:pr-16 pr-3  text-sm"
                     placeholder="Write Message"

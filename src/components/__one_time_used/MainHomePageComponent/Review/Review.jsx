@@ -126,7 +126,7 @@ const Review = () => {
             allowTouchMove={true}
             breakpoints={breakpoints}
           >
-            {reviews.map((test, i) => (
+            {reviews.map((review, i) => (
               <SwiperSlide key={i} className="!h-auto">
                 <div className="!h-full bg-[#D9D9D980] rounded-lg shadow-md p-[13px] ">
                   <div>
@@ -148,12 +148,12 @@ const Review = () => {
                     />
                   </div>
                   <p className="text-sm text-gray-800 py-3 3xl:text-sm ">
-                    {test.text}
+                    {review.text}
                   </p>
-                  <h6 className="font-semibold text-gray-900 ">
-                    {test.author}
-                  </h6>
-                  <p className="text-gray-600 text-sm ">{test.location}</p>
+                  <author className="font-semibold text-gray-900 ">
+                    {review.author}
+                  </author>
+                  <p className="text-gray-600 text-sm ">{review.location}</p>
                 </div>
               </SwiperSlide>
             ))}
