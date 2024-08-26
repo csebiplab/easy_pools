@@ -52,9 +52,9 @@ const FAQ = () => {
                       onClick={() => handleOpen(ques.id)}
                       className="relative flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] p-4 border-2"
                     >
-                      <h6 className="text-white text-sm md:text-base">
+                      <h3 className="text-white text-sm md:text-base">
                         {ques.question}
-                      </h6>
+                      </h3>
 
                       <div className="white-icon absolute right-1">
                         <IoCaretDown
