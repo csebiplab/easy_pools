@@ -47,9 +47,9 @@ const PartnerNRatings = ({ classNames }) => {
                 <div className="h-full flex items-center">
                   <div className="">
                     <div className="flex items-center gap-x-1">
-                      <h4 className="text-dark-300 text-base font-bold">
+                      <p className="text-dark-300 text-base font-bold">
                         Star Score
-                      </h4>
+                      </p>
                       <CiCircleInfo className="h-4 w-4 fill-dark-300" />
                     </div>
                     <div className="flex items-center gap-x-[5px]">
