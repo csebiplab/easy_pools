@@ -272,7 +272,7 @@ export function NavHeader() {
             <div className="flex items-center justify-between text-blue-gray-900">
               <Link href="/" aria-label="Home">
                 <WebBrandSvg />
-                <span class="sr-only">Home</span>
+                <span className="sr-only">Home</span>
               </Link>
               <div className="hidden lg:block">
                 <NavList />

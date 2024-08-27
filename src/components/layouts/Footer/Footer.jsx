@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="">
       <div className="container footer__bg ">
-        <footer className="px-5 lg:px-[35px] !text-white !z-50 pt-[50px] xl:pt-[90px] 2xl:pt-[120px] pb-9 md:pb-20 text-white">
+        <footer className="px-5 lg:px-[35px] !text-white !z-50 pt-[50px] xl:pt-[90px] 2xl:pt-[120px] pb-9 md:pb-20">
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-12 2xl:gap-x-[126px] justify-center">
               <div className="w-full lg:w-auto">
@@ -161,40 +161,39 @@ const Footer = () => {
                       easypools.landscaping@gmail.com
                     </a>
                   </li>
-                  <div className="mt-[38px]">
-                    <div className="">
-                      <div className="flex flex-wrap justify-center md:justify-normal gap-5">
-                        {footerIcon.map((fIcon, i) => (
-                          <div key={i} className="col-span-1">
-                            {fIcon?.svg}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="block md:hidden">
-                    <div className="h-[1px] bg-[#8E8E8E] w-full mt-9 mb-4" />
-
-                    <div className="text-center lg:text-left">
-                      <p className="text-sm lg:text-base text-white">
-                        © All Copyright 2024 by Easy Pools
-                      </p>
-                      <ul className="text-sm lg:text-base flex justify-evenly gap-2 mt-4">
-                        <li className="text-white">
-                          <Link href="/" className="text-white">
-                            Terms & Condition
-                          </Link>
-                        </li>
-                        <li className="text-white">
-                          <Link href="/" className="text-white">
-                            Privacy Policy
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
                 </ul>
+                <div className="mt-[38px]">
+                  <div className="">
+                    <div className="flex flex-wrap justify-center md:justify-normal gap-5">
+                      {footerIcon.map((fIcon, i) => (
+                        <div key={i} className="col-span-1">
+                          {fIcon?.svg}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="block md:hidden">
+                  <div className="h-[1px] bg-[#8E8E8E] w-full mt-9 mb-4" />
+                  <div className="text-center lg:text-left">
+                    <p className="text-sm lg:text-base text-white">
+                      © All Copyright 2024 by Easy Pools
+                    </p>
+                    <ul className="text-sm lg:text-base flex justify-evenly gap-2 mt-4">
+                      <li className="text-white">
+                        <Link href="/" className="text-white">
+                          Terms & Condition
+                        </Link>
+                      </li>
+                      <li className="text-white">
+                        <Link href="/" className="text-white">
+                          Privacy Policy
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
