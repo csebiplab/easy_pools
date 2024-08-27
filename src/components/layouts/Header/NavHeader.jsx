@@ -154,7 +154,7 @@ function OurServiceManu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6" 
+              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -280,8 +280,8 @@ export function NavHeader() {
                 <NavList />
               </div>
 
-              <div className="flex ">
-                <div className="flex items-center gap-x-6 md:gap-x-7 lg:gap-x-8">
+              <div className="flex gap-x-4">
+                <div className="flex items-center gap-x-6 md:gap-x-7 lg:gap-x-8 pr-2">
                   <div className="flex items-center gap-2">
                     <Image
                       src="/assets/images/phone-call.png"
@@ -301,7 +301,8 @@ export function NavHeader() {
                 <IconButton
                   variant="text"
                   color="blue-gray"
-                  className="lg:hidden"
+                  className="lg:hidden !pl-4"
+                  aria-label="Menu"
                   onClick={() => setOpenNav(!openNav)}
                 >
                   {openNav ? (
@@ -314,6 +315,7 @@ export function NavHeader() {
                       height={20}
                     />
                   )}
+                  <span className="sr-only">Menu</span>
                 </IconButton>
               </div>
             </div>
@@ -333,6 +335,8 @@ export function NavHeader() {
           <IconButton
             variant="text"
             color="blue-gray"
+            className="!pl-4"
+            aria-label="Menu"
             onClick={() => setOpenNav(false)}
           >
             <svg
@@ -349,6 +353,7 @@ export function NavHeader() {
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
+            <span className="sr-only">Menu</span>
           </IconButton>
         </div>
         <NavList />
