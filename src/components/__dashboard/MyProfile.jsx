@@ -107,6 +107,7 @@ const MyProfile = ({ user }) => {
               type="submit"
               className={`bg-red-700 text-white mt-6 px-3 py-1`}
               disabled={isLoading ? true : false}
+              aria-label="Submit"
             >
               {isLoading ? "Updating..." : "Update"}
             </button>

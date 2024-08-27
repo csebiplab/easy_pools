@@ -133,6 +133,7 @@ const GiveUsFeedback = () => {
                 <div className=" flex md:block xs:justify-center xs:items-center xs:mx-auto">
                   <button
                     type="submit"
+                    aria-label="Submit"
                     className="  rounded-md bg-[#049E43E4] px-10 py-4 md:px-20  font-semibold  text-white items-center flex lg:mt-13 mt-8 "
                   >
                     Submit <FaLocationArrow className=" ml-2 fill-white " />

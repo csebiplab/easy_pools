@@ -95,7 +95,7 @@ const OurServiceAreas = ({
                   <SwiperSlide
                     key={i}
                     // className="relative  rounded-xl px-[45px]"
-                    className="relative  rounded-xl px-7 md:px-8 lg:px-0"
+                    className="relative rounded-xl px-7 md:px-8 lg:px-0"
                   >
                     <div>
                       <div className="shadow-md p-0 relative">
@@ -107,9 +107,13 @@ const OurServiceAreas = ({
                           loading="lazy"
                           referrerPolicy="no-referrer-when-downgrade"
                           className="rounded-xl"
+                          title={`Google Maps showing the location of our office at ${loc?.location}`}
                         ></iframe>
                         <div className="absolute rounded-xl inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                          <button className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300">
+                          <button
+                            aria-label="Visit map"
+                            className="bg-white py-2 px-4 rounded-lg shadow-md text-gray-800 hover:bg-gray-200 transition duration-300"
+                          >
                             Visit Map
                           </button>
                         </div>

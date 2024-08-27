@@ -25,8 +25,9 @@ export default function RemoveBlogBtnComponent({ id }) {
   };
 
   return (
-    <button onClick={removeTopic} className="text-red-400">
+    <button aria-label="Delete" onClick={removeTopic} className="text-red-400">
       <HiOutlineTrash size={24} />
+      <span className="sr-only">Delete</span>
     </button>
   );
 }

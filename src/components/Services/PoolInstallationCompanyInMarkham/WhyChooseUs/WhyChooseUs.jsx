@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 import "./WhyChooseUs.css";
+import GetAnEstimateButton from "@/components/common/GetAnEstimateButton";
 
 const WhyChooseUs = () => {
   return (
@@ -39,7 +40,7 @@ const WhyChooseUs = () => {
             backyard oasis into a reality. Choose Easy Pools Markham for a
             stress-free and seamless pool installation experience.
           </p>
-          <a href="tel:+1(647) 449 9512">
+          {/* <a href="tel:+1(647) 449 9512">
             <button className="btn_bg text-white flex items-center gap-2 py-1 px-8 text-base font-bold my-5">
               Get Your Free Estimated{" "}
               <svg
@@ -55,7 +56,8 @@ const WhyChooseUs = () => {
                 />
               </svg>
             </button>
-          </a>
+          </a> */}
+          <GetAnEstimateButton />
 
           <h5 className="text-[25px] lg:text-[30px] font-semibold text-[#0C1C3C]">
             or Call Us:{" "}

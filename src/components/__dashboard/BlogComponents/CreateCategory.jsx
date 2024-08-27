@@ -11,7 +11,7 @@ function CreateCategory({ id, data }) {
     description: "",
   });
 
-  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL
+  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
 
   const handleInputChange = (eventKey, e) => {
     setInputValue((prevInputValue) => ({
@@ -34,16 +34,13 @@ function CreateCategory({ id, data }) {
     if (id) {
       let { name, slug, description } = inputValue;
       try {
-        const res = await fetch(
-          `${baseAPIUrl}/api/blogCategory/${id}`,
-          {
-            method: "PUT",
-            headers: {
-              "Content-type": "application/json",
-            },
-            body: JSON.stringify({ name, slug, description }),
-          }
-        );
+        const res = await fetch(`${baseAPIUrl}/api/blogCategory/${id}`, {
+          method: "PUT",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({ name, slug, description }),
+        });
         if (!res.ok) {
           toast(`Failed to update category`);
         }
@@ -91,7 +88,8 @@ function CreateCategory({ id, data }) {
               Name
             </label>
             <div className="mt-2">
-              <input required
+              <input
+                required
                 type="text"
                 name="name"
                 id="name"
@@ -110,7 +108,8 @@ function CreateCategory({ id, data }) {
               Slug
             </label>
             <div className="mt-2">
-              <input required
+              <input
+                required
                 type="text"
                 name="slug"
                 id="slug"
@@ -145,6 +144,8 @@ function CreateCategory({ id, data }) {
           </div>
         </div>
         <button
+          type="submit"
+          aria-label="Submit"
           onClick={handleSubmit}
           className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 my-5 px-5 border border-blue-500 hover:border-transparent rounded"
         >

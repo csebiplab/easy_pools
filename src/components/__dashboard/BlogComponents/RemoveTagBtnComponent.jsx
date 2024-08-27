@@ -9,7 +9,7 @@ export default function RemoveTagBtnComponent({ id }) {
   const removeTopic = async () => {
     const confirmed = confirm("Are you sure?");
 
-    const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL
+    const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
 
     if (confirmed) {
       const res = await fetch(`${baseAPIUrl}/api/blogTag?id=${id}`, {
@@ -25,8 +25,9 @@ export default function RemoveTagBtnComponent({ id }) {
   };
 
   return (
-    <button onClick={removeTopic} className="text-red-400">
+    <button aria-label="Delete" onClick={removeTopic} className="text-red-400">
       <HiOutlineTrash size={24} />
+      <span className="sr-only">Delete</span>
     </button>
   );
 }

@@ -243,6 +243,8 @@ function CreateBlog({ id, data }) {
         </div>
         <div className="mt-20">
           <button
+            type="submit"
+            aria-label="Submit"
             onClick={handleSubmit}
             className="bg-transparent w-1/6 hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 my-5 px-5 border border-blue-500 hover:border-transparent rounded"
           >

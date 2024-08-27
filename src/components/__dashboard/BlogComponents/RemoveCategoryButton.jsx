@@ -9,15 +9,12 @@ export default function RemoveCategoryBtnComponent({ id }) {
   const removeTopic = async () => {
     const confirmed = confirm("Are you sure?");
 
-    const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL
+    const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
 
     if (confirmed) {
-      const res = await fetch(
-        `${baseAPIUrl}/api/blogCategory?id=${id}`,
-        {
-          method: "DELETE",
-        }
-      );
+      const res = await fetch(`${baseAPIUrl}/api/blogCategory?id=${id}`, {
+        method: "DELETE",
+      });
 
       if (res.ok) {
         router.refresh();
@@ -28,8 +25,9 @@ export default function RemoveCategoryBtnComponent({ id }) {
   };
 
   return (
-    <button onClick={removeTopic} className="text-red-400">
+    <button aria-label="Delete" onClick={removeTopic} className="text-red-400">
       <HiOutlineTrash size={24} />
+      <span className="sr-only">Delete</span>
     </button>
   );
 }
