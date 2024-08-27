@@ -43,14 +43,20 @@ const MenuItem = ({ item }) => {
             className={`flex flex-row items-center p-2 rounded-lg hover-bg-zinc-100 w-full justify-between hover:bg-zinc-100 ${
               pathname.includes(item.href) ? "bg-zinc-100 text-gray-900" : ""
             }`}
+            aria-expanded={subMenuOpen} // Indicates if the submenu is open
           >
             <div className="flex flex-row space-x-4 items-center">
               <IconOne size={16} />
-              <span className="">{item.title}</span>
+              <span>{item.title}</span>
             </div>
 
             <div className={`${subMenuOpen ? "rotate-180" : ""} flex`}>
-              <Icon icon="lucide:chevron-down" width="24" height="24" />
+              <Icon
+                icon="lucide:chevron-down"
+                width="24"
+                height="24"
+                aria-hidden="true"
+              />
             </div>
           </button>
 

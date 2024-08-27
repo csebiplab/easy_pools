@@ -3,7 +3,10 @@ import React from "react";
 export default function Button({ title }) {
   return (
     <div>
-      <button className="service__card__btn flex justify-center items-center">
+      <button
+        aria-label={title}
+        className="service__card__btn flex justify-center items-center"
+      >
         <span className="text-white text-sm font-bold lg:text-[16px] md:text-sm">
           {title}
         </span>

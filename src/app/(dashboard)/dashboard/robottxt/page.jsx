@@ -84,6 +84,7 @@ const RobotTxtPage = () => {
         <button
           type="submit"
           className="inline bg-blue-700 text-white px-16 py-3 rounded-lg mt-3"
+          aria-label="Submit"
         >
           Submit
         </button>

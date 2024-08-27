@@ -17,19 +17,6 @@ const FiberglassPoolBanner = () => {
                 Toronto for ensuring a hassle-free installation process for
                 modern living.
               </p>
-              {/* <div className="mb-4 md:mb-0">
-                <a
-                  href={`tel:+1(647) 449 9512`}
-                  className="text-sm font-bold text-white"
-                >
-                  <Button className="!px-[34px] !py-4 btn__bannerFiberglass !text-white text-sm lg:text-lg font-bold capitalize flex items-center gap-x-2">
-                    <span className="!text-white">Get an Estimate</span>
-                    <span>
-                      <FaChevronRight fill="white" />
-                    </span>
-                  </Button>
-                </a>
-              </div> */}
 
               <div className="mb-4 md:mb-0">
                 <GetAnEstimateButton />

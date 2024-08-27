@@ -15,7 +15,10 @@ const HomeBanner = () => {
           </p>
           <div className="flex justify-center">
             <a href="tel:+1(647) 449 9512">
-              <button className="flex items-center rounded-full bg-secondary py-3 md:py-4 px-8 mt-7 md:mt-8">
+              <button
+                aria-label="Get an Estimate"
+                className="flex items-center rounded-full bg-secondary py-3 md:py-4 px-8 mt-7 md:mt-8"
+              >
                 <span className="text-white text-sm md:text-lg">
                   Get an Estimate
                 </span>

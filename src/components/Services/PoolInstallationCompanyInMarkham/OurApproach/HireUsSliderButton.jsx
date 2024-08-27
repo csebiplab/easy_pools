@@ -2,23 +2,17 @@
 
 import { useSwiper } from "swiper/react";
 
-const HireUsSliderButton = ({
-  setSelectImageIndex,
-  selectImageIndex,
-}) => {
+const HireUsSliderButton = ({ setSelectImageIndex, selectImageIndex }) => {
   const swiper = useSwiper();
   return (
     <div className="flex justify-between items-center">
       <div
         onClick={() =>
-          setSelectImageIndex(
-            selectImageIndex === 5
-              ? 5
-              : selectImageIndex + 1
-          )
+          setSelectImageIndex(selectImageIndex === 5 ? 5 : selectImageIndex + 1)
         }
       >
-        <button onClick={() => swiper.slideNext()}>
+        <button aria-label="next" onClick={() => swiper.slideNext()}>
+          <span className="sr-only">Next</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="52"
@@ -40,7 +34,8 @@ const HireUsSliderButton = ({
           setSelectImageIndex(selectImageIndex === 0 ? 0 : selectImageIndex - 1)
         }
       >
-        <button onClick={() => swiper.slidePrev()}>
+        <button aria-label="prev" onClick={() => swiper.slidePrev()}>
+          <span className="sr-only">Prev</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="52"
