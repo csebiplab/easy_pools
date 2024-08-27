@@ -24,8 +24,9 @@ export default function RemoveBtnComponent({ id, endpoint }) {
   };
 
   return (
-    <button onClick={deleteDataHandler} className="text-red-400">
+    <button aria-label="Delete" onClick={deleteDataHandler} className="text-red-400">
       <HiOutlineTrash size={24} />
+      <span className="sr-only">Delete</span>
     </button>
   );
 }

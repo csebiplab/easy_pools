@@ -10,7 +10,6 @@ import "swiper/css/scrollbar";
 import "swiper/css/virtual";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { headingIconText } from "@/utils/heading-text";
 
 const breakpoints = {
   0: {
@@ -35,7 +34,7 @@ const allImages = [
   "/assets/fiberglass/process/process11.png",
 ];
 
-const Process = ({sHeading="empty", bHeading="empty"}) => {
+const Process = ({ sHeading = "empty", bHeading = "empty" }) => {
   return (
     <div className="">
       <div className="container common__padding__top">
@@ -48,7 +47,8 @@ const Process = ({sHeading="empty", bHeading="empty"}) => {
 
         <div className="relative mt-20">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center w-full">
-            <button>
+            <button aria-label="prev">
+              <span className="sr-only">Prev</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="52"
@@ -64,7 +64,8 @@ const Process = ({sHeading="empty", bHeading="empty"}) => {
               </svg>
             </button>
             <div className="bg-[#049E43] h-3 w-full" />
-            <button>
+            <button aria-label="next">
+              <span className="sr-only">Next</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="52"

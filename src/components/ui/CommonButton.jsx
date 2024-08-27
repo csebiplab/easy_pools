@@ -1,6 +1,9 @@
 const CommonButton = ({ buttonText }) => {
   return (
-    <button className="service__card__btn flex justify-center items-center">
+    <button
+      aria-label={buttonText}
+      className="service__card__btn flex justify-center items-center"
+    >
       <span className="text-white text-sm md:text-sm font-bold">
         {buttonText}
       </span>

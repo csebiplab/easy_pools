@@ -9,7 +9,10 @@ export default function TagList({ allTaglist }) {
       <div className="px-5">
         <div className="tableHeaderArea flex items-end justify-end">
           <Link href={`/dashboard/blogs/tags/addNewTag`}>
-            <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 my-5 px-5 border border-blue-500 hover:border-transparent rounded">
+            <button
+              aria-label="Add new tag"
+              className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 my-5 px-5 border border-blue-500 hover:border-transparent rounded"
+            >
               Add new Tag
             </button>
           </Link>
