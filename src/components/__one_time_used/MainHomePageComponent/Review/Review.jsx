@@ -97,17 +97,17 @@ const reviews = [
 
 const Review = () => {
   return (
-    <div className="bg-[#188B891A]">
-      <div className="  container 3xl:py-[50px] py-[30px]">
+    <div className="">
+      <div className="container bg-[#188B891A] 3xl:py-[50px] py-[30px]">
         <div>
           <div className=" flex flex-col justify-center items-center ">
             <HeadingIcon text={headingIconText.revidw__IconText} />
 
             <div>
-              <p className="text-lg md:text-3xl lg:text-4xl text-dark md:text-start text-center md:mb-20 mb-8 text ">
+              <h2 className="text-lg md:text-3xl lg:text-4xl text-black font-normal md:text-start text-center md:mb-20 mb-8 text ">
                 Here's what to expect when you hire us as your Pool Installer in
                 Toronto.
-              </p>
+              </h2>
             </div>
           </div>
         </div>

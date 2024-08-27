@@ -11,8 +11,8 @@ import { brandSVG, footerIcon, footerLinks } from "./Footer.utilities";
 const Footer = () => {
   return (
     <div className="">
-      <div className="footer__bg px-5 lg:px-[35px] !text-white">
-        <footer className="container !z-50 pt-[50px] xl:pt-[90px] 2xl:pt-[311px] pb-9 md:pb-20 text-white">
+      <div className="container footer__bg ">
+        <footer className="px-5 lg:px-[35px] !text-white !z-50 pt-[50px] xl:pt-[90px] 2xl:pt-[120px] pb-9 md:pb-20 text-white">
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-12 2xl:gap-x-[126px] justify-center">
               <div className="w-full lg:w-auto">
@@ -202,8 +202,8 @@ const Footer = () => {
       </div>
 
       {/* creater company credit */}
-      <div className="footer-bottom-bg">
-        <div className="container flex flex-col lg:flex-row justify-between items-center py-2">
+      <div className="">
+        <div className="container footer-bottom-bg flex flex-col lg:flex-row justify-between items-center py-2">
           <div className="flex justify-center items-center mb-2 lg:mb-0">
             <p className="text-sm md:text-base font-semibold text-white mr-[14px] lg:mr-4">
               WEBSITE DESIGN AND SEO BY :-

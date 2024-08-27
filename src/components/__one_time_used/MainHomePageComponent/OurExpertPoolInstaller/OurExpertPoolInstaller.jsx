@@ -83,10 +83,10 @@ const OurExpertPoolInstaller = () => {
           </div>
 
           <div>
-            <p className="2xl:text-[36px] md:text-[20px] xs:text-[18px] md:pb-0 xs:pb-[20px] text-center ">
-              Serving the Greater Toronto Horseshoe Area for all your pool's
-              needs.
-            </p>
+            <h2 className="px-3 text-black text-lg md:text-3xl lg:text-4xl 3xl:pb-[30px] pb-[25px] text-center ">
+            Choose Our Expert Pool Installers in Toronto
+
+            </h2>
           </div>
 
           <div>
@@ -101,9 +101,9 @@ const OurExpertPoolInstaller = () => {
 
         <div className="grid md:grid-cols-2 md:gap-[50px] gap-7">
           <div className=" border-2 shadow">
-            <h2 className="title-bg text-center 2xl:py-[15px] py-[14px] text-white 2xl:text-[18px] text-[16px]">
+            <p className="title-bg text-center 2xl:py-[15px] py-[14px] text-white 2xl:text-[18px] text-[16px]">
               Usual Pool Installers
-            </h2>
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]  ">
               {usualPool.map((usual, idx) => (
                 <div
@@ -124,9 +124,9 @@ const OurExpertPoolInstaller = () => {
           </div>
 
           <div className=" border-2 shadow">
-            <h2 className="title-bg text-center 2xl:py-[15px] py-[14px] text-white 2xl:text-[18px] text-[16px]">
+            <p className="title-bg text-center 2xl:py-[15px] py-[14px] text-white 2xl:text-[18px] text-[16px]">
               Easy Pools Pool Installers
-            </h2>
+            </p>
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-x-4 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px] ">
               {easyPool.map((usual, idx) => (
                 <div

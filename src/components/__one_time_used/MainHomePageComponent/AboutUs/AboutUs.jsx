@@ -24,9 +24,9 @@ const AboutUs = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.aboutUs__IconText} />
             </div>
-            <p className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
-              About Our Pool Installation Company in Toronto
-            </p>
+            <h2 className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
+            About Our Swimming Pool Contractors in Toronto
+            </h2>
             <p className=" 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
               Easy Pools custom designs and builds pool and spa solutions that
               reflect your unique needs and personal aesthetic. With over 10

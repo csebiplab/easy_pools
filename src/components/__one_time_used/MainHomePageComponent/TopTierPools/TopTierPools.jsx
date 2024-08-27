@@ -4,10 +4,12 @@ import Image from "next/image";
 
 const TopTierPools = () => {
   return (
-    <div className="bg-[#188B891A]">
-      <div className="container grid md:grid-cols-2 py-[40px] md:py-[50px]">
+    <div className="">
+      <div className="container bg-[#188B891A] grid md:grid-cols-2 py-[40px] md:py-[50px]">
         <div className="md:pr-[45px] text-center md:text-left">
+          <div className="flex justify-center md:justify-end">
           <HeadingIcon text={headingIconText.toptail__IconText} />
+          </div>
           <h2 className="text-black text-lg md:text-3xl lg:text-4xl py-2 md:py-3 !font-semibold">
             Toronto's Top-Tier Pools Installation Solutions
           </h2>
