@@ -1,11 +1,17 @@
 "use client";
 
-import Button from "../__one_time_used/LocationPageComponent/BestChoice/Button";
+import { Button } from "@material-tailwind/react";
 
 export default function GetAnEstimateButton() {
   return (
-    <a href={`tel:+1(647) 449 9512`} className="text-sm font-bold text-white">
-      <Button className="hero_btn text-white text-sm lg:text-base font-bold capitalize flex items-center gap-x-2">
+    <a
+      href={`tel:+1(647) 449 9512`}
+      className="text-sm font-bold text-white inline-block"
+    >
+      <Button
+        aria-label="Get an estimate"
+        className="hero_btn text-white text-sm lg:text-base font-bold capitalize flex items-center gap-x-2"
+      >
         <span className="text-white">Get an Estimate</span>
         <span>
           <svg
