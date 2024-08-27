@@ -81,7 +81,7 @@ export default function () {
               name="password"
             />
           </div>
-          <Button className="mt-6" type="submit" disabled={isLoading} fullWidth>
+          <Button aria-label="Form submit button" className="mt-6" type="submit" disabled={isLoading} fullWidth>
             {isLoading ? `Loading...` : `Sing In`}
           </Button>
         </form>

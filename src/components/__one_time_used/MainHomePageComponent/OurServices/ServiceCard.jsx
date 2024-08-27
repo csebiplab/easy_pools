@@ -11,7 +11,6 @@ const ServiceCard = ({ serv }) => {
         <Image
           src={imgUrl}
           alt="easy pools"
-          layout="responsive"
           width={400}
           height={177}
           className="w-full"
