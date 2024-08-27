@@ -58,6 +58,7 @@ function OurLocationMenu() {
             aria-expanded={isMenuOpen} // Dynamically set the value based on the menu state
             aria-haspopup="true" // Indicating this element triggers a popup
             id=":RrarjtaH2:"
+            role="button"
           >
             <ListItem
               className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
@@ -150,9 +151,10 @@ function OurServiceManu() {
             aria-expanded={isMenuOpen} // Dynamically set the value based on the menu state
             aria-haspopup="true" // Indicating this element triggers a popup
             id=":RrarjtaH2:"
+            role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6" 
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -266,7 +268,7 @@ export function NavHeader() {
   return (
     <>
       <UpperNavbar />
-      <header className="sticky top-0 z-[500000]">
+      <header className="sticky top-0 z-50">
         <div className="custom-container main__nav">
           <Navbar className="container rounded-none py-2 shadow-none max-w-full">
             <div className="flex items-center justify-between text-blue-gray-900">

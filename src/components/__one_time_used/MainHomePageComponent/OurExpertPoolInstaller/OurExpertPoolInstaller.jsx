@@ -75,7 +75,8 @@ const easyPool = [
 
 const OurExpertPoolInstaller = () => {
   return (
-    <div className="container">
+    <div className="bg-white">
+      <div className="container">
       <div className="  2xl:py-20 py-10 shadow-sm md:mx-0 xs:mx-[35px] ">
         <div className="mx-auto  flex flex-col items-center justify-center">
           <div>
@@ -147,6 +148,7 @@ const OurExpertPoolInstaller = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

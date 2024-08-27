@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ServiceCard = ({ serv }) => {
-  const { imgUrl, title, desc, url } = serv ?? {};
+  const { imgUrl, title, desc, url} = serv ?? {};
 
   return (
     <div className="service__card">
@@ -24,7 +24,7 @@ const ServiceCard = ({ serv }) => {
           <p className=" 2xl:text-[15px] text-sm leading-[20px]">{desc}</p>
           <div className="pb-5 mt-5 flex justify-center items-b relative">
             <Link href={`/${url}`}>
-              <CommonButton buttonText={`Learn More`} />
+              <CommonButton buttonText={title} />
             </Link>
           </div>
         </div>

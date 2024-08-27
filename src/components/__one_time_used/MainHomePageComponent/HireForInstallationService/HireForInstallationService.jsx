@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HireForInstallationService = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div className="container">
         <div className="px-[35px] md:px-0 grid md:grid-cols-2 3xl:gap-[50px] gap-8 3xl:py-[120px] lg:py-[80px] py-[60px] ">
           <div className="hidden md:block">

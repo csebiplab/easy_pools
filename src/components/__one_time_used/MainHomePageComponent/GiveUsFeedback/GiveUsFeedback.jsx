@@ -17,7 +17,7 @@ const GiveUsFeedback = () => {
         <div className="grid lg:grid-cols-10 md:grid-cols-7 custom-container  lg:relative  ">
           <div
             className=" lg:absolute md:col-span-3 md:order-1 flex justify-center items-center align-middle 2xl:left-[20%] lg:left-[16%] xl:left-[20%] 2xl:top-[10%] 4xl:left-[25%]  xs:align-middle
-                    lg:top-[20%]  bg-[#188B89] 2xl:my-16 my-8  2xl:py-8 py-5 border shadow-md rounded-md border-black z-50   "
+                    lg:top-[20%]  bg-[#188B89] 2xl:my-16 my-8  2xl:py-8 py-5 border shadow-md rounded-md border-black z-20   "
           >
             <div className="">
               <div className=" 2xl:py-8 py-5 lg:px-10 px-5  ">

@@ -67,7 +67,8 @@ const breakpoints = {
 
 const BenefitsWithEasyPools = () => {
   return (
-    <div className="container">
+    <div className="bg-white">
+      <div className="container">
       <div className="!overflow-x-hidden">
       <div className="lg:py-[120px] py-20 md:px-0 xs:px-[35px]">
         {/* heading  */}
@@ -157,6 +158,7 @@ const BenefitsWithEasyPools = () => {
         </div>
       </div>
       </div>
+    </div>
     </div>
   );
 };

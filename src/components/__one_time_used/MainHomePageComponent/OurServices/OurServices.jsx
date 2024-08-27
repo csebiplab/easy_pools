@@ -30,7 +30,7 @@ const ourServices = [
     and most customizable. They are the most expensive due to their 
     building process, however, this is outweighed by their longevity 
     and endless customization options`,
-    url: "swimming-pool-installation-company-in-vaughan",
+    url: "/",
   },
   {
     imgUrl: "/assets/services/serv4.png",
@@ -49,7 +49,7 @@ const OurServices = () => {
           <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.ourServices__IconTxt} />
           </div>
-          <h2 className="text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center mt-2 md:mt-4">
+          <h2 className="text-lg md:text-3xl lg:text-4xl text-black font-normal leading-normal md:text-start text-center mt-2 md:mt-4">
             Our Services
           </h2>
           <div className="mt-7 md:mt-[35px]">
