@@ -17,7 +17,7 @@ const TopTierPools = () => {
             Looking for top-tier pool installation solutions in Toronto? Look no
             further.
           </p>
-          <p className="text-sm md:text-sm 2xl:text-[16px] mt-3">
+          <p className="text-sm md:text-sm 2xl:text-[16px] mt-2">
             Our company specializes in providing premium pool installation
             services tailored to meet your specific needs and preferences. With
             our team of skilled professionals and years of experience in the

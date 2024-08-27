@@ -6,7 +6,8 @@ import "./MaterialsNEquip.css";
 
 const MaterialsNEquip = () => {
   return (
-    <div className=" container ">
+    <div className="bg-white">
+      <div className=" container ">
       <div className=" 2xl:py-[120px] lg:py-[80px] py-[50px] md:px-[0px] px-[35px] ">
         <div className="grid lg:grid-cols-2 grid-cols-1 2xl:gap-x-[75px] lg:gap-x-[40px] gap-x-[25px]">
           <div className=" ">
@@ -77,7 +78,7 @@ const MaterialsNEquip = () => {
           <div className=" flex justify-center items-center md:pt-0 pt-[20px]">
             <div>
               <HeadingIcon text={headingIconText.meterialNEquip__IconText} />
-              <h2 className=" text-black text-lg md:text-3xl lg:text-4xl mt-4 mb-[25px]">
+              <h2 className="text-black font-normal text-lg md:text-3xl lg:text-4xl mt-4 mb-[25px]">
                 Materials and Equipment Needed for Pool Installation
               </h2>
               <p className=" 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px] ">
@@ -101,6 +102,7 @@ const MaterialsNEquip = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

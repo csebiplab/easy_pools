@@ -17,6 +17,8 @@ import GiveUsFeedback from "./GiveUsFeedback/GiveUsFeedback";
 import LicensedNInsured from "./LicensedNInsured/LicensedNInsured";
 import { bHeadingTexts } from "@/utils/bHeadingText";
 import { headingIconText } from "@/utils/heading-text";
+import EasyPoolsLeads from "./EasyPoolsLeads/EasyPoolsLeads";
+import DesignandCustomization from "./DesignandCustomization/DesignandCustomization";
 
 const MainHomePageComponent = () => {
   return (
@@ -31,6 +33,14 @@ const MainHomePageComponent = () => {
 
       <section>
         <AboutUs />
+      </section>
+
+      <section>
+        <EasyPoolsLeads />
+      </section>
+
+      <section>
+        <DesignandCustomization />
       </section>
 
       <section>

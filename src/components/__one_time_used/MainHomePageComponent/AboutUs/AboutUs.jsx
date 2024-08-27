@@ -24,7 +24,7 @@ const AboutUs = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.aboutUs__IconText} />
             </div>
-            <h2 className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:text-start text-center">
+            <h2 className="mt-4 lg:mb-[25px] mb-[15px] text-lg md:text-3xl lg:text-4xl text-blacke font-normal leading-normal md:text-start text-center">
             About Our Swimming Pool Contractors in Toronto
             </h2>
             <p className=" 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px] md:text-start text-center">
