@@ -1,7 +1,6 @@
-"use client";
-import { Button } from "@material-tailwind/react";
 import Image from "next/image";
 import "./SwimmingPoolBanner.css";
+import GetAnEstimateButton from "@/components/common/GetAnEstimateButton";
 
 const SwimmingPoolBanner = () => {
   return (
@@ -19,7 +18,7 @@ const SwimmingPoolBanner = () => {
                 tailored to your vision.
               </p>
               <div className="mb-4 md:mb-0">
-                <a
+                {/* <a
                   href={`tel:+1(647) 449 9512`}
                   className="text-sm font-bold text-white"
                 >
@@ -40,7 +39,9 @@ const SwimmingPoolBanner = () => {
                       </svg>
                     </span>
                   </Button>
-                </a>
+                </a> */}
+
+                <GetAnEstimateButton />
               </div>
             </div>
           </div>

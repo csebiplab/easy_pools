@@ -1,9 +1,6 @@
-"use client";
-
 import Image from "next/image";
-import { Button } from "@material-tailwind/react";
-import { FaChevronRight } from "react-icons/fa6";
 import "./FiberglassPoolBanner.css";
+import GetAnEstimateButton from "@/components/common/GetAnEstimateButton";
 
 const FiberglassPoolBanner = () => {
   return (
@@ -20,7 +17,7 @@ const FiberglassPoolBanner = () => {
                 Toronto for ensuring a hassle-free installation process for
                 modern living.
               </p>
-              <div className="mb-4 md:mb-0">
+              {/* <div className="mb-4 md:mb-0">
                 <a
                   href={`tel:+1(647) 449 9512`}
                   className="text-sm font-bold text-white"
@@ -32,6 +29,10 @@ const FiberglassPoolBanner = () => {
                     </span>
                   </Button>
                 </a>
+              </div> */}
+
+              <div className="mb-4 md:mb-0">
+                <GetAnEstimateButton />
               </div>
             </div>
           </div>

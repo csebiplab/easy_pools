@@ -27,7 +27,6 @@ const MaterialsNEquip = () => {
                   height={474}
                   loading="lazy"
                   alt="easy pools"
-                  layout="responsive"
                   className="w-[650px] pl-32 mr-2 rounded-[9px]"
                 />
                 <div className="-ml-[130px] mt-[-12rem]">
