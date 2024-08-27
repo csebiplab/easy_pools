@@ -57,15 +57,15 @@ const HireForInstallationService = () => {
               <HeadingIcon text={headingIconText.hire__IconText} />
 
               <div>
-                <p className="text-lg md:text-3xl lg:text-4xl text-dark 3xl:pb-[28px] pb-[16px] text-center md:text-start  ">
+                <h2 className="text-lg md:text-3xl lg:text-4xl text-dark 3xl:pb-[28px] pb-[16px] text-center md:text-start  ">
                   Hire Easy Pools For Your Pool Installation Services
-                </p>
+                </h2>
               </div>
             </div>
             <div>
               <p className=" text-center md:text-start 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
-                Looking to transform your backyard into an oasis of relaxation
-                and enjoyment? Look no further than Easy Pools for all your pool
+                Do you want to transform your backyard into an oasis of relaxation and enjoyment?
+                Look no further than Easy Pools for all your pool
                 installation needs. Our team of experienced professionals is
                 dedicated to providing top-notch service, from consultation to
                 completion. Whether you're dreaming of a serene lap pool or a

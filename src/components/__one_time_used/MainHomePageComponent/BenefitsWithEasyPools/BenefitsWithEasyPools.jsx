@@ -67,16 +67,17 @@ const breakpoints = {
 
 const BenefitsWithEasyPools = () => {
   return (
-    <div className="container !overflow-x-hidden">
+    <div className="container">
+      <div className="!overflow-x-hidden">
       <div className="lg:py-[120px] py-20 md:px-0 xs:px-[35px]">
         {/* heading  */}
         <div className=" flex flex-col justify-center items-center ">
           <HeadingIcon text={headingIconText.Benefits__IconText} />
 
           <div>
-            <p className="text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:mb-14xs :mb-10 mb-8 text-center">
+            <h2 className="text-lg md:text-3xl lg:text-4xl text-dark leading-normal md:mb-14xs :mb-10 mb-8 text-center">
               Benefits of Installing Swimming Pools with Easy Pools
-            </p>
+            </h2>
           </div>
         </div>
 
@@ -154,6 +155,7 @@ const BenefitsWithEasyPools = () => {
             <SwipButton></SwipButton>
           </Swiper>
         </div>
+      </div>
       </div>
     </div>
   );

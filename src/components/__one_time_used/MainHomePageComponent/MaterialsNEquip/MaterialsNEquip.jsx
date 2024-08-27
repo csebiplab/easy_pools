@@ -78,9 +78,9 @@ const MaterialsNEquip = () => {
           <div className=" flex justify-center items-center md:pt-0 pt-[20px]">
             <div>
               <HeadingIcon text={headingIconText.meterialNEquip__IconText} />
-              <p className=" text-black text-lg md:text-3xl lg:text-4xl mt-4 mb-[25px]">
+              <h2 className=" text-black text-lg md:text-3xl lg:text-4xl mt-4 mb-[25px]">
                 Materials and Equipment Needed for Pool Installation
-              </p>
+              </h2>
               <p className=" 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px] ">
                 To install a pool, you'll need various materials and pool
                 equipment to ensure a smooth and efficient process. Firstly,

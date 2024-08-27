@@ -27,25 +27,19 @@ export const faqQuestionsNAns = [
     },
     {
         id: 5,
-        question: "What maintenance services do you provide post-installation?",
-        answer:
-            "Yes, we can assist you with obtaining the necessary permits for your construction project. Our team is familiar with the permit process and will work closely with local authorities to ensure all requirements are met.",
-    },
-    {
-        id: 6,
         question: "Are your installation technicians licensed and insured?",
         answer:
             "Yes, we can assist you with obtaining the necessary permits for your construction project. Our team is familiar with the permit process and will work closely with local authorities to ensure all requirements are met.",
     },
     {
-        id: 7,
+        id: 6,
         question:
             "What sets your company apart from others offering pool installation services?",
         answer:
             "You can contact us by phone, by email, or through the contact form on our website. Our team is available to assist you with any further inquiries or questions you may have.",
     },
     {
-        id: 8,
+        id: 7,
         question: "How can we get started with the pool installation process?",
         answer:
             "You can contact us by phone, by email, or through the contact form on our website. Our team is available to assist you with any further inquiries or questions you may have.",

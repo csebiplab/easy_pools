@@ -57,8 +57,8 @@ const OurServiceAreas = ({
   bHeading = "empty",
 }) => {
   return (
-    <div className={`${classNames ? classNames?.bg : "area-bg"}`}>
-      <div className="container">
+    <div className={`${classNames ? classNames?.bg : "area-bg"} container`}>
+      <div className="">
         <div
           className={`${
             classNames ? classNames?.pdy : "2xl:py-[55px] py-[30px]"
@@ -68,9 +68,9 @@ const OurServiceAreas = ({
             <HeadingIcon text={sHeading} />
 
             <div>
-              <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+              <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                 {bHeading}
-              </h3>
+              </h2>
             </div>
           </div>
 

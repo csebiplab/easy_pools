@@ -7,8 +7,8 @@ import Button from "./Button";
 const JoinWithUs = () => {
   return (
     <div className=" ">
-      <div className="bg-[#188B891A]">
-        <div className=" custom-container md:px-0 xs:px-[35px] md:py-0 xs:py-10  grid grid-cols-1 md:grid-cols-8 gap-4">
+      <div className="">
+        <div className="custom-container bg-[#188B891A] md:px-0 xs:px-[35px] md:py-0 xs:py-10  grid grid-cols-1 md:grid-cols-8 gap-4">
           <div
             className=" md:col-span-4 md:order-1 bg-white  lg:px-8 px-4 lg:py-12 md:py-8 py-4  border-2 shadow-md md:rounded-xl xs:rounded-t-xl z-50 5xl:ml-[285px] 4xl:ml-[200px] 3xl:ml-[180px] 2xl:ml-[130px] xl:ml-[90px] lg:ml-[50px]
                     2xl:w-[770px] xl:w-[650px] lg:w-[600px] md:w-[500px] 2xl:h-[550px] xl:h-[500px] lg:h-[380px] md:h-[300px] md:my-10  3xl:my-[55px] lg:my-[25px] my-20px "
@@ -17,9 +17,9 @@ const JoinWithUs = () => {
               <HeadingIcon text={headingIconText.joinUs__IconText} />
 
               <div>
-                <p className="text-black text-lg md:text-3xl lg:text-4xl 3xl:mb-[20px]  ">
+                <h2 className="text-black text-lg md:text-3xl lg:text-4xl 3xl:mb-[20px]  ">
                   Ready to Start Your Swimming Pool Installation With Us?
-                </p>
+                </h2>
               </div>
             </div>
             <p className="mt-4 2xl:text-[16px] md:text-sm text-sm 2xl:leading-[35px] lg:leading-[25px] leading-[20px]">
@@ -49,14 +49,14 @@ const JoinWithUs = () => {
             </div>
           </div>
 
-          <div className="w-full  md:col-span-4 md:order-2 ">
+          <div className="w-full  md:col-span-4 md:order-2">
             <Image
               src="/assets/random/joinus.png"
               alt="Trusted general contractor"
               width={450}
               height={300}
               loading="lazy"
-              className="w-full h-full xs:rounded-b-xl md:rounded-none"
+              className="w-full h-full ml-10 xs:rounded-b-xl md:rounded-none"
             />
           </div>
         </div>

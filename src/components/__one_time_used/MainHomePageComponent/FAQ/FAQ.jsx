@@ -39,9 +39,9 @@ const FAQ = () => {
                   <HeadingIcon text={headingIconText.faq__IconText} />
 
                   <div>
-                    <p className="text-black text-lg md:text-3xl lg:text-4xl lg:mb-8 mb-5">
+                    <h2 className="text-black text-lg md:text-3xl lg:text-4xl lg:mb-8 mb-5">
                       Pool Installation Services in Toronto
-                    </p>
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -52,9 +52,9 @@ const FAQ = () => {
                       onClick={() => handleOpen(ques.id)}
                       className="relative flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] p-4 border-2"
                     >
-                      <h3 className="text-white text-sm md:text-base">
+                      <p className="text-white text-sm md:text-base">
                         {ques.question}
-                      </h3>
+                      </p>
 
                       <div className="white-icon absolute right-1">
                         <IoCaretDown
