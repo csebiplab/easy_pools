@@ -8,7 +8,7 @@ const Excelence = () => {
   return (
     <div className="bg__fiberglassPage">
       <div className="container">
-        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] common__padding__top ">
+        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 common__padding__top ">
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
@@ -16,7 +16,7 @@ const Excelence = () => {
                 width={596}
                 height={490}
                 alt="about us image"
-                className=""
+                
               />
             </div>
           </div>

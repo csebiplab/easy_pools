@@ -85,9 +85,9 @@ const services = [
 
 const FlawlessDesign = () => {
   return (
-    <div className="!overflow-hidden">
-      <div className="bg__fiberglassPage common__padding__top">
-        <div className="container">
+    <div className="bg__fiberglassPage">
+      <div className="container common__padding__top">
+        <div className="!overflow-hidden">
           <div className="flex flex-col items-center">
             <div className="flex justify-center lg:justify-normal items-center">
               <HeadingIcon

@@ -20,21 +20,21 @@ const QA = () => {
 
   return (
     <div className="bg__fiberglassPage common__padding__top">
-      <section className="full__section_l_p">
-        <div className="mx-auto">
+      <section className="full__section_l_p ">
+        <div className="">
           <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="order-2 flex justify-end items-center pr-3 md:pr-0">
+            <div className="order-1 md:order-2 flex justify-end items-center pr-3 md:pr-0">
               <Image
                 alt="faq"
                 src="/assets/fiberglass/qa.png"
                 width={893}
                 height={810}
-                className="h-dvh"
+                className="h-[503px] md:h-[810px]"
               />
             </div>
 
             <div>
-              <div className="order-1 flex flex-col">
+              <div className="order-2 md:order-1 flex flex-col">
                 <HeadingIcon text={headingIconText.qnda__inFiberglassText} />
 
                 <div>

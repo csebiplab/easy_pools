@@ -7,7 +7,7 @@ import { headingIconText } from "@/utils/heading-text";
 const CostCalculating = () => {
   return (
     <div className="bg__fiberglassPage common__padding__top">
-      <div className="full__section_l_p">
+      <div className="full__section_l_p pr-3 md:pr-0">
         <div className="grid md:grid-cols-6 grid-cols-1 gap-10">
           <div className="md:col-span-3">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
@@ -27,7 +27,7 @@ const CostCalculating = () => {
                 alt="Trusted-Partner"
                 width={200}
                 height={200}
-                className="w-[815px] h-[528px]"
+                className="w-[430px] md:w-[815px] h-[434px] md:h-[528px]"
               />
             </div>
           </div>

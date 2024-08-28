@@ -5,9 +5,9 @@ import Image from "next/image";
 const AboutUsInFiberglass = () => {
   return (
     <div className="bg__fiberglassPage">
-      <div className="full__section_r_p">
-        <div className="grid md:grid-cols-7 grid-cols-1 gap-7  common__padding__top common__padding__btm">
-          <div className="md:col-span-4 flex items-center md:items-start">
+      <div className="full__section_r_p pl-3 md:pl-0">
+        <div className="grid md:grid-cols-6 grid-cols-1 gap-7  common__padding__top common__padding__btm">
+          <div className="md:col-span-3 flex items-center md:items-start">
             <div className="">
               <Image
                 src="/assets/fiberglass/aboutus.png"
@@ -20,7 +20,7 @@ const AboutUsInFiberglass = () => {
           </div>
 
           <div className=" md:col-span-3 flex flex-col justify-center items-center md:items-start pt-6 md:pt-0">
-            <div className="flex md:justify-normal justify-center md:items-start items-center mb-4">
+            <div className="flex md:justify-normal justify-center md:items-start items-center mb-2">
               <HeadingIcon text={headingIconText.about__usInFiberglassText} />
             </div>
             <h2 className="text-black text-3xl md:text-4xl font-medium leading-normal not-italic text-center md:text-left">
