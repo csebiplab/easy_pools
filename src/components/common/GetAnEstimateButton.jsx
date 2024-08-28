@@ -10,7 +10,7 @@ export default function GetAnEstimateButton() {
     >
       <Button
         aria-label="Get an estimate"
-        className="hero_btn text-white text-sm lg:text-base font-bold capitalize flex items-center gap-x-2"
+        className="hero_btn bg-[#049e43] rounded-[50px] text-white text-sm lg:text-base font-bold capitalize flex items-center gap-x-2"
       >
         <span className="text-white">Get an Estimate</span>
         <span>

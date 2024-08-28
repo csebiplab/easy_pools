@@ -104,10 +104,10 @@ const ReviewsInFiberglass = () => {
             <HeadingIcon text={headingIconText.revidw__IconText} />
 
             <div>
-              <p className="text-lg md:text-3xl lg:text-4xl text-dark md:text-start text-center md:mb-20 mb-8 text ">
+              <h2 className="text-lg md:text-3xl lg:text-4xl text-dark md:text-start text-center md:mb-20 mb-8 text ">
                 Here's what to expect when you hire us as your Pool Installer in
                 Toronto.
-              </p>
+              </h2>
             </div>
           </div>
         </div>

@@ -13,26 +13,11 @@ const CostCalculating = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.cost__inFiberglassText} />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px">
-              Easy Pools Leads the Fiberglass Pool Installation Industry
-            </h3>
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px">
+            Calculating the Cost of Fiberglass Pool Installation
+            </h2>
             <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[14px] md:pt-[15px]">
-              Easy Pools is a leader in the fiberglass pool installation
-              industry, renowned for its exceptional craftsmanship and customer
-              service. With a commitment to quality and innovation, our company
-              offers a wide range of stylish and durable fiberglass pools,
-              tailored to meet the unique needs of each client. With a
-              reputation built, we stand out in the competitive market for our
-              attention to detail and personalized approach. We use the highest
-              quality materials to ensure longevity and reliability, offering
-              clients peace of mind with every installation. Our comprehensive
-              services include initial consultation, custom design, expert
-              installation, and post-installation support, making the entire
-              process smooth and stress-free. Our commitment to customer
-              satisfaction is reflected in our numerous positive reviews and
-              repeat clientele. By continuously embracing new technologies and
-              industry best practices, our company maintains its position at the
-              forefront of the fiberglass pool installation industry.
+            Installing a fiberglass inground pool involves various factors that contribute to the overall cost. Firstly, the size and shape of the pool significantly impact expenses, with larger and more intricate designs requiring more materials and labor. Additionally, the location and accessibility of the installation site can influence costs, as difficult terrain or limited access may necessitate specialized equipment or additional manpower. Furthermore, labor costs play a crucial role in determining the overall expenditure. Homeowners should obtain multiple quotes, considering both material and labor expenses, to accurately assess the total investment required for fiberglass pool installation. Proper planning and research are essential to ensure a transparent understanding of the costs involved and to make informed decisions that align with the desired pool specifications and budget constraints. 
             </p>
           </div>
           <div className="md:col-span-3 flex">

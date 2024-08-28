@@ -38,9 +38,9 @@ const QA = () => {
                 <HeadingIcon text={headingIconText.qnda__inFiberglassText} />
 
                 <div>
-                  <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+                  <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                     Questions & Answers for Pool Installation
-                  </h3>
+                  </h2>
                 </div>
               </div>
               <div className="pr-3 md:pr-0">
@@ -50,9 +50,9 @@ const QA = () => {
                       onClick={() => handleOpen(ques?.id)}
                       className="flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] py-3 px-5 5xl:py-[14px] 5xl:px-8 border-2"
                     >
-                      <h6 className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
+                      <p className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
                         {ques.question}
-                      </h6>
+                      </p>
 
                       <div className="white-icon absolute right-1">
                         <IoCaretDown
