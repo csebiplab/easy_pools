@@ -21,9 +21,9 @@ const AboutUs = () => {
           <div>
             <HeadingIcon text={headingIconText.aboutUs__IconText} />
           </div>
-          <h3 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
+          <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
             About Our Markham Pool Installers
-          </h3>
+          </h2>
           <p className="text-lg font-normal text-center md:text-left text-black pt-[14px]">
             Our Markham pool installers are dedicated professionals committed to
             providing top-notch pool installation services in the Markham area.

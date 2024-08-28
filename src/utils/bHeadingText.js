@@ -13,4 +13,8 @@ export const bHeadingTexts = {
     // review section 
     swimmingPoolReview__bHeading : "Here's what to expect when you hire us",
     poolInstallationCompanyMarkhamReview__bHeading : "Reviews for Our Pool Installation Services",
+
+    // Gallery section 
+    poolInstallationCompanyMarkhamGallery__bHeading : "Gallery of Our Past Projects",
+    SwimmingPoolInstallationInVaughanGallery__bHeading : "Past Projects Gallery of Our Swimming Pool Installation",
 }
