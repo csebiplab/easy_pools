@@ -104,8 +104,8 @@ function OurLocationMenu() {
 const our_service_menu_items = {
   interior: [
     {
-      title: "Swimming Pool Installation Company In Vaughan",
-      route: "/swimming-pool-installation-company-in-vaughan",
+      title: "Swimming Pool Installation In Vaughan",
+      route: "/swimming-pool-installation-in-vaughan",
     },
     {
       title: "Vinyl Pool Installation In Toronto",

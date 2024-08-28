@@ -25,9 +25,9 @@ const Experienced = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.experienced__IconText} />
             </div>
-            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
+            <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
               Experienced Vaughan Pools Designers
-            </h3>
+            </h2>
             <p className="text-black text-lg font-normal mt-4 text-center md:text-left">
               Are you looking for experienced designers to transform your
               backyard into a stunning oasis? Look no further than Easy Pools,

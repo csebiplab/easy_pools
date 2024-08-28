@@ -1,14 +1,14 @@
 /* Hero section */
 .hero__section__vaughan {
   height: auto;
-  background-image: url("/assets/swimmingPool/hero-bg.jpg");
+  background-image: url("/assets/swimmingPool/hero__bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .hero__right__vaughan {
-  width: 42%;
+  width: 50%;
 }
 
 .hero__right__vaughan .hero-main-image {
