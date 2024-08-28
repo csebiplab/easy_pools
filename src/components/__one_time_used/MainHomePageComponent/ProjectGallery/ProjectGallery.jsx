@@ -53,7 +53,7 @@ const ProjectGallery = () => {
   };
 
   return (
-    <div className="bg_vinylPool">
+    <div className="bg-[#188B891A]">
       <div className="custom-container padding__top">
         <div className="">
           <div className="flex flex-col justify-center items-center">

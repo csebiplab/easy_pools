@@ -65,9 +65,9 @@ const ProjectGallery = () => {
           <div className="flex flex-col justify-center items-center">
             <HeadingIcon text={headingIconText.gallery_IconText} />
             <div className="pb-5">
-              <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
+              <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
                 Past Projects Gallery of Our Swimming Pool Installation
-              </h3>
+              </h2>
             </div>
           </div>
         </div>

@@ -99,9 +99,9 @@ const InstallationProcess = () => {
                   text={headingIconText.installationProcess__IconText}
                 />
               </div>
-              <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
+              <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
               Our Vaughan Swimming Pools Installation Process
-              </h3>
+              </h2>
             </div>
 
             <div className="w-full h-[3px] bg-primary-500 mt-8" />
@@ -149,9 +149,9 @@ const InstallationProcess = () => {
 
                     <div className="mx-auto w-[323px] h-[305px] cart px-4 py-[13px]">
                       <div className="">
-                        <h5 className="text-black text-2xl font-bold text-center">
+                        <p className="text-black text-2xl font-bold text-center">
                           {service.title}{" "}
-                        </h5>
+                        </p>
                         <p className="text-black text-lg font-normal text-center">
                           {service.para}
                         </p>
