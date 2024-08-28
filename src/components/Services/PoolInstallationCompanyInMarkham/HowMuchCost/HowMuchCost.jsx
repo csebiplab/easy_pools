@@ -21,9 +21,9 @@ const HowMuchCost = () => {
           <div>
             <HeadingIcon text={headingIconText.howMuchCost__IconText} />
           </div>
-          <h3 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
+          <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
             How Much Does the Pool Installation Project Cost?
-          </h3>
+          </h2>
           <p className="text-lg font-normal text-center md:text-left text-black pt-[14px]">
             The cost of a pool installation project can vary widely depending on
             factors such as the size, type, materials used, labor costs, and

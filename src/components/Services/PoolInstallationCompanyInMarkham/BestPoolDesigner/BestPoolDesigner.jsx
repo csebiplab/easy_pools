@@ -21,9 +21,9 @@ const BestPoolDesigner = () => {
           <div>
             <HeadingIcon text={headingIconText.bestPoolDesigners__IconText} />
           </div>
-          <h3 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
+          <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
             We are the Best Pool Designers in Markham
-          </h3>
+          </h2>
           <p className="text-lg font-normal text-center md:text-left text-black pt-[14px]">
             At our pool installation company, we understand that a pool is more
             than just a place to swim—it's a focal point of relaxation,

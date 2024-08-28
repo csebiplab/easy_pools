@@ -43,7 +43,7 @@ const SwimingPoolInstallationInVaughan = () => {
       </section>
 
       <section>
-        <ProjectGallery />
+        <ProjectGallery bHeading={bHeadingTexts.SwimmingPoolInstallationInVaughanGallery__bHeading}/>
       </section>
 
       <section>

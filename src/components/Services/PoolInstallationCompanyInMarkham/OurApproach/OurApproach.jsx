@@ -73,14 +73,23 @@ const OurApproach = () => {
         <HeadingIcon
                   text={headingIconText.ourApproach__IconText}
                 />
-          <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-black text-center pb-[25px]">
+          <h2 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-bold text-black text-center pb-[25px]">
           Our Approach to Swimming Pool Installation Is Different
-          </h3>
+          </h2>
         </div>
 
         <div className=" ">
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
+            speed={3000}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              pauseOnMouseEnter: false,
+              disableOnInteraction: false,
+              stopOnLastSlide: false,
+            }}
+            allowTouchMove={false}
             breakpoints={breakpoints}
             className="!relative"
           >
@@ -114,12 +123,11 @@ const OurApproach = () => {
 
         <div className="mt-[25px] mx-auto w-80">
           <div className="cart_bg p-4">
-          <h4 className="text-[25px] font-bold text-center text-[#049E43]">{allContents[selectImageIndex]?.title}</h4>
+          <p className="text-[25px] font-bold text-center text-[#049E43]">{allContents[selectImageIndex]?.title}</p>
           <p className="text-[#1E252B] text-lg font-normal text-center">{allContents[selectImageIndex]?.desc}</p>
           </div>
-          
-          
         </div>
+        
       </div>
     </div>
   );

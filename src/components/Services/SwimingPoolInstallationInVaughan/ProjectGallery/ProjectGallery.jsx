@@ -38,7 +38,7 @@ const galImgs2 = [
   "/assets/swimmingPool/pg1.png",
 ];
 
-const ProjectGallery = () => {
+const ProjectGallery = ({bHeading = "empty"}) => {
   const [isMobileView, setIsMobileView] = useState(false);
   const [showAll, setShowAll] = useState(false);
 
@@ -66,7 +66,7 @@ const ProjectGallery = () => {
             <HeadingIcon text={headingIconText.gallery_IconText} />
             <div className="pb-5">
               <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-                Past Projects Gallery of Our Swimming Pool Installation
+                {bHeading}
               </h2>
             </div>
           </div>

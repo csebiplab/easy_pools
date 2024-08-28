@@ -17,9 +17,11 @@ import { projectsHeadingIconText } from "@/utils/projects/heading__text";
 const breakpoints = {
   0: {
     slidesPerView: 1,
+    spaceBetween: 20,
   },
   768: {
     slidesPerView: 3,
+    spaceBetween: 20,
   },
 };
 
@@ -99,7 +101,7 @@ const Review = ({ classNames, bHeading = "emapy" }) => {
                 key={i}
                 className={`text-center py-4 lg:py-10 md:pr-[21px]`}
               >
-                <div className="bg-[#D9D9D980] rounded-lg shadow-md w-[370px] md:w-full h-[250px] md:h-full card-sd p-[14px] md:mx-0 mx-auto">
+                <div className="bg-[#D9D9D980] rounded-lg shadow-md w-[370px] md:w-full h-[332px] md:h-full card-sd p-[14px] md:mx-0 mx-auto">
                   <Image
                     src={google}
                     width={89.92}
