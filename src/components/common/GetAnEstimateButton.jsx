@@ -4,15 +4,14 @@ import { Button } from "@material-tailwind/react";
 
 export default function GetAnEstimateButton() {
   return (
-    <a
-      href={`tel:+1(647) 449 9512`}
-      className="text-sm font-bold text-white inline-block"
-    >
+    <a href={`tel:+1(647) 449 9512`} className="inline-block">
       <Button
         aria-label="Get an estimate"
-        className="hero_btn text-white text-sm lg:text-base font-bold capitalize flex items-center gap-x-2"
+        className="getAnEstimate__btn flex items-center gap-x-2"
       >
-        <span className="text-white">Get an Estimate</span>
+        <span className="text-white text-xs md:text-base font-semibold">
+          Get an Estimate
+        </span>
         <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
