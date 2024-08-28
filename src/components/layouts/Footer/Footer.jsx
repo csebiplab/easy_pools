@@ -116,7 +116,9 @@ const Footer = () => {
                     category.cat === "News" ? "justify-self-center" : ""
                   }`}
                 >
-                  <h5 className="text-white !text-xl mb-5">{category.cat}</h5>
+                  <p className="text-white !text-xl mb-5 font-bold">
+                    {category.cat}
+                  </p>
                   <ul>
                     {category.links.map((link, idx) => (
                       <li key={idx} className="mb-9">
@@ -132,7 +134,7 @@ const Footer = () => {
               ))}
 
               <div className="w-full lg:w-auto text-center md:text-start">
-                <h5 className="text-white !text-xl mb-5">Contact Us</h5>
+                <p className="text-white !text-xl mb-5 font-bold">Contact Us</p>
                 <ul className="text-center md:text-start mx-auto">
                   <li>
                     <Link
