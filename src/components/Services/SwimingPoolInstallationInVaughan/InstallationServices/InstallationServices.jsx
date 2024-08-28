@@ -66,9 +66,9 @@ const InstallationServices = () => {
           <div className="flex justify-center gap-[54px]">
             <HeadingIcon text={headingIconText.installationServices_IconText}/>
           </div>
-          <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
+          <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
           Our Swimming Pool Installation Services
-          </h3>
+          </h2>
         </div>
 
         {/* ==================== swiper slider ================ */}
@@ -90,9 +90,9 @@ const InstallationServices = () => {
             <SwiperSlide key={index} className={`px-[30px] md:px-0 !h-auto !md:h-full`}>
               <div className="w-full !h-full  card-sd bg-primary py-6">
                 <div className="text-center py-3 md:px-2 px-1">
-                  <h4 className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
+                  <p className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
                     {slideInfo?.title}
-                  </h4>
+                  </p>
                   <p className="text-lg font-normal md:px-1 text-center text-black">
                     {slideInfo?.description}
                   </p>

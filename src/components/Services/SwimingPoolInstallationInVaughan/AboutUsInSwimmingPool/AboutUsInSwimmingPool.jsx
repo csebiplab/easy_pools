@@ -23,9 +23,9 @@ const AboutUsInSwimmingPool = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center mb-4">
               <HeadingIcon text={headingIconText.about__usInFiberglassText} />
             </div>
-            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
+            <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
               About Easy Pools Vaughan
-            </h3>
+            </h2>
 
             <p className="text-black text-lg font-normal mt-4 text-center md:text-left">
               Easy Pools is a reputable provider of top-quality pool services in

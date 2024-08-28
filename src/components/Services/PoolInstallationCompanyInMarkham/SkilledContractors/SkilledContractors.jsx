@@ -21,9 +21,9 @@ const SkilledContractors = () => {
           <div>
             <HeadingIcon text={headingIconText.skilledContractors__IconText} />
           </div>
-          <h3 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
+          <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
             Skilled Pool Contractors Bring Your Vision to Life
-          </h3>
+          </h2>
           <p className="text-lg font-normal text-center md:text-left text-black pt-[14px]">
             Our skilled pool contractors are dedicated to bringing your vision
             to life, transforming your backyard into a stunning oasis of

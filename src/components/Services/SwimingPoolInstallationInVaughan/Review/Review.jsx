@@ -17,9 +17,11 @@ import { projectsHeadingIconText } from "@/utils/projects/heading__text";
 const breakpoints = {
   0: {
     slidesPerView: 1,
+    spaceBetween: 20,
   },
   768: {
     slidesPerView: 3,
+    spaceBetween: 20,
   },
 };
 
@@ -71,9 +73,9 @@ const Review = ({ classNames, bHeading = "emapy" }) => {
             <div className="flex justify-center items-center">
               <HeadingIcon text={projectsHeadingIconText.review__IconText} />
             </div>
-            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
+            <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
               {bHeading}
-            </h3>
+            </h2>
           </div>
           {/* =================== Card Section =============== */}
           <Swiper
@@ -99,7 +101,7 @@ const Review = ({ classNames, bHeading = "emapy" }) => {
                 key={i}
                 className={`text-center py-4 lg:py-10 md:pr-[21px]`}
               >
-                <div className="bg-[#D9D9D980] rounded-lg shadow-md w-[370px] md:w-full h-[250px] md:h-full card-sd p-[14px] md:mx-0 mx-auto">
+                <div className="bg-[#D9D9D980] rounded-lg shadow-md w-[370px] md:w-full h-[332px] md:h-full card-sd p-[14px] md:mx-0 mx-auto">
                   <Image
                     src={google}
                     width={89.92}
@@ -119,9 +121,9 @@ const Review = ({ classNames, bHeading = "emapy" }) => {
                     <p className="text-sm md:text-[12px] mt-4  text-black leading-[22px] md:leading-6">
                       {reviewText}
                     </p>
-                    <h6 className="font-semibold lg:text-sm text-sm mt-3">
+                    <p className="font-semibold lg:text-sm text-sm mt-3">
                       {author}
-                    </h6>
+                    </p>
                     <p className="text-[#4A4A4A] text-[8px] mt-2">{address}</p>
                   </div>
                 </div>

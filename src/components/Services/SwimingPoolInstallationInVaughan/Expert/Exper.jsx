@@ -23,9 +23,9 @@ const Expert = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.expert__IconText} />
             </div>
-            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
+            <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
             Expert Swimming Pool Builder Vaughan
-            </h3>
+            </h2>
             <p className="text-black text-lg font-normal mt-4 text-center md:text-left">
             Our team specializes in crafting stunning, customized swimming pools tailored to your specific preferences and needs. With years of experience, we ensure that each pool we build exceeds expectations in both aesthetics and functionality. From design conception to installation, we're committed to delivering exceptional results that transform your backyard into a luxurious oasis.
             </p>

@@ -53,7 +53,11 @@ const PoolInstallationCompanyInMarkham = () => {
       </section>
 
       <section>
-        <ProjectGallery />
+        <ProjectGallery
+          bHeading={
+            bHeadingTexts.poolInstallationCompanyMarkhamGallery__bHeading
+          }
+        />
       </section>
 
       <section>

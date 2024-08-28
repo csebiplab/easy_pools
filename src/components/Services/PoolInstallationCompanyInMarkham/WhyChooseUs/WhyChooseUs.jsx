@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 
 import "./WhyChooseUs.css";
-import GetAnEstimateButton from "@/components/common/GetAnEstimateButton";
 
 const WhyChooseUs = () => {
   return (
@@ -24,9 +23,9 @@ const WhyChooseUs = () => {
           <div>
             <HeadingIcon text={headingIconText.whyChooseUs__IconText} />
           </div>
-          <h3 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
+          <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
             Choose the Right Pool Installation Company in Markham
-          </h3>
+          </h2>
           <p className="text-lg font-normal text-center md:text-left text-black pt-[14px]">
             Choosing the right pool installers in Markham is essential for
             ensuring a smooth and successful project. Look for experienced
@@ -40,7 +39,7 @@ const WhyChooseUs = () => {
             backyard oasis into a reality. Choose Easy Pools Markham for a
             stress-free and seamless pool installation experience.
           </p>
-          {/* <a href="tel:+1(647) 449 9512">
+          <a href="tel:+1(647) 449 9512">
             <button className="btn_bg text-white flex items-center gap-2 py-1 px-8 text-base font-bold my-5">
               Get Your Free Estimated{" "}
               <svg
@@ -56,8 +55,7 @@ const WhyChooseUs = () => {
                 />
               </svg>
             </button>
-          </a> */}
-          <GetAnEstimateButton />
+          </a>
 
           <h5 className="text-[25px] lg:text-[30px] font-semibold text-[#0C1C3C]">
             or Call Us:{" "}
