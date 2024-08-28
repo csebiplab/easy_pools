@@ -94,9 +94,9 @@ const FlawlessDesign = () => {
                 text={headingIconText.flawlessDesign__inFiberglassText}
               />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
               Impeccable Flawless Design for Fiberglass Pool Installation
-            </h3>
+            </h2>
           </div>
 
           <div className="lg:mt-15 mt-10">
@@ -121,12 +121,12 @@ const FlawlessDesign = () => {
                 >
                   <div className="mx-auto relative px-2">
                     <div className="py-7">
-                      <h6 className="mt-4 mx-auto text-center text-2xl font-bold">
+                      <p className="mt-4 mx-auto text-center text-2xl font-bold">
                         {service.title}{" "}
-                      </h6>
-                      <h6 className="mx-auto text-center text-sm  xl:text-base 3xl:text-lg font-normal">
+                      </p>
+                      <p className="mx-auto text-center text-sm  xl:text-base 3xl:text-lg font-normal">
                         {service.desc}{" "}
-                      </h6>
+                      </p>
                     </div>
                     <div className="absolute  -top-10 md:-top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                       <Image

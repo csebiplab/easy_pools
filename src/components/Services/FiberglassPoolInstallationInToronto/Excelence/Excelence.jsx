@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import "./Excelence.css";
+import Link from "next/link";
 
 const Excelence = () => {
   return (
@@ -24,9 +25,9 @@ const Excelence = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.excelence__inFiberglassText} />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
               Excellence Inground Fiberglass Pool in Toronto
-            </h3>
+            </h2>
             <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
               Easy Pools stands as the pinnacle of inground fiberglass pool
               excellence in Toronto, setting unmatched standards in design and
@@ -40,7 +41,7 @@ const Excelence = () => {
               unparalleled luxury in Toronto's backyard havens. Residents of
               Toronto trust us to transform their backyard dreams into a reality
               that exceeds expectations. Say goodbye to the stress of
-              traditional pool maintenance and embrace the effortless beauty of
+              traditional <Link className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/Swimming_pool_service_technician">pool maintenance</Link> and embrace the effortless beauty of
               fiberglass, creating a haven where the symphony of relaxation
               plays on, creating a timeless ambiance for you and your loved
               ones.

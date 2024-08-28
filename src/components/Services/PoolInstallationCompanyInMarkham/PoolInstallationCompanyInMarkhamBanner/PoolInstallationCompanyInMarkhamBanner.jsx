@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./PoolInstallationCompanyInMarkhamBanner.css";
+import GetAnEstimateButton from "@/components/common/GetAnEstimateButton";
 
 const PoolInstallationCompanyInMarkhamBanner = () => {
   return (
@@ -17,7 +18,7 @@ const PoolInstallationCompanyInMarkhamBanner = () => {
                 services in Markham.
               </p>
               <div className="mb-4 md:mb-0">
-                <a
+                {/* <a
                   href={`tel:+1(647) 449 9512`}
                   className="text-sm font-bold text-white"
                 >
@@ -41,7 +42,8 @@ const PoolInstallationCompanyInMarkhamBanner = () => {
                       </svg>
                     </span>
                   </button>
-                </a>
+                </a> */}
+                <GetAnEstimateButton/>
               </div>
             </div>
           </div>

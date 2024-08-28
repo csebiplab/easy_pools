@@ -40,9 +40,9 @@ const ProjectGalleryInFiberglass = () => {
             <HeadingIcon text={headingIconText.gellary__IconText} />
 
             <div>
-              <p className="px-3 text-black text-lg md:text-3xl lg:text-4xl 3xl:pb-[30px] pb-[25px] text-center ">
+              <h2 className="px-3 text-black text-lg md:text-3xl lg:text-4xl font-normal 3xl:pb-[30px] pb-[25px] text-center ">
                 Swimming Pools Installation Gallery Of Past Projects
-              </p>
+              </h2>
             </div>
           </div>
         </div>

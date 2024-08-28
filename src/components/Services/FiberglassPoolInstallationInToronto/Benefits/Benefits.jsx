@@ -94,9 +94,9 @@ const Benefits = () => {
                   text={headingIconText.benefits__inFiberglassText}
                 />
               </div>
-              <h3 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
+              <h2 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
                 Benefits of Installing a Fiberglass Swimming Pool in Toronto
-              </h3>
+              </h2>
             </div>
 
             <div className="w-full h-[3px] bg-primary-500" />
@@ -142,9 +142,9 @@ const Benefits = () => {
 
                     <div className="mx-auto w-[250px] h-[230px] cart px-4 py-[13px]">
                       <div className="">
-                        <h5 className="text-black text-2xl font-bold text-center">
+                        <p className="text-black text-2xl font-bold text-center">
                           {service.title}{" "}
-                        </h5>
+                        </p>
                         <p className="text-black text-lg font-normal text-center">
                           {service.para}
                         </p>
