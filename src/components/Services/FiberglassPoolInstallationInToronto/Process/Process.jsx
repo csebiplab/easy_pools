@@ -268,7 +268,7 @@ const Process = () => {
                     width={165}
                     height={165}
                     alt="our approach"
-                    className="w-[165px] h-[165px]"
+                    className="w-[165px] h-[165px] border-[8px] border-[#049E43] rounded-[16px] bg-white p-5"
                   />
                    <div className="bg-[#049E43] h-3 w-full" />
                 </div>
