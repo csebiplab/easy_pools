@@ -84,7 +84,9 @@ function OurLocationMenu() {
         <MenuList className="!p-0 hidden max-w-[300px] w-full lg:block outline-0 bg-gray-100">
           <div className="!p-0 !border-none !outline-none w-full">
             <div className="w-full">
-              <ul className="w-full">{renderItems(our__location__menuItem)}</ul>
+              <ul className="w-full">
+                <li>{renderItems(our__location__menuItem)}</li>
+              </ul>
             </div>
           </div>
         </MenuList>
@@ -92,7 +94,9 @@ function OurLocationMenu() {
 
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
-          <ul>{renderItems(our__location__menuItem)}</ul>
+          <ul>
+            <li>{renderItems(our__location__menuItem)}</li>
+          </ul>
           <hr className="my-1" />
         </Collapse>
       </div>
@@ -178,7 +182,9 @@ function OurServiceManu() {
           <div className="container grid grid-cols-3 gap-y-2">
             <div>
               <h3 className="mb-1 text-primary font-semibold">Interior</h3>
-              <ul>{renderItems(our_service_menu_items.interior)}</ul>
+              <ul>
+                <li>{renderItems(our_service_menu_items.interior)}</li>
+              </ul>
             </div>
           </div>
         </MenuList>
@@ -186,7 +192,9 @@ function OurServiceManu() {
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
           <h4 className="text-primary mb-1 font-semibold">Interior</h4>
-          <ul>{renderItems(our_service_menu_items.interior)}</ul>
+          <ul>
+            <li>{renderItems(our_service_menu_items.interior)}</li>
+          </ul>
           <hr className="my-1" />
         </Collapse>
       </div>
