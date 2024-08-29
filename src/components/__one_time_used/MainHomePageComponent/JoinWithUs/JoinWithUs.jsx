@@ -28,10 +28,12 @@ const JoinWithUs = () => {
           <div className="p-3 md:px-0">
             <GetAnEstimateButton />
           </div>
-          <p className="text-secondary text-sm md:text-base font-bold">Or</p>
+          <p className="text-secondary-700 text-sm md:text-base font-bold">
+            Or
+          </p>
           <a
             href="tel:+1(647) 449 9512"
-            className="text-xs md:text-lg text-secondary font-bold inline-block p-3 md:p-0"
+            className="text-xs md:text-lg text-secondary-700 font-bold inline-block p-3 md:p-0"
           >
             Call Us: +1(647) 449 9512
           </a>

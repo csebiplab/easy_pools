@@ -46,6 +46,8 @@ module.exports = withMT({
           500: "#049E43",  // Default
           600: "#038B3A",  // Darker variant for better contrast
           700: "#027632",
+          800: "#06602C",
+          900: "#064721",
         },
         info: {
           DEFAULT: "#33475B",
@@ -102,6 +104,18 @@ module.exports = withMT({
           600: "#000000",  // Darker variant (Same as default)
           700: "#000000",
         },
+        gray: {
+          100: "#F5F5F5",  // Lightest gray
+          200: "#E0E0E0",  // Light gray
+          300: "#BDBDBD",  // Mid gray
+          400: "#9E9E9E",  // Medium dark gray
+          500: "#7E7E7E",  // Dark gray
+          600: "#616161",  // Darker gray
+          700: "#424242",  // Even darker gray
+          800: "#303030",  // Very dark gray
+          900: "#212121",  // Darkest gray
+          'opacity-50': "#D9D9D980",  // Gray with 50% opacity
+        }
       },
     },
   },

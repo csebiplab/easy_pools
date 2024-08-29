@@ -2,9 +2,9 @@ const CommonButton = ({ buttonText="Learn More"}) => {
   return (
     <button
       aria-label={buttonText}
-      className="service__card__btn flex justify-center items-center"
+      className="common_btn bg-secondary-800 flex justify-center items-center rounded-lg px-3 py-2"
     >
-      <span className="text-white text-sm md:text-sm font-bold">
+      <span className="text-white text-sm md:text-base font-bold">
         {buttonText}
       </span>
       <svg

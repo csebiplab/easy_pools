@@ -16,7 +16,6 @@ const Excelence = () => {
                 width={596}
                 height={490}
                 alt="about us image"
-                
               />
             </div>
           </div>
@@ -41,10 +40,16 @@ const Excelence = () => {
               unparalleled luxury in Toronto's backyard havens. Residents of
               Toronto trust us to transform their backyard dreams into a reality
               that exceeds expectations. Say goodbye to the stress of
-              traditional <Link className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/Swimming_pool_service_technician">pool maintenance</Link> and embrace the effortless beauty of
-              fiberglass, creating a haven where the symphony of relaxation
-              plays on, creating a timeless ambiance for you and your loved
-              ones.
+              traditional{" "}
+              <Link
+                className="text-primary-600 hover:underline"
+                href="https://en.wikipedia.org/wiki/Swimming_pool_service_technician"
+              >
+                pool maintenance
+              </Link>{" "}
+              and embrace the effortless beauty of fiberglass, creating a haven
+              where the symphony of relaxation plays on, creating a timeless
+              ambiance for you and your loved ones.
             </p>
           </div>
         </div>

@@ -38,7 +38,7 @@ const galImgs2 = [
   "/assets/swimmingPool/pg1.png",
 ];
 
-const ProjectGallery = ({bHeading = "empty"}) => {
+const ProjectGallery = ({ bHeading = "empty" }) => {
   const [isMobileView, setIsMobileView] = useState(false);
   const [showAll, setShowAll] = useState(false);
 
@@ -94,7 +94,7 @@ const ProjectGallery = ({bHeading = "empty"}) => {
                 <button
                   aria-label="Load more"
                   onClick={handleLoadMore}
-                  className="w-2/3 flex items-center justify-center gap-2 text-sm font-bold px-4 py-2 bg-secondary text-white rounded-[20px]"
+                  className="w-2/3 flex items-center justify-center gap-2 text-sm font-bold px-4 py-2 bg-secondary-700 text-white rounded-[20px]"
                 >
                   Load More
                   <svg

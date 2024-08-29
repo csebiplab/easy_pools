@@ -60,7 +60,7 @@ const ProjectGallery = () => {
             <HeadingIcon text={headingIconText.gallery_IconText} />
             <div className="pb-5">
               <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-              Swimming Pool Installation Gallery Of Past Projects
+                Swimming Pool Installation Gallery Of Past Projects
               </h3>
             </div>
           </div>
@@ -87,7 +87,7 @@ const ProjectGallery = () => {
               <div className="flex justify-center text-center mt-4 px-10">
                 <button
                   onClick={handleLoadMore}
-                  className="w-2/3 flex items-center justify-center gap-2 text-sm font-bold px-4 py-2 bg-secondary text-white rounded-[20px]"
+                  className="w-2/3 flex items-center justify-center gap-2 text-sm font-bold px-4 py-2 bg-secondary-700 text-white rounded-[20px]"
                 >
                   Load More
                   <svg

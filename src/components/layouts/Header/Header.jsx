@@ -20,20 +20,18 @@ const Header = () => {
           </Link>
           <div className="hidden lg:block">
             <ul className="flex items-center gap-x-2 md:gap-x-5 xl:gap-x-10 2xl:gap-x-[75px]">
-              {navMenus.map(
-                ({ mainMenu, url, subMenu, svg = null }, index) => (
-                  <li key={index}>
-                    <Link
-                      href={url}
-                      className={`${
-                        svg ? "flex items-center gap-x-1" : ""
-                      } !text-lg text-dark-100 font-bold`}
-                    >
-                      {mainMenu} {svg}
-                    </Link>
-                  </li>
-                )
-              )}
+              {navMenus.map(({ mainMenu, url, subMenu, svg = null }, index) => (
+                <li key={index}>
+                  <Link
+                    href={url}
+                    className={`${
+                      svg ? "flex items-center gap-x-1" : ""
+                    } !text-lg text-dark-100 font-bold`}
+                  >
+                    {mainMenu} {svg}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="flex items-center gap-x-6 md:gap-x-7 lg:gap-x-8">
@@ -47,7 +45,7 @@ const Header = () => {
               />
               <a
                 href="tel:+1(647) 449 9512"
-                className="text-secondary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
+                className="text-secondary-700 font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
               >
                 +1(647) 449 9512
               </a>

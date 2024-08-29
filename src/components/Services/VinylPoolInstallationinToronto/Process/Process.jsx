@@ -84,9 +84,8 @@ const allContents = [
     img: "/assets/VinylPool/process9.png",
     title: "Advanced Materials",
     desc: "The manufacturing process incorporates high-quality vinyl materials known for their durability, UV resistance, and longevity.",
-  }
+  },
 ];
-
 
 const Process = () => {
   const [selectImageIndex, setSelectImageIndex] = useState(0);
@@ -94,11 +93,9 @@ const Process = () => {
     <div className="bg_vinylPool">
       <div className="container padding__top">
         <div className="flex flex-col justify-center items-center">
-        <HeadingIcon
-                  text={headingIconText.process__inFiberglassText}
-                />
+          <HeadingIcon text={headingIconText.process__inFiberglassText} />
           <h2 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
-          Process for Vinyl Pool Manufacturing
+            Process for Vinyl Pool Manufacturing
           </h2>
         </div>
 
@@ -120,7 +117,7 @@ const Process = () => {
             {allContents?.map((img, index) => (
               <SwiperSlide key={index}>
                 <div className="flex justify-end items-center">
-                    <div className="bg-secondary h-3 w-full" />
+                  <div className="bg-secondary-700 h-3 w-full" />
                   <Image
                     src={img?.img}
                     width={165}
@@ -128,10 +125,8 @@ const Process = () => {
                     alt="our approach"
                     className="w-[165px] h-[165px] border-[8px] border-secondary rounded-[16px] bg-white p-5"
                   />
-                   <div className="bg-secondary h-3 w-full" />
+                  <div className="bg-secondary-700 h-3 w-full" />
                 </div>
-                
-                
               </SwiperSlide>
             ))}
             <div className="z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
@@ -147,15 +142,17 @@ const Process = () => {
 
         <div className="mt-[25px] mx-auto w-80">
           <div className="cart_bg p-4">
-          <p className="text-[25px] font-bold text-center text-secondary">{allContents[selectImageIndex]?.title}</p>
-          <p className="text-[#1E252B] text-lg font-normal text-center">{allContents[selectImageIndex]?.desc}</p>
+            <p className="text-[25px] font-bold text-center text-secondary">
+              {allContents[selectImageIndex]?.title}
+            </p>
+            <p className="text-[#1E252B] text-lg font-normal text-center">
+              {allContents[selectImageIndex]?.desc}
+            </p>
           </div>
         </div>
-        
       </div>
     </div>
   );
 };
 
 export default Process;
-
