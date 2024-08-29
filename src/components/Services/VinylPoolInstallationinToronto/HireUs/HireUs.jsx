@@ -94,9 +94,9 @@ const HireUs = () => {
               </div>
 
               <div>
-                <h3 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
+                <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
                   Why Hire Our Pool Contractors in Toronto
-                </h3>
+                </h2>
               </div>
 
               <div>

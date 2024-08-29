@@ -109,16 +109,16 @@ const services = [
 
 const VinylCompare = () => {
   return (
-    <div className="!overflow-hidden">
-      <div className="bg_vinylPool padding__top">
-        <div className="container">
+    <div className=" bg_vinylPool">
+      <div className="container padding__top">
+        <div className="!overflow-hidden">
           <div className="flex flex-col items-center">
             <div className="flex justify-center lg:justify-normal items-center">
               <HeadingIcon text={headingIconText.comparePool__IconText} />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
               How Does Vinyl Compare to Other Pool Materials in Your Catalogue?
-            </h3>
+            </h2>
           </div>
 
           <div className="lg:mt-15 mt-10">
@@ -143,12 +143,12 @@ const VinylCompare = () => {
                 >
                   <div className="mx-auto relative px-2">
                     <div className="py-7">
-                      <h6 className="mt-4 mx-auto text-center text-2xl font-bold">
+                      <p className="mt-4 mx-auto text-center text-2xl font-bold">
                         {service.title}{" "}
-                      </h6>
-                      <h6 className="mx-auto text-center text-sm  xl:text-base 3xl:text-lg font-normal">
+                      </p>
+                      <p className="mx-auto text-center text-sm  xl:text-base 3xl:text-lg font-normal">
                         {service.desc}{" "}
-                      </h6>
+                      </p>
                     </div>
                     <div className="absolute -top-10 md:-top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                       <Image
