@@ -48,7 +48,7 @@ const QA = () => {
                   <Accordion key={ques?.id} open={open === ques?.id}>
                     <AccordionHeader
                       onClick={() => handleOpen(ques?.id)}
-                      className="flex cursor-pointer items-center justify-between gap-1.5 bg-[#188B89] py-3 px-5 5xl:py-[14px] 5xl:px-8 border-2"
+                      className="flex cursor-pointer items-center justify-between gap-1.5 bg-primary py-3 px-5 5xl:py-[14px] 5xl:px-8 border-2"
                     >
                       <p className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
                         {ques.question}

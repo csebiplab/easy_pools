@@ -87,7 +87,7 @@ const ProjectGallery = () => {
               <div className="flex justify-center text-center mt-4 px-10">
                 <button
                   onClick={handleLoadMore}
-                  className="w-2/3 flex items-center justify-center gap-2 text-sm font-bold px-4 py-2 bg-[#049E43] text-white rounded-[20px]"
+                  className="w-2/3 flex items-center justify-center gap-2 text-sm font-bold px-4 py-2 bg-secondary text-white rounded-[20px]"
                 >
                   Load More
                   <svg

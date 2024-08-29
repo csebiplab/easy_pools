@@ -10,29 +10,29 @@ export const SwipButton = () => {
     <div className="md:hidden block">
       <div className="flex gap-5 mt-5 items-center justify-center py-5">
         {/* ========= first line ======== */}
-        <div className="w-[330px] h-0.5  bg-[#049E43]  "></div>
+        <div className="w-[330px] h-0.5  bg-secondary  "></div>
 
         <div className="flex gap-5">
           <button
             aria-label="prev"
             onClick={() => swiper.slidePrev()}
-            className="p-1 rounded-full border-2 border-[#049E43] hover:text-white hover:bg-[#049E43]  "
+            className="p-1 rounded-full border-2 border-secondary hover:text-white hover:bg-secondary  "
           >
-            <FaChevronLeft className="fill-[#049E43] hover:fill-white" />
+            <FaChevronLeft className="fill-secondary hover:fill-white" />
             <span className="sr-only">Prev</span>
           </button>
 
           <button
             aria-label="next"
             onClick={() => swiper.slideNext()}
-            className=" hover:text-white bg-active hover:bg-[#049E43] border-2 p-1  rounded-full  border-[#049E43]  "
+            className=" hover:text-white bg-active hover:bg-secondary border-2 p-1  rounded-full  border-secondary  "
           >
-            <FaChevronRight className="fill-[#049E43] hover:fill-white" />
+            <FaChevronRight className="fill-secondary hover:fill-white" />
             <span className="sr-only">Next</span>
           </button>
         </div>
         {/* =============== second line ============= */}
-        <div className="w-[330px] h-0.5 bg-[#049E43] "></div>
+        <div className="w-[330px] h-0.5 bg-secondary "></div>
       </div>
     </div>
   );

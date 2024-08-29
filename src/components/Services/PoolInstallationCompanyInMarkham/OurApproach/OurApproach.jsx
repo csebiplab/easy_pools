@@ -96,15 +96,15 @@ const OurApproach = () => {
             {allContents?.map((img, index) => (
               <SwiperSlide key={index}>
                 <div className="flex justify-end items-center">
-                    <div className="bg-[#049E43] h-3 w-full" />
+                    <div className="bg-secondary h-3 w-full" />
                   <Image
                     src={img?.img}
                     width={165}
                     height={165}
                     alt="our approach"
-                    className="w-[165px] h-[165px] border-[8px] border-[#049E43] rounded-[16px] bg-white p-5"
+                    className="w-[165px] h-[165px] border-[8px] border-secondary rounded-[16px] bg-white p-5"
                   />
-                   <div className="bg-[#049E43] h-3 w-full" />
+                   <div className="bg-secondary h-3 w-full" />
                 </div>
                 
                 
@@ -123,7 +123,7 @@ const OurApproach = () => {
 
         <div className="mt-[25px] mx-auto w-80">
           <div className="cart_bg p-4">
-          <p className="text-[25px] font-bold text-center text-[#049E43]">{allContents[selectImageIndex]?.title}</p>
+          <p className="text-[25px] font-bold text-center text-secondary">{allContents[selectImageIndex]?.title}</p>
           <p className="text-[#1E252B] text-lg font-normal text-center">{allContents[selectImageIndex]?.desc}</p>
           </div>
         </div>
