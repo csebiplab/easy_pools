@@ -13,9 +13,9 @@ const UpperNavbar = () => {
             alt="canada leaf"
             className="w-[38px] h-[40px]"
           />
-          <h5 className="text-18px text-white">
+          <p className="text-18px text-white">
             Swimming Pool Installation in Toronto
-          </h5>
+          </p>
         </div>
 
         <div className="flex items-center gap-x-4 md:gap-x-6 xl:gap-x-9">

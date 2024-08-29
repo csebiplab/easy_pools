@@ -181,7 +181,7 @@ function OurServiceManu() {
         <MenuList className="hidden max-w-[100vw] w-screen lg:block border-0 outline-0 bg-gray-100">
           <div className="container grid grid-cols-3 gap-y-2">
             <div>
-              <h3 className="mb-1 text-primary font-semibold">Interior</h3>
+              {/* <h3 className="mb-1 text-primary font-semibold">Interior</h3> */}
               <ul>
                 <li>{renderItems(our_service_menu_items.interior)}</li>
               </ul>
@@ -191,7 +191,7 @@ function OurServiceManu() {
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
-          <h4 className="text-primary mb-1 font-semibold">Interior</h4>
+          {/* <p className="text-primary mb-1 font-semibold">Interior</p> */}
           <ul>
             <li>{renderItems(our_service_menu_items.interior)}</li>
           </ul>
@@ -337,7 +337,7 @@ export function NavHeader() {
         className="p-4 overflow-y-auto pb-24 !z-[1000000000000000000]"
       >
         <div className="mb-6 flex items-center justify-between">
-          <Typography variant="h5" color="blue-gray">
+          <Typography variant="p" color="blue-gray">
             Easy Pools
           </Typography>
           <IconButton
