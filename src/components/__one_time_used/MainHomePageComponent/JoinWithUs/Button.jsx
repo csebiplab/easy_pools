@@ -3,7 +3,7 @@ import React from "react";
 export default function Button({ title }) {
   return (
     <a href="tel:+1(647) 449 9512">
-      <button className="service__card__btn flex justify-center items-center">
+      <button className="common__btn flex justify-center items-center">
         <span className="text-white text-sm font-bold lg:text-[16px] md:text-sm">
           {title}
         </span>

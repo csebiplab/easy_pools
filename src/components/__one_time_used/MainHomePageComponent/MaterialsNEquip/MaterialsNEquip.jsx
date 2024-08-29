@@ -13,7 +13,7 @@ const MaterialsNEquip = () => {
             <div className=" ">
               {/* show when medium or large screen */}
               <div className="md:block hidden">
-                <div className="stats__area text-white rotate-[270deg] -ml-[90px] mt-[90px] px-[17px] py-[4px]">
+                <div className="stats__area bg-secondary-700 text-white rotate-[270deg] -ml-[90px] mt-[90px] px-[17px] py-[4px]">
                   <div className="text-center">
                     <span className="pools__num text-white">25+</span>
                     <p className="text-white install__pool">

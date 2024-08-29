@@ -61,7 +61,7 @@ function OurLocationMenu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -158,7 +158,7 @@ function OurServiceManu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -211,9 +211,9 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm lg:text-sm xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm lg:text-sm xl:text-base 2xl:text-lg"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           About Us
         </ListItem>
       </Typography>
@@ -227,9 +227,9 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Blog
         </ListItem>
       </Typography>
@@ -238,9 +238,9 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Projects
         </ListItem>
       </Typography>
@@ -254,9 +254,9 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact Us
         </ListItem>
       </Typography>
@@ -300,7 +300,7 @@ export function NavHeader() {
                     />
                     <a
                       href="tel:+1(647) 449 9512"
-                      className="text-secondary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
+                      className="text-secondary-700 font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
                     >
                       +1(647) 449 9512
                     </a>

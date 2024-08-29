@@ -24,7 +24,7 @@
   line-height: 28px;
 }
 
-.service__card__btn {
+.common__btn {
   width: 184px;
   height: 42px;
   border-radius: 8px;
@@ -32,5 +32,5 @@
 }
 
 .service__card img {
-  @apply  w-full;
+  @apply w-full;
 }
