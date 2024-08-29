@@ -181,7 +181,7 @@ function OurServiceManu() {
         <MenuList className="hidden max-w-[100vw] w-screen lg:block border-0 outline-0 bg-gray-100">
           <div className="container grid grid-cols-3 gap-y-2">
             <div>
-              <h3 className="mb-1 text-primary font-semibold">Interior</h3>
+              <h3 className="mb-1 text-primary-600 font-semibold">Interior</h3>
               <ul>
                 <li>{renderItems(our_service_menu_items.interior)}</li>
               </ul>
@@ -191,7 +191,7 @@ function OurServiceManu() {
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
-          <h4 className="text-primary mb-1 font-semibold">Interior</h4>
+          <h4 className="text-primary-600 mb-1 font-semibold">Interior</h4>
           <ul>
             <li>{renderItems(our_service_menu_items.interior)}</li>
           </ul>

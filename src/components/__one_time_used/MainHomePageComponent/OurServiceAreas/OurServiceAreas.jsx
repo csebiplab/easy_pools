@@ -117,7 +117,7 @@ const OurServiceAreas = ({
                             Visit Map
                           </button>
                         </div>
-                        <p className="text-base py-4 px-10 bg-primary text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white rounded-b-2xl ">
+                        <p className="text-base py-4 px-10 bg-primary-700  text-center lg:text-[18px] absolute bottom-0 left-0 right-0 text-white rounded-b-2xl ">
                           {loc?.location}
                         </p>
                       </div>

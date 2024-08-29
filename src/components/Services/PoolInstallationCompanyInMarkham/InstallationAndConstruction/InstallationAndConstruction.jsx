@@ -28,10 +28,31 @@ const InstallationAndConstruction = () => {
             Markham Swimming Pool Installation and Construction
           </h2>
           <p className="text-lg font-normal text-center md:text-left text-black pt-[14px]">
-          Our pool installers are seasoned experts specializing in the installation and construction of swimming pools in Markham Ontario. With a wealth of experience and a commitment to excellence, our team delivers precision and quality in every project. From the initial consultation to the final touches, we prioritize customer satisfaction, providing tailored solutions to suit your unique requirements. Whether you desire an inground pool, an above-ground pool, or any other aquatic feature, our Markham pool installers are dedicated to enhancing your outdoor space and lifestyle with exceptional results.
+            Our pool installers are seasoned experts specializing in the
+            installation and construction of swimming pools in Markham Ontario.
+            With a wealth of experience and a commitment to excellence, our team
+            delivers precision and quality in every project. From the initial
+            consultation to the final touches, we prioritize customer
+            satisfaction, providing tailored solutions to suit your unique
+            requirements. Whether you desire an inground pool, an above-ground
+            pool, or any other aquatic feature, our Markham pool installers are
+            dedicated to enhancing your outdoor space and lifestyle with
+            exceptional results.
           </p>
           <p className="text-lg font-normal text-center md:text-left text-black">
-          We understand that a <Link className="text-primary hover:underline " href="https://en.wikipedia.org/wiki/Swimming_(sport)">swimming</Link> pool is not just a structure, but a centerpiece of leisure and relaxation for your home. That's why our Markham pool installers approach each project with meticulous attention to detail, ensuring that every aspect of the installation process is handled with care and expertise. Trust our Markham pool installation company to transform your backyard into a haven of tranquility and enjoyment.
+            We understand that a{" "}
+            <Link
+              className="text-primary-600 hover:underline "
+              href="https://en.wikipedia.org/wiki/Swimming_(sport)"
+            >
+              swimming
+            </Link>{" "}
+            pool is not just a structure, but a centerpiece of leisure and
+            relaxation for your home. That's why our Markham pool installers
+            approach each project with meticulous attention to detail, ensuring
+            that every aspect of the installation process is handled with care
+            and expertise. Trust our Markham pool installation company to
+            transform your backyard into a haven of tranquility and enjoyment.
           </p>
         </div>
       </div>

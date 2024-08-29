@@ -144,7 +144,7 @@ function SitemapForDBoard({ data }) {
 
 
         <div className="mt-40 text-center">
-          <Link href="/dashboard/siteMap/show-all-sitemaps" className="px-5 py-3 bg-primary text-white">Show All Sitemaps</Link>
+          <Link href="/dashboard/siteMap/show-all-sitemaps" className="px-5 py-3 bg-primary-700  text-white">Show All Sitemaps</Link>
         </div>
       </div>
     </div>

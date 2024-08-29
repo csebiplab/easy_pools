@@ -70,7 +70,7 @@ const page = () => {
                     </table>
                 </div>) : <div className="mt-40 text-center">
                 <p className='text-3xl text-center'>No Data Found!</p>
-                <Link href="/dashboard/siteMap" className="mt-5 px-5 py-3 bg-primary text-white">Add Sitemaps</Link>
+                <Link href="/dashboard/siteMap" className="mt-5 px-5 py-3 bg-primary-700  text-white">Add Sitemaps</Link>
             </div>}
         </div>
     );

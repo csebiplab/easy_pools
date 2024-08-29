@@ -1,6 +1,4 @@
-
 "use client";
-
 
 import "./InstallationServices.css";
 
@@ -53,59 +51,62 @@ const slideData = [
   {
     title: "Freshwater Pools",
     description: `Transform your backyard oasis dreams into reality with our professional freshwater pool installation service. With meticulous attention to detail, we'll create a serene retreat where you can unwind and make lasting memories with family.`,
-  }
-  
+  },
 ];
 
 const InstallationServices = () => {
   return (
     <div className="bg_swimmingPool">
       <div className="container padding__top">
-      <div className="">
-        <div className="text-center pb-6">
-          <div className="flex justify-center gap-[54px]">
-            <HeadingIcon text={headingIconText.installationServices_IconText}/>
+        <div className="">
+          <div className="text-center pb-6">
+            <div className="flex justify-center gap-[54px]">
+              <HeadingIcon
+                text={headingIconText.installationServices_IconText}
+              />
+            </div>
+            <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
+              Our Swimming Pool Installation Services
+            </h2>
           </div>
-          <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-          Our Swimming Pool Installation Services
-          </h2>
-        </div>
 
-        {/* ==================== swiper slider ================ */}
-        <Swiper
-          modules={[Autoplay]}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            pauseOnMouseEnter: false,
-            disableOnInteraction: false,
-            stopOnLastSlide: false,
-          }}
-          speed={3000}
-          allowTouchMove={false}
-          breakpoints={breakpoints}
-          spaceBetween={12}
-        >
-          {slideData.map((slideInfo, index) => (
-            <SwiperSlide key={index} className={`px-[30px] md:px-0 !h-auto !md:h-full`}>
-              <div className="w-full !h-full  card-sd bg-primary py-6">
-                <div className="text-center py-3 md:px-2 px-1">
-                  <h4 className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
-                    {slideInfo?.title}
-                  </h4>
-                  <p className="text-lg font-normal md:px-1 text-center text-black">
-                    {slideInfo?.description}
-                  </p>
+          {/* ==================== swiper slider ================ */}
+          <Swiper
+            modules={[Autoplay]}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              pauseOnMouseEnter: false,
+              disableOnInteraction: false,
+              stopOnLastSlide: false,
+            }}
+            speed={3000}
+            allowTouchMove={false}
+            breakpoints={breakpoints}
+            spaceBetween={12}
+          >
+            {slideData.map((slideInfo, index) => (
+              <SwiperSlide
+                key={index}
+                className={`px-[30px] md:px-0 !h-auto !md:h-full`}
+              >
+                <div className="w-full !h-full  card-sd bg-primary-700  py-6">
+                  <div className="text-center py-3 md:px-2 px-1">
+                    <h4 className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
+                      {slideInfo?.title}
+                    </h4>
+                    <p className="text-lg font-normal md:px-1 text-center text-black">
+                      {slideInfo?.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-          {/* <SwipButton/> */}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+            {/* <SwipButton/> */}
+          </Swiper>
+        </div>
       </div>
     </div>
-    </div>
-    
   );
 };
 

@@ -63,7 +63,7 @@
 //                 />
 //               </svg>
 //             </button>
-//             <div className="bg-secondary h-3 w-full" />
+//             <div className="bg-secondary-700 h-3 w-full" />
 //             <button aria-label="next">
 //               <span className="sr-only">Next</span>
 //               <svg
@@ -112,7 +112,7 @@
 //         </div>
 
 //         <div className="text__card w-full md:w-[385px] px-3 py-4 mx-auto mt-28">
-//           <p className="text-center text-2xl font-medium text-secondary mb-1">
+//           <p className="text-center text-2xl font-medium text-secondary-700 mb-1">
 //             Excavate with precision
 //           </p>
 //           <p className="text-center text-base font-medium leading-[218%]">
@@ -126,7 +126,6 @@
 // };
 
 // export default Process;
-
 
 "use client";
 
@@ -229,18 +228,15 @@ const allContents = [
   },
 ];
 
-
 const Process = () => {
   const [selectImageIndex, setSelectImageIndex] = useState(0);
   return (
     <div className="">
       <div className="container padding__top">
         <div className="flex flex-col justify-center items-center">
-        <HeadingIcon
-                  text={headingIconText.process__inFiberglassText}
-                />
+          <HeadingIcon text={headingIconText.process__inFiberglassText} />
           <h2 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
-          Process of Installing Fiberglass Pools in Toronto
+            Process of Installing Fiberglass Pools in Toronto
           </h2>
         </div>
 
@@ -262,7 +258,7 @@ const Process = () => {
             {allContents?.map((img, index) => (
               <SwiperSlide key={index}>
                 <div className="flex justify-end items-center">
-                    <div className="bg-secondary h-3 w-full" />
+                  <div className="bg-secondary-700 h-3 w-full" />
                   <Image
                     src={img?.img}
                     width={165}
@@ -270,10 +266,8 @@ const Process = () => {
                     alt="our approach"
                     className="w-[165px] h-[165px] border-[8px] border-secondary rounded-[16px] bg-white p-5"
                   />
-                   <div className="bg-secondary h-3 w-full" />
+                  <div className="bg-secondary-700 h-3 w-full" />
                 </div>
-                
-                
               </SwiperSlide>
             ))}
             <div className="z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
@@ -289,15 +283,17 @@ const Process = () => {
 
         <div className="mt-[25px] mx-auto w-80">
           <div className="cart_bg p-4">
-          <p className="text-[25px] font-bold text-center text-secondary">{allContents[selectImageIndex]?.title}</p>
-          <p className="text-[#1E252B] text-lg font-normal text-center">{allContents[selectImageIndex]?.desc}</p>
+            <p className="text-[25px] font-bold text-center text-secondary">
+              {allContents[selectImageIndex]?.title}
+            </p>
+            <p className="text-[#1E252B] text-lg font-normal text-center">
+              {allContents[selectImageIndex]?.desc}
+            </p>
           </div>
         </div>
-        
       </div>
     </div>
   );
 };
 
 export default Process;
-

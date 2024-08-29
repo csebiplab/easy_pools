@@ -28,7 +28,7 @@ const HireUsSliderButton = ({ setSelectImageIndex, selectImageIndex }) => {
           <span className="sr-only">Next</span>
         </button>
       </div>
-      <div className="bg-secondary h-3 w-full" />
+      <div className="bg-secondary-700 h-3 w-full" />
       <div
         onClick={() =>
           setSelectImageIndex(selectImageIndex === 0 ? 0 : selectImageIndex - 1)
