@@ -13,8 +13,14 @@ import { projectsHeadingIconText } from "@/utils/projects/heading__text";
 import { reviews } from "@/constants/reviews.constant";
 
 const breakpoints = {
-  0: { slidesPerView: 1 },
-  768: { slidesPerView: 3 },
+  0: {
+    slidesPerView: 1,
+    spaceBetween: 20,
+  },
+  768: {
+    slidesPerView: 3,
+    spaceBetween: 20,
+  },
 };
 
 const Review = () => {

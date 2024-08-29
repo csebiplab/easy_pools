@@ -101,9 +101,9 @@ const OurProcessSteps = () => {
               />
             </div>
 
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
               Process of Our Swimming Pool Installation in Barrie
-            </h3>
+            </h2>
           </div>
 
           <Swiper
@@ -132,7 +132,7 @@ const OurProcessSteps = () => {
                     width={100}
                     height={95}
                     alt="RH"
-                    className="w-14 h-14 lg:w-[80px] lg:h-[80px] mx-auto p-[14px] lg:p-[20px] bg-white rounded-full border-[3px] border-secondary-50"
+                    className="w-14 h-14 lg:w-[80px] lg:h-[80px] mx-auto p-[14px] lg:p-[20px] bg-white rounded-full border-[3px] border-secondary"
                   />
                   <div className="text-center">
                     <p className="text-[12px] md:text-[16px] mt-2 mb-3  text-black leading-[20px] md:leading-6">

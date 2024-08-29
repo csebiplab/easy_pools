@@ -6,13 +6,11 @@ const ProjectBanner = () => {
     <div className="container project-banner py-[78px] md:py-[110px] lg:py-[135] xl:py-[160] 2xl:py-[185] 3xl:py-[210] 4xl:py-[235] 5xl:py-[260px] flex justify-center items-center bg-blend-multiply bg-dark-200">
       <div className="text-center project-content">
         <div>
-          <h3 className="text-white text-[27px] lg:text-[55px] leading-normal">
-            Pool Installation Services in Barrie
-          </h3>
+          <h1 className="text-white text-[27px] lg:text-[55px] leading-normal">
+          Swimming Pool Installation in Barrie
+          </h1>
           <p className="mt-4 lg:mt-8 lg:leading-10 leading-normal text-white lg:text-[25px] text-sm font-normal">
-            Welcome to our swimming pool installation services in Barrie, where
-            your dream of a luxurious and refreshing pool oasis becomes a
-            reality!
+          Welcome to our swimming pool installation services in Barrie, where your dream of a luxurious and refreshing pool oasis becomes a reality!
           </p>
           <div className="flex justify-center">
             <Link href={`tel:+1(647) 449 9512`}>

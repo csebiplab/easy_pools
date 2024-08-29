@@ -8,7 +8,7 @@ const StunningDesign = () => {
   return (
     <div className="bg-white">
       <div className="container">
-        <div className="grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] padding__all">
+        <div className="grid md:grid-cols-7 grid-cols-1 gap-10 padding__all">
           <div className="md:col-span-3 flex justify-center items-center">
             <Image
               src="/assets/projects/images/stunning__design.png"
@@ -25,9 +25,9 @@ const StunningDesign = () => {
                 text={projectsHeadingIconText.stunningdesign__IconText}
               />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
               Stunning Designs Exceptional Swimming Pool Installation in Barrie
-            </h3>
+            </h2>
             <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
               Creating stunning designs for swimming pools requires a delicate
               balance between aesthetic appeal and functionality. Our team of
@@ -41,8 +41,8 @@ const StunningDesign = () => {
               choice of materials, is carefully considered to achieve a
               breathtaking result.
             </p>
-            <div className="py-5 flex justify-start">
-              <CommonButton />
+            <div className="py-5 flex justify-center md:justify-start">
+              <CommonButton/>
             </div>
           </div>
         </div>

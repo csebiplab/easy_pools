@@ -12,12 +12,12 @@ export const SwiperNavButtons = () => {
       <>
         <div className="flex lg:gap-8 gap-3 items-center justify-center lg:py-6 py-5">
           {/* ========= first line ======== */}
-          <div className="lg:w-[330px] w-[154px] h-0.5 bg-secondary-50"></div>
+          <div className="lg:w-[330px] w-[154px] h-0.5 bg-secondary"></div>
           <div className="flex lg:gap-5 gap-3">
             <button
               aria-label="prev"
               onClick={() => swiper.slidePrev()}
-              className="p-3 rounded-full border-2  hover:bg-secondary-50 border-secondary-50"
+              className="p-3 rounded-full border-2  hover:bg-secondary-50 border-secondary"
             >
               <FaChevronLeft className="hover:text-white" />
               <span className="sr-only">Prev</span>
@@ -25,14 +25,14 @@ export const SwiperNavButtons = () => {
             <button
               aria-label="next"
               onClick={() => swiper.slideNext()}
-              className=" hover:text-secondary-50 hover:bg-white border-2 p-3 bg-secondary-50 rounded-full border-secondary-50"
+              className=" hover:text-secondary hover:bg-white border-2 p-3 bg-secondary rounded-full border-secondary"
             >
               <FaChevronRight className="hover:text-white" />
               <span className="sr-only">Next</span>
             </button>
           </div>
           {/* =============== second line ============= */}
-          <div className="lg:w-[330px] w-[154px] h-0.5 bg-secondary-50"></div>
+          <div className="lg:w-[330px] w-[154px] h-0.5 bg-secondary"></div>
         </div>
       </>
     </div>
