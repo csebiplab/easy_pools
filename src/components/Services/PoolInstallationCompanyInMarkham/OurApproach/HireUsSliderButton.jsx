@@ -28,7 +28,7 @@ const HireUsSliderButton = ({ setSelectImageIndex, selectImageIndex }) => {
           </svg>
         </button>
       </div>
-      {/* <div className="bg-[#049E43] h-3 w-full" /> */}
+      {/* <div className="bg-secondary h-3 w-full" /> */}
       <div
         onClick={() =>
           setSelectImageIndex(selectImageIndex === 0 ? 0 : selectImageIndex - 1)

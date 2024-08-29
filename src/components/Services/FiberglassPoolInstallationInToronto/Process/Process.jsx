@@ -63,7 +63,7 @@
 //                 />
 //               </svg>
 //             </button>
-//             <div className="bg-[#049E43] h-3 w-full" />
+//             <div className="bg-secondary h-3 w-full" />
 //             <button aria-label="next">
 //               <span className="sr-only">Next</span>
 //               <svg
@@ -112,7 +112,7 @@
 //         </div>
 
 //         <div className="text__card w-full md:w-[385px] px-3 py-4 mx-auto mt-28">
-//           <p className="text-center text-2xl font-medium text-[#049E43] mb-1">
+//           <p className="text-center text-2xl font-medium text-secondary mb-1">
 //             Excavate with precision
 //           </p>
 //           <p className="text-center text-base font-medium leading-[218%]">
@@ -262,15 +262,15 @@ const Process = () => {
             {allContents?.map((img, index) => (
               <SwiperSlide key={index}>
                 <div className="flex justify-end items-center">
-                    <div className="bg-[#049E43] h-3 w-full" />
+                    <div className="bg-secondary h-3 w-full" />
                   <Image
                     src={img?.img}
                     width={165}
                     height={165}
                     alt="our approach"
-                    className="w-[165px] h-[165px] border-[8px] border-[#049E43] rounded-[16px] bg-white p-5"
+                    className="w-[165px] h-[165px] border-[8px] border-secondary rounded-[16px] bg-white p-5"
                   />
-                   <div className="bg-[#049E43] h-3 w-full" />
+                   <div className="bg-secondary h-3 w-full" />
                 </div>
                 
                 
@@ -289,7 +289,7 @@ const Process = () => {
 
         <div className="mt-[25px] mx-auto w-80">
           <div className="cart_bg p-4">
-          <p className="text-[25px] font-bold text-center text-[#049E43]">{allContents[selectImageIndex]?.title}</p>
+          <p className="text-[25px] font-bold text-center text-secondary">{allContents[selectImageIndex]?.title}</p>
           <p className="text-[#1E252B] text-lg font-normal text-center">{allContents[selectImageIndex]?.desc}</p>
           </div>
         </div>

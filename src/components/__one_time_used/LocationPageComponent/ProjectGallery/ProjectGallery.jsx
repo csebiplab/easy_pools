@@ -37,7 +37,7 @@ const ProjectGallery = () => {
   ];
 
   return (
-    <div className="bg-[#fff]">
+    <div className="bg-white">
       <div className="  custom-container padding__all">
         <div className="">
           <div className=" flex flex-col justify-center items-center ">
