@@ -1,4 +1,4 @@
-const CommonButton = ({ buttonText }) => {
+const CommonButton = ({ buttonText="Learn More"}) => {
   return (
     <button
       aria-label={buttonText}

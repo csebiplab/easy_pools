@@ -61,7 +61,7 @@ function OurLocationMenu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -158,7 +158,7 @@ function OurServiceManu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -213,7 +213,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm lg:text-sm xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           About Us
         </ListItem>
       </Typography>
@@ -229,7 +229,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Blog
         </ListItem>
       </Typography>
@@ -240,7 +240,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Projects
         </ListItem>
       </Typography>
@@ -256,7 +256,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-100 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact Us
         </ListItem>
       </Typography>

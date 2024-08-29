@@ -12,9 +12,9 @@ const PermitsandRegulations = () => {
               text={projectsHeadingIconText.permitsandRegulations__IconText}
               classes={{ textWhite: "text-white" }}
             />
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-white pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-white pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
               Permits and Regulations for Pool Installation Barrie
-            </h3>
+            </h2>
           </div>
           <p className="text-sm md:text-base font-normal text-center text-white pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
             Installing a pool requires adherence to various permits and

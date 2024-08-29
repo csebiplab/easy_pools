@@ -7,7 +7,7 @@ const TopRatedPoolInstallation = () => {
   return (
     <div className=" bg__color">
       <div className=" container">
-        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px] py-[40px] md:py-[48px]">
+        <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 py-[40px] md:py-[48px]">
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
@@ -24,9 +24,9 @@ const TopRatedPoolInstallation = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={projectsHeadingIconText.topRated__IconText} />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
-              Barrie’s Top-Rated Pool Installation Specialists
-            </h3>
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px]">
+              Barrie's Top-Rated Pool Installation Specialists
+            </h2>
             <p className="text-sm md:text-base font-normal text-center md:text-left text-black pt-[15px] md:pt-[25px] leading-6 lg:leading-8">
               Transform your backyard into a haven of opulence with Easy Pools
               pool installation specialists. With a commitment to excellence and
