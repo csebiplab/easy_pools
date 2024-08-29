@@ -178,9 +178,9 @@ const SelectionPreparation = () => {
   };
 
   return (
-    <div className="!overflow-hidden">
-      <div className="bg__color">
-        <div className="container  py-[34px] md:py-[54px]">
+    <div className="bg__color">
+      <div className="container py-[34px] md:py-[54px]">
+        <div className="!overflow-hidden  ">
           <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-40 gap-4 items-center text-sm ">
             <div className="  ">
               <div className="flex justify-center lg:justify-normal items-center">
@@ -188,10 +188,10 @@ const SelectionPreparation = () => {
                   text={projectsHeadingIconText.selectionPreparation__IconText}
                 />
               </div>
-              <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+              <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                 Site Selection & <br className=" hidden lg:block" /> Preparation
                 for Pool <br className=" hidden lg:block" /> Installation
-              </h3>
+              </h2>
             </div>
 
             <div className="flex justify-center items-center">
@@ -208,7 +208,7 @@ const SelectionPreparation = () => {
 
           {/* taggle button */}
           <div className="flex justify-center items-center py-5 mb-12 mx-2 ">
-            <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white border border-secondary-50">
+            <label className="themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-3xl bg-white border border-secondary">
               <input
                 type="checkbox"
                 className="sr-only"
@@ -217,7 +217,7 @@ const SelectionPreparation = () => {
               />
               <span
                 className={`flex items-center border pr-5  lg:px-32 rounded-3xl lg:py-4 py-2  text-sm md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
-                  !isChecked ? "text-white bg-secondary-50 " : "text-body-color"
+                  !isChecked ? "text-white bg-secondary" : "text-body-color"
                 }`}
               >
                 <svg
@@ -237,7 +237,7 @@ const SelectionPreparation = () => {
               </span>
               <span
                 className={`flex items-center pr-5 lg:px-32 rounded-3xl lg:py-4 py-2 text-sm md:text-base 3xl:text-lg 5xl:text-[20px] 5xl:leading-[25px] font-bold ${
-                  isChecked ? "text-white bg-secondary-50 " : "text-body-color"
+                  isChecked ? "text-white bg-secondary" : "text-body-color"
                 }`}
               >
                 <svg
@@ -270,7 +270,7 @@ const SelectionPreparation = () => {
                 {services.map((service, index) => (
                   <SwiperSlide
                     key={index}
-                    className="bg-white border-4 rounded border-secondary-50 !h-auto !md:h-full px-2 py-6 md:py-0"
+                    className="bg-white border-4 rounded border-secondary !h-auto !md:h-full px-2 py-6 md:py-0"
                   >
                     <div className="mx-auto relative px-2">
                       <div className="py-7">
@@ -283,7 +283,7 @@ const SelectionPreparation = () => {
                           src={service.img}
                           height={58}
                           width={58}
-                          className="w-14 h-14 lg:w-[80px] lg:h-[80px] p-[14px] lg:p-[20px] bg-white rounded-full border-[3px] border-secondary-50"
+                          className="w-14 h-14 lg:w-[80px] lg:h-[80px] p-[14px] lg:p-[20px] bg-white rounded-full border-[3px] border-secondary"
                           alt="Profile"
                         />
                       </div>
@@ -312,7 +312,7 @@ const SelectionPreparation = () => {
                 {services2.map((service, index) => (
                   <SwiperSlide
                     key={index}
-                    className="bg-white border-4 rounded border-secondary-50 !h-auto !md:h-full px-2 py-6 md:py-0"
+                    className="bg-white border-4 rounded border-secondary !h-auto !md:h-full px-2 py-6 md:py-0"
                   >
                     <div className="mx-auto rounded-lg relative">
                       <div className=" py-7 ">
@@ -325,7 +325,7 @@ const SelectionPreparation = () => {
                           src={service.img}
                           height={58}
                           width={58}
-                          className="w-14 h-14 lg:w-[80px] lg:h-[80px] p-[14px] lg:p-[20px] bg-white rounded-full border-[3px] border-secondary-50"
+                          className="w-14 h-14 lg:w-[80px] lg:h-[80px] p-[14px] lg:p-[20px] bg-white rounded-full border-[3px] border-secondary"
                           alt="Profile"
                         />
                       </div>

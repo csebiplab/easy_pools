@@ -97,7 +97,7 @@ module.exports = withMT({
           100: "#B3B3B3",
           200: "#8C8C8C",
           300: "#666666",
-          400: "#404040",
+          400: "#484848",
           500: "#000000",  // Default
           600: "#000000",  // Darker variant (Same as default)
           700: "#000000",

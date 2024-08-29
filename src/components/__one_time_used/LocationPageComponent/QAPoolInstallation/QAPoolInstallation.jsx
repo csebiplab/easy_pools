@@ -68,9 +68,9 @@ const QAPoolInstallation = () => {
   return (
     <div className="bg__colorQA">
       <section className="container ">
-        <div className="mx-auto xs:px-[35px] padding__all">
+        <div className="padding__all">
           <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="order-2 flex justify-center items-center ">
+            <div className="order-1 md:order-2 flex justify-center items-center ">
               <Image
                 alt="faq"
                 src="/assets/projects/images/qa__pool.png"
@@ -80,17 +80,17 @@ const QAPoolInstallation = () => {
               />
             </div>
 
-            <div>
+            <div className="order-2 md:order-1">
               <div>
-                <div className="order-1 flex flex-col  ">
+                <div className=" flex flex-col  ">
                   <HeadingIcon
                     text={projectsHeadingIconText.QAPoolInstallation__IconText}
                   />
 
                   <div>
-                    <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+                    <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
                       Questions & Answers for Pool Installation
-                    </h3>
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -99,16 +99,16 @@ const QAPoolInstallation = () => {
                   <div key={idx}>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">
                       <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-primary py-3 px-5 5xl:py-[14px] 5xl:px-8 border-2">
-                        <h6 className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
+                        <p className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
                           {ques.question}
-                        </h6>
+                        </p>
 
                         <div className="white-icon">
                           <IoCaretDown className="white-icon" fill="white" />
                         </div>
                       </summary>
 
-                      <p className="py-3 pl-4 pr-8 lg:py-4 lg:px-6 5xl:py-5 5xl:px-7  border-2 text-black text-sm lg:text-sm 5xl:text-base font-normal 5xl:leading-[30px]">
+                      <p className="py-3 pl-4 pr-8 lg:py-4 lg:px-6 5xl:py-5 5xl:px-7  border-2 text-black text-sm lg:text-sm 5xl:text-base font-normal 5xl:leading-[30px] border-primary">
                         {ques.answer}
                       </p>
                     </details>

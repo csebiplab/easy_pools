@@ -95,17 +95,17 @@ const trustedLine3 = [
 const TrustedPartner = () => {
   return (
     <div className="bg__color">
-      <div className="full__section_l_p">
+      <div className="full__section_l_p pr-3 md:pr-0">
         <div className="grid md:grid-cols-6 grid-cols-1 gap-10">
-          <div className="md:col-span-3 pt-[25px] md:pt-[28px] lg:pt-[30px] xl:pt-[32px] 2xl:pt-[35px] 3xl:pt-[37px] 4xl:pt-[40px] 5xl:pt-[43px]">
+          <div className="order-2 md:order-1 md:col-span-3 pt-[25px] md:pt-[28px] lg:pt-[30px] xl:pt-[32px] 2xl:pt-[35px] 3xl:pt-[37px] 4xl:pt-[40px] 5xl:pt-[43px]">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon
                 text={projectsHeadingIconText.trustedPartner__IconText}
               />
             </div>
-            <p className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px">
               Your Trusted Partner for Pools Installation in Barrie
-            </p>
+            </h2>
             <p className="text-sm  5xl:text-base font-normal text-center md:text-left text-black pt-[14px] md:pt-[15px]">
               As your trusted partner for impeccable pool installations in
               Barrie, we bring years of expertise and dedication to every
@@ -150,14 +150,14 @@ const TrustedPartner = () => {
               </div>
             </div>
           </div>
-          <div className="md:col-span-3 flex justify-end items-center">
+          <div className="order-1 md:order-2 md:col-span-3 flex justify-end items-center">
             <div>
               <Image
                 src="/assets/projects/images/Trusted-Partner.png"
                 alt="Trusted-Partner"
                 width={200}
                 height={200}
-                className="w-[815px] h-[586px]"
+                className="w-[815px] h-[310px] md:h-[586px]"
               />
             </div>
           </div>

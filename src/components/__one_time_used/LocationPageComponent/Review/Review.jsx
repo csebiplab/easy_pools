@@ -17,9 +17,11 @@ import { projectsHeadingIconText } from "@/utils/projects/heading__text";
 const breakpoints = {
   0: {
     slidesPerView: 1,
+    spaceBetween: 20,
   },
   768: {
     slidesPerView: 3,
+    spaceBetween: 20,
   },
 };
 
@@ -71,10 +73,10 @@ const Review = () => {
             <div className="flex justify-center items-center">
               <HeadingIcon text={projectsHeadingIconText.review__IconText} />
             </div>
-            <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-              Here’s what to expect when you hire us as your Pool Installer in
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
+              Here's what to expect when you hire us as your Pool Installer in
               Toronto.
-            </h3>
+            </h2>
           </div>
           {/* =================== Card Section =============== */}
           <Swiper
@@ -100,7 +102,7 @@ const Review = () => {
                 key={i}
                 className={`text-center py-4 lg:py-10 md:pr-[21px]`}
               >
-                <div className="bg-[#D9D9D980] rounded-lg shadow-md w-[370px] md:w-full h-[250px] md:h-full card-sd p-[14px] md:mx-0 mx-auto">
+                <div className="bg-[#D9D9D980] rounded-lg shadow-md w-[370px] md:w-full h-[302px] md:h-full card-sd p-[14px] md:mx-0 mx-auto">
                   <Image
                     src={google}
                     width={89.92}
@@ -120,9 +122,9 @@ const Review = () => {
                     <p className="text-sm md:text-[12px] mt-4  text-black leading-[22px] md:leading-6">
                       {reviewText}
                     </p>
-                    <h6 className="font-semibold lg:text-sm text-sm mt-3">
+                    <p className="font-semibold lg:text-sm text-sm mt-3">
                       {author}
-                    </h6>
+                    </p>
                     <p className="text-[#4A4A4A] text-[8px] mt-2">{address}</p>
                   </div>
                 </div>

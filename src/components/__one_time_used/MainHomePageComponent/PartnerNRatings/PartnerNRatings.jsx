@@ -55,13 +55,13 @@ const PartnerNRatings = ({ classNames }) => {
                     <div className="flex items-center gap-x-[5px]">
                       <Image
                         src="/assets/images/star.png"
-                        width={60}
-                        height={60}
-                        className="w-[60px] h-[60px]"
+                        width={40}
+                        height={40}
+                        className="w-[40px] h-[40px]"
                         alt="star"
                         loading="lazy"
                       />
-                      <span className="font-semibold md:text-3xl xl:text-4xl 2xl:text-[40px] text-dark-400">
+                      <span className="font-semibold md:text-2xl xl:text-3xl 2xl:text-[36px] text-dark-400">
                         99%
                       </span>
                     </div>
