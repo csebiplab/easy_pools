@@ -16,7 +16,7 @@ const MaterialsNEquip = () => {
                 <div className="stats__area bg-secondary-700 text-white rotate-[270deg] -ml-[90px] mt-[90px] px-[17px] py-[4px]">
                   <div className="text-center">
                     <span className="pools__num text-white">25+</span>
-                    <p className="text-white install__pool">
+                    <p className="text-white text-lg">
                       Year Experience in install <br /> pool
                     </p>
                   </div>
@@ -57,9 +57,9 @@ const MaterialsNEquip = () => {
                     />
                   </div>
                   <div className="mt-4">
-                    <div className="text-center  bg-green-600 rounded-xl mx-14 px-4 py-5 my-2">
-                      <span className=" text-white text-[25px]">25+</span>
-                      <p className=" text-white">
+                    <div className="text-center text-white bg-secondary-700 rounded-xl mx-14 px-4 py-5 my-2">
+                      <span className="text-2xl">25+</span>
+                      <p className="text-white">
                         Year Experience in install pool
                       </p>
                     </div>
@@ -76,7 +76,7 @@ const MaterialsNEquip = () => {
                 </div>
               </div>
             </div>
-            <div className=" flex justify-center items-center md:pt-0 pt-[20px]">
+            <div className="flex justify-center items-center md:pt-0 pt-[20px]">
               <div>
                 <HeadingIcon text={headingIconText.meterialNEquip__IconText} />
                 <h2 className="text-black font-normal text-lg md:text-3xl lg:text-4xl mt-4 mb-[25px]">
