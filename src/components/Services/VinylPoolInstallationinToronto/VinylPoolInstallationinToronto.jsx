@@ -13,12 +13,12 @@ import { bHeadingTexts } from "@/utils/bHeadingText";
 import { headingIconText } from "@/utils/heading-text";
 import Definition from "./Definition/Definition";
 import Unveils from "./Unveils/Unveils";
-import Process from "@/components/Services/FiberglassPoolInstallationInToronto/Process/Process";
 import Design from "./Design/Design";
 import VinylCompare from "./VinylCompare/VinylCompare";
 import Benifits from "./Benifits/Benifits";
 import EnsureLongevity from "./EnsureLongevity/EnsureLongevity";
 import HireUs from "./HireUs/HireUs";
+import Process from "./Process/Process";
 
 const VinylPoolInstallationinToronto = () => {
   return (
@@ -55,11 +55,8 @@ const VinylPoolInstallationinToronto = () => {
         <ProjectGallery />
       </section>
 
-      <section className="bg_vinylPool padding__top">
-        <Process
-          bHeading={bHeadingTexts.vinylPoolProcess__bHeading}
-          sHeading={headingIconText.process__inFiberglassText}
-        />
+      <section>
+        <Process/>
       </section>
 
       <section>
