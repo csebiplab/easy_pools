@@ -23,9 +23,9 @@ const AboutUsInVinylPool = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center mb-4">
               <HeadingIcon text={headingIconText.about__usInFiberglassText} />
             </div>
-            <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center md:text-left">
+            <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center md:text-left">
             About Our Vinyl Pool Installation Company in Toronto
-            </h3>
+            </h2>
 
             <p className="text-black text-lg font-normal mt-4 text-center md:text-left">
             Welcome to Easy Pools, Toronto's premier vinyl pool installation company. With years of experience and a passion for creating luxurious outdoor spaces, we are dedicated to transforming your backyard into a personal oasis. At Easy Pools, we pride ourselves on our craftsmanship, attention to detail, and exceptional customer service. Our skilled professionals bring expertise and innovation to every project, ensuring that your pool is beautiful and built to last. We specialize in installing high-quality vinyl pools, offering a variety of designs and customization options to fit your style and budget. Our seamless installation process ensures that your pool is ready for use in no time. We provide comprehensive renovation services to update and enhance your pool's appearance and functionality. Our commitment to our clients extends beyond installation. We offer reliable maintenance and repair services to keep your pool in perfect condition year-round.

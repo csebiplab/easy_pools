@@ -66,9 +66,9 @@ const InstallationServices = () => {
           <div className="flex justify-center gap-[54px]">
             <HeadingIcon text={headingIconText.installationServices_IconText}/>
           </div>
-          <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
+          <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
           Our Swimming Pool Installation Services
-          </h3>
+          </h2>
         </div>
 
         {/* ==================== swiper slider ================ */}

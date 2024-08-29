@@ -90,9 +90,9 @@ const QA = () => {
                   <HeadingIcon text={headingIconText.faq__IconText} />
 
                   <div>
-                    <h3 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center md:text-left">
+                    <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center md:text-left">
                       Some Questions for Choosing the Best Company
-                    </h3>
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -101,9 +101,9 @@ const QA = () => {
                   <div key={idx}>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">
                       <summary className="flex cursor-pointer items-center justify-between gap-1.5 bg-primary py-3 px-5 5xl:py-[14px] 5xl:px-8 border-2">
-                        <h6 className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
+                        <p className="text-white text-sm lg:text-sm xl:text-base 5xl:text-lg 5xl:leading-[22px] font-bold">
                           {ques.question}
-                        </h6>
+                        </p>
 
                         <div className="white-icon">
                           <IoCaretDown className="white-icon" fill="white" />
