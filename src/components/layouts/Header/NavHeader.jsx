@@ -69,7 +69,7 @@ function OurLocationMenu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6 -mt-[9px]"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -166,7 +166,7 @@ function OurServiceManu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6 -mt-[9px]"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
