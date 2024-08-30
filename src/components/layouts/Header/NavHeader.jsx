@@ -27,6 +27,14 @@ const our__location__menuItem = [
     title: "Pool Installation Services In Barrie",
     route: "/pool-installation-services-in-barrie",
   },
+  {
+    title: "Pool Installation Company In Markham",
+    route: "/pool-installation-company-in-markham",
+  },
+  {
+    title: "Swimming Pool Installation In Vaughan",
+    route: "/swimming-pool-installation-in-vaughan",
+  },
 ];
 
 function OurLocationMenu() {
@@ -81,10 +89,10 @@ function OurLocationMenu() {
             </ListItem>
           </div>
         </MenuHandler>
-        <MenuList className="!p-0 hidden max-w-[300px] w-full lg:block outline-0 bg-gray-100">
+        <MenuList className="!p-0 hidden max-w-[400px] w-full lg:block outline-0 bg-gray-100">
           <div className="!p-0 !border-none !outline-none w-full">
             <div className="w-full">
-              <ul className="w-full">
+              <ul className="w-full flex justify-center">
                 <li>{renderItems(our__location__menuItem)}</li>
               </ul>
             </div>
@@ -107,10 +115,10 @@ function OurLocationMenu() {
 // our services nav menu
 const our_service_menu_items = {
   interior: [
-    {
-      title: "Swimming Pool Installation In Vaughan",
-      route: "/swimming-pool-installation-in-vaughan",
-    },
+    // {
+    //   title: "Swimming Pool Installation In Vaughan",
+    //   route: "/swimming-pool-installation-in-vaughan",
+    // },
     {
       title: "Vinyl Pool Installation In Toronto",
       route: "/vinyl-pool-installation-in-toronto",
@@ -119,10 +127,10 @@ const our_service_menu_items = {
       title: "Fiberglass Pool Installation In Toronto",
       route: "/fiberglass-pool-installation-in-toronto",
     },
-    {
-      title: "Pool Installation Company In Markham",
-      route: "/pool-installation-company-in-markham",
-    },
+    // {
+    //   title: "Pool Installation Company In Markham",
+    //   route: "/pool-installation-company-in-markham",
+    // },
   ],
 };
 
