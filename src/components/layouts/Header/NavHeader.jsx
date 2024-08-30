@@ -19,7 +19,6 @@ import Link from "next/link";
 import React from "react";
 import UpperNavbar from "./UpperNavbar";
 import WebBrandSvg from "@/components/ui/WebBrandSvg";
-import "./Header.css";
 import "./NavHeader.css";
 
 const our__location__menuItem = [
@@ -98,16 +97,22 @@ function OurLocationMenu() {
             </div>
           </div>
         </MenuList>
-      </Menu>
 
-      <div className="block lg:hidden">
-        <Collapse open={isMobileMenuOpen}>
-          <ul>
-            <li>{renderItems(our__location__menuItem)}</li>
-          </ul>
-          <hr className="my-1" />
-        </Collapse>
-      </div>
+        {isMobileMenuOpen ? (
+          <>
+            <div className="block lg:hidden">
+              <Collapse open={isMobileMenuOpen}>
+                <ul>
+                  <li>{renderItems(our__location__menuItem)}</li>
+                </ul>
+                <hr className="my-1" />
+              </Collapse>
+            </div>
+          </>
+        ) : (
+          ""
+        )}
+      </Menu>
     </>
   );
 }
@@ -196,16 +201,25 @@ function OurServiceManu() {
             </div>
           </div>
         </MenuList>
+
+        {isMobileMenuOpen ? (
+          <>
+            <div className="block lg:hidden">
+              <Collapse open={isMobileMenuOpen}>
+                <h4 className="text-primary-600 mb-1 font-semibold">
+                  Interior
+                </h4>
+                <ul>
+                  <li>{renderItems(our_service_menu_items.interior)}</li>
+                </ul>
+                <hr className="my-1" />
+              </Collapse>
+            </div>
+          </>
+        ) : (
+          ""
+        )}
       </Menu>
-      <div className="block lg:hidden">
-        <Collapse open={isMobileMenuOpen}>
-          <h4 className="text-primary-600 mb-1 font-semibold">Interior</h4>
-          <ul>
-            <li>{renderItems(our_service_menu_items.interior)}</li>
-          </ul>
-          <hr className="my-1" />
-        </Collapse>
-      </div>
     </>
   );
 }
