@@ -24,16 +24,16 @@ const DesignandCustomization = () => {
               in Toronto. From sleek, modern designs to more traditional and
               rustic styles, Toronto's pool designers offer a wide range of
               options to cater to every taste. Clients can customize features
-              such as shape, size, depth, and materials to {" "}
+              such as shape, size, depth, and materials to{" "}
               <Link
-                className="text-primary hover:underline"
+                className="text-primary-700 hover:underline"
                 href="https://en.wikipedia.org/wiki/Swimming_pool"
                 rel="nofollow"
                 target="_blank"
               >
                 create a pool <span className="pl-[1px]"></span>
-              </Link> 
-               that seamlessly integrates with their outdoor space while
+              </Link>
+              that seamlessly integrates with their outdoor space while
               reflecting their unique aesthetic vision. Additionally, advanced
               technology and sustainable practices are becoming increasingly
               popular in Toronto's pool design scene. Homeowners can opt for

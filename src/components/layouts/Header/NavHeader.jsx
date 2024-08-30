@@ -69,7 +69,7 @@ function OurLocationMenu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -166,7 +166,7 @@ function OurServiceManu() {
             role="button"
           >
             <ListItem
-              className="flex items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
+              className="flex items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -189,7 +189,7 @@ function OurServiceManu() {
         <MenuList className="hidden max-w-[100vw] w-screen lg:block border-0 outline-0 bg-gray-100">
           <div className="container grid grid-cols-3 gap-y-2">
             <div>
-              {/* <h3 className="mb-1 text-primary font-semibold">Interior</h3> */}
+              <h3 className="mb-1 text-primary-600 font-semibold">Interior</h3>
               <ul>
                 <li>{renderItems(our_service_menu_items.interior)}</li>
               </ul>
@@ -199,7 +199,7 @@ function OurServiceManu() {
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
-          {/* <p className="text-primary mb-1 font-semibold">Interior</p> */}
+          <h4 className="text-primary-600 mb-1 font-semibold">Interior</h4>
           <ul>
             <li>{renderItems(our_service_menu_items.interior)}</li>
           </ul>
@@ -219,9 +219,9 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm lg:text-sm xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm lg:text-sm xl:text-base 2xl:text-lg"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           About Us
         </ListItem>
       </Typography>
@@ -235,9 +235,9 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Blog
         </ListItem>
       </Typography>
@@ -246,9 +246,9 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Projects
         </ListItem>
       </Typography>
@@ -262,9 +262,9 @@ function NavList() {
         href="/"
         variant="small"
         color="blue-gray"
-        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg text-black"
+        className="font-medium rounded-full text-sm md:text-sm xl:text-base 2xl:text-lg"
       >
-        <ListItem className="flex items-start md:items-center text-lg text-dark-400 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
+        <ListItem className="flex items-start md:items-center text-lg text-dark-500 font-bold px-1 lg:px-4 xl:px-5 2xl:px-6">
           Contact Us
         </ListItem>
       </Typography>
@@ -308,7 +308,7 @@ export function NavHeader() {
                     />
                     <a
                       href="tel:+1(647) 449 9512"
-                      className="text-secondary font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
+                      className="text-secondary-700 font-bold xs:text-base sm:text-xl md:text-2xl 2xl:text-3xl"
                     >
                       +1(647) 449 9512
                     </a>

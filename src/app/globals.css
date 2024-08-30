@@ -36,17 +36,17 @@ footer * {
 }
 
 a {
-  @apply text-primary underline-offset-2 hover:underline decoration-primary-700;
+  @apply text-primary-600 underline-offset-2 hover:underline decoration-primary-700;
 }
 .bar {
   @apply h-[2px] w-40 bg-primary;
 }
 .btn {
-  @apply tracking-wider py-3 px-6 text-white font-medium text-lg bg-primary hover:bg-primary-600 active:bg-primary-700 duration-150;
+  @apply tracking-wider py-3 px-6 text-white font-medium text-lg bg-primary-700  hover:bg-primary-600 active:bg-primary-700 duration-150;
 }
 
 .getAnEstimate__btn {
-  @apply tracking-wider py-2 md:py-3 px-2 md:px-6 text-white font-medium text-lg bg-secondary hover:bg-secondary-50 active:bg-secondary-50 duration-150;
+  @apply tracking-wider py-2 md:py-3 px-2 md:px-6 text-white font-medium text-lg bg-secondary-700 hover:bg-secondary-900 active:bg-secondary-900 duration-150;
 }
 
 @layer base {
@@ -92,7 +92,7 @@ a {
 ::-webkit-scrollbar-thumb {
   border-radius: 100px;
   /* background: #888; */
-  @apply bg-secondary;
+  @apply bg-secondary-700;
 }
 
 /* Handle on hover */

@@ -8,7 +8,9 @@ const ProcessSliderButton = ({ setSelectImageIndex, selectImageIndex }) => {
     <div className="flex justify-between items-center">
       <div
         onClick={() =>
-          setSelectImageIndex(selectImageIndex === 11 ? 11 : selectImageIndex + 1)
+          setSelectImageIndex(
+            selectImageIndex === 11 ? 11 : selectImageIndex + 1
+          )
         }
       >
         <button aria-label="next" onClick={() => swiper.slideNext()}>
@@ -28,7 +30,7 @@ const ProcessSliderButton = ({ setSelectImageIndex, selectImageIndex }) => {
           </svg>
         </button>
       </div>
-      {/* <div className="bg-secondary h-3 w-full" /> */}
+      {/* <div className="bg-secondary-700 h-3 w-full" /> */}
       <div
         onClick={() =>
           setSelectImageIndex(selectImageIndex === 0 ? 0 : selectImageIndex - 1)

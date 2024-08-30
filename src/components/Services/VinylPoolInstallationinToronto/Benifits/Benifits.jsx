@@ -1,6 +1,4 @@
-
 "use client";
-
 
 import "./Benifits.css";
 
@@ -61,59 +59,60 @@ const slideData = [
   {
     title: "Algae Resistance",
     description: `The smooth, non-porous surface of vinyl liners resists algae growth more effectively than other pool materials. This not only keeps the pool water clearer.`,
-  }
-  
+  },
 ];
 
 const Benifits = () => {
   return (
     <div className="bg_vinylPool">
       <div className="container ">
-      <div className="">
-        <div className="text-center pb-6">
-          <div className="flex justify-center gap-[54px]">
-            <HeadingIcon text={headingIconText.benefits__IconText}/>
+        <div className="">
+          <div className="text-center pb-6">
+            <div className="flex justify-center gap-[54px]">
+              <HeadingIcon text={headingIconText.benefits__IconText} />
+            </div>
+            <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
+              The Benefits of Vinyl Pools for Homeowners
+            </h2>
           </div>
-          <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-normal text-center">
-          The Benefits of Vinyl Pools for Homeowners
-          </h2>
-        </div>
 
-        {/* ==================== swiper slider ================ */}
-        <Swiper
-          modules={[Autoplay]}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            pauseOnMouseEnter: false,
-            disableOnInteraction: false,
-            stopOnLastSlide: false,
-          }}
-          speed={3000}
-          allowTouchMove={false}
-          breakpoints={breakpoints}
-          spaceBetween={12}
-        >
-          {slideData.map((slideInfo, index) => (
-            <SwiperSlide key={index} className={`px-[30px] md:px-0 !h-auto !md:h-full`}>
-              <div className="w-full !h-full  card-sd bg-primary py-6">
-                <div className="text-center py-3 md:px-2 px-1">
-                  <p className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
-                    {slideInfo?.title}
-                  </p>
-                  <p className="text-lg font-normal md:px-1 text-center text-black">
-                    {slideInfo?.description}
-                  </p>
+          {/* ==================== swiper slider ================ */}
+          <Swiper
+            modules={[Autoplay]}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              pauseOnMouseEnter: false,
+              disableOnInteraction: false,
+              stopOnLastSlide: false,
+            }}
+            speed={3000}
+            allowTouchMove={false}
+            breakpoints={breakpoints}
+            spaceBetween={12}
+          >
+            {slideData.map((slideInfo, index) => (
+              <SwiperSlide
+                key={index}
+                className={`px-[30px] md:px-0 !h-auto !md:h-full`}
+              >
+                <div className="w-full !h-full  card-sd bg-primary-700  py-6">
+                  <div className="text-center py-3 md:px-2 px-1">
+                    <p className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
+                      {slideInfo?.title}
+                    </p>
+                    <p className="text-lg font-normal md:px-1 text-center text-black">
+                      {slideInfo?.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-          <SwiperNavButtons />
-        </Swiper>
+              </SwiperSlide>
+            ))}
+            <SwiperNavButtons />
+          </Swiper>
+        </div>
       </div>
     </div>
-    </div>
-    
   );
 };
 

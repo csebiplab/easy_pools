@@ -19,7 +19,7 @@ export default function UserAccountNav({ user }) {
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
 
   return (
-    <DropdownMenu className="!bg-primary text-white">
+    <DropdownMenu className="!bg-primary-700  text-white">
       <DropdownMenuTrigger className="outline-none cursor-pointer" asChild>
         <Avatar>
           <AvatarImage src={user?.image} />

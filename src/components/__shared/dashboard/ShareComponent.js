@@ -116,7 +116,7 @@ const ShareComponent = ({
     <div>
 
       <div className="px-5">
-        <h3 className="text-2xl uppercase">Create <span className="text-primary border-2 p-2 border-secondary">{pagename}</span> Page Meta Data</h3>
+        <h3 className="text-2xl uppercase">Create <span className="text-primary-600 border-2 p-2 border-secondary">{pagename}</span> Page Meta Data</h3>
         <div>
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">

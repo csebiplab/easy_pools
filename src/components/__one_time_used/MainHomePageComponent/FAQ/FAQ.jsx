@@ -50,7 +50,7 @@ const FAQ = () => {
                   <Accordion key={ques.id} open={open === ques.id}>
                     <AccordionHeader
                       onClick={() => handleOpen(ques.id)}
-                      className="relative flex cursor-pointer items-center justify-between gap-1.5 bg-primary p-4 border-2"
+                      className="relative flex cursor-pointer items-center justify-between gap-1.5 bg-primary-700  p-4 border-2"
                     >
                       <p className="text-white text-sm md:text-base">
                         {ques.question}

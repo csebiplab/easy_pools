@@ -17,7 +17,7 @@ const GiveUsFeedback = () => {
         <div className="grid lg:grid-cols-10 md:grid-cols-7 custom-container  lg:relative  ">
           <div
             className=" lg:absolute md:col-span-3 md:order-1 flex justify-center items-center align-middle 2xl:left-[20%] lg:left-[16%] xl:left-[20%] 2xl:top-[10%] 4xl:left-[25%]  xs:align-middle
-                    lg:top-[20%]  bg-primary 2xl:my-16 my-8  2xl:py-8 py-5 border shadow-md rounded-md border-black z-20   "
+                    lg:top-[20%]  bg-primary-700  2xl:my-16 my-8  2xl:py-8 py-5 border shadow-md rounded-md border-black z-20   "
           >
             <div className="">
               <div className=" 2xl:py-8 py-5 lg:px-10 px-5  ">
@@ -61,13 +61,16 @@ const GiveUsFeedback = () => {
 
           <div className="xl:col-span-6  lg:col-span-6 md:col-span-4 md:order-2  lg:py-30 md:flex items-center lg:ml-32 2xl:ml-48 3xl:ml-56 4xl:ml-64">
             <div className="rounded-lg md:p-8 lg:col-span-3 lg:p-12 items-center">
-              <p className="lg:mb-8 mb-5 text-primary"> Give Us Feedback </p>
+              <p className="lg:mb-8 mb-5 text-primary-700">
+                {" "}
+                Give Us Feedback{" "}
+              </p>
               <form action="#" className=" ">
                 <div>
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:mb-8 mb-4">
                     <div>
                       {" "}
-                      <label className="mb-2 text-primary font-bold">
+                      <label className="mb-2 text-primary-600 font-bold">
                         Your name *
                       </label>
                       <input
@@ -79,7 +82,7 @@ const GiveUsFeedback = () => {
                     </div>
 
                     <div>
-                      <label className="mb-2 text-primary font-bold">
+                      <label className="mb-2 text-primary-600 font-bold">
                         Email *
                       </label>
                       <input
@@ -94,7 +97,7 @@ const GiveUsFeedback = () => {
 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:mb-8 mb-4  ">
                   <div>
-                    <label className="mb-2 text-primary font-bold">
+                    <label className="mb-2 text-primary-600 font-bold">
                       Subjects *
                     </label>
                     <input
@@ -106,7 +109,7 @@ const GiveUsFeedback = () => {
                   </div>
 
                   <div>
-                    <label className="mb-2 text-primary font-bold">
+                    <label className="mb-2 text-primary-600 font-bold">
                       Your Phone *
                     </label>
                     <input
@@ -119,7 +122,7 @@ const GiveUsFeedback = () => {
                 </div>
 
                 <div>
-                  <label className="mb-2 text-primary font-bold">
+                  <label className="mb-2 text-primary-600 font-bold">
                     Message *
                   </label>
                   <textarea
@@ -134,7 +137,7 @@ const GiveUsFeedback = () => {
                   <button
                     type="submit"
                     aria-label="Submit"
-                    className="  rounded-md bg-[#049E43E4] px-10 py-4 md:px-20  font-semibold  text-white items-center flex lg:mt-13 mt-8 "
+                    className="  rounded-md bg-secondary-800 px-10 py-4 md:px-20  font-semibold  text-white items-center flex lg:mt-13 mt-8 "
                   >
                     Submit <FaLocationArrow className=" ml-2 fill-white " />
                   </button>
