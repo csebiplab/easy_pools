@@ -20,7 +20,7 @@ import { bHeadingTexts } from "@/utils/bHeadingText";
 
 const LocationPageComponent = () => {
   return (
-    <div>
+    <div className="custom-container">
       <section>
         <ProjectBanner/>
       </section>

@@ -21,7 +21,7 @@ import FiberglassPoolBanner from "./FiberglassPoolBanner/FiberglassPoolBanner";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (
-    <div className="">
+    <div className="custom-container">
       <section>
         <FiberglassPoolBanner />
       </section>

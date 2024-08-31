@@ -59,8 +59,8 @@ const ProjectGallery = () => {
   };
 
   return (
-    <div className="bg_vinylPool">
-      <div className="custom-container padding__top">
+    <div className="">
+      <div className="bg_vinylPool custom-container padding__top">
         <div className="">
           <div className="flex flex-col justify-center items-center">
             <HeadingIcon text={headingIconText.gallery_IconText} />

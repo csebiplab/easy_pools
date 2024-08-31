@@ -21,7 +21,7 @@ import { bHeadingTexts } from "@/utils/bHeadingText";
 
 const SwimingPoolInstallationInVaughan = () => {
   return (
-    <div>
+    <div className="custom-container">
       <section>
         <SwimmingPoolBanner />
       </section>

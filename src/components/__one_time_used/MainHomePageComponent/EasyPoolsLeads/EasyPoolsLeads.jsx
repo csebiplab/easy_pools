@@ -6,8 +6,8 @@ import "./EasyPoolsLeads.css";
 
 const EasyPoolsLeads = () => {
   return (
-    <div className="bg__color">
-      <div className="full__section_l_p pr-3 md:pr-0 py-[25px]  md:py-[30px] lg:py-[35px] xl:py-[40px] 2xl:py-[45px] 3xl:py-[50px] 4xl:py-[54px] 5xl:py-[58px]">
+    <div className="">
+      <div className="bg__color full__section_l_p pr-3 md:pr-0 py-[25px]  md:py-[30px] lg:py-[35px] xl:py-[40px] 2xl:py-[45px] 3xl:py-[50px] 4xl:py-[54px] 5xl:py-[58px]">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-[35px] 3xl:gap-[53px] md:mx-0 mx-[35px]">
           <div className="order-2 md:order-1 md:col-span-3">
             <div className="flex justify-center md:justify-start">

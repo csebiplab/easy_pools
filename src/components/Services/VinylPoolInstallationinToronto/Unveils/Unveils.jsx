@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Unveils = () => {
   return (
-    <div className="bg_vinylPool">
-      <div className="container padding__top">
+    <div className="">
+      <div className="bg_vinylPool container padding__top">
         <div className="grid md:grid-cols-7 grid-cols-1 gap-7">
           <div className="md:col-span-3 flex justify-end items-center">
             <div className="">

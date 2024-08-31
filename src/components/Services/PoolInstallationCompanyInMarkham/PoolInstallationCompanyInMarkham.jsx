@@ -21,7 +21,7 @@ import OurApproach from "./OurApproach/OurApproach";
 
 const PoolInstallationCompanyInMarkham = () => {
   return (
-    <div className="bg_poolInstallationCompanyInMarkham">
+    <div className="custom-container bg_poolInstallationCompanyInMarkham">
       <section>
         <PoolInstallationCompanyInMarkhamBanner />
       </section>

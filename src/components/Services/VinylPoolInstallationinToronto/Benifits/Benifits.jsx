@@ -64,8 +64,8 @@ const slideData = [
 
 const Benifits = () => {
   return (
-    <div className="bg_vinylPool">
-      <div className="container ">
+    <div className="">
+      <div className="bg_vinylPool container ">
         <div className="">
           <div className="text-center pb-6">
             <div className="flex justify-center gap-[54px]">
