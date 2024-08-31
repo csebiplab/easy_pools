@@ -11,6 +11,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { projectsHeadingIconText } from "@/utils/projects/heading__text";
 import { reviews } from "@/constants/reviews.constant";
+import { SwiperNavButtons } from "./SwiperSliderButton";
 
 const breakpoints = {
   0: {
@@ -29,7 +30,7 @@ const Review = () => {
       <div className="container padding__all text-center">
         <HeadingIcon text={projectsHeadingIconText.review__IconText} />
         <h3 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-black pt-2 md:pt-4 pb-4 md:pb-9">
-          Here’s what to expect when you hire us as your Pool Installer in
+          Here's what to expect when you hire us as your Pool Installer in
           Toronto.
         </h3>
         <Swiper
