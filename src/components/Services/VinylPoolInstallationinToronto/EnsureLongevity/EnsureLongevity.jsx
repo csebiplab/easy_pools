@@ -97,10 +97,10 @@ const services = [
 
 const EnsureLongevity = () => {
   return (
-    <div className="bg_vinylPool">
-      <div className="!overflow-hidden padding__top">
-        <div className="bg__fiberglassPage">
-          <div className="container">
+    <div className="">
+      <div className="bg_vinylPool container  padding__top">
+        <div className="!overflow-hidden">
+          <div className="">
             <div className="flex flex-col items-center justify-center">
               <div className="flex justify-center lg:justify-normal items-center">
                 <HeadingIcon

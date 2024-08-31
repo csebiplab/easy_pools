@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const AboutUsInVinylPool = () => {
   return (
-    <div className="bg_vinylPool">
-      <div className="full__section_l_p pr-3 md:pr-0 padding__top">
+    <div className="">
+      <div className="bg_vinylPool full__section_l_p pr-3 md:pr-0 padding__top">
         <div className="grid md:grid-cols-6 grid-cols-1 gap-7">
           <div className="order-2 md:col-span-3 flex justify-end items-center md:items-start">
             <div className="">

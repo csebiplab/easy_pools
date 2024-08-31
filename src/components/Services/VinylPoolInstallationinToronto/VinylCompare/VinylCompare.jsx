@@ -109,8 +109,8 @@ const services = [
 
 const VinylCompare = () => {
   return (
-    <div className=" bg_vinylPool">
-      <div className="container padding__top">
+    <div className=" ">
+      <div className="bg_vinylPool container padding__top">
         <div className="!overflow-hidden">
           <div className="flex flex-col items-center">
             <div className="flex justify-center lg:justify-normal items-center">

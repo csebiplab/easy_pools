@@ -90,8 +90,8 @@ const allContents = [
 const Process = () => {
   const [selectImageIndex, setSelectImageIndex] = useState(0);
   return (
-    <div className="bg_vinylPool">
-      <div className="container padding__top">
+    <div className="">
+      <div className="bg_vinylPool container padding__top">
         <div className="flex flex-col justify-center items-center">
           <HeadingIcon text={headingIconText.process__inFiberglassText} />
           <h2 className="text-[28px] md:text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px]  leading-[35px] font-normal text-black text-center pb-[25px]">
