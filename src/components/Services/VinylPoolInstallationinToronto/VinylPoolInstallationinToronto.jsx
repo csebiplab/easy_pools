@@ -22,12 +22,12 @@ import Process from "./Process/Process";
 
 const VinylPoolInstallationinToronto = () => {
   return (
-    <div>
+    <div className="custom-container">
       <section>
         <VinylPoolBanner />
       </section>
 
-      <section>
+      <section >
         <PartnerNRatings classNames={{ bg: "bg_vinylPool" }} />
       </section>
 
