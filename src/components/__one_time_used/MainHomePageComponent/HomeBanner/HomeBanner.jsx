@@ -3,7 +3,7 @@ import "./HomeBanner.css";
 
 const HomeBanner = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center h-auto container py-28">
+    <div className="relative flex flex-col items-center justify-center h-screen lg:h-auto lg:py-28 container">
       <div className="text-center max-w-lg px-4">
         <h1 className="text-white text-[27px] lg:text-[40px] leading-normal lg:leading-[1.2]">
           Swimming Pool Installation in Toronto
