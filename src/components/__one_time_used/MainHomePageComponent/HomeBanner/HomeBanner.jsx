@@ -3,8 +3,8 @@ import "./HomeBanner.css";
 
 const HomeBanner = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center h-auto lg:py-28 container">
-      <div className="text-center max-w-lg px-4 py-20 lg:py-0">
+    <div className="relative flex flex-col items-center justify-center h-screen lg:h-auto lg:py-28 container">
+      <div className="text-center max-w-lg px-4">
         <h1 className="text-white text-[27px] lg:text-[40px] leading-normal lg:leading-[1.2]">
           Swimming Pool Installation in Toronto
         </h1>
@@ -33,15 +33,15 @@ const HomeBanner = () => {
         </a>
       </div>
       <Image
-        src="/assets/images/home_banner.webp"
+        src="/assets/images/home_banner.webp" // Use optimized and smaller image for mobile
         layout="fill"
         objectFit="cover"
         priority={false} // Remove priority if not crucial
         alt="Banner Image"
         className="z-[-1]" // Push image behind the content
         sizes="(max-width: 768px) 100vw, 100vw"
-        quality={75} // Adjust the quality to reduce the image size
-        loading="eager" // This could be changed to "lazy" if testing shows improvement
+        quality={70} // Further reduce the image quality to reduce size
+        loading="lazy" // Load the image lazily to prevent render blocking
       />
     </div>
   );
