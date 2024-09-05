@@ -19,6 +19,7 @@ import { bHeadingTexts } from "@/utils/bHeadingText";
 import { headingIconText } from "@/utils/heading-text";
 import EasyPoolsLeads from "./EasyPoolsLeads/EasyPoolsLeads";
 import DesignandCustomization from "./DesignandCustomization/DesignandCustomization";
+import Location from "./Location/Location";
 
 const MainHomePageComponent = () => {
   return (
@@ -100,6 +101,10 @@ const MainHomePageComponent = () => {
 
       <section>
         <LicensedNInsured />
+      </section>
+
+      <section>
+        <Location/>
       </section>
     </div>
   );
