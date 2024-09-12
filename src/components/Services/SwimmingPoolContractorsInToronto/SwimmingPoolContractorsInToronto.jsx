@@ -3,6 +3,9 @@ import "./SwimmingPoolContractorsInToronto.css";
 import SwimmingPoolContractorsInTorontoBanner from "./SwimmingPoolContractorsInTorontoBanner/SwimmingPoolContractorsInTorontoBanner";
 import AboutUs from "./AboutUs/AboutUs";
 import PartnerNRatings from "@/components/__one_time_used/MainHomePageComponent/PartnerNRatings/PartnerNRatings";
+import LuxuryDesigns from "./LuxuryDesigns/LuxuryDesigns";
+import BestSwimming from "./BestSwimming/BestSwimming";
+import TopRatedPoolContractors from "./TopRatedPoolContractors/TopRatedPoolContractors";
 
 const SwimmingPoolContractorsInToronto = () => {
   return (
@@ -19,6 +22,18 @@ const SwimmingPoolContractorsInToronto = () => {
 
       <section>
         <AboutUs/>
+      </section>
+
+      <section>
+        <TopRatedPoolContractors/>
+      </section>
+
+      <section>
+        <LuxuryDesigns/>
+      </section>
+      
+      <section>
+        <BestSwimming/>
       </section>
     </div>
   );

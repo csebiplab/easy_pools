@@ -3,23 +3,23 @@ import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
 import React from "react";
 
-const AboutUs = () => {
+const LuxuryDesigns = () => {
   return (
     <div className="full__section_l_p padding__top pr-3 md:pr-0">
       <div className="grid md:grid-cols-6 grid-cols-1 gap-5 xl:gap-6 3xl:gap-7 5xl:gap-[30px]">
         <div className="order-2 md:col-span-3">
           <div>
             <Image
-              src="/assets/swimming_pool_contractors/aboutUs.png"
-              alt="about us image"
+              src="/assets/swimming_pool_contractors/luxuryDesigns.png"
+              alt="luxuryDesigns image"
               width={836}
-              height={600}
+              height={708}
             />
           </div>
         </div>
         <div className="order-1 md:col-span-3 flex flex-col justify-center items-center md:items-start">
           <div>
-            <HeadingIcon text={headingIconText.aboutUs__IconText} />
+            <HeadingIcon text={headingIconText.luxuryDesigns__IconText} />
           </div>
           <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
           About Our Toronto Swimming Pool Contractors
@@ -34,4 +34,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default LuxuryDesigns;
