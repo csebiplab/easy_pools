@@ -71,4 +71,26 @@ export const headingIconText = {
     faq__IconText : "FAQ",
     whyChooseUs__IconText : "Why Choose US",
 
+    // Swimming Pool Contractors in Toronto page 
+
+    benefits__IconText : "Benefits",
+    topRatedPoolContractors__IconText : "Top-Rated Pool Contractors",
+    luxuryDesigns__IconText : "Luxury Designs",
+    premium__IconText : "Premium",
+    bestSwimmingPoolContractors__IconText : "Best Swimming Pool Contractors",
+    poolComparison__IconText : "Pool Comparison",
+    expertPoolContractors__IconText : "Expert Pool Contractors",
+    costFactors__IconText : "Cost Factors",
+    finestSwimmingPool__IconText : "Finest Swimming Pool",
+    gallery__IconText : "Gallery",
+    experienced__IconText : "Experienced",
+    workingProcess__IconText : "Working Process",
+    revies__IconText : "Review",
+    trustUs__IconText : "Trust Us",
+    considerationsAndLimitations__IconText : "Considerations and Limitations",
+    whyHireUs__IconText : "Why Hire Us",
+    swimmingPoolsContractors__IconText : "Swimming Pools Contractors",
+    faq__IconText : "FAQ",
+    ourServiceAreas__IconText : "Our Service Areas",
+
 }
