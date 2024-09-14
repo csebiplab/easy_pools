@@ -19,14 +19,33 @@ const BestSwimming = () => {
         </div>
         <div className="md:col-span-3 flex flex-col justify-center items-center md:items-start">
           <div>
-            <HeadingIcon text={headingIconText.bestSwimmingPoolContractors__IconText} />
+            <HeadingIcon
+              text={headingIconText.bestSwimmingPoolContractors__IconText}
+            />
           </div>
           <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
-          About Our Toronto Swimming Pool Contractors
+            Best Swimming Pool Contractors in Toronto
           </h2>
           <p className="text-lg font-normal text-center md:text-left text-black pt-[10px]">
-          At Easy Pools, our skilled Toronto swimming pool contractors specialize in designing, building, and maintaining custom pools tailored to your needs. With years of experience, we provide top-quality craftsmanship, ensuring your pool is both beautiful and durable. Whether you're looking for a luxurious backyard retreat or a simple, elegant pool, we deliver personalized solutions and exceptional service.
-          Our Toronto swimming pool contractors work closely with you throughout the entire process, from initial consultation and design to the final touches of construction. We use high-quality materials and innovative techniques to ensure your pool meets the highest standards of safety and performance. Whether it's a complete pool installation, renovation, or routine maintenance, we are committed to exceeding your expectations. At our swimming pool company, we pride ourselves on delivering exceptional results on time and within budget, making your dream pool a reality. Trust our team to transform your outdoor space into a stunning oasis.
+            Easy Pools is known as one of the best swimming pool contractors in
+            Toronto, delivering exceptional craftsmanship and personalized
+            designs. We specialize in creating custom swimming pools that
+            enhance your outdoor living space, offering everything from modern,
+            elegant designs to luxurious backyard retreats. Our experienced team
+            ensures a seamless process, from the initial consultation to the
+            final construction, with a focus on quality, safety, and customer
+            satisfaction. As one of the best swimming pool contractors in
+            Toronto, our swimming pool company is dedicated to providing
+            unparalleled service and results. Our team combines expertise with
+            creativity to design and build pools that perfectly match your
+            vision and lifestyle. We use top-quality materials and the latest
+            technology to ensure durability and efficiency. From the initial
+            design phase to the final touches, we work closely with you to
+            ensure every detail meets your standards. With our commitment to
+            excellence, we guarantee a stunning and functional pool that
+            enhances your outdoor experience and adds value to your home. Trust
+            us to provide expert advice, innovative solutions, and a pool that
+            exceeds your expectations, making your dream pool a reality.
           </p>
         </div>
       </div>
