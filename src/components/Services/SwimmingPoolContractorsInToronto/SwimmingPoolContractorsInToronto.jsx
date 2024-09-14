@@ -6,6 +6,8 @@ import PartnerNRatings from "@/components/__one_time_used/MainHomePageComponent/
 import LuxuryDesigns from "./LuxuryDesigns/LuxuryDesigns";
 import BestSwimming from "./BestSwimming/BestSwimming";
 import TopRatedPoolContractors from "./TopRatedPoolContractors/TopRatedPoolContractors";
+import PoolComparison from "./PoolComparison/PoolComparison";
+import CostFactors from "./CostFactors/CostFactors";
 
 const SwimmingPoolContractorsInToronto = () => {
   return (
@@ -34,6 +36,14 @@ const SwimmingPoolContractorsInToronto = () => {
       
       <section>
         <BestSwimming/>
+      </section>
+
+      <section>
+        <PoolComparison/>
+      </section>
+
+      <section>
+        <CostFactors/>
       </section>
     </div>
   );
