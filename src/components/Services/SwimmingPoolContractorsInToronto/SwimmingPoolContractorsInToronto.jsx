@@ -8,6 +8,10 @@ import BestSwimming from "./BestSwimming/BestSwimming";
 import TopRatedPoolContractors from "./TopRatedPoolContractors/TopRatedPoolContractors";
 import PoolComparison from "./PoolComparison/PoolComparison";
 import CostFactors from "./CostFactors/CostFactors";
+import Experienced from "./Experienced/Experienced";
+import FinestSwimmingPool from "./FinestSwimmingPool/FinestSwimmingPool";
+import TrustUs from "./TrustUs/TrustUs";
+import Expert from "./Expert/Expert";
 
 const SwimmingPoolContractorsInToronto = () => {
   return (
@@ -39,11 +43,27 @@ const SwimmingPoolContractorsInToronto = () => {
       </section>
 
       <section>
+        <TrustUs/>
+      </section>
+
+      <section>
         <PoolComparison/>
       </section>
 
       <section>
+        <Expert/>
+      </section>
+      
+      <section>
         <CostFactors/>
+      </section>
+
+      <section>
+        <FinestSwimmingPool/>
+      </section>
+
+      <section>
+        <Experienced/>
       </section>
     </div>
   );
