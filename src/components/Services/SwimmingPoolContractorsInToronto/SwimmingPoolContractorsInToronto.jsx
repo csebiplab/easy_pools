@@ -17,6 +17,13 @@ import { bHeadingTexts } from "@/utils/bHeadingText";
 import OurServiceAreas from "@/components/__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import { headingIconText } from "@/utils/heading-text";
 import Faq from "./Faq/Faq";
+import Benefits from "./Benefits/Benefits";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
+import WorkingProcess from "./WorkingProcess/WorkingProcess";
+import ConsiderationsAndLimitations from "./ConsiderationsAndLimitations/ConsiderationsAndLimitations";
+import HireUs from "./HireUs/HireUs";
+import SwimmingPoolsContractors from "./SwimmingPoolsContractors/SwimmingPoolsContractors";
+import Premium from "./Premium/Premium";
 
 const SwimmingPoolContractorsInToronto = () => {
   return (
@@ -36,11 +43,19 @@ const SwimmingPoolContractorsInToronto = () => {
       </section>
 
       <section>
+        <Benefits/>
+      </section>
+
+      <section>
         <TopRatedPoolContractors/>
       </section>
 
       <section>
         <LuxuryDesigns/>
+      </section>
+
+      <section>
+        <Premium/>
       </section>
       
       <section>
@@ -61,6 +76,18 @@ const SwimmingPoolContractorsInToronto = () => {
       </section>
 
       <section>
+        <ConsiderationsAndLimitations/>
+      </section>
+
+      <section>
+        <HireUs/>
+      </section>
+
+      <section>
+        <SwimmingPoolsContractors/>
+      </section>
+
+      <section>
         <PoolComparison/>
       </section>
 
@@ -77,7 +104,15 @@ const SwimmingPoolContractorsInToronto = () => {
       </section>
 
       <section>
+        <ProjectGallery/>
+      </section>
+
+      <section>
         <Experienced/>
+      </section>
+
+      <section>
+        <WorkingProcess/>
       </section>
 
       <section>
