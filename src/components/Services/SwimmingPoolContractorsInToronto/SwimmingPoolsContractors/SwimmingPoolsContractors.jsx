@@ -7,7 +7,7 @@ import "./SwimmingPoolsContractors.css";
 
 const SwimmingPoolsContractors = () => {
   return (
-    <div className="full__section_r_p pl-3 md:pl-0">
+    <div className="full__section_r_p pl-3 md:pl-0 padding__top">
       <div className="grid md:grid-cols-6 grid-cols-1 gap-5 xl:gap-6 3xl:gap-7 5xl:gap-[30px]">
         <div className="md:col-span-3">
           <div>
@@ -21,23 +21,16 @@ const SwimmingPoolsContractors = () => {
         </div>
         <div className="md:col-span-3 flex flex-col justify-center items-center md:items-start">
           <div>
-            <HeadingIcon text={headingIconText.whyChooseUs__IconText} />
+            <HeadingIcon text={headingIconText.swimmingPoolsContractors__IconText} />
           </div>
           <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center md:text-left ">
-            Choose the Right Pool Installation Company in Markham
+          Start With Our Toronto Swimming Pools Contractors
           </h2>
           <p className="text-lg font-normal text-center md:text-left text-black pt-[14px]">
-            Choosing the right pool installers in Markham is essential for
-            ensuring a smooth and successful project. Look for experienced
-            professionals with a solid reputation for quality workmanship and
-            excellent customer service. Check for certifications, licenses, and
-            insurance to ensure compliance with local regulations and industry
-            standards. Reading reviews and asking for referrals from friends or
-            family can also help you find trustworthy pool installers who
-            deliver exceptional results. By doing your research and selecting
-            reputable professionals, you can turn your dream of a beautiful
-            backyard oasis into a reality. Choose Easy Pools Markham for a
-            stress-free and seamless pool installation experience.
+          Begin your journey to a stunning backyard oasis with Easy Pools, your premier Toronto swimming pool contractor. Our team of experts specializes in crafting exceptional swimming pools tailored to your vision and lifestyle. Whether you're interested in fiberglass, concrete, ICF, infinity, or saltwater pools, we provide top-notch design, construction, and maintenance services to ensure your project is executed with precision and excellence.
+          </p>
+          <p className="text-lg font-normal text-center md:text-left text-black">
+          Starting with us means benefiting from our extensive experience, high-quality materials, and client-focused approach. We handle every step of the process, from initial consultation and custom design to seamless installation and ongoing support. Let our swimming pool contractors transform your outdoor space into a luxurious retreat with our trusted expertise and commitment to quality. Start with us today and experience the difference of working with Toronto's finest pool contractors.
           </p>
           <a href="tel:+1(647) 449 9512">
             <button className="btn_bg text-white flex items-center gap-2 py-1 px-8 text-base font-bold my-5">
@@ -60,7 +53,7 @@ const SwimmingPoolsContractors = () => {
           <h5 className="text-[25px] lg:text-[30px] font-semibold text-[#0C1C3C]">
             or Call Us:{" "}
             <a className="text-[#7BB344] font-bold" href="tel:+1(647) 449 9512">
-              +1(647) 449 9512
+            +1(647) 449 9512
             </a>
           </h5>
         </div>

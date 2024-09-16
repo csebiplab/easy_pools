@@ -94,7 +94,7 @@ const Benefits = () => {
             <SwiperSlide key={index} className={`px-[30px] md:px-0 !h-auto !md:h-full`}>
               <div className="w-full !h-full  card-sd bg-primary">
                 <div className="text-center py-3 md:px-2 px-1">
-                  <p className="text-[25px] font-bold py-1 md:py-2 text-center text-balck">
+                  <p className="text-[25px] 5xl:text-[28px] font-bold py-1 md:py-2 text-center text-balck">
                     {slideInfo?.title}
                   </p>
                   <p className="text-lg font-normal md:px-1 text-center text-black">

@@ -56,34 +56,29 @@ const breakpoints = {
 
 const services = [
   {
-    img: "/assets/swimmingPool/ip1.png",
+    img: "/assets/swimming_pool_contractors/workingProcess/workingProcess1.png",
     title: "Initial Consultation",
-    para: "We begin by scheduling a consultation with our clients to discuss their vision, and budget for their swimming pool. During this meeting, we also conduct a site assessment to determine the best location for the pool and identify any potential challenges.",
+    para: "Discuss Your Vision: We begin with a detailed consultation to understand your needs, preferences, and budget. Our experts will discuss various pool types, designs, and features to find the perfect match for your outdoor space. Site Assessment: Our team visits your property to assess the site, taking into account factors such as space, soil conditions, and access.",
   },
   {
-    img: "/assets/swimmingPool/ip2.png",
+    img: "/assets/swimming_pool_contractors/workingProcess/workingProcess2.png",
     title: "Design and Planning",
-    para: "Once we have a clear understanding of the client's requirements, our team of experts works closely with them to create a customized design plan. This includes selecting the size, shape, and features of the pool, as well as any additional amenities.",
+    para: "Custom Design: Based on your input and site assessment, we create a custom pool design that fits your vision and maximizes your space. Detailed Proposal: We provide a comprehensive proposal that outlines the project scope, timeline, and cost, ensuring transparency and clarity before we proceed.",
   },
   {
-    img: "/assets/swimmingPool/ip3.png",
+    img: "/assets/swimming_pool_contractors/workingProcess/workingProcess3.png",
     title: "Permitting & Approvals",
-    para: "Before any construction begins, we handle all necessary permits and approvals to ensure compliance with local building codes and regulations. This step helps to streamline the installation process and prevent any delays or complications down the line.",
+    para: "Obtain Permits: We handle all permits and approvals required for pool construction in Toronto, ensuring compliance with local regulations and codes",
   },
   {
-    img: "/assets/swimmingPool/ip4.png",
+    img: "/assets/swimming_pool_contractors/workingProcess/workingProcess4.png",
     title: "Construction & Install",
-    para: "Once the site is prepared, we begin the construction process according to the approved design plan. This includes installing the pool shell, plumbing, filtration system, and any additional features or accessories."
+    para: "Excavation and Preparation: Our team prepares the site by excavating and setting up the groundwork for your pool. Pool Construction: Depending on the type of pool, we install fiberglass, concrete, or ICF structures. This phase also includes plumbing, electrical work, and any additional Finishing Touches: We complete the project with finishing touches such as tiling, decking."
   },
   {
-    img: "/assets/swimmingPool/ip5.png",
-    title: "Finishing Touches",
-    para: "With the main construction complete, we focus on adding the finishing touches to the pool and its surroundings. This may include applying finishes to the pool surface, installing decking and coping, landscaping the surrounding",
-  },
-  {
-    img: "/assets/swimmingPool/ip6.png",
+    img: "/assets/swimming_pool_contractors/workingProcess/workingProcess5.png",
     title: "Final Inspection",
-    para: "Before handing over the completed pool to the client, we conduct a thorough inspection to ensure that everything meets our high standards of quality and safety. Once satisfied, we provide the client with a comprehensive orientation to familiarize .",
+    para: "Quality Check: We conduct a thorough inspection to ensure everything is installed to our high standards and meets your expectations. Client Walkthrough: We walk you through the finished pool, explaining its features, operation, and maintenance requirements.",
   }
 ];
 
@@ -96,11 +91,11 @@ const WorkingProcess = () => {
             <div className="flex flex-col items-center justify-center">
               <div className="flex justify-center lg:justify-normal items-center">
                 <HeadingIcon
-                  text={headingIconText.installationProcess__IconText}
+                  text={headingIconText.workingProcess__IconText}
                 />
               </div>
               <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-              Our Vaughan Swimming Pools Installation Process
+              Working Process of Our Toronto Pool Contractors
               </h2>
             </div>
 
@@ -133,10 +128,10 @@ const WorkingProcess = () => {
                     <div className="">
                       <Image
                         src={service.img}
-                        width={37}
-                        height={37}
+                        width={57}
+                        height={57}
                         alt="benifits image"
-                        className="w-[50px] h-[50px] mx-auto p-2 border-2 border-primary-500 rounded-full"
+                        className="w-[57px] h-[57px] mx-auto p-2 border-2 border-primary-500 rounded-full"
                       />
                     </div>
 
@@ -147,12 +142,12 @@ const WorkingProcess = () => {
                     </div>
                     
 
-                    <div className="mx-auto w-[323px] h-[305px] cart px-4 py-[13px]">
+                    <div className="mx-auto w-[323px] h-[393px] cart px-3 py-[13px]">
                       <div className="">
                         <p className="text-black text-2xl font-bold text-center">
                           {service.title}{" "}
                         </p>
-                        <p className="text-black text-lg font-normal text-center">
+                        <p className="text-black text-lg font-normal text-center pt-[5px]">
                           {service.para}
                         </p>
                       </div>

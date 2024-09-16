@@ -61,13 +61,14 @@ const ProjectGallery = ({ bHeading = "empty" }) => {
   return (
     <div className="bg_swimmingPool">
       <div className="custom-containe padding__top">
-        <div className="">
+        <div className="container">
           <div className="flex flex-col justify-center items-center">
             <HeadingIcon text={headingIconText.gallery_IconText} />
             <div className="pb-5">
               <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-                {bHeading}
+              Past Projects Gallery of swimming pool contractors toronto
               </h2>
+              <p className="text-lg font-normal text-black pt-[10px] text-center">Explore our Gallery to see the stunning transformations we've created for our clients in Toronto. Each project in our gallery highlights our commitment to exceptional craftsmanship and personalized service. Browse through our past installations to inspire your backyard transformation and see how Easy Pools can bring your vision to life.</p>
             </div>
           </div>
         </div>
