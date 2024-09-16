@@ -27,7 +27,7 @@ import Premium from "./Premium/Premium";
 
 const SwimmingPoolContractorsInToronto = () => {
   return (
-    <div className="swimmingPoolContractor__bg">
+    <div className="swimmingPoolContractor__bg custom-container">
       <section>
         <SwimmingPoolContractorsInTorontoBanner />
       </section>
@@ -63,6 +63,34 @@ const SwimmingPoolContractorsInToronto = () => {
       </section>
 
       <section>
+        <PoolComparison/>
+      </section>
+
+      <section>
+        <Expert/>
+      </section>
+
+      <section>
+        <CostFactors/>
+      </section>
+
+      <section>
+        <FinestSwimmingPool/>
+      </section>
+
+      <section>
+        <ProjectGallery/>
+      </section>
+
+      <section>
+        <Experienced/>
+      </section>
+
+      <section>
+        <WorkingProcess/>
+      </section>
+
+      <section>
         <Review
           classNames={{ bg: "bg_poolInstallationCompanyInMarkham" }}
           bHeading={
@@ -85,34 +113,6 @@ const SwimmingPoolContractorsInToronto = () => {
 
       <section>
         <SwimmingPoolsContractors/>
-      </section>
-
-      <section>
-        <PoolComparison/>
-      </section>
-
-      <section>
-        <Expert/>
-      </section>
-      
-      <section>
-        <CostFactors/>
-      </section>
-
-      <section>
-        <FinestSwimmingPool/>
-      </section>
-
-      <section>
-        <ProjectGallery/>
-      </section>
-
-      <section>
-        <Experienced/>
-      </section>
-
-      <section>
-        <WorkingProcess/>
       </section>
 
       <section>

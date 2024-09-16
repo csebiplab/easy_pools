@@ -7,79 +7,67 @@ import { headingIconText } from "@/utils/heading-text";
 
 const usualPool = [
   {
-    title: "High initial cost",
+    title: "Lack of Experience",
   },
   {
-    title: "Maintenance requirements",
+    title: "Poor Communication",
   },
   {
-    title: "Potential for construction delays",
+    title: "Use of Subpar Materials",
   },
   {
-    title: "Risk of structural issues",
+    title: "Inconsistent Quality of Work",
   },
   {
-    title: "Limited seasonal use",
+    title: "Limited Customization Options",
   },
   {
-    title: "High energy consumption",
+    title: "Delays in Project Completion",
   },
   {
-    title: "Water evaporation and loss",
+    title: "Inadequate Permitting and Compliance",
   },
   {
-    title: "Chemical usage for maintenance",
+    title: "Insufficient Post-Installation Support",
   },
   {
-    title: "Safety concerns, especially for children",
+    title: "Hidden Costs and Overcharges",
   },
   {
-    title: "Possible zoning restrictions",
-  },
-  {
-    title: "Environmental impact",
-  },
-  {
-    title: "Noise during construction",
-  },
+    title: "Unreliable Maintenance Services",
+  }
 ];
 const easyPool = [
   {
-    title: "Highly experienced professionals",
+    title: "Extensive Experience",
   },
   {
-    title: "Exceptional craftsmanship",
+    title: "Exceptional Craftsmanship",
   },
   {
-    title: "Innovative design solutions",
+    title: "Clear Communication",
   },
   {
-    title: "Timely project completion",
+    title: "High-Quality Materials",
   },
   {
-    title: "Competitive Pricing",
+    title: "Custom Design Solutions",
   },
   {
-    title: "Excellent customer service",
+    title: "Timely Project Completion",
   },
   {
-    title: "High-quality materials",
+    title: "Comprehensive Services",
   },
   {
-    title: "Customizable pool options",
+    title: "Transparent Pricing",
   },
   {
-    title: "Comprehensive maintenance services",
+    title: "Reliable Maintenance and Support",
   },
   {
-    title: "Eco-friendly construction practices",
-  },
-  {
-    title: "Reliable project management",
-  },
-  {
-    title: "Extensive industry knowledge",
-  },
+    title: "Strong Client Testimonials",
+  } 
 ];
 
 const HireUs = () => {
@@ -95,31 +83,26 @@ const HireUs = () => {
 
               <div>
                 <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
-                  Why Hire Our Pool Contractors in Toronto
+                  Why Choose Our Swimming Pool Contractors
                 </h2>
               </div>
 
               <div>
                 <p className="text-lg font-normal md:text-start text-center py-[14px]">
-                  Are you envisioning a serene oasis in your backyard or a
-                  vibrant centerpiece for your community space? Look no further
-                  than our expert vinyl pool installation contractors in
-                  Toronto. Whether you dream of a luxurious private pool or a
-                  functional public aquatic facility, our contractors specialize
-                  in bringing aquatic visions to life.
+                Choosing Easy Pools means partnering with Toronto's leading pool contractors, renowned for our unparalleled expertise and commitment to excellence. Trust our swimming pool contractors for superior craftsmanship, exceptional customer service, and a pool that transforms your backyard into a luxurious retreat.
                 </p>
               </div>
             </div>
 
             <div className="w-full border-2 my-6 md:my-0 cart1">
               <p className="title-bg text-center 2xl:py-[15px] py-[14px] text-white text-base md:text-lg font-bold">
-                Usual Swimming Pool Contractors
+              Usual Pool Contractors
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]  ">
+              <div className="grid grid-rows-8 3xl:py-[35px] py-[20px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]">
                 {usualPool.map((usual, idx) => (
                   <div
                     key={idx}
-                    className="flex gap-4 items-center mb-[25px]  leading-none  "
+                    className="flex gap-4 items-center mb-[25px] leading-none"
                   >
                     <Image
                       src="/assets/VinylPool/x.png"
@@ -128,7 +111,7 @@ const HireUs = () => {
                       height={20}
                       className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm  text-black font-bold">
+                    <p className="text-sm text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
@@ -137,13 +120,13 @@ const HireUs = () => {
             </div>
             <div className="border-2 my-6 md:my-0 cart2">
               <p className="title-bg2 text-center 2xl:py-[15px] py-[14px] text-white text-base md:text-lg font-bold">
-                Our Swimming Pool Contractors
+              Easy Pools
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]  ">
+              <div className="grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]">
                 {easyPool.map((usual, idx) => (
                   <div
                     key={idx}
-                    className="flex  gap-4 items-center mb-[25px]  leading-none  "
+                    className="flex gap-4 items-center mb-[25px] leading-none  "
                   >
                     <Image
                       src="/assets/VinylPool/r.png"
@@ -152,7 +135,7 @@ const HireUs = () => {
                       height={20}
                       className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm  text-black font-bold">
+                    <p className="text-sm text-black font-bold">
                       {usual.title}
                     </p>
                   </div>

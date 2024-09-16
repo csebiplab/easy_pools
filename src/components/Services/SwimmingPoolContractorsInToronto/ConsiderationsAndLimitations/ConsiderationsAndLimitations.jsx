@@ -15,16 +15,14 @@ import "swiper/css/virtual";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
-import vc1 from "../../../../../public/assets/VinylPool/vc1.png";
-import vc2 from "../../../../../public/assets/VinylPool/vc2.png";
-import vc3 from "../../../../../public/assets/VinylPool/vc3.png";
-import vc4 from "../../../../../public/assets/VinylPool/vc4.png";
-import vc5 from "../../../../../public/assets/VinylPool/vc5.png";
-import vc6 from "../../../../../public/assets/VinylPool/vc6.png";
-import vc7 from "../../../../../public/assets/VinylPool/vc7.png";
-import vc8 from "../../../../../public/assets/VinylPool/vc8.png";
-import vc9 from "../../../../../public/assets/VinylPool/vc9.png";
-import vc10 from "../../../../../public/assets/VinylPool/vc10.png";
+import vc1 from "../../../../../public/assets/swimming_pool_contractors/icons/cal1.png";
+import vc2 from "../../../../../public/assets/swimming_pool_contractors/icons/cal2.png";
+import vc3 from "../../../../../public/assets/swimming_pool_contractors/icons/cal3.png";
+import vc4 from "../../../../../public/assets/swimming_pool_contractors/icons/cal4.png";
+import vc5 from "../../../../../public/assets/swimming_pool_contractors/icons/cal5.png";
+import vc6 from "../../../../../public/assets/swimming_pool_contractors/icons/cal6.png";
+import vc7 from "../../../../../public/assets/swimming_pool_contractors/icons/cal7.png";
+import vc8 from "../../../../../public/assets/swimming_pool_contractors/icons/cal8.png";
 import { SwiperNavButtons } from "@/components/__one_time_used/LocationPageComponent/OurProcess/SwiperSliderButton";
 
 const breakpoints = {
@@ -37,74 +35,64 @@ const breakpoints = {
     spaceBetween: 20,
   },
   767: {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 20,
   },
   1024: {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 20,
   },
   1280: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
   },
   1440: {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 20,
   },
 };
 
 const services = [
   {
-    desc: "Vinyl excellence boasts superior resilience, outlasting traditional pool materials.",
-    title: "Unmatched Durability",
+    desc: "Pools can be expensive to install and maintain. Beyond the initial cost, consider ongoing expenses for repairs, chemicals, heating, and insurance. Stick to a realistic budget to avoid overspending.",
+    title: "Budget",
     img: vc1,
   },
   {
-    desc: "Dive into opulence without breaking the bank—vinyl offers affordable elegance.",
-    title: "Budget-Friendly Luxury",
+    desc: "Ensure your yard has enough space for the pool and any required decking or safety features. Zoning laws and property line setbacks may limit where you can place your pool.",
+    title: "Space and Location",
     img: vc2,
   },
   {
-    desc: "Experience limitless design possibilities with vinyl, tailored to suit your unique vision.",
-    title: "Seamless Customization",
+    desc: "Consider whether you'll manage regular cleaning, chemical balancing, and equipment upkeep yourself or hire a service, as this adds time and cost.",
+    title: "Maintenance",
     img: vc3,
   },
   {
-    desc: "Enjoy a smooth and comfortable feel underfoot, enhancing the overall swimming experience.",
-    title: "Comfortable Texture",
+    desc: "In colder climates, pools require heating or closing during winter months. This can add to operational costs. Additionally, consider the impact of weather on pool materials.",
+    title: "Climate",
     img: vc4,
   },
   {
-    desc: "Vinyl pools simplify upkeep, requiring minimal time and resources for long-lasting beauty.",
-    title: "Effortless Maintenance",
+    desc: "Installing safety features like fences, pool covers, and alarms is essential to prevent accidents. Local laws may also require specific safety measures, increasing installation costs.",
+    title: "Safety",
     img: vc5,
   },
   {
-    desc: "Vinyl's vibrant colors resist fading, maintaining a picturesque pool aesthetic over time.",
-    title: "Fade-Resistant",
+    desc: "While pools can increase property value, they may limit the market of potential buyers. Families with young children or those concerned about maintenance might be less interested.",
+    title: "Resale Value",
     img: vc6,
   },
   {
-    desc: "Opt for sustainability with vinyl excellence, a material that aligns with environmental ",
-    title: "Eco-Friendly Choice",
+    desc: "Pool installation can take weeks or even months, causing disruptions to your daily life. Noise, debris, and construction may be inconvenient during this time.",
+    title: "Time and Disruption",
     img: vc7,
   },
   {
-    desc: "Experience optimal water temperature retention, ensuring comfortable swims in any season.",
-    title: "Temperature Control",
+    desc: "Pools consume water and energy. Consider installing energy-efficient equipment or water-saving measures to reduce the environmental footprint.",
+    title: "Environmental Impact",
     img: vc8,
-  },
-  {
-    desc: "Vinyl's flexibility guards against cracks, providing a durable and worry-free pool surface.",
-    title: "Crack-Resistant",
-    img: vc9,
-  },
-  {
-    desc: "Choose vinyl for a swift & efficient pool setup, minimizing disruptions to your outdoor",
-    title: "Quick Installation",
-    img: vc10,
-  },
+  }
 ];
 
 const ConsiderationsAndLimitations = () => {
@@ -114,10 +102,10 @@ const ConsiderationsAndLimitations = () => {
         <div className="!overflow-hidden">
           <div className="flex flex-col items-center">
             <div className="flex justify-center lg:justify-normal items-center">
-              <HeadingIcon text={headingIconText.comparePool__IconText} />
+              <HeadingIcon text={headingIconText.considerationsAndLimitations__IconText} />
             </div>
             <h2 className="text-lg md:text-xl lg:text-2xl xl:text-[26px] 2xl:text-[28px] 3xl:text-3xl 4xl:text-[33px] 5xl:text-4xl font-normal text-center md:text-left text-black pt-[8px] md:pt-[16px] pb-[16px] md:pb-[36px]">
-              How Does Vinyl Compare to Other Pool Materials in Your Catalogue?
+            Considerations and Limitations for Pool Investment
             </h2>
           </div>
 
@@ -139,7 +127,7 @@ const ConsiderationsAndLimitations = () => {
               {services.map((service, index) => (
                 <SwiperSlide
                   key={index}
-                  className="border-4 rounded-[12px] border-secondary-50 !h-auto !md:h-full px-2 py-6 md:py-0"
+                  className="border-4 rounded-[12px] border-secondary !h-auto !md:h-full px-2 py-6 md:py-0"
                 >
                   <div className="mx-auto relative px-2">
                     <div className="py-7">
