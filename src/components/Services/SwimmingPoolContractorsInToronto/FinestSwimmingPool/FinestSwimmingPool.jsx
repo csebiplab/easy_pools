@@ -7,7 +7,7 @@ const FinestSwimmingPool = () => {
   return (
     <div className="full__section_l_p padding__top pr-3 md:pr-0">
       <div className="grid md:grid-cols-6 grid-cols-1 gap-5 xl:gap-6 3xl:gap-7 5xl:gap-[30px]">
-        <div className="order-2 md:col-span-3">
+        <div className="order-1 md:order-2 md:col-span-3">
           <div>
             <Image
               src="/assets/swimming_pool_contractors/finestSwimmingPool.png"
@@ -17,7 +17,7 @@ const FinestSwimmingPool = () => {
             />
           </div>
         </div>
-        <div className="order-1 md:col-span-3 flex flex-col justify-center items-center md:items-start">
+        <div className="order-2 md:order-1 md:col-span-3 flex flex-col justify-center items-center md:items-start">
           <div>
             <HeadingIcon text={headingIconText.finestSwimmingPool__IconText} />
           </div>
