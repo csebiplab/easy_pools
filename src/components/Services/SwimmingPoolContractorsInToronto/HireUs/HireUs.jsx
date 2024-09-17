@@ -111,7 +111,7 @@ const HireUs = () => {
                       height={20}
                       className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm text-black font-bold">
+                    <p className="text-[13px] 2xl:text-sm text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
@@ -135,7 +135,7 @@ const HireUs = () => {
                       height={20}
                       className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm text-black font-bold">
+                    <p className="text-[13px] 2xl:text-sm text-black font-bold">
                       {usual.title}
                     </p>
                   </div>

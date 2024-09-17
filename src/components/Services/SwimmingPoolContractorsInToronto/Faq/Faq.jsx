@@ -52,7 +52,7 @@ const Faq = () => {
       <section className="full__section_l_p">
         <div className="mx-auto">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="order-2 flex justify-end items-center pr-3 md:pr-0">
+            <div className="order-1 md:order-2 flex justify-end items-center pr-3 md:pr-0">
               <Image
                 alt="faq"
                 src="/assets/swimming_pool_contractors/faq.png"
@@ -64,7 +64,7 @@ const Faq = () => {
 
             <div>
               <div>
-                <div className="order-1 flex flex-col items-center md:items-start">
+                <div className="order-2 md:order-1 flex flex-col items-center md:items-start">
                   <HeadingIcon text={headingIconText.faq_IconText} />
 
                   <div>
