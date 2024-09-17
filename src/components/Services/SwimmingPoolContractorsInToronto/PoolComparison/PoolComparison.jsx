@@ -219,41 +219,87 @@ const TABLE_ROWS = [
       </>
     ),
   },
+  // {
+  //   id : 9,
+  //   img : (
+  //     <>
+  //       <p><strong>Best for Budget:</strong></p>
+  //     </>
+  //   ),
+  //   title : (
+  //     <>
+  //       <p>inyl pools offer the lowest <br/> upfront cost.</p>
+  //     </>
+  //   ),
+  //   vinyl: (
+  //     <>
+  //       <p><strong>Best for Quick Installation:</strong> <br/>
+  //       Fiberglass pools can be <br/> installed within a couple of <br/> weeks.</p>
+  //     </>
+  //   ),
+  //   fiberglass: (
+  //     <>
+  //       <p><strong>Best for Customization:</strong> <br/> Concrete and ICF pools <br/> allow for the most design <br/> flexibility.</p>
+  //     </>
+  //   ),
+  //   concrete: (
+  //     <>
+  //       <p><strong>Best for Low Maintenance:</strong> <br/> Fiberglass pools require the <br/> least amount of upkeep.</p>
+  //     </>
+  //   ),
+  //   icf: (
+  //     <>
+  //       <p><strong>Best for Longevity:</strong> <br/> Concrete and ICF pools have <br/> the longest lifespan with <br/> proper maintenance.</p>
+  //     </>
+  //   ),
+  // },
+  
+];
+
+const table_row2 = [
   {
-    id : 9,
-    img : (
-      <>
-        <p><strong>Best for Budget:</strong></p>
-      </>
-    ),
+    id : 1,
     title : (
       <>
-        <p>inyl pools offer the lowest <br/> upfront cost.</p>
+        <p><strong>Best for Budget:</strong> <br/> inyl pools offer the lowest <br/> upfront cost.</p>
       </>
-    ),
-    vinyl: (
+    )
+  },
+  {
+    id : 2, 
+    title: (
       <>
         <p><strong>Best for Quick Installation:</strong> <br/>
         Fiberglass pools can be <br/> installed within a couple of <br/> weeks.</p>
       </>
-    ),
-    fiberglass: (
+    )
+  },
+  {
+    id : 3, 
+    title: (
       <>
         <p><strong>Best for Customization:</strong> <br/> Concrete and ICF pools <br/> allow for the most design <br/> flexibility.</p>
       </>
-    ),
-    concrete: (
+    )
+  },
+  {
+    id : 4, 
+    title: (
       <>
         <p><strong>Best for Low Maintenance:</strong> <br/> Fiberglass pools require the <br/> least amount of upkeep.</p>
       </>
-    ),
-    icf: (
+    )
+  },
+  {
+    id : 5, 
+    title: (
       <>
         <p><strong>Best for Longevity:</strong> <br/> Concrete and ICF pools have <br/> the longest lifespan with <br/> proper maintenance.</p>
       </>
-    ),
+    )
   },
-];
+
+]
 
 const PoolComparison = () => {
   return (
@@ -272,11 +318,11 @@ const PoolComparison = () => {
           <thead>
             <tr>
               {TABLE_HEAD.map((head) => (
-                <th key={head} className="p-4 pt-10 cart__bg">
+                <th key={head} className="p-4 pt-10 border border-[#838383] bg-[#E1FFFE]">
                   <Typography
                     variant="small"
                     color="blue-gray"
-                    className="font-bold leading-none"
+                    className="font-bold leading-none text-lg font-bold text-black "
                   >
                     {head}
                   </Typography>
@@ -288,54 +334,69 @@ const PoolComparison = () => {
             {TABLE_ROWS.map(({ number, img, title, vinyl, fiberglass, concrete, icf }) => {
               return (
                 <tr key={number}>
-                  <td className="p-4 cart__bg ">
+                  <td className="p-4 border border-[#838383] bg-[#E1FFFE]">
                     <Image className="w-[46px] h-[46px] mx-auto" src={img} alt="time" width={46} height={46}/>
                     <Typography
                       variant="small"
                       color="blue-gray"
                       className="font-bold"
                     >
-                      <p className="text-center">{title}</p>
+                      <p className="text-center pt-[10px]">{title}</p>
                     </Typography>
                   </td>
-                  <td className="p-4 cart__bg">
+                  <td className="py-[4px] px-[17px] border border-[#838383] bg-[#E1FFFE]">
                     <Typography
                       variant="small"
-                      className="font-normal text-gray-600"
+                      className="font-normal text-gray-600 text-base 5xl:text-lg text-center font-normal text-black"
                     >
                       {vinyl}
                     </Typography>
                   </td>
-                  <td className="p-4 cart__bg">
+                  <td className="py-[4px] px-[17px]  border border-[#838383] bg-[#E1FFFE]">
                     <Typography
                       variant="small"
-                      className="font-normal text-gray-600"
+                      className="font-normal text-gray-600 text-base 5xl:text-lg text-center font-normal text-black"
                     >
                       {fiberglass}
                     </Typography>
                   </td>
-                  <td className="p-4 cart__bg">
+                  <td className="py-[4px] px-[17px]  border border-[#838383] bg-[#E1FFFE]">
                     <Typography
                       variant="small"
-                      className="font-normal text-gray-600"
+                      className="font-normal text-gray-600 text-base 5xl:text-lg text-center font-normal text-black"
                     >
                       {concrete}
                     </Typography>
                   </td>
-                  <td className="p-4 cart__bg">
+                  <td className="py-[4px] px-[17px]  border border-[#838383] bg-[#E1FFFE]">
                     <Typography
                       variant="small"
-                      className="font-normal text-gray-600"
+                      className="font-normal text-gray-600 text-base 5xl:text-lg text-center font-normal text-black"
                     >
                       {icf}
                     </Typography>
                   </td>
                 </tr>
+                
               );
             })}
           </tbody>
         </table>
       </Card>
+      {/* second div  */}
+      <div className="border border-[#838383] bg-[#E1FFFE]">
+        <p className="text-center text-[25px] font-bold text-black py-[42px]">Summary</p>
+      </div>
+      {/* third div  */}
+      <div className="grid grid-cols-1 md:grid-cols-5">
+        {
+          table_row2?.map((data, index)=>{
+            return <div key={index} className="border border-[#838383] bg-[#E1FFFE] text-center py-[14px] px-[4px] 5xl:px-[8px]">
+              <p className="text-base 5xl:text-lg">{data?.title}</p>
+            </div>
+          })
+        }
+      </div>
     </div>
   );
 };
