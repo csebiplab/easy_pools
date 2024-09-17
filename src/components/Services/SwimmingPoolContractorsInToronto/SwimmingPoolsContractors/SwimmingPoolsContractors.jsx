@@ -50,12 +50,12 @@ const SwimmingPoolsContractors = () => {
             </button>
           </a>
 
-          <h5 className="text-[25px] lg:text-[30px] font-semibold text-[#0C1C3C]">
+          <p className="text-[25px] lg:text-[30px] font-semibold text-[#0C1C3C]">
             or Call Us:{" "}
             <a className="text-[#7BB344] font-bold" href="tel:+1(647) 449 9512">
             +1(647) 449 9512
             </a>
-          </h5>
+          </p>
         </div>
       </div>
     </div>
