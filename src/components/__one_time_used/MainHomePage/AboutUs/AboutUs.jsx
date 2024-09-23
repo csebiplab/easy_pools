@@ -8,7 +8,7 @@ const AboutUs = () => {
         <div className='full__section_r_p pl-3 md:pl-0 padding__top'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[36px]'>
                 <div className='md:col-span-1'>
-                    <Image src="/assets/homePage/AboutUs.png" alt="about Us" width={857} height={632} className='w-full h-[317px] xl:w-[857px] xl:h-[670px] 5xl:w-[857px] 5xl:h-[632px]'/>
+                    <Image src="/assets/homePage/AboutUs.png" alt="about Us" width={857} height={632} className='w-full h-[317px] xl:w-[857px] xl:h-[670px] 5xl:w-[857px] 5xl:h-[530px]'/>
                 </div>
                 <div className='md:col-span-1'>
                     <div className='flex justify-center md:justify-start items-center '>
