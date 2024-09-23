@@ -1,4 +1,5 @@
-import MainHomePageComponent from "@/components/__one_time_used/MainHomePageComponent/MainHomePageComponent";
+import MainHomePage from "@/components/__one_time_used/MainHomePage/MainHomePage";
+// import MainHomePageComponent from "@/components/__one_time_used/MainHomePageComponent/MainHomePageComponent";
 
 
 
@@ -6,7 +7,8 @@ import MainHomePageComponent from "@/components/__one_time_used/MainHomePageComp
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <MainHomePageComponent />
+      {/* <MainHomePageComponent /> */}
+      <MainHomePage/>
     </main>
   );
 }
