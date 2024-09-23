@@ -3,6 +3,8 @@ import AboutUs from './AboutUs/AboutUs';
 import LeadingToronto from './LeadingToronto/LeadingToronto';
 import TrustedPartner from './TrustedPartner/TrustedPartner';
 import DesignCustomization from './DesignCustomization/DesignCustomization';
+import MaterialsEquipment from './MaterialsEquipment/MaterialsEquipment';
+import Specialists from './Specialists/Specialists';
 
 const MainHomePage = () => {
     return (
@@ -18,9 +20,17 @@ const MainHomePage = () => {
             <section>
                 <TrustedPartner/>
             </section>
-            
+
             <section>
                 <DesignCustomization/>
+            </section>
+
+            <section>
+                <MaterialsEquipment/>
+            </section>
+
+            <section>
+                <Specialists/>
             </section>
         </div>
     );
