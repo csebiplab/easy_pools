@@ -16,6 +16,7 @@ import PartnerNRatings from "./PartnerNRatings/PartnerNRatings";
 import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import Review from "./Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
+import PoolComparison from "./PoolComparison/PoolComparison";
 const MainHomePage = () => {
   return (
     <div className="homePage__bg custom-container">
@@ -50,6 +51,10 @@ const MainHomePage = () => {
 
       <section>
         <Specialists />
+      </section>
+
+      <section>
+        <PoolComparison />
       </section>
 
       <section>

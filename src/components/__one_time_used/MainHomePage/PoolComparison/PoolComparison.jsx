@@ -11,7 +11,7 @@ const TABLE_HEAD = [
   "",
   "Vinyl Pools",
   "Fiberglass Pools",
-  "Concrete Pools (Gunite or Shotcrete)",
+  "Concrete Pools",
   "ICF Pools (Insulated Concrete Form)",
 ];
 
@@ -22,22 +22,22 @@ const TABLE_ROWS = [
     title : "Installation Time",
     vinyl: (
       <>
-        <p>Typically quick, around <br/> 1-2 weeks.</p>
+        <p>Moderate (4-8 weeks).</p>
       </>
     ),
     fiberglass: (
       <>
-        <p>Quick installation, <br/> usually within 1-2 <br/> weeks.</p>
+        <p>Quick installation (1-3 <br/> weeks).</p>
       </>
     ),
     concrete: (
       <>
-        <p>Takes the longest to <br/> build, about 3-6 months.</p>
+        <p>Longest (3-6 months).</p>
       </>
     ),
     icf: (
       <>
-        <p>Takes longer than <br/> fiberglass but is quicker <br/> than traditional <br/> concrete pools.</p>
+        <p>Moderate (6-10 weeks).</p>
       </>
     ),
   },
@@ -47,22 +47,22 @@ const TABLE_ROWS = [
     title : "Maintenance",
     vinyl: (
       <>
-        <p>Requires periodic liner <br/> replacement and more <br/> chemical use to prevent <br/> algae growth.</p>
+        <p>To prevent liner tears, <br/> perform regular <br/> maintenance.</p>
       </>
     ),
     fiberglass: (
       <>
-        <p>Very low maintenance <br/> compared to other types. <br/> Requires fewer chemicals <br/> and less frequent cleaning.</p>
+        <p>VThe smooth surface leads <br/> to low maintenance.</p>
       </>
     ),
     concrete: (
       <>
-        <p>Requires the most <br/> maintenance, including <br/> regular resurfacing (every <br/> 10-15 years), and is more <br/> susceptible to algae growth.</p>
+        <p>The porous surface requires <br/> high maintenance, <br/> necessitating frequent <br/> cleaning.</p>
       </>
     ),
     icf: (
       <>
-        <p>Low maintenance with <br/> good thermal insulation <br/> that can reduce heating <br/> costs.</p>
+        <p>Maintenance is low to <br/> moderate; it is energy- <br/> efficient.</p>
       </>
     ),
   },
@@ -72,22 +72,22 @@ const TABLE_ROWS = [
     title : "Durability",
     vinyl: (
       <>
-        <p>Vinyl liners last about <br/> 7-10 years but can be <br/> punctured by sharp <br/> objects or pets.</p>
+        <p>Liners are less durable; <br/> they may need <br/> replacement every 7-10 <br/> years.</p>
       </>
     ),
     fiberglass: (
       <>
-        <p>Extremely durable with <br/> minimal risk of cracks; <br/> resistant to algae.</p>
+        <p>Highly durable and <br/> resistant to algae growth.</p>
       </>
     ),
     concrete: (
       <>
-        <p>Extremely durable, but <br/> prone to cracking over time.</p>
+        <p>Extremely durable and <br/> long-lasting.</p>
       </>
     ),
     icf: (
       <>
-        <p>Very strong and well- <br/> insulated, resistant to <br/> shifting, cracking, or <br/> weather damage.</p>
+        <p>Very durable, with <br/> excellent insulation <br/> properties.</p>
       </>
     ),
   },
@@ -97,220 +97,64 @@ const TABLE_ROWS = [
     title : "Customization",
     vinyl: (
       <>
-        <p>High flexibility in size <br/> and shape.</p>
+        <p>The shape and size are <br/> highly customizable</p>
       </>
     ),
     fiberglass: (
       <>
-        <p>Limited design and size <br/> options as they're pre- <br/> molded.</p>
+        <p>Limited in size and shape <br/> options.</p>
       </>
     ),
     concrete: (
       <>
-        <p>Offers limitless design <br/> flexibility in terms of shape, <br/> size, and features.</p>
+        <p>Concrete pools are fully <br/> customizable in any shape <br/> or size.</p>
       </>
     ),
     icf: (
       <>
-        <p>Highly customizable in <br/> shape and size, similar <br/> to concrete pools.</p>
+        <p>Customization is <br/> available, but it comes <br/> with certain design <br/> limitations.</p>
       </>
     ),
   },
   {
     id : 5,
-    img : "/assets/swimming_pool_contractors/poolComparison/aesthetic.png",
-    title : "Aesthetic Appeal",
-    vinyl: (
-      <>
-        <p>Liners are available in <br/> various patterns, but <br/> they tend to fade over <br/> time.</p>
-      </>
-    ),
-    fiberglass: (
-      <>
-        <p>Modern, sleek look; fewer <br/> customization options for <br/> features like steps and <br/> benches.</p>
-      </>
-    ),
-    concrete: (
-      <>
-        <p>High-end custom finishes, <br/> including plaster, pebble, or <br/> tile.</p>
-      </>
-    ),
-    icf: (
-      <>
-        <p>Can be finished with <br/> vinyl or concrete-like <br/> surfaces, offering <br/> flexibility in design.</p>
-      </>
-    ),
-  },
-  {
-    id : 6,
-    img : "/assets/swimming_pool_contractors/poolComparison/comfort.png",
-    title : "Comfort",
-    vinyl: (
-      <>
-        <p>Smooth surface, gentle <br/> on the skin.</p>
-      </>
-    ),
-    fiberglass: (
-      <>
-        <p>Smooth, non-porous <br/> surface that feels good to <br/> the touch.</p>
-      </>
-    ),
-    concrete: (
-      <>
-        <p>Rough surface, which can <br/> be uncomfortable to walk <br/> on.</p>
-      </>
-    ),
-    icf: (
-      <>
-        <p>Smooth surface <br/> depending on the finish.</p>
-      </>
-    ),
-  },
-  {
-    id : 7,
-    img : "/assets/swimming_pool_contractors/poolComparison/lifespan.png",
-    title : "Lifespan",
-    vinyl: (
-      <>
-        <p>Vinyl liners need <br/> replacement every 7-10 <br/> years, but the structure <br/> lasts much longer.</p>
-      </>
-    ),
-    fiberglass: (
-      <>
-        <p>Can last 25-30 years or <br/> more with proper care.</p>
-      </>
-    ),
-    concrete: (
-      <>
-        <p>Can last 50+ years with <br/> proper maintenance.</p>
-      </>
-    ),
-    icf: (
-      <>
-        <p>Smooth surface <br/> depending on the finish.</p>
-      </>
-    ),
-  },
-  {
-    id : 8,
     img : "/assets/swimming_pool_contractors/poolComparison/cost.png",
     title : "Cost",
     vinyl: (
       <>
-        <p>Generally the most <br/> affordable option. <br/>
-        <strong>$60,000-$150,000.</strong></p>
+        <p>Vinyl pools have the lowest <br/> initial cost, but liner <br/> replacement costs increase <br/> over time. On average, you <br/> can expect to pay between <br/> <strong>$25,000 and $50,000</strong> for the <br/> installation of a vinyl pool.</p>
       </>
     ),
     fiberglass: (
       <>
-        <p>More expensive upfront <br/> than vinyl but less costly <br/> than concrete. <br/>
-        <strong>$60,000-$120,000.</strong></p>
+        <p>Mid-range pricing, <br/> typically between vinyl <br/> and concrete. The cost of <br/> fibreglass pools in Toronto <br/> typically ranges from <br/> <strong>$30,000 to $70,000.</strong></p>
       </>
     ),
     concrete: (
       <>
-        <p>The most expensive option, <br/> both upfront and long-term. <br/>
-        <strong>$100,000-$300,000.</strong></p>
+        <p>The highest cost is for both <br/> installation and long-term <br/> upkeep. The cost of installing <br/> a concrete pool in Toronto <br/> typically ranges from <strong>$50,000 <br/> to $100,000</strong> or more, <br/> depending on a variety of <br/> factors.</p>
       </>
     ),
     icf: (
       <>
-        <p>Comparable to concrete but <br/> offers savings over time due <br/> to energy efficiency. <br/> <strong>$80,000-$240,000.</strong></p>
+        <p>While the initial cost may be <br/> higher, energy efficiency can <br/> significantly reduce long-term <br/> operating expenses. In <br/> Toronto, the cost of installing <br/> an ICF (Insulated Concrete <br/> Form) pool typically ranges <br/> from <strong>$50,000 to $100,000</strong> or <br/> more, depending on several <br/> factors.</p>
       </>
     ),
   },
-  // {
-  //   id : 9,
-  //   img : (
-  //     <>
-  //       <p><strong>Best for Budget:</strong></p>
-  //     </>
-  //   ),
-  //   title : (
-  //     <>
-  //       <p>inyl pools offer the lowest <br/> upfront cost.</p>
-  //     </>
-  //   ),
-  //   vinyl: (
-  //     <>
-  //       <p><strong>Best for Quick Installation:</strong> <br/>
-  //       Fiberglass pools can be <br/> installed within a couple of <br/> weeks.</p>
-  //     </>
-  //   ),
-  //   fiberglass: (
-  //     <>
-  //       <p><strong>Best for Customization:</strong> <br/> Concrete and ICF pools <br/> allow for the most design <br/> flexibility.</p>
-  //     </>
-  //   ),
-  //   concrete: (
-  //     <>
-  //       <p><strong>Best for Low Maintenance:</strong> <br/> Fiberglass pools require the <br/> least amount of upkeep.</p>
-  //     </>
-  //   ),
-  //   icf: (
-  //     <>
-  //       <p><strong>Best for Longevity:</strong> <br/> Concrete and ICF pools have <br/> the longest lifespan with <br/> proper maintenance.</p>
-  //     </>
-  //   ),
-  // },
   
 ];
 
-const table_row2 = [
-  {
-    id : 1,
-    title : (
-      <>
-        <p><strong>Best for Budget:</strong> <br/> inyl pools offer the lowest <br/> upfront cost.</p>
-      </>
-    )
-  },
-  {
-    id : 2, 
-    title: (
-      <>
-        <p><strong>Best for Quick Installation:</strong> <br/>
-        Fiberglass pools can be <br/> installed within a couple of <br/> weeks.</p>
-      </>
-    )
-  },
-  {
-    id : 3, 
-    title: (
-      <>
-        <p><strong>Best for Customization:</strong> <br/> Concrete and ICF pools <br/> allow for the most design <br/> flexibility.</p>
-      </>
-    )
-  },
-  {
-    id : 4, 
-    title: (
-      <>
-        <p><strong>Best for Low Maintenance:</strong> <br/> Fiberglass pools require the <br/> least amount of upkeep.</p>
-      </>
-    )
-  },
-  {
-    id : 5, 
-    title: (
-      <>
-        <p><strong>Best for Longevity:</strong> <br/> Concrete and ICF pools have <br/> the longest lifespan with <br/> proper maintenance.</p>
-      </>
-    )
-  },
-
-]
 
 const PoolComparison = () => {
   return (
     <div className="container padding__top swimmingPoolContractor__bg">
       <div className="flex flex-col items-center justify-center">
           <HeadingIcon text={headingIconText.poolComparison__IconText} />
-          <h2 className="text-[32px] md:text-[34px] lg:text-4xl xl:text-[38px] 3xl:text-[40px] 5xl:text-[42px] font-bold text-black text-center pt-[5px]">
-            Pool Comparison: Vinyl vs Fiberglass vs Concrete vs ICF
+          <h2 className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-black text-center md:text-left leading-normal pt-[5px]">
+          Fibreglass Pool, Vinyl Pool, Concrete Pool, and ICF Pool Comparisons
           </h2>
           <p className="text-lg font-normal text-black pt-[10px] text-center pb-[15px]">
-          When deciding on a pool material, understanding the differences between vinyl, fiberglass, concrete, and insulated concrete form (ICF) pools can help you make an informed choice. Here's a comparison of the key features:
+          Each pool type offers different advantages based on durability, cost, maintenance, and customization options, allowing you to choose the best fit for your needs and budget.
           </p>
         </div>
       <Card className="h-full w-full overflow-scroll">
@@ -383,20 +227,6 @@ const PoolComparison = () => {
           </tbody>
         </table>
       </Card>
-      {/* second div  */}
-      <div className="border border-[#838383] bg-[#E1FFFE]">
-        <p className="text-center text-[25px] font-bold text-black py-[42px]">Summary</p>
-      </div>
-      {/* third div  */}
-      <div className="grid grid-cols-1 md:grid-cols-5">
-        {
-          table_row2?.map((data, index)=>{
-            return <div key={index} className="border border-[#838383] bg-[#E1FFFE] text-center py-[14px] px-[4px] 5xl:px-[8px]">
-              <p className="text-base 5xl:text-lg">{data?.title}</p>
-            </div>
-          })
-        }
-      </div>
     </div>
   );
 };
