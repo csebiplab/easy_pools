@@ -8,6 +8,7 @@ import MaterialsEquipment from './MaterialsEquipment/MaterialsEquipment';
 import Specialists from './Specialists/Specialists';
 import HireFor from './HireFor/HireFor';
 import WorkingProcess from './WorkingProcess/WorkingProcess';
+import ConsiderationsLimitations from './ConsiderationsLimitations/ConsiderationsLimitations';
 
 const MainHomePage = () => {
     return (
@@ -38,6 +39,10 @@ const MainHomePage = () => {
 
             <section>
                 <WorkingProcess/>
+            </section>
+
+            <section>
+                <ConsiderationsLimitations/>
             </section>
 
             <section>
