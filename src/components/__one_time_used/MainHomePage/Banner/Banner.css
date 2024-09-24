@@ -1,0 +1,12 @@
+.banner__bg{
+    background-image: url("/assets/homePage/Header.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.btn_bg{
+    border-radius: 50px;
+    background: #049E43;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
