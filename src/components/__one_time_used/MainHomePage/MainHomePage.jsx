@@ -7,6 +7,7 @@ import DesignCustomization from './DesignCustomization/DesignCustomization';
 import MaterialsEquipment from './MaterialsEquipment/MaterialsEquipment';
 import Specialists from './Specialists/Specialists';
 import HireFor from './HireFor/HireFor';
+import WorkingProcess from './WorkingProcess/WorkingProcess';
 
 const MainHomePage = () => {
     return (
@@ -33,6 +34,10 @@ const MainHomePage = () => {
 
             <section>
                 <Specialists/>
+            </section>
+
+            <section>
+                <WorkingProcess/>
             </section>
 
             <section>
