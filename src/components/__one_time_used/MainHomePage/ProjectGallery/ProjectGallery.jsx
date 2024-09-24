@@ -11,31 +11,23 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 const galImgs = [
-  "/assets/swimmingPool/pg1.png",
-  "/assets/swimmingPool/pg2.png",
-  "/assets/swimmingPool/pg3.png",
-  "/assets/swimmingPool/pg4.png",
-  "/assets/swimmingPool/pg5.png",
-  "/assets/swimmingPool/pg6.png",
-  "/assets/swimmingPool/pg7.png",
-  "/assets/swimmingPool/pg8.png",
-  "/assets/swimmingPool/pg9.png",
-  "/assets/swimmingPool/pg10.png",
-  "/assets/swimmingPool/pg11.png",
+  "/assets/homePage/gallery/gallery1.png",
+  "/assets/homePage/gallery/gallery2.png",
+  "/assets/homePage/gallery/gallery3.png",
+  "/assets/homePage/gallery/gallery4.png",
+  "/assets/homePage/gallery/gallery5.png",
+  "/assets/homePage/gallery/gallery6.png",
+  "/assets/homePage/gallery/gallery7.png",
 ];
 
 const galImgs2 = [
-  "/assets/swimmingPool/pg11.png",
-  "/assets/swimmingPool/pg10.png",
-  "/assets/swimmingPool/pg9.png",
-  "/assets/swimmingPool/pg8.png",
-  "/assets/swimmingPool/pg7.png",
-  "/assets/swimmingPool/pg6.png",
-  "/assets/swimmingPool/pg5.png",
-  "/assets/swimmingPool/pg4.png",
-  "/assets/swimmingPool/pg3.png",
-  "/assets/swimmingPool/pg2.png",
-  "/assets/swimmingPool/pg1.png",
+  "/assets/homePage/gallery/gallery7.png",
+  "/assets/homePage/gallery/gallery6.png",
+  "/assets/homePage/gallery/gallery5.png",
+  "/assets/homePage/gallery/gallery4.png",
+  "/assets/homePage/gallery/gallery3.png",
+  "/assets/homePage/gallery/gallery2.png",
+  "/assets/homePage/gallery/gallery1.png",
 ];
 
 const ProjectGallery = ({ bHeading = "empty" }) => {
@@ -64,11 +56,10 @@ const ProjectGallery = ({ bHeading = "empty" }) => {
         <div className="container">
           <div className="flex flex-col justify-center items-center">
             <HeadingIcon text={headingIconText.gallery_IconText} />
-            <div className="pb-5">
-              <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center">
-              Past Projects Gallery of swimming pool contractors toronto
+            <div className="">
+              <h2 className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-black text-center leading-normal pt-[5px] pb-[25px]">
+              Swimming Pools Installation Gallery Of Past Projects
               </h2>
-              <p className="text-lg font-normal text-black pt-[10px] text-center">Explore our Gallery to see the stunning transformations we've created for our clients in Toronto. Each project in our gallery highlights our commitment to exceptional craftsmanship and personalized service. Browse through our past installations to inspire your backyard transformation and see how Easy Pools can bring your vision to life.</p>
             </div>
           </div>
         </div>

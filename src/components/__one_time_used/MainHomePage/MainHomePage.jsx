@@ -15,6 +15,7 @@ import { headingIconText } from "@/utils/heading-text";
 import PartnerNRatings from "./PartnerNRatings/PartnerNRatings";
 import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import Review from "./Review/Review";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
 const MainHomePage = () => {
   return (
     <div className="homePage__bg custom-container">
@@ -53,6 +54,10 @@ const MainHomePage = () => {
 
       <section>
         <WorkingProcess />
+      </section>
+
+      <section>
+        <ProjectGallery />
       </section>
 
       <section>
