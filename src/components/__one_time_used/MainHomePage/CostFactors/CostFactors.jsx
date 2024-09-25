@@ -61,7 +61,7 @@ const CostFactors = () => {
       <div className="flex flex-col items-center justify-center">
           <HeadingIcon text={headingIconText.costFactors__IconText} />
           <h2 className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-black text-center md:text-left leading-normal pt-[5px]">
-          Cost Factors for Swimming Pool Installation
+          Cost Factors for Swimming <br className="block md:hidden" /> Pool Installation
           </h2>
           <p className="text-lg font-normal text-black pt-[10px] text-center pb-[15px]">
           Several factors, including the following, affect the cost of swimming pool installation.
@@ -78,7 +78,7 @@ const CostFactors = () => {
                     color="blue-gray"
                     className="font-bold leading-none text-lg font-bold text-black "
                   >
-                    {head}
+                    <h4 className="text-[20px] font-bold text-black">{head}</h4>
                   </Typography>
                 </th>
               ))}

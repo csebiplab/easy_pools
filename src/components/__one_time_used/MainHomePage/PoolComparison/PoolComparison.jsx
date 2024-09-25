@@ -168,7 +168,7 @@ const PoolComparison = () => {
                     color="blue-gray"
                     className="font-bold leading-none text-lg font-bold text-black "
                   >
-                    {head}
+                    <h3 className="text-[20px] font-bold text-black">{head}</h3>
                   </Typography>
                 </th>
               ))}
@@ -185,7 +185,7 @@ const PoolComparison = () => {
                       color="blue-gray"
                       className="font-bold"
                     >
-                      <p className="text-center pt-[10px]">{title}</p>
+                      <h4 className="text-center pt-[10px] text-lg font-bold text-black">{title}</h4>
                     </Typography>
                   </td>
                   <td className="py-[4px] px-[17px] border border-[#838383] bg-[#E1FFFE]">

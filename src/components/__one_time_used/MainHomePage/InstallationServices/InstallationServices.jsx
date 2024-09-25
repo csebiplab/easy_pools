@@ -50,7 +50,7 @@ const InstallationServices = () => {
             {
                 installationServicesData?.map((data)=>{
                     return <div key={data.id} className="Services_cart__bg">
-                        <Image src={data.img} alt="services image" width={326} height={140} className="rounded-t-[9px]"/>
+                        <Image src={data.img} alt="services image" width={326} height={140} className="rounded-t-[9px] w-full h-[140px]"/>
                         <div className=" py-[16px] 5xl:py-[20px] px-[18px] 5xl:px-[22px]">
                         <p className="text-[20px] xl:text-[22px] 5xl:text-[24px] font-bold text-center leading-normal text-black pb-[9px]">{data.title}</p>
                         <p className="text-base 5xl:text-lg font-normal text-center leading-[28px[ text-balck text-center">{data.desc}</p>

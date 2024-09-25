@@ -21,6 +21,7 @@ import CostFactors from "./CostFactors/CostFactors";
 import InstallationServices from "./InstallationServices/InstallationServices";
 import Faq from "./Faq/Faq";
 import JoinWithUs from "./JoinWithUs/JoinWithUs";
+import Benefits from "./Benefits/Benefits";
 const MainHomePage = () => {
   return (
     <div className="homePage__bg custom-container">
@@ -75,6 +76,10 @@ const MainHomePage = () => {
 
       <section>
         <ConsiderationsLimitations />
+      </section>
+
+      <section>
+        <Benefits />
       </section>
 
       <section>

@@ -10,14 +10,14 @@ const JoinWithUs = () => {
     <div className="full__section_l_p pr-3 md:pr-0 padding__top">
       <div className="grid grid-cols-1 md:grid-cols-5">
         <div className="md:col-span-2 z-30">
-          <div className="flex flex-col items-center justify-start join_cart_bg py-[25px] 5xl:py-[37px] px-[33px] mt-[25px] -mr-[80px]">
+          <div className="flex flex-col items-center justify-start join_cart_bg py-[10px] md:py-[20px] 5xl:py-[37px] px-[12px] md:px-[20px] 5xl:px-[33px] mt-[25px] -mr-0 md:-mr-[80px]">
             <div className="w-full flex justify-start">
               <HeadingIcon text={headingIconText.joinWithUs__IconText} />
             </div>
-            <h2 className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-black text-center md:text-left leading-normal pt-[5px]">
+            <h2 className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-black text-left leading-normal pt-[5px]">
               Ready to Start Your Swimming Pool Installation With Us?
             </h2>
-            <p className="text-lg font-normal text-black text-center md:text-left pt-[10px]">
+            <p className="text-lg font-normal text-black text-left pt-[10px]">
               At Easy Pools, our pool contractors specialize in transforming
               your backyard into a personal paradise. From custom-designed pools
               to seamless installations, our experienced contractors ensure that
@@ -25,15 +25,15 @@ const JoinWithUs = () => {
               vision. Whether looking for a luxurious oasis or a simple, elegant
               design, we're here to ready your dream pool.
             </p>
-            <p className="text-lg font-normal text-black text-center md:text-left">
+            <p className="text-lg font-normal text-black text-left">
               Start your pool service with Easy Pools, your trusted partner for
               swimming pool installation in Toronto. Our team of expert
               contractors ensures a hassle-free experience. From concept to
               completion, our contractors guarantee a swift and stress-free
               process, making your aquatic oasis a reality.
             </p>
-            <div className="w-full flex justify-start items-center gap-[33px] pt-[20px] 5xl:pt-[25px]">
-              <button className=" text-base 5xl:text-lg font-bold py-[6px] px-[20px] xl:py-[12px] xl:px-[25px] 5xl:py-[18px] 5xl:px-[31px] text-white leading-normal btn_bg">
+            <div className="w-full flex justify-start items-center gap-[25px] md:gap-[33px] pt-[20px] 5xl:pt-[25px]">
+              <button className="text-base 5xl:text-lg font-bold py-[6px] px-[20px] xl:py-[12px] xl:px-[25px] 5xl:py-[18px] 5xl:px-[31px] text-white leading-normal btn_bg">
                 <Link className="flex items-center gap-[5px] text-white" href="tel: 647-931-0164">
                   Get an Estimate{" "}
                   <svg
@@ -50,8 +50,8 @@ const JoinWithUs = () => {
                   </svg>
                 </Link>
               </button>
-              <p className="text-lg font-bold text-secondary">or</p>
-              <p className="text-lg font-bold text-secondary"><Link className="text-secondary" href="tel : 647-931-0164">Call Us: 647-931-0164</Link></p>
+              <p className="text-base 5xl:text-lg font-bold text-secondary">or</p>
+              <p className="text-base 5xl:text-lg font-bold text-secondary"><Link className="text-secondary" href="tel : 647-931-0164">Call Us: 647-931-0164</Link></p>
             </div>
           </div>
         </div>
