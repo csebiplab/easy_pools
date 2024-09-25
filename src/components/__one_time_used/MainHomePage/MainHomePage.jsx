@@ -20,6 +20,7 @@ import PoolComparison from "./PoolComparison/PoolComparison";
 import CostFactors from "./CostFactors/CostFactors";
 import InstallationServices from "./InstallationServices/InstallationServices";
 import Faq from "./Faq/Faq";
+import JoinWithUs from "./JoinWithUs/JoinWithUs";
 const MainHomePage = () => {
   return (
     <div className="homePage__bg custom-container">
@@ -82,6 +83,10 @@ const MainHomePage = () => {
 
       <section>
         <HireFor />
+      </section>
+
+      <section>
+        <JoinWithUs />
       </section>
 
       <section>

@@ -110,6 +110,7 @@ export const headingIconText = {
     costFactors__IconText : "Cost Factors",
     chooseUs__IconText : "Choose Us",
     hireForInstallation__IconText : "Hire For Installation Services",
+    joinWithUs__IconText : "Join With Us",
     faq__IconText : "Frequently Asked Questions (FAQ)",
     review__IconText : "Review",
     ourServiceAreas__IconText : "Our Service Areas",
