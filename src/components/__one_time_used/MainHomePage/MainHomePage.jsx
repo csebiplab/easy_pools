@@ -18,6 +18,7 @@ import Review from "./Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import PoolComparison from "./PoolComparison/PoolComparison";
 import CostFactors from "./CostFactors/CostFactors";
+import InstallationServices from "./InstallationServices/InstallationServices";
 const MainHomePage = () => {
   return (
     <div className="homePage__bg custom-container">
@@ -52,6 +53,10 @@ const MainHomePage = () => {
 
       <section>
         <Specialists />
+      </section>
+
+      <section>
+        <InstallationServices />
       </section>
 
       <section>
