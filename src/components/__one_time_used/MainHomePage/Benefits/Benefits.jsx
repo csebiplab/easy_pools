@@ -1,76 +1,34 @@
 "use client";
 
 import "./Benefits.css";
-
 import Image from "next/image";
-
-import { Navigation, Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/navigation";
-import "swiper/css/scrollbar";
-import "swiper/css/virtual";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
-import vc1 from "../../../../../public/assets/swimming_pool_contractors/icons/cal1.png";
-import vc2 from "../../../../../public/assets/swimming_pool_contractors/icons/cal2.png";
-import vc3 from "../../../../../public/assets/swimming_pool_contractors/icons/cal3.png";
-import vc4 from "../../../../../public/assets/swimming_pool_contractors/icons/cal4.png";
-import vc5 from "../../../../../public/assets/swimming_pool_contractors/icons/cal5.png";
-import vc6 from "../../../../../public/assets/swimming_pool_contractors/icons/cal6.png";
-import vc7 from "../../../../../public/assets/swimming_pool_contractors/icons/cal7.png";
-import vc8 from "../../../../../public/assets/swimming_pool_contractors/icons/cal8.png";
-
-const breakpoints = {
-  0: {
-    slidesPerView: 1,
-    spaceBetween: 30,
-  },
-  640: {
-    slidesPerView: 2,
-    spaceBetween: 20,
-  },
-  767: {
-    slidesPerView: 2,
-    spaceBetween: 20,
-  },
-  1024: {
-    slidesPerView: 2,
-    spaceBetween: 20,
-  },
-  1280: {
-    slidesPerView: 3,
-    spaceBetween: 20,
-  },
-  1440: {
-    slidesPerView: 3,
-    spaceBetween: 20,
-  },
-};
-
-const services = [
+const benefitsData = [
   {
-    desc: "Our pool contractors provide a hassle-free installation process, saving time and effort compared to traditional pool construction methods.",
+    id : 1,
+    img : "/assets/homePage/benefits/benefits1.png",
     title: "Convenience",
-    img: vc1,
+    desc: "Our pool contractors provide a hassle-free installation process, saving time and effort compared to traditional pool construction methods.",
   },
   {
-    desc: "Our pool company frequently saves money on installation and maintenance expenses.",
+    id : 2,
+    img : "/assets/homePage/benefits/benefits2.png",
     title: "Cost-effectiveness",
-    img: vc2,
+    desc: "Our pool company frequently saves money on installation and maintenance expenses.",
   },
   {
-    desc: "Despite the streamlined installation process, Easy Pools builds all projects to last. We use high-quality materials resistant to wear and tear.",
+    id : 3,
+    img : "/assets/homePage/benefits/benefits3.png",
     title: "Durability",
-    img: vc3,
+    desc: "Despite the streamlined installation process, Easy Pools builds all projects to last. We use high-quality materials resistant to wear and tear.",
   },
   {
-    desc: "Our pool services company has various built-in safety features, such as non-slip surfaces, sturdy construction, and secure fencing options. ",
+    id : 4,
+    img : "/assets/homePage/benefits/benefits4.png",
     title: "Safety Features",
-    img: vc4,
+    desc: "Our pool services company has various built-in safety features, such as non-slip surfaces, sturdy construction, and secure fencing options. ",
   },
   
 ];
@@ -87,51 +45,19 @@ const Benefits = () => {
             <h2 className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-black text-center leading-normal pt-[5px]">
             Benefits of Installing <br className="block md:hidden" /> Swimming Pools with Easy <br className="block md:hidden" /> Pools
             </h2>
-            <p className="text-lg font-normal text-center text-black pt-[10px]  pb-[16px] md:pb-[36px]">For your Toronto swimming pools, installing with our pool installer offers several benefits for your Toronto swimming pools:</p>
+            <p className="text-lg font-normal text-center text-black pt-[10px] pb-[50px]">For your Toronto swimming pools, installing with our pool installer offers several benefits for your Toronto swimming pools:</p>
           </div>
 
-          <div className="lg:mt-15 mt-10">
-            <Swiper
-              modules={[Navigation, Autoplay]}
-              breakpoints={breakpoints}
-              loop={true}
-              autoplay={{
-                delay: 3000,
-                pauseOnMouseEnter: false,
-                disableOnInteraction: false,
-                stopOnLastSlide: false,
-              }}
-              speed={3000}
-              allowTouchMove={false}
-              className="!px-5 md:px-0 !overflow-visible"
-            >
-              {services.map((service, index) => (
-                <SwiperSlide
-                  key={index}
-                  className="border-4 rounded-[12px] border-secondary !h-auto !md:h-full px-2 py-6 md:py-0"
-                >
-                  <div className="mx-auto relative px-2 bg__color">
-                    <div className="py-7">
-                      <p className="mt-4 mx-auto text-center text-2xl font-bold">
-                        {service.title}{" "}
-                      </p>
-                      <p className="mx-auto text-center text-sm  xl:text-base 3xl:text-lg font-normal">
-                        {service.desc}{" "}
-                      </p>
-                    </div>
-                    <div className="absolute -top-10 md:-top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <Image
-                        src={service.img}
-                        height={100}
-                        width={100}
-                        className="w-20 h-20 lg:w-[100px] lg:h-[100px] border-4 border-[#049E43] p-2 rounded-full"
-                        alt="Profile"
-                      />
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-[20px] 5xl:gap-[33px]">
+              {
+                benefitsData?.map((data)=>{
+                  return <div key={data.id} className="px-[6px] py-[20px] bg-white border-2 border-secondary rounded-[10px] ">
+                    <Image src={data.img} alt="benefits image" width={44} height={44} className="w-[64px] h-[64px] mx-auto p-2 rounded-full border-2 border-secondary -mt-[55px] bg-white"/>
+                    <p className="text-[24px] font-bold text-center text-gray-700">{data.title}</p>
+                    <p className="text-lg font-normal text-black text-center pt-[9px]">{data.desc}</p>
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                })
+              }
           </div>
         </div>
       </div>
