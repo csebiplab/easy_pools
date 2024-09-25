@@ -84,11 +84,11 @@ const ProjectGallery = ({ bHeading = "empty" }) => {
             {!showAll && (
               <div className="flex justify-center text-center mt-4 px-10">
                 <button
-                  aria-label="Load more"
+                  aria-label="See More"
                   onClick={handleLoadMore}
-                  className="w-2/3 flex items-center justify-center gap-2 text-sm font-bold px-4 py-2 bg-secondary-700 text-white rounded-[20px]"
+                  className="w-2/3 flex items-center justify-center gap-2 text-base font-bold px-4 py-2 bg-secondary-700 text-white rounded-[20px]"
                 >
-                  Load More
+                  See More
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="8"

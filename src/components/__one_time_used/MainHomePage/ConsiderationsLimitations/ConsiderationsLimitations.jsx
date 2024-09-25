@@ -43,7 +43,7 @@ const ConsiderationsLimitations = () => {
             <div className='container padding__top'>
                 <div className='flex flex-col justify-center items-center'>
                     <HeadingIcon text={headingIconText.considerationsLimitations__IconText}/>
-                    <h2 className='text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-black text-center md:text-left leading-normal pt-[5px]'>Considerations & Limitations for Pool Installation</h2>
+                    <h2 className='text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-black text-center md:text-left leading-normal pt-[5px]'>Considerations & Limitations <br className="block md:hidden" /> for Pool Installation</h2>
                     <p className='text-lg font-normal text-black text-center pt-[10px]'>When planning a pool installation, there are several important considerations and potential limitations: Easy Pools provides expert guidance on these factors to ensure a smooth and successful installation.</p>
                 </div>
                 {/* first div  */}

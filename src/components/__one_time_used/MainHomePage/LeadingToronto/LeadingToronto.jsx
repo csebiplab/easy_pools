@@ -7,10 +7,10 @@ const LeadingToronto = () => {
     return (
         <div className='full__section_l_p pr-3 md:pr-0 padding__top'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[36px]'>
-                <div className='order-2 md:col-span-1'>
+                <div className='order-1 md:order-2 md:col-span-1'>
                     <Image src="/assets/homePage/LeadingToronto.png" alt="Leading Toronto" width={857} height={632} className='w-full h-[317px] xl:w-[857px] xl:h-[710px] 5xl:w-[857px] 5xl:h-[650px]'/>
                 </div>
-                <div className='order-1 md:col-span-1'>
+                <div className='order-2 md:order-1 md:col-span-1'>
                     <div className='flex justify-center md:justify-start items-center '>
                         <HeadingIcon text={headingIconText.leadingToronto__IconText}/>
                     </div>

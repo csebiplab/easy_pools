@@ -8,7 +8,7 @@ const MaterialsEquipment = () => {
         <div className='container padding__top'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-[36px]'>
                 <div className='md:col-span-1'>
-                    <Image src="/assets/homePage/MaterialsAndEquipment.png" alt="MaterialsAndEquipment" width={857} height={632} className='w-full h-[317px] xl:w-[857px] xl:h-[710px] 5xl:w-[857px] 5xl:h-[650px]'/>
+                    <Image src="/assets/homePage/MaterialsAndEquipment.png" alt="MaterialsAndEquipment" width={857} height={632} className='w-full h-[417px] xl:w-[857px] xl:h-[710px] 5xl:w-[857px] 5xl:h-[650px]'/>
                 </div>
                 <div className='md:col-span-1'>
                     <div className='flex justify-center md:justify-start items-center '>

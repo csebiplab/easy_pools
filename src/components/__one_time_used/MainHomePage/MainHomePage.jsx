@@ -17,6 +17,11 @@ import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import Review from "./Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import PoolComparison from "./PoolComparison/PoolComparison";
+import CostFactors from "./CostFactors/CostFactors";
+import InstallationServices from "./InstallationServices/InstallationServices";
+import Faq from "./Faq/Faq";
+import JoinWithUs from "./JoinWithUs/JoinWithUs";
+import Benefits from "./Benefits/Benefits";
 const MainHomePage = () => {
   return (
     <div className="homePage__bg custom-container">
@@ -54,6 +59,10 @@ const MainHomePage = () => {
       </section>
 
       <section>
+        <InstallationServices />
+      </section>
+
+      <section>
         <PoolComparison />
       </section>
 
@@ -70,7 +79,23 @@ const MainHomePage = () => {
       </section>
 
       <section>
+        <Benefits />
+      </section>
+
+      <section>
+        <CostFactors />
+      </section>
+
+      <section>
         <HireFor />
+      </section>
+
+      <section>
+        <JoinWithUs />
+      </section>
+
+      <section>
+        <Faq />
       </section>
 
       <section>

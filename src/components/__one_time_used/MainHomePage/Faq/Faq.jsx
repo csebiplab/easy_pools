@@ -7,69 +7,83 @@ import { headingIconText } from "@/utils/heading-text";
 const QAPoolInstallationQuestionsNAns = [
   {
     id: 1,
-    question: "What types of pools do you install?",
+    question: "What is the best type of pool to install?",
     answer:
-      "We specialize in installing a variety of pool types, including vinyl, fiberglass, and concrete pools. Easy Pools also offers custom designs to meet your specific needs.",
+      "If you want a highly customizable, long-lasting pool and are willing to invest more time and money upfront, a concrete pool is the best choice. If you're looking for an affordable and flexible option, vinyl pools provide excellent value. ",
   },
   {
     id: 2,
-    question: "How long does pool installation take?",
+    question: "How long does it take to install a swimming pool?",
     answer:
-      "The installation time varies based on the type of pool and the complexity of the project. Typically, vinyl and fiberglass pools take 1-2 weeks, while concrete pools may take 3-6 months.",
+      "The duration of the installation process depends on a variety of factors, including the type and size of the pool, site preparation requirements, and weather conditions. On average, it takes about 6-8 weeks to install an in-ground ",
   },
   {
     id: 3,
     question:
-      "What is the cost of a new pool?",
+      "What types of pools do Easy Pools install?",
     answer:
-      "Costs depend on factors like pool size, materials, and added features. We offer free consultations to provide an accurate estimate based on your requirements.",
+      "At Easy Pools, we specialize in installing various types of inground pools, including concrete, vinyl, ICF, and fibreglass pools. Our contractors help you choose the best option based on your needs and budget.",
   },
   {
     id: 4,
-    question: "Do you offer pool maintenance services?",
+    question: "What does your pool installation service include?",
     answer:
-      "Yes, Easy Pools provides a range of maintenance services, including regular cleaning, chemical balancing, and equipment checks to ensure your pool stays in top condition.",
+      "Our comprehensive pool installation services include everything: design consultation, site preparation, excavation, installation, and more. We also offer lighting, heating systems, water features, and more.",
   },
   {
     id: 5,
     question:
-      "Can you help with pool repairs and renovations?",
+      "Do I need to obtain a permit to install a pool?",
     answer:
-      "Absolutely. We handle everything from minor repairs to complete pool renovations, including resurfacing, equipment upgrades, and modernizing older pools.",
+      "Yes, a permit is required for pool installations in Toronto. Easy Pools will guide you through the permit application process.",
   },
   {
     id: 6,
     question:
-      "What maintenance is required for different types of pools?",
+      "Can I customize my pool design?",
     answer:
-      "Maintenance needs vary depending on the type of pool. Fiberglass and saltwater pools generally require less frequent maintenance compared to concrete pools. Regular cleaning, checking chemical levels, and occasional professional",
+      "Absolutely! Our contractors work with you to create a customized pool design for your outdoor space. Our contractors tailor the pool to your needs, from shape and size to special features.",
+  },
+  {
+    id: 7,
+    question:
+      "What areas do Easy Pools serve?",
+    answer:
+      "Easy Pools proudly serves Toronto and the surrounding GTA areas, offering top-quality pool installation and renovation services.",
+  },
+  {
+    id: 8,
+    question:
+      "CDo you offer pool renovation or repair services?",
+    answer:
+      "Yes, in addition to installation, Easy Pools also offers pool renovation services. Whether you need to update an older pool or fix damaged parts, our expert team can handle everything for repair.",
   },
 ];
 
 const Faq = () => {
   return (
     <div className="bg_swimmingPool padding__top ">
-      <section className="full__section_l_p">
+      <section className="full__section_r_p pl-3 md:pl-0">
         <div className="mx-auto">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="order-1 md:order-2 flex justify-end items-center pr-3 md:pr-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[27px]">
+            <div className="flex justify-end items-center pr-3 md:pr-0">
               <Image
                 alt="faq"
-                src="/assets/swimming_pool_contractors/faq.png"
-                width={893}
-                height={618}
-                className=""
+                src="/assets/homePage/FAQ.png"
+                width={897}
+                height={801}
+                // className="w-[897px] h-[801px]"
               />
             </div>
 
             <div>
               <div>
-                <div className="order-2 md:order-1 flex flex-col items-center md:items-start">
-                  <HeadingIcon text={headingIconText.faq_IconText} />
+                <div className="flex flex-col items-center md:items-start">
+                  <HeadingIcon text={headingIconText.faq__IconText} />
 
                   <div>
                     <h2 className="text-black text-[32px] md:text-[33px] xl:text-[34px] 2xl:text-[36px] 3xl:text-[38px]4xl:text-[40px] 5xl:text-[42px] font-bold text-center md:text-left">
-                    Some Questions for Choosing the Best Company
+                    Frequently Asked Questions (FAQ): Swimming Pool Installation Services in Toronto
                     </h2>
                   </div>
                 </div>
