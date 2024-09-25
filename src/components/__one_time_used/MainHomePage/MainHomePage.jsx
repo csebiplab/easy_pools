@@ -17,6 +17,7 @@ import OurServiceAreas from "./OurServiceAreas/OurServiceAreas";
 import Review from "./Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import PoolComparison from "./PoolComparison/PoolComparison";
+import CostFactors from "./CostFactors/CostFactors";
 const MainHomePage = () => {
   return (
     <div className="homePage__bg custom-container">
@@ -67,6 +68,10 @@ const MainHomePage = () => {
 
       <section>
         <ConsiderationsLimitations />
+      </section>
+
+      <section>
+        <CostFactors />
       </section>
 
       <section>
