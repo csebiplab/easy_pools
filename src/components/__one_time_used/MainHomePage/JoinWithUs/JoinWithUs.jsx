@@ -10,7 +10,7 @@ const JoinWithUs = () => {
     <div className="full__section_l_p pr-3 md:pr-0 padding__top">
       <div className="grid grid-cols-1 md:grid-cols-5">
         <div className="md:col-span-2 z-30">
-          <div className="flex flex-col items-center justify-start join_cart_bg py-[10px] md:py-[20px] 5xl:py-[37px] px-[12px] md:px-[20px] 5xl:px-[33px] mt-[25px] -mr-0 md:-mr-[80px]">
+          <div className="flex flex-col items-center justify-start join_cart_bg py-[10px] md:py-[20px] 5xl:py-[37px] px-[12px] md:px-[20px] 5xl:px-[33px] mt-[43px] -mr-0 md:-mr-[80px]">
             <div className="w-full flex justify-start">
               <HeadingIcon text={headingIconText.joinWithUs__IconText} />
             </div>
@@ -32,9 +32,9 @@ const JoinWithUs = () => {
               completion, our contractors guarantee a swift and stress-free
               process, making your aquatic oasis a reality.
             </p>
-            <div className="w-full flex justify-start items-center gap-[25px] md:gap-[33px] pt-[20px] 5xl:pt-[25px]">
-              <button className="text-base 5xl:text-lg font-bold py-[6px] px-[20px] xl:py-[12px] xl:px-[25px] 5xl:py-[18px] 5xl:px-[31px] text-white leading-normal btn_bg">
-                <Link className="flex items-center gap-[5px] text-white" href="tel: 647-931-0164">
+            <div className="w-full flex justify-start items-center gap-[10px] md:gap-[33px] pt-[20px] 5xl:pt-[25px]">
+              <button className="text-sm xl:text-base 5xl:text-lg font-bold py-[6px] px-[20px] xl:py-[12px] xl:px-[25px] 5xl:py-[18px] 5xl:px-[31px] text-white leading-normal btn_bg">
+                <Link className="flex items-center gap-[3px] xl:gap-[5px] text-white" href="tel: 647-931-0164">
                   Get an Estimate{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,8 +50,8 @@ const JoinWithUs = () => {
                   </svg>
                 </Link>
               </button>
-              <p className="text-base 5xl:text-lg font-bold text-secondary">or</p>
-              <p className="text-base 5xl:text-lg font-bold text-secondary"><Link className="text-secondary" href="tel : 647-931-0164">Call Us: 647-931-0164</Link></p>
+              <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary">or</p>
+              <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary"><Link className="text-secondary" href="tel : 647-931-0164">Call Us: 647-931-0164</Link></p>
             </div>
           </div>
         </div>

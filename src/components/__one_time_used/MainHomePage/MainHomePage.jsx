@@ -22,6 +22,8 @@ import InstallationServices from "./InstallationServices/InstallationServices";
 import Faq from "./Faq/Faq";
 import JoinWithUs from "./JoinWithUs/JoinWithUs";
 import Benefits from "./Benefits/Benefits";
+import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
+import ContactUs from "./ContactUs/ContactUs";
 const MainHomePage = () => {
   return (
     <div className="homePage__bg custom-container">
@@ -87,6 +89,10 @@ const MainHomePage = () => {
       </section>
 
       <section>
+        <WhyChooseUs />
+      </section>
+
+      <section>
         <HireFor />
       </section>
 
@@ -108,6 +114,10 @@ const MainHomePage = () => {
           sHeading={headingIconText.map__IconTxt}
           bHeading={bHeadingTexts.homePageLocationMap__bHeading}
         />
+      </section>
+
+      <section>
+        <ContactUs/>
       </section>
     </div>
   );
