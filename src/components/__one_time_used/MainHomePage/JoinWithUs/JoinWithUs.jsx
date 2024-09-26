@@ -10,7 +10,7 @@ const JoinWithUs = () => {
     <div className="full__section_l_p pr-3 md:pr-0 padding__top">
       <div className="grid grid-cols-1 md:grid-cols-5">
         <div className="md:col-span-2 z-30">
-          <div className="flex flex-col items-center justify-start join_cart_bg py-[10px] md:py-[20px] 5xl:py-[37px] px-[12px] md:px-[20px] 5xl:px-[33px] mt-[25px] -mr-0 md:-mr-[80px]">
+          <div className="flex flex-col items-center justify-start join_cart_bg py-[10px] md:py-[20px] 5xl:py-[37px] px-[12px] md:px-[20px] 5xl:px-[33px] mt-[43px] -mr-0 md:-mr-[80px]">
             <div className="w-full flex justify-start">
               <HeadingIcon text={headingIconText.joinWithUs__IconText} />
             </div>
