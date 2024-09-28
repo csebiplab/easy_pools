@@ -70,7 +70,7 @@ const CostFactors = () => {
         <table className="w-full min-w-max table-auto text-left">
           <thead>
             <tr>
-              {TABLE_HEAD.map((head, index) => (
+              {TABLE_HEAD?.map((head, index) => (
                 <th key={index} className="p-4 pt-10 border border-[#838383] bg-[#E1FFFE]">
                   <Typography
                     variant="small"
@@ -84,7 +84,7 @@ const CostFactors = () => {
             </tr>
           </thead>
           <tbody>
-            {TABLE_ROWS.map(({ number, poolType, sizeAndShape, materials, features, landscaping, location }) => {
+            {TABLE_ROWS?.map(({ number, poolType, sizeAndShape, materials, features, landscaping, location }) => {
               return (
                 <tr key={number}>
                   <td className="py-[4px] px-[17px] border border-[#838383] bg-[#E1FFFE]">

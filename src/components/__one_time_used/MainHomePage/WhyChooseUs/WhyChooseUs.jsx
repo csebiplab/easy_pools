@@ -102,7 +102,7 @@ const WhyChooseUs = () => {
               Usual Swimming Pool Installers
               </p>
               <div className="grid grid-rows-8 3xl:py-[35px] py-[20px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]">
-                {usualPool.map((usual, index) => (
+                {usualPool?.map((usual, index) => (
                   <>
                   <div
                     key={index}
@@ -131,7 +131,7 @@ const WhyChooseUs = () => {
               Easy Pools Pool Installers
               </p>
               <div className="grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]">
-                {easyPool.map((usual, index) => (
+                {easyPool?.map((usual, index) => (
                   <>
                   <div
                     key={index}

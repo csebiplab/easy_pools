@@ -161,7 +161,7 @@ const PoolComparison = () => {
         <table className="w-full min-w-max table-auto text-left">
           <thead>
             <tr>
-              {TABLE_HEAD.map((head) => (
+              {TABLE_HEAD?.map((head) => (
                 <th key={head} className="p-4 pt-10 border border-[#838383] bg-[#E1FFFE]">
                   <Typography
                     variant="small"
@@ -175,7 +175,7 @@ const PoolComparison = () => {
             </tr>
           </thead>
           <tbody>
-            {TABLE_ROWS.map(({ number, img, title, vinyl, fiberglass, concrete, icf }) => {
+            {TABLE_ROWS?.map(({ number, img, title, vinyl, fiberglass, concrete, icf }) => {
               return (
                 <tr key={number}>
                   <td className="p-4 border border-[#838383] bg-[#E1FFFE]">
