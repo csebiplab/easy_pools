@@ -1,7 +1,6 @@
 "use client"
 import React from "react";
 import "./CostFactors.css";
-import Image from 'next/image';
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
@@ -71,8 +70,8 @@ const CostFactors = () => {
         <table className="w-full min-w-max table-auto text-left">
           <thead>
             <tr>
-              {TABLE_HEAD.map((head) => (
-                <th key={head} className="p-4 pt-10 border border-[#838383] bg-[#E1FFFE]">
+              {TABLE_HEAD.map((head, index) => (
+                <th key={index} className="p-4 pt-10 border border-[#838383] bg-[#E1FFFE]">
                   <Typography
                     variant="small"
                     color="blue-gray"

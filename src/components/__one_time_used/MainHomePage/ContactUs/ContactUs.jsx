@@ -38,7 +38,12 @@ const ContactUs = () => {
                   width={21}
                   height={21}
                 />{" "}
-                <Link className="text-white" href="loaction : 1331 Major Mackenzie dr West, Vaughan">1331 Major Mackenzie dr West, Vaughan</Link>
+                <Link
+                  className="text-white"
+                  href="loaction : 1331 Major Mackenzie dr West, Vaughan"
+                >
+                  1331 Major Mackenzie dr West, Vaughan
+                </Link>
               </p>
               <p className="text-base font-normal text-white leading-normal py-[20px] flex items-center gap-[15px]">
                 {" "}
@@ -48,8 +53,9 @@ const ContactUs = () => {
                   width={21}
                   height={21}
                 />{" "}
-                <Link className="text-white" href="tel : +1(647)449-9512">+1(647)449-9512</Link>
-                
+                <Link className="text-white" href="tel : +1(647)449-9512">
+                  +1(647)449-9512
+                </Link>
               </p>
               <p className="text-base font-normal text-white leading-normal pb-[30px] flex items-center gap-[15px]">
                 {" "}
@@ -59,7 +65,12 @@ const ContactUs = () => {
                   width={21}
                   height={21}
                 />{" "}
-                <Link className="text-white" href="mail : easypools.landscaping@gmail.com">easypools.landscaping@gmail.com</Link>
+                <Link
+                  className="text-white"
+                  href="mail : easypools.landscaping@gmail.com"
+                >
+                  easypools.landscaping@gmail.com
+                </Link>
               </p>
               <div className="flex items-center gap-[37px]">
                 {socialIcons?.map((icon, index) => {
@@ -81,7 +92,7 @@ const ContactUs = () => {
               <p className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-primary leading-normal pb-[30px]">
                 Give Us Feedback
               </p>
-              <form className="">
+              {/* <form className="">
                 <div className="w-full flex justify-between items-center gap-[20px]">
                   <div className="w-1/2">
                     <label
@@ -170,6 +181,108 @@ const ContactUs = () => {
                     </svg>
                   </button>
                 </div>
+              </form> */}
+              <form className="contact-form">
+                <div className="contact-form__row w-full flex justify-between items-center gap-[20px]">
+                  <div className="contact-form__field w-1/2">
+                    <label
+                      className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                      htmlFor="name"
+                    >
+                      Your Name <sup className="text-primary">*</sup>
+                    </label>
+                    <input
+                      className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                      type="text"
+                      id="name"
+                      placeholder="Robot Fox"
+                      required
+                    />
+                  </div>
+                  <div className="contact-form__field w-1/2">
+                    <label
+                      className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                      htmlFor="email"
+                    >
+                      Your Email <sup className="text-primary">*</sup>
+                    </label>
+                    <input
+                      className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                      type="email"
+                      id="email"
+                      placeholder="info.example@gmail.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="contact-form__row w-full flex items-center gap-[20px] py-[25px]">
+                  <div className="contact-form__field w-1/2">
+                    <label
+                      className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                      htmlFor="subject"
+                    >
+                      Subject <sup className="text-primary">*</sup>
+                    </label>
+                    <input
+                      className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                      type="text"
+                      id="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div className="contact-form__field w-1/2">
+                    <label
+                      className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                      htmlFor="phone"
+                    >
+                      Your Phone <sup className="text-primary">*</sup>
+                    </label>
+                    <input
+                      className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                      type="tel"
+                      id="phone"
+                      placeholder="+88 01764912536"
+                      pattern="^\+?\d{1,14}$"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div className="contact-form__field w-full pb-[35px]">
+                  <label
+                    className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                    htmlFor="message"
+                  >
+                    Message <sup className="text-primary">*</sup>
+                  </label>
+                  <textarea
+                    className="contact-form__textarea w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                    id="message"
+                    name="message"
+                    placeholder="Write Message"
+                    required
+                  ></textarea>
+                </div>
+
+                <div className="contact-form__submit flex justify-start pb-[28px] md:pb-0">
+                  <button className="contact-form__button flex items-center gap-[5px] text-lg font-normal py-[7px] px-[33px] bg-primary text-white">
+                    Submit
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="15"
+                      viewBox="0 0 17 15"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.614 2.76096L7.66652 5.26541L1.614 4.48763V2.76096ZM7.66652 9.54319L1.614 12.0476V10.321L7.66652 9.54319ZM0 0.404297V5.84874L12.105 7.4043L0 8.95985V14.4043L16.947 7.4043L0 0.404297Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -190,8 +303,12 @@ const ContactUs = () => {
                 width={21}
                 height={21}
               />{" "}
-              <Link className="text-white" href="loaction : 1331 Major Mackenzie dr West, Vaughan">1331 Major Mackenzie dr West, Vaughan</Link>
-              
+              <Link
+                className="text-white"
+                href="loaction : 1331 Major Mackenzie dr West, Vaughan"
+              >
+                1331 Major Mackenzie dr West, Vaughan
+              </Link>
             </p>
             <p className="text-base font-normal text-white leading-normal py-[20px] flex items-center gap-[15px]">
               {" "}
@@ -201,7 +318,9 @@ const ContactUs = () => {
                 width={21}
                 height={21}
               />{" "}
-              <Link className="text-white" href="tel : +1(647)449-9512">+1(647)449-9512</Link>
+              <Link className="text-white" href="tel : +1(647)449-9512">
+                +1(647)449-9512
+              </Link>
             </p>
             <p className="text-base font-normal text-white leading-normal pb-[30px] flex items-center gap-[15px]">
               {" "}
@@ -211,7 +330,12 @@ const ContactUs = () => {
                 width={21}
                 height={21}
               />{" "}
-              <Link className="text-white" href="mail : easypools.landscaping@gmail.com">easypools.landscaping@gmail.com</Link>
+              <Link
+                className="text-white"
+                href="mail : easypools.landscaping@gmail.com"
+              >
+                easypools.landscaping@gmail.com
+              </Link>
             </p>
             <div className="flex items-center gap-[37px]">
               {socialIcons?.map((icon, index) => {
@@ -233,7 +357,7 @@ const ContactUs = () => {
             <p className="text-[25px] md:text-[27px] lg:text-[29px] xl:text-[32px] 2xl:text-[34px] 3xl:text-[36px] 4xl:text-[38px] 5xl:tex-[40px] font-bold text-primary leading-normal pb-[10px]">
               Give Us Feedback
             </p>
-            <form className="">
+            {/* <form className="">
               <div className="w-full">
                 <label
                   className="text-base 5xl:text-lg font-normal text-primary leading-normal"
@@ -304,6 +428,106 @@ const ContactUs = () => {
               <div className="flex justify-center pb-[28px] md:pb-0">
                 <button className="contact_btn text-white flex items-center gap-[5px] text-lg font-normal py-[7px] px-[33px]">
                   Submit{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.614 2.76096L7.66652 5.26541L1.614 4.48763V2.76096ZM7.66652 9.54319L1.614 12.0476V10.321L7.66652 9.54319ZM0 0.404297V5.84874L12.105 7.4043L0 8.95985V14.4043L16.947 7.4043L0 0.404297Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form> */}
+            <form className="contact-form">
+              <div className="contact-form__field">
+                <label
+                  className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                  htmlFor="name"
+                >
+                  Your Name <sup className="text-primary">*</sup>
+                </label>
+                <input
+                  className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                  type="text"
+                  id="name"
+                  placeholder="Robot Fox"
+                  required
+                />
+              </div>
+
+              <div className="contact-form__field py-[20px]">
+                <label
+                  className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                  htmlFor="email"
+                >
+                  Your Email <sup className="text-primary">*</sup>
+                </label>
+                <input
+                  className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                  type="email"
+                  id="email"
+                  placeholder="info.example@gmail.com"
+                  required
+                />
+              </div>
+
+              <div className="contact-form__field">
+                <label
+                  className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                  htmlFor="subject"
+                >
+                  Subject <sup className="text-primary">*</sup>
+                </label>
+                <input
+                  className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                  type="text"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+
+              <div className="contact-form__field py-[20px]">
+                <label
+                  className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                  htmlFor="phone"
+                >
+                  Your Phone <sup className="text-primary">*</sup>
+                </label>
+                <input
+                  className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                  type="tel"
+                  id="phone"
+                  placeholder="+88 01764912536"
+                  pattern="^\+?\d{1,14}$"
+                  required
+                />
+              </div>
+
+              <div className="contact-form__field pb-[16px]">
+                <label
+                  className="contact-form__label text-base 5xl:text-lg font-normal text-primary leading-normal"
+                  htmlFor="message"
+                >
+                  Message <sup className="text-primary">*</sup>
+                </label>
+                <textarea
+                  className="contact-form__textarea w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
+                  id="message"
+                  name="message"
+                  placeholder="Write Message"
+                  required
+                ></textarea>
+              </div>
+
+              <div className="contact-form__submit flex justify-center pb-[28px] md:pb-0">
+                <button className="contact-form__button flex items-center gap-[5px] text-lg font-normal py-[7px] px-[33px] bg-primary text-white">
+                  Submit
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="17"

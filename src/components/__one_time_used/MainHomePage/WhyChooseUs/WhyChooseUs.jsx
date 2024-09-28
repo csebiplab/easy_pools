@@ -102,10 +102,10 @@ const WhyChooseUs = () => {
               Usual Swimming Pool Installers
               </p>
               <div className="grid grid-rows-8 3xl:py-[35px] py-[20px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]">
-                {usualPool.map((usual, idx) => (
+                {usualPool.map((usual, index) => (
                   <>
                   <div
-                    key={idx}
+                    key={index}
                     className="flex gap-4 items-center leading-none"
                   >
                     <Image
@@ -131,10 +131,10 @@ const WhyChooseUs = () => {
               Easy Pools Pool Installers
               </p>
               <div className="grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-sm xs:text-[9px]">
-                {easyPool.map((usual, idx) => (
+                {easyPool.map((usual, index) => (
                   <>
                   <div
-                    key={idx}
+                    key={index}
                     className="flex gap-4 items-center leading-none  "
                   >
                     <Image
