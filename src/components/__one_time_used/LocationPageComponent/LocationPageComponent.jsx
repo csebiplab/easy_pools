@@ -1,5 +1,5 @@
-import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurServiceAreas";
-import PartnerNRatings from "../MainHomePageComponent/PartnerNRatings/PartnerNRatings";
+// import OurServiceAreas from "../MainHomePageComponent/OurServiceAreas/OurServiceAreas";
+// import PartnerNRatings from "../MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import BestChoice from "./BestChoice/BestChoice";
 import CompanyIntroduction from "./CompanyIntroduction/CompanyIntroduction";
 import FlatPoolInstallation from "./FlatPoolInstallation/FlatPoolInstallation";
@@ -17,6 +17,8 @@ import TopRatedPoolInstallation from "./TopRatedPoolInstallation/TopRatedPoolIns
 import TrustedPartner from "./TrustedPartner/TrustedPartner";
 import { headingIconText } from "@/utils/heading-text";
 import { bHeadingTexts } from "@/utils/bHeadingText";
+import PartnerNRatings from "../MainHomePage/PartnerNRatings/PartnerNRatings";
+import OurServiceAreas from "../MainHomePage/OurServiceAreas/OurServiceAreas";
 
 const LocationPageComponent = () => {
   return (
