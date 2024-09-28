@@ -2,7 +2,6 @@ import React from "react";
 import "./SwimmingPoolContractorsInToronto.css";
 import SwimmingPoolContractorsInTorontoBanner from "./SwimmingPoolContractorsInTorontoBanner/SwimmingPoolContractorsInTorontoBanner";
 import AboutUs from "./AboutUs/AboutUs";
-import PartnerNRatings from "@/components/__one_time_used/MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import LuxuryDesigns from "./LuxuryDesigns/LuxuryDesigns";
 import BestSwimming from "./BestSwimming/BestSwimming";
 import TopRatedPoolContractors from "./TopRatedPoolContractors/TopRatedPoolContractors";
@@ -14,7 +13,6 @@ import TrustUs from "./TrustUs/TrustUs";
 import Expert from "./Expert/Expert";
 import Review from "../SwimingPoolInstallationInVaughan/Review/Review";
 import { bHeadingTexts } from "@/utils/bHeadingText";
-import OurServiceAreas from "@/components/__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import { headingIconText } from "@/utils/heading-text";
 import Faq from "./Faq/Faq";
 import Benefits from "./Benefits/Benefits";
@@ -24,6 +22,8 @@ import ConsiderationsAndLimitations from "./ConsiderationsAndLimitations/Conside
 import HireUs from "./HireUs/HireUs";
 import SwimmingPoolsContractors from "./SwimmingPoolsContractors/SwimmingPoolsContractors";
 import Premium from "./Premium/Premium";
+import PartnerNRatings from "@/components/__one_time_used/MainHomePage/PartnerNRatings/PartnerNRatings";
+import OurServiceAreas from "@/components/__one_time_used/MainHomePage/OurServiceAreas/OurServiceAreas";
 
 const SwimmingPoolContractorsInToronto = () => {
   return (

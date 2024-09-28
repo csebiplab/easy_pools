@@ -10,7 +10,6 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
-// import { SwipButton } from "../BenefitsWithEasyPools/SwipButton";
 
 const breakpoints = {
   0: {
@@ -102,7 +101,6 @@ const InstallationServices = () => {
                 </div>
               </SwiperSlide>
             ))}
-            {/* <SwipButton/> */}
           </Swiper>
         </div>
       </div>

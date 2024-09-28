@@ -1,8 +1,6 @@
 import React from "react";
 import "./VinylPoolInstallationinToronto.css";
 import VinylPoolBanner from "./VinylPoolBanner/VinylPoolBanner";
-import PartnerNRatings from "@/components/__one_time_used/MainHomePageComponent/PartnerNRatings/PartnerNRatings";
-import OurServiceAreas from "@/components/__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import Review from "../SwimingPoolInstallationInVaughan/Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import QA from "./Q&A/Q&A";
@@ -19,6 +17,8 @@ import Benifits from "./Benifits/Benifits";
 import EnsureLongevity from "./EnsureLongevity/EnsureLongevity";
 import HireUs from "./HireUs/HireUs";
 import Process from "./Process/Process";
+import PartnerNRatings from "@/components/__one_time_used/MainHomePage/PartnerNRatings/PartnerNRatings";
+import OurServiceAreas from "@/components/__one_time_used/MainHomePage/OurServiceAreas/OurServiceAreas";
 
 const VinylPoolInstallationinToronto = () => {
   return (
@@ -96,6 +96,7 @@ const VinylPoolInstallationinToronto = () => {
           sHeading={headingIconText.map__IconTxt}
           bHeading={bHeadingTexts.vinylPoolMap__bHeading}
         />
+        
       </section>
     </div>
   );

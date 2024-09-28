@@ -1,6 +1,5 @@
 import "./FiberglassPoolInstallationInToronto.css";
 
-import PartnerNRatings from "../../__one_time_used/MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import AboutUsInFiberglass from "./AboutUsInFiberglass/AboutUsInFiberglass";
 import MeaningFiberglass from "./MeaningFiberglass/MeaningFiberglass";
 import Excelence from "./Excelence/Excelence";
@@ -12,12 +11,14 @@ import CostCalculating from "./CostCalculating/CostCalculating";
 import FlawlessDesign from "./FlawlessDesign/FlawlessDesign";
 import QA from "./QA/QA";
 import WhyChooseEasyPools from "./WhyChooseEasyPools/WhyChooseEasyPools";
-import OurServiceAreas from "../../__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
+// import OurServiceAreas from "../../__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import ProjectGalleryInFiberglass from "./FiberglassProjectGal/FiberglassProjectGal";
 import ReviewsInFiberglass from "./ReviewsInFiberglass/ReviewsInFiberglass";
 import { headingIconText } from "@/utils/heading-text";
 import { bHeadingTexts } from "@/utils/bHeadingText";
 import FiberglassPoolBanner from "./FiberglassPoolBanner/FiberglassPoolBanner";
+import PartnerNRatings from "@/components/__one_time_used/MainHomePage/PartnerNRatings/PartnerNRatings";
+import OurServiceAreas from "@/components/__one_time_used/MainHomePage/OurServiceAreas/OurServiceAreas";
 
 const FiberglassPoolInstallationInToronto = () => {
   return (

@@ -1,13 +1,11 @@
 import React from "react";
 import "./PoolInstallationCompanyInMarkham.css";
 import PoolInstallationCompanyInMarkhamBanner from "./PoolInstallationCompanyInMarkhamBanner/PoolInstallationCompanyInMarkhamBanner";
-import PartnerNRatings from "@/components/__one_time_used/MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import AboutUs from "./AboutUs/AboutUs";
 import Review from "../SwimingPoolInstallationInVaughan/Review/Review";
 import ProjectGallery from "../SwimingPoolInstallationInVaughan/ProjectGallery/ProjectGallery";
 import { bHeadingTexts } from "@/utils/bHeadingText";
 import { headingIconText } from "@/utils/heading-text";
-import OurServiceAreas from "@/components/__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import InstallationAndConstruction from "./InstallationAndConstruction/InstallationAndConstruction";
 import BestPoolDesigner from "./BestPoolDesigner/BestPoolDesigner";
 import HowMuchCost from "./HowMuchCost/HowMuchCost";
@@ -18,6 +16,8 @@ import SkilledContractors from "./SkilledContractors/SkilledContractors";
 import AvoidMistakes from "./AvoidMistakes/AvoidMistakes";
 import Qualities from "./Qualities/Qualities";
 import OurApproach from "./OurApproach/OurApproach";
+import PartnerNRatings from "@/components/__one_time_used/MainHomePage/PartnerNRatings/PartnerNRatings";
+import OurServiceAreas from "@/components/__one_time_used/MainHomePage/OurServiceAreas/OurServiceAreas";
 
 const PoolInstallationCompanyInMarkham = () => {
   return (
@@ -27,7 +27,7 @@ const PoolInstallationCompanyInMarkham = () => {
       </section>
 
       <section>
-        <PartnerNRatings
+        <PartnerNRatings 
           classNames={{ bg: "bg_poolInstallationCompanyInMarkham" }}
         />
       </section>
