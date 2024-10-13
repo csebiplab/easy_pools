@@ -12,7 +12,7 @@ import "swiper/css/grid";
 import "swiper/css/navigation";
 import "swiper/css/virtual";
 import "swiper/css/autoplay";
-import { SwipButton } from "../../../__one_time_used/MainHomePageComponent/BenefitsWithEasyPools/SwipButton";
+import { SwiperButton } from "@/components/__one_time_used/MainHomePage/OurServiceAreas/SwiperButton";
 
 const breakpoints = {
   0: {
@@ -159,7 +159,7 @@ const ReviewsInFiberglass = () => {
             ))}
 
             <div>
-              <SwipButton />
+              <SwiperButton />
             </div>
           </Swiper>
         </div>

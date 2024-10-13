@@ -1,0 +1,24 @@
+/* Hero section */
+.hero__section__markham {
+    height: auto;
+    background-image: url("/assets/swimming_pool_contractors/hero-session.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .hero__right__markham {
+    width: 50%;
+  }
+  
+  .hero__right__markham .hero-main-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .hero_btn {
+    border-radius: 50px;
+    background: #049e43;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
+  }
+  

@@ -9,39 +9,39 @@ export const faqQuestionsNAns = [
         id: 2,
         question: "How long does the installation process take?",
         answer:
-            "Our main office is located in Brooklyn NY. However, we operate in Brooklyn, Queens, Manhattan, Bronx, and Staten Island.",
+            "The duration of the installation process depends on various factors such as the type and size of the pool, site preparation requirements, and weather conditions.",
     },
     {
         id: 3,
         question:
-            "Do you handle all aspects of the installation, including permits and pool inspections?",
+            " Do you handle all aspects of the installation, including permits and pool inspections?",
         answer:
-            "Yes, RH Construction USA Inc. is a fully licensed and insured company. We adhere to all necessary regulations and standards to ensure the safety and satisfaction of our clients.",
+            "Yes, our team takes care of obtaining necessary permits and ensuring that installations comply with local regulations. We also coordinate any required pool inspections in Toronto throughout the process.",
     },
     {
         id: 4,
         question:
-            "Can you customize the design of the pool to suit our preferences and backyard space?",
+            " Can you customize the design of the pool to suit our preferences and backyard space?",
         answer:
-            "Safety is our top priority at RH Construction USA Inc. We have strict safety protocols in place and provide regular training to our staff to ensure compliance with safety regulations and standards.",
+            "Absolutely! We offer customizable options to tailor the pool design according to your preferences, backyard layout, and budget. Our team will work closely with you to create the perfect pool for your needs.",
     },
     {
         id: 5,
         question: "Are your installation technicians licensed and insured?",
         answer:
-            "Yes, we can assist you with obtaining the necessary permits for your construction project. Our team is familiar with the permit process and will work closely with local authorities to ensure all requirements are met.",
+            "Yes, our installation technicians are highly trained, licensed, and insured professionals with extensive experience in pool installation.",
     },
     {
         id: 6,
         question:
-            "What sets your company apart from others offering pool installation services?",
+            " What sets your company apart from others offering pool installation services?",
         answer:
-            "You can contact us by phone, by email, or through the contact form on our website. Our team is available to assist you with any further inquiries or questions you may have.",
+            "We take pride in our commitment to customer satisfaction, attention to detail, and expertise in the industry. With a focus on quality craftsmanship and personalized service, we strive to exceed our client's expectations at every step of the process.",
     },
     {
         id: 7,
-        question: "How can we get started with the pool installation process?",
+        question: "How can we get started with the swimming pool installation process?",
         answer:
-            "You can contact us by phone, by email, or through the contact form on our website. Our team is available to assist you with any further inquiries or questions you may have.",
+            "During the consultation, we'll discuss your requirements, assess your backyard space, and provide you with a personalized quote. From there, we'll work together to bring your dream pool to life.",
     },
 ];

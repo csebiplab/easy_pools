@@ -71,4 +71,48 @@ export const headingIconText = {
     faq__IconText : "FAQ",
     whyChooseUs__IconText : "Why Choose US",
 
+    // Swimming Pool Contractors in Toronto page 
+
+    benefits__IconText : "Benefits",
+    topRatedPoolContractors__IconText : "Top-Rated Pool Contractors",
+    luxuryDesigns__IconText : "Luxury Designs",
+    premium__IconText : "Premium",
+    bestSwimmingPoolContractors__IconText : "Best Swimming Pool Contractors",
+    poolComparison__IconText : "Pool Comparison",
+    expertPoolContractors__IconText : "Expert Pool Contractors",
+    costFactors__IconText : "Cost Factors",
+    finestSwimmingPool__IconText : "Finest Swimming Pool",
+    gallery__IconText : "Gallery",
+    experienced__IconText : "Experienced",
+    workingProcess__IconText : "Working Process",
+    revies__IconText : "Review",
+    trustUs__IconText : "Trust Us",
+    considerationsAndLimitations__IconText : "Considerations and Limitations",
+    whyHireUs__IconText : "Why Hire Us",
+    swimmingPoolsContractors__IconText : "Swimming Pools Contractors",
+    faq__IconText : "FAQ",
+    ourServiceAreas__IconText : "Our Service Areas",
+
+
+    // home page 
+    aboutUs__IconText : "About Us",
+    leadingToronto__IconText : "Leading Toronto Swimming Pool",
+    trustedPartner__IconText : "Trusted Partner",
+    designAndCustomization__IconText : "Design and Customization",
+    materialsAndEquipment__IconText : "Materials and Equipment",
+    specialists__IconText : "Specialists",
+    installationServices__IconText : "Installation Services",
+    poolComparison__IconText : "Pool Comparison",
+    workingProcess__IconText : "Working Process",
+    gallery__IconText : "Gallery",
+    considerationsLimitations__IconText : "Considerations & Limitations",
+    benefits__IconText : "Benefits",
+    costFactors__IconText : "Cost Factors",
+    chooseUs__IconText : "Choose Us",
+    hireForInstallation__IconText : "Hire For Installation Services",
+    joinWithUs__IconText : "Join With Us",
+    faq__IconText : "Frequently Asked Questions (FAQ)",
+    review__IconText : "Review",
+    ourServiceAreas__IconText : "Our Service Areas",
+
 }

@@ -137,8 +137,8 @@ const Footer = () => {
                 <p className="text-white !text-xl mb-5 font-bold">Contact Us</p>
                 <ul className="text-center md:text-start mx-auto">
                   <li>
-                    <Link
-                      href="/"
+                    <Link rel="nofollow" target="_blank"
+                      href="https://www.google.com/maps/place/Easy+pools/@43.8622621,-79.4823842,16z/data=!4m6!3m5!1s0x882b2968ab14ffe9:0x44b4c761886b31cb!8m2!3d43.8620107!4d-79.4818907!16s%2Fg%2F11vqsjvxpl?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D"
                       className="footer-link items-center justify-center md:justify-normal text-sm md:text-base text-white"
                     >
                       <FaMapMarkedAlt className=" lg:h-7 lg:w-7  h-4 w-4" /> 2a

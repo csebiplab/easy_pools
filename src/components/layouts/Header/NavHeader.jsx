@@ -132,10 +132,10 @@ const our_service_menu_items = {
       title: "Fiberglass Pool Installation In Toronto",
       route: "/fiberglass-pool-installation-in-toronto",
     },
-    // {
-    //   title: "Pool Installation Company In Markham",
-    //   route: "/pool-installation-company-in-markham",
-    // },
+    {
+      title: "Swimming Pool Contractors in Toronto",
+      route: "/swimming-pool-contractors-in-toronto",
+    },
   ],
 };
 

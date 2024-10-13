@@ -1,10 +1,8 @@
 import React from "react";
 import "./SwimingPoolInstallationInVaughan.css";
 
-import PartnerNRatings from "@/components/__one_time_used/MainHomePageComponent/PartnerNRatings/PartnerNRatings";
 import SwimmingPoolBanner from "./SwimmingPoolBanner/SwimmingPoolBanner";
 import AboutUsInSwimmingPool from "./AboutUsInSwimmingPool/AboutUsInSwimmingPool";
-import OurServiceAreas from "@/components/__one_time_used/MainHomePageComponent/OurServiceAreas/OurServiceAreas";
 import InstallationProcess from "./InstallationProcess/InstallationProcess";
 import Review from "./Review/Review";
 import TrustUs from "./TrustUs/TrustUs";
@@ -18,6 +16,8 @@ import InstallationServices from "./InstallationServices/InstallationServices";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import { headingIconText } from "@/utils/heading-text";
 import { bHeadingTexts } from "@/utils/bHeadingText";
+import OurServiceAreas from "@/components/__one_time_used/MainHomePage/OurServiceAreas/OurServiceAreas";
+import PartnerNRatings from "@/components/__one_time_used/MainHomePage/PartnerNRatings/PartnerNRatings";
 
 const SwimingPoolInstallationInVaughan = () => {
   return (
