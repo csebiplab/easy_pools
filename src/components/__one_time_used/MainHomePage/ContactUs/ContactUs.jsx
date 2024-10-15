@@ -243,7 +243,7 @@ const ContactUs = () => {
                       className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
                       type="tel"
                       id="phone"
-                      placeholder="+88 01764912536"
+                      placeholder="+1(647) 449 9512"
                       pattern="^\+?\d{1,14}$"
                       required
                     />
@@ -503,7 +503,7 @@ const ContactUs = () => {
                   className="contact-form__input w-full py-[13px] pl-[16px] placeholder:text-dark-600 placeholder:text-sm placeholder:font-normal placeholder:leading-normal"
                   type="tel"
                   id="phone"
-                  placeholder="+88 01764912536"
+                  placeholder="+1(647) 449 9512"
                   pattern="^\+?\d{1,14}$"
                   required
                 />
