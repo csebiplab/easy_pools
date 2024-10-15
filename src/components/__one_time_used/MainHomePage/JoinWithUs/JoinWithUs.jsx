@@ -34,7 +34,7 @@ const JoinWithUs = () => {
             </p>
             <div className="w-full flex justify-start items-center gap-[10px] md:gap-[33px] pt-[20px] 5xl:pt-[25px]">
               <button className="text-sm xl:text-base 5xl:text-lg font-bold py-[6px] px-[20px] xl:py-[12px] xl:px-[25px] 5xl:py-[18px] 5xl:px-[31px] text-white leading-normal btn_bg">
-                <Link className="flex items-center gap-[3px] xl:gap-[5px] text-white" href="tel: 647-931-0164">
+                <Link className="flex items-center gap-[3px] xl:gap-[5px] text-white" href="tel: +1(647) 449 9512">
                   Get an Estimate{" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ const JoinWithUs = () => {
                 </Link>
               </button>
               <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary">or</p>
-              <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary"><Link className="text-secondary" href="tel : 647-931-0164">Call Us: 647-931-0164</Link></p>
+              <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary"><Link className="text-secondary" href="tel : +1(647) 449 9512">Call Us: +1(647) 449 9512</Link></p>
             </div>
           </div>
         </div>
