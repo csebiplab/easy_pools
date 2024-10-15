@@ -163,7 +163,7 @@ const Benefits = () => {
                 <button className="text-sm xl:text-base 5xl:text-lg font-bold py-[6px] px-[10px] xl:py-[12px] xl:px-[25px] 5xl:py-[18px] 5xl:px-[31px] text-white leading-normal btn_bg">
                   <Link
                     className="flex items-center gap-[3px] xl:gap-[5px] text-white"
-                    href="tel: +1(647) 449 9512"
+                    href="tel:+1(647)449-9512"
                   >
                     Get an Estimate{" "}
                     <svg
@@ -184,7 +184,7 @@ const Benefits = () => {
                   or
                 </p>
                 <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary">
-                  <Link className="text-secondary" href="tel: +1(647) 449 9512">
+                  <Link className="text-secondary" href="tel:+1(647)449-9512">
                     Call Us: +1(647) 449 9512
                   </Link>
                 </p>
