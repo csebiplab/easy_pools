@@ -97,7 +97,7 @@ const WhyChooseUs = () => {
               </div>
             </div>
 
-            <div className="w-full border-2 my-6 md:my-0 cart1">
+            <div className="w-full my-6 md:my-0 cart1">
               <p className="title-bg text-center 2xl:py-[15px] py-[14px] text-black text-base md:text-lg font-bold">
               Usual Swimming Pool Installers
               </p>
@@ -126,7 +126,7 @@ const WhyChooseUs = () => {
                 ))}
               </div>
             </div>
-            <div className="border-2 my-6 md:my-0 cart2">
+            <div className="my-6 md:my-0 cart2">
               <p className="title-bg2 text-center 2xl:py-[15px] py-[14px] text-black text-base md:text-lg font-bold">
               Easy Pools Pool Installers
               </p>
