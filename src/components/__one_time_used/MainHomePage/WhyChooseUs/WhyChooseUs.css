@@ -1,15 +1,9 @@
-/* .title-bg {
-  border-radius: 6px 6px 0px 0px;
-  border: 1px solid #EBEBEB;
+.title-bg {
   background: #FFF;
-  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
-} */
-/* .title-bg2 {
-  border-radius: 6px 6px 0px 0px;
-  border: 1px solid #EBEBEB;
+}
+.title-bg2 {
   background: #DFF8FF;
-  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.25);
-} */
+}
 .cart1{
   border-radius: 0px 0px 15px 15px;
   background: #FFF;
