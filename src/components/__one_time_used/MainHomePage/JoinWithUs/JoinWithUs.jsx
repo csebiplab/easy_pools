@@ -51,7 +51,7 @@ const JoinWithUs = () => {
                 </Link>
               </button>
               <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary">or</p>
-              <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary"><Link className="text-secondary" href="tel : +1(647) 449 9512">Call Us: +1(647) 449 9512</Link></p>
+              <p className="text-sm xl:text-base 5xl:text-lg font-bold text-secondary"><Link className="text-secondary" href="tel: +1(647) 449 9512">Call Us: +1(647) 449 9512</Link></p>
             </div>
           </div>
         </div>

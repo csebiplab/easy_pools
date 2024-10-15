@@ -40,7 +40,7 @@ const ContactUs = () => {
                 />{" "}
                 <Link
                   className="text-white"
-                  href="loaction : 1331 Major Mackenzie dr West, Vaughan"
+                  href="loaction: 1331 Major Mackenzie dr West, Vaughan"
                 >
                   1331 Major Mackenzie dr West, Vaughan
                 </Link>
@@ -53,7 +53,7 @@ const ContactUs = () => {
                   width={21}
                   height={21}
                 />{" "}
-                <Link className="text-white" href="tel : +1(647)449-9512">
+                <Link className="text-white" href="tel: +1(647) 449 9512">
                   +1(647)449-9512
                 </Link>
               </p>
@@ -67,7 +67,7 @@ const ContactUs = () => {
                 />{" "}
                 <Link
                   className="text-white"
-                  href="mail : easypools.landscaping@gmail.com"
+                  href="mail: easypools.landscaping@gmail.com"
                 >
                   easypools.landscaping@gmail.com
                 </Link>
