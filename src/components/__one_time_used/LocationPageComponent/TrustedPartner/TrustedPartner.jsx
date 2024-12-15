@@ -37,19 +37,19 @@ const trustedLine1 = [
 ];
 const trustedLine2 = [
   {
-    id: 1,
+    id: 10,
     para: "Superior Quality Materials",
   },
   {
-    id: 2,
+    id: 20,
     para: "Timely Project Completion",
   },
   {
-    id: 3,
+    id: 30,
     para: "Customized Solutions",
   },
   {
-    id: 4,
+    id: 40,
     para: "Innovative Design Concepts",
   },
   {
@@ -57,37 +57,37 @@ const trustedLine2 = [
     para: "Eco-Friendly Practices",
   },
   {
-    id: 6,
+    id: 60,
     para: "Local Reputation & Recognition",
   },
   {
-    id: 7,
+    id: 70,
     para: "Dedication to Safety & Compliance",
   },
 ];
 const trustedLine3 = [
   {
-    id: 1,
+    id: 100,
     para: "Unmatched Craftsmanship",
   },
   {
-    id: 2,
+    id: 200,
     para: "Exceptional Customer Service",
   },
   {
-    id: 3,
+    id: 300,
     para: "Attention to Detail",
   },
   {
-    id: 4,
+    id: 400,
     para: "Certified & Skilled",
   },
   {
-    id: 5,
+    id: 500,
     para: "Competitive Pricing",
   },
   {
-    id: 6,
+    id: 600,
     para: "Collaborative Approach",
   },
 ];

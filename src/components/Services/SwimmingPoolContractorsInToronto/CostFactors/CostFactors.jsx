@@ -226,11 +226,18 @@ const CostFactors = () => {
           spaceBetween={12}
         >
           {costFactors?.map((data) => (
-            <SwiperSlide key={data.id} className={`bg-secondary py-[50px] px-[25px] !h-auto !md:h-full`}>
-                <div className="cart__bg !bg-white pb-[50px] pt-[39px] pr-[15px] pl-[8px] -mt-[250px]">
-                  <p className="text-center text-[25px] text-black font-bold pb-[15px]">{data.title}</p>
-                  <p className="text-center text-lg font-normal text-black">{data.desc}</p>
+            <SwiperSlide
+              key={data.id}
+              className={`bg-secondary py-[50px] px-[25px] !h-auto !md:h-full`}
+            >
+              <div className="cart__bg !bg-white pb-[50px] pt-[39px] pr-[15px] pl-[8px] -mt-[250px]">
+                <p className="text-center text-[25px] text-black font-bold pb-[15px]">
+                  {data.title}
+                </p>
+                <div className="text-center text-lg font-normal text-black">
+                  {data.desc}
                 </div>
+              </div>
               {/* <div className="bg-secondary px-[25px] pb-[95px] ">
                 
               </div> */}

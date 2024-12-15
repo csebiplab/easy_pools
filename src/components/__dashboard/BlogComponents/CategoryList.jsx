@@ -41,9 +41,9 @@ export default function CategoryList({ allCategorylist }) {
               </tr>
             </thead>
             <tbody>
-              {allCategorylist?.map((item) => (
+              {allCategorylist?.map((item, idx) => (
                 <tr
-                  key={item?._id}
+                  key={idx}
                   className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
                 >
                   <th

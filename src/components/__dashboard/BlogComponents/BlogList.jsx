@@ -54,45 +54,41 @@ export default function BlogList({ allBlogList }) {
                 </tr>
               </thead>
               <tbody>
-                {allBlogList?.map((item) => {
+                {allBlogList?.map((item, idx) => {
                   return (
-                    <>
-                      <tr
-                        key={item?._id}
-                        className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
-                      >
-                        <th scope="row" className="px-6 py-4 font-medium">
-                          {item?.blogTitle}
-                        </th>
-                        <td className="px-6 py-4">
-                          {convertSubStr(item?.metaTitle)}
-                        </td>
-                        <td className="px-6 py-4">{item?.customLink}</td>
-                        <td className="px-6 py-4">
-                          {convertSubStr(item?.metaDescription)}
-                        </td>
-                        <td className="px-6 py-4">
-                          {convertSubStr(item?.metaKeywords)}
-                        </td>
-                        <td className="px-6 py-4">
-                          {convertSubStr(item?.shortDescription)}
-                        </td>
-                        <td className="px-6 py-4">
-                          {convertSubStr(item?.content)}
-                        </td>
-                        <td className="px-6 py-4">
-                          <div className="flex gap-2">
-                            {" "}
-                            <Link
-                              href={`/dashboard/blogs/editBlog/${item?._id}`}
-                            >
-                              <HiPencilAlt size={24} />
-                            </Link>
-                            <RemoveBlogBtnComponent id={item._id} />
-                          </div>
-                        </td>
-                      </tr>
-                    </>
+                    <tr
+                      key={idx}
+                      className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+                    >
+                      <th scope="row" className="px-6 py-4 font-medium">
+                        {item?.blogTitle}
+                      </th>
+                      <td className="px-6 py-4">
+                        {convertSubStr(item?.metaTitle)}
+                      </td>
+                      <td className="px-6 py-4">{item?.customLink}</td>
+                      <td className="px-6 py-4">
+                        {convertSubStr(item?.metaDescription)}
+                      </td>
+                      <td className="px-6 py-4">
+                        {convertSubStr(item?.metaKeywords)}
+                      </td>
+                      <td className="px-6 py-4">
+                        {convertSubStr(item?.shortDescription)}
+                      </td>
+                      <td className="px-6 py-4">
+                        {convertSubStr(item?.content)}
+                      </td>
+                      <td className="px-6 py-4">
+                        <div className="flex gap-2">
+                          {" "}
+                          <Link href={`/dashboard/blogs/editBlog/${item?._id}`}>
+                            <HiPencilAlt size={24} />
+                          </Link>
+                          <RemoveBlogBtnComponent id={item._id} />
+                        </div>
+                      </td>
+                    </tr>
                   );
                 })}
               </tbody>

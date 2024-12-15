@@ -114,9 +114,14 @@ const ShareComponent = ({
 
   return (
     <div>
-
       <div className="px-5">
-        <h3 className="text-2xl uppercase">Create <span className="text-primary-600 border-2 p-2 border-secondary">{pagename}</span> Page Meta Data</h3>
+        <h3 className="text-2xl uppercase">
+          Create{" "}
+          <span className="text-primary-600 border-2 p-2 border-secondary">
+            {pagename}
+          </span>{" "}
+          Page Meta Data
+        </h3>
         <div>
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
@@ -148,7 +153,8 @@ const ShareComponent = ({
                 Meta Description
               </label>
               <div className="mt-2">
-                <input required
+                <input
+                  required
                   type="text"
                   name="description"
                   id="description"
@@ -190,71 +196,63 @@ const ShareComponent = ({
             className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 my-5 px-5 border border-blue-500 hover:border-transparent rounded"
             disabled={isUpdateCreateLoading}
           >
+            {!isUpdateCreateLoading && <span>{id ? "Update" : "Save"}</span>}
 
-            {
-              !isUpdateCreateLoading && <span>{id ? "Update" : "Save"}</span>
-            }
-
-            {
-              isUpdateCreateLoading && <span>Submitting...</span>
-            }
-
+            {isUpdateCreateLoading && <span>Submitting...</span>}
           </button>
         </div>
 
-        {
-          metaData || id ? (
-            <>
-              <div className="relative mt-4 overflow-x-auto shadow-md sm:rounded-lg">
-                <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                  <thead className="text-sm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                      <th scope="col" className="px-6 py-3">
-                        Meta Title
-                      </th>
-                      <th scope="col" className="px-6 py-3">
-                        Meta Description
-                      </th>
-                      <th scope="col" className="px-6 py-3">
-                        Meta Keywords
-                      </th>
-                      <th scope="col" className="px-6 py-3">
-                        Action
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr
-                      key={id}
-                      className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
+        {metaData || id ? (
+          <>
+            <div className="relative mt-4 overflow-x-auto shadow-md sm:rounded-lg">
+              <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead className="text-sm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" className="px-6 py-3">
+                      Meta Title
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                      Meta Description
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                      Meta Keywords
+                    </th>
+                    <th scope="col" className="px-6 py-3">
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                    <th
+                      scope="row"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                     >
-                      <th
-                        scope="row"
-                        className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                      >
-                        {titleValue}
-                      </th>
-                      <td className="px-6 py-4">{descriptionValue}</td>
-                      <td className="px-6 py-4">{keywordsValue}</td>
-                      <td className="px-6 py-4">
-                        <div className="flex gap-2">
-                          {/* <Link href={`/${editPath}/${id}`}>
+                      {titleValue}
+                    </th>
+                    <td className="px-6 py-4">{descriptionValue}</td>
+                    <td className="px-6 py-4">{keywordsValue}</td>
+                    <td className="px-6 py-4">
+                      <div className="flex gap-2">
+                        {/* <Link href={`/${editPath}/${id}`}>
                             <HiPencilAlt size={24} />
                           </Link> */}
-                          <RemoveBtn id={id} endPoints={endPoints} pagename={pagename} />
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </>
-          ) : (
-            <NoDataFound />
-          )
-        }
+                        <RemoveBtn
+                          id={id}
+                          endPoints={endPoints}
+                          pagename={pagename}
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </>
+        ) : (
+          <NoDataFound />
+        )}
       </div>
-
     </div>
   );
 };

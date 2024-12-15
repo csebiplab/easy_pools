@@ -83,7 +83,6 @@ function SiteVerificationComponent({ data }) {
   return (
     <div>
       <div className="px-5">
-
         <div>
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
@@ -94,7 +93,8 @@ function SiteVerificationComponent({ data }) {
                 Message
               </label>
               <div className="mt-2">
-                <input required
+                <input
+                  required
                   type="text"
                   name="title"
                   id="title"
@@ -114,7 +114,8 @@ function SiteVerificationComponent({ data }) {
                 Verification Url
               </label>
               <div className="mt-2">
-                <input required
+                <input
+                  required
                   type="text"
                   name="description"
                   id="description"
@@ -136,8 +137,6 @@ function SiteVerificationComponent({ data }) {
           </button>
         </div>
 
-
-
         <>
           <div className="relative mt-4 overflow-x-auto shadow-md sm:rounded-lg">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -155,9 +154,9 @@ function SiteVerificationComponent({ data }) {
                 </tr>
               </thead>
               <tbody>
-                {data?.map((item) => (
+                {data?.map((item, idx) => (
                   <tr
-                    key={item._id}
+                    key={idx}
                     className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700"
                   >
                     <th
@@ -176,7 +175,10 @@ function SiteVerificationComponent({ data }) {
                           >
                             <HiPencilAlt size={24} />
                           </Link> */}
-                        <RemoveBtnComponent id={item._id} endpoint={'verificationUrl'} />
+                        <RemoveBtnComponent
+                          id={item._id}
+                          endpoint={"verificationUrl"}
+                        />
                       </div>
                     </td>
                   </tr>

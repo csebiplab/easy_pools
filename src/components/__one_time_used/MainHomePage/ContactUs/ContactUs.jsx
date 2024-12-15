@@ -15,7 +15,7 @@ const ContactUs = () => {
     <div>
       {/* large device  */}
       <div className="hidden md:block full__section_r_p pl-3 md:pl-0">
-        <div className="grid grid-cols-1 grid-cols-7 gap-[30px] 5xl:gap-[55px]">
+        <div className="grid grid-cols-7 gap-[30px] 5xl:gap-[55px]">
           <div className="md:col-span-3">
             <Image
               src="/assets/homePage/GiveUs.png"
@@ -41,8 +41,9 @@ const ContactUs = () => {
                 <Link
                   className="text-white"
                   // href="loaction: 1331 Major Mackenzie dr West, Vaughan"
-                      rel="nofollow" target="_blank"
-                      href="https://www.google.com/maps/place/Easy+pools/@43.8622621,-79.4823842,16z/data=!4m6!3m5!1s0x882b2968ab14ffe9:0x44b4c761886b31cb!8m2!3d43.8620107!4d-79.4818907!16s%2Fg%2F11vqsjvxpl?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D"
+                  rel="nofollow"
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Easy+pools/@43.8622621,-79.4823842,16z/data=!4m6!3m5!1s0x882b2968ab14ffe9:0x44b4c761886b31cb!8m2!3d43.8620107!4d-79.4818907!16s%2Fg%2F11vqsjvxpl?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D"
                 >
                   1331 Major Mackenzie dr West, Vaughan
                 </Link>
